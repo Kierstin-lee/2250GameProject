@@ -1,4 +1,6 @@
 using UnityEngine;
+using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class StartButton : MonoBehaviour
 {
@@ -8,9 +10,8 @@ public class StartButton : MonoBehaviour
         
     }
 
-    // Update is called once per frame
-    void Update()
+    public void OpenScene()
     {
-        
+        SceneManager.LoadScene("Mainhub");
     }
 }
