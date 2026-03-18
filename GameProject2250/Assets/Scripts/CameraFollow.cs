@@ -2,9 +2,9 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {
-    public Transform target; // your player/fairy
+    public Transform target;      // the player/fairy
     public float smoothSpeed = 0.125f;
-    public BoxCollider2D bounds; // assign CameraBounds collider
+    public Collider2D bounds;     // assign your CameraBounds (any 2D collider works)
     private float zOffset = -10f;
 
     private float camHalfHeight;
@@ -22,7 +22,7 @@ public class CameraFollow : MonoBehaviour
 
         Vector3 desiredPos = new Vector3(target.position.x, target.position.y, zOffset);
 
-        // Calculate min and max using the bounds collider
+        // Get the bounds from the collider
         float minX = bounds.bounds.min.x + camHalfWidth;
         float maxX = bounds.bounds.max.x - camHalfWidth;
         float minY = bounds.bounds.min.y + camHalfHeight;
