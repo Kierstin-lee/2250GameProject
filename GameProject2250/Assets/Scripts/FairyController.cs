@@ -9,11 +9,16 @@ public class FairyController : MonoBehaviour
     private Animator anim;
     private Vector2 moveInput;
 
+    private KeyManager keyManager;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
+    [System.Obsolete]
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+
+        keyManager = Object.FindObjectOfType<KeyManager>();
     }
 
     // Update is called once per frame
@@ -33,6 +38,22 @@ public class FairyController : MonoBehaviour
             rb.MovePosition(rb.position + moveInput.normalized * moveSpeed * Time.fixedDeltaTime);
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Key"))
+        {
+            Debug.Log("Key collected!");
+
+            if (keyManager != null)
+            {
+                keyManager.ShowNextKey();
+            }
+
+            Destroy(other.gameObject);
+        }
+    }
+
 
     private void UpdateAnimationState()
     {
