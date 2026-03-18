@@ -4,7 +4,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
 
-    public int levelsCompleted = 0;
+    public int keysDeposited = 0;
 
     void Awake()
         {
@@ -22,7 +22,8 @@ public class GameManager : MonoBehaviour
 
     public void CompleteLevel()
     {
-        levelsCompleted++;
+        keyDeposited++;
+        Debug.Log("Keys: keysDeposited");
     }
     
     
