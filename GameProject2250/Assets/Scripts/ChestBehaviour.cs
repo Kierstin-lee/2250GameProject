@@ -6,12 +6,15 @@ public class ChestBehaviour : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player") && !keyDeposited)
+        if ((other.CompareTag("Player") || other.GetComponent<CharacterController>() != null) 
+            && !keyDeposited)
         {
             keyDeposited = true;
 
+            // Add key to GameManager
             GameManager.instance.AddKey();
 
+            // Update NPC dialogue
             NPCDialogue npc = FindObjectOfType<NPCDialogue>();
             if (npc != null)
             {
