@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Stairs
   - Wall
+  - Key
   layers:
   - Default
   - TransparentFX

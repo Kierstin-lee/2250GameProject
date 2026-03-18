@@ -31,4 +31,6 @@ public class NPCDialogue : MonoBehaviour
             dialogueText.text = dialogueLines[progress];
         }
     }
+    
+    
 }

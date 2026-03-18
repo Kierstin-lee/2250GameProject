@@ -1,16 +1,25 @@
 using UnityEngine;
 
-public class KeyBhaviour : MonoBehaviour
+public class KeyBehaviour : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    private bool collected = false;
 
-    // Update is called once per frame
-    void Update()
+    void OnTriggerEnter2D(Collider2D other)
     {
-        
+        if (collected) return;
+
+        if (other.CompareTag("Player"))
+        {
+            collected = true;
+            gameObject.SetActive(false);
+
+            GameManager.instance.AddKey();
+
+            NPCDialogue npc = FindObjectOfType<NPCDialogue>();
+            if (npc != null)
+                npc.UpdateDialogue();
+
+            Debug.Log("Key collected!");
+        }
     }
 }

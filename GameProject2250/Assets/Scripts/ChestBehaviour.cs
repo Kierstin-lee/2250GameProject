@@ -2,26 +2,16 @@ using UnityEngine;
 
 public class ChestBehaviour : MonoBehaviour
 {
-    private bool keyDeposited = false;
+    private bool used = false;
 
-    void OnTriggerEnter(Collider other)
+    void OnTriggerEnter2D(Collider2D other)
     {
-        if ((other.CompareTag("Player") || other.GetComponent<CharacterController>() != null) 
-            && !keyDeposited)
+        if (used) return;
+
+        if (other.CompareTag("Player"))
         {
-            keyDeposited = true;
-
-            // Add key to GameManager
-            GameManager.instance.AddKey();
-
-            // Update NPC dialogue
-            NPCDialogue npc = FindObjectOfType<NPCDialogue>();
-            if (npc != null)
-            {
-                npc.UpdateDialogue();
-            }
-
-            Debug.Log("Key deposited!");
+            used = true;
+            Debug.Log("Chest triggered!");
         }
     }
 }
