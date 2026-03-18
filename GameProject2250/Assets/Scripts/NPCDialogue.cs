@@ -10,16 +10,11 @@ public class NPCDialogue : MonoBehaviour
 
     private int lastSeen = -1;
 
-    void Start()
-    {
-        UpdateDialogue();
-    }
-
     public void UpdateDialogue()
     {
-        int progress = GameManager.instance.keysDeposited;
+        int progress = GameManager.instance.KeysDepositedCount();
 
-        if (progress >= 6)
+        if (progress >= dialogueLines.Length)
         {
             dialogueText.text = "";
             return;
@@ -31,6 +26,4 @@ public class NPCDialogue : MonoBehaviour
             dialogueText.text = dialogueLines[progress];
         }
     }
-    
-    
 }
