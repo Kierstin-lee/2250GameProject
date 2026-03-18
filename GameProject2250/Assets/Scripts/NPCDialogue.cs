@@ -3,37 +3,37 @@ using TMPro;
 
 public class NPCDialogue : MonoBehaviour
 {
-    public TMP_Text dialogueText;
-
+    public TMP_Text bubbleText;
     [TextArea]
     public string[] dialogueLines;
-
     private int lastSeen = -1;
 
     public void UpdateDialogue()
     {
-        // Number of deposited keys
         int progress = GameManager.instance.KeysDepositedCount();
 
-        // Clamp progress to dialogue array size
-        if (progress >= dialogueLines.Length)
+        if (!GameManager.instance.hasTalkedToNPC)
         {
-            dialogueText.text = ""; // all dialogue done
+            // first talk triggers text 0
+            bubbleText.text = dialogueLines[0];
+            lastSeen = 0;
+            GameManager.instance.hasTalkedToNPC = true;
+            Debug.Log("First NPC talk: " + dialogueLines[0]);
             return;
         }
 
-        // Only update if progress changed
+        // after first talk, follow normal progression
+        if (progress >= dialogueLines.Length)
+        {
+            bubbleText.text = "";
+            return;
+        }
+
         if (progress != lastSeen)
         {
             lastSeen = progress;
-            dialogueText.text = dialogueLines[progress];
-            Debug.Log("NPC updated: " + dialogueText.text);
+            bubbleText.text = dialogueLines[progress];
+            Debug.Log("NPC updated: " + dialogueLines[progress]);
         }
-    }
-
-    void Start()
-    {
-        // Make sure it shows first line at start
-        UpdateDialogue();
     }
 }

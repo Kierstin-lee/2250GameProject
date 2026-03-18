@@ -10601,6 +10601,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
   keysCollected: []
   keysDeposited: []
+  hasTalkedToNPC: 0
 --- !u!4 &956753281
 Transform:
   m_ObjectHideFlags: 0
@@ -27260,7 +27261,7 @@ PrefabInstance:
     - target: {fileID: 5628018141983903116, guid: ef67ba864d1ecc042b5f4cf48455c0a6,
         type: 3}
       propertyPath: m_IsTrigger
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5628018141983903117, guid: ef67ba864d1ecc042b5f4cf48455c0a6,
         type: 3}
@@ -27281,6 +27282,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1951022447}
+    - targetCorrespondingSourceObject: {fileID: 5628018141983903104, guid: ef67ba864d1ecc042b5f4cf48455c0a6,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1951022452}
   m_SourcePrefab: {fileID: 100100000, guid: ef67ba864d1ecc042b5f4cf48455c0a6, type: 3}
 --- !u!4 &1951022446 stripped
 Transform:
@@ -27300,7 +27305,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63e0e3379ff0f4d0e9cdfade3a616a45, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPCDialogue
-  dialogueText: {fileID: 1590676845}
+  bubbleText: {fileID: 1590676845}
   dialogueLines:
   - 'Hi! Welcome to Fairy Rescue! The big bad wizard has taken my fairy friend hostage,
     but she''s stuck in the third world. You must go through each world collect keys
@@ -27318,6 +27323,18 @@ MonoBehaviour:
     and head into portal 3 to find the next key.
   - Congrats You have finished the mission. You have saved the land from the evil
     wizard and my fairy friend is free.
+--- !u!114 &1951022452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1629227919}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14437de7e6ec444fc992dbce0b1b958b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NPCInteraction
 --- !u!1 &1978142081
 GameObject:
   m_ObjectHideFlags: 0

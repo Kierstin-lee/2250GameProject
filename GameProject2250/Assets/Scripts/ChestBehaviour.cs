@@ -4,11 +4,16 @@ public class ChestBehaviour : MonoBehaviour
 {
     void OnTriggerEnter2D(Collider2D other)
     {
+        // Only player can interact
         if (!other.CompareTag("Player")) return;
 
-        // Get the first key the player has collected but not deposited
+        // Cannot deposit keys before first NPC talk
+        if (!GameManager.instance.hasTalkedToNPC) return;
+
+        // Check if player has any keys collected
         if (GameManager.instance.keysCollected.Count > 0)
         {
+            // Take the first key in the collected list
             string keyToDeposit = GameManager.instance.keysCollected[0];
 
             // Deposit it
