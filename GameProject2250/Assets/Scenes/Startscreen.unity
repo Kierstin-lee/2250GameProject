@@ -618,7 +618,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 769428433}
-        m_TargetAssemblyTypeName: NewMonoBehaviourScript, Assembly-CSharp
+        m_TargetAssemblyTypeName: QuitButton, Assembly-CSharp
         m_MethodName: QuitGame
         m_Mode: 1
         m_Arguments:
@@ -676,9 +676,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 769428428}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 062d16f3fdf021444b4d90625d12b883, type: 3}
+  m_Script: {fileID: 11500000, guid: 8817b6b934749494e94b7f8f3d8d1b2d, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::NewMonoBehaviourScript
+  m_EditorClassIdentifier: Assembly-CSharp::QuitButton
 --- !u!1 &820477307
 GameObject:
   m_ObjectHideFlags: 0
