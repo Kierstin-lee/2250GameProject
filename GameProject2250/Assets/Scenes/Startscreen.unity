@@ -1166,7 +1166,7 @@ PrefabInstance:
     - target: {fileID: 3979658910644941265, guid: ea8d65b89dc84d9092703d2ef9b70db7,
         type: 3}
       propertyPath: m_Name
-      value: Red Fairy
+      value: Red Fairy (1)
       objectReference: {fileID: 0}
     - target: {fileID: 5115795131485341815, guid: ea8d65b89dc84d9092703d2ef9b70db7,
         type: 3}
@@ -1529,7 +1529,7 @@ PrefabInstance:
     - target: {fileID: 1671945572645789033, guid: 059790aee4124594910a271a5986e78d,
         type: 3}
       propertyPath: m_Name
-      value: Orange Fairy
+      value: Orange Fairy (3)
       objectReference: {fileID: 0}
     - target: {fileID: 7319478287407324983, guid: 059790aee4124594910a271a5986e78d,
         type: 3}
@@ -1595,7 +1595,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: e000bfe29c5c48cbbdc52471bb790453, type: 2}
+      objectReference: {fileID: 9100000, guid: 58d2d480f697468e9b0fb334a0e43f21, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1613,7 +1613,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: e000bfe29c5c48cbbdc52471bb790453, type: 2}
+      objectReference: {fileID: 9100000, guid: bad357c65a4f4a22ba05ccc48b00a0ce, type: 2}
     - target: {fileID: 3205784271185447661, guid: 8f19645d1dcc4c24a1fe81dfc3bbe9a5,
         type: 3}
       propertyPath: m_SortingOrder
@@ -1682,7 +1682,7 @@ PrefabInstance:
     - target: {fileID: 7194166884115714197, guid: 8f19645d1dcc4c24a1fe81dfc3bbe9a5,
         type: 3}
       propertyPath: m_Name
-      value: Green Fairy
+      value: Green Fairy (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
