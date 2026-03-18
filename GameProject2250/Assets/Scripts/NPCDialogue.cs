@@ -6,9 +6,9 @@ public class NPCDialogue : MonoBehaviour
     public TMP_Text dialogueText;
 
     [TextArea]
-    public string[] dialogueLines; // size = 6
+    public string[] dialogueLines;
 
-    private int lastLevelSeen = -1;
+    private int lastSeen = -1;
 
     void Start()
     {
@@ -17,18 +17,17 @@ public class NPCDialogue : MonoBehaviour
 
     public void UpdateDialogue()
     {
-        int progress = GameManager.instance.levelsCompleted;
+        int progress = GameManager.instance.keysDeposited;
 
-        // No dialogue after level 6
         if (progress >= 6)
         {
             dialogueText.text = "";
             return;
         }
 
-        if (progress != lastLevelSeen)
+        if (progress != lastSeen)
         {
-            lastLevelSeen = progress;
+            lastSeen = progress;
             dialogueText.text = dialogueLines[progress];
         }
     }

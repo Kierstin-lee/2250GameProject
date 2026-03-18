@@ -2,15 +2,23 @@ using UnityEngine;
 
 public class ChestBehaviour : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
+    private bool keyDeposited = false;
 
-    // Update is called once per frame
-    void Update()
+    void OnTriggerEnter(Collider other)
     {
-        
+        if (other.CompareTag("Player") && !keyDeposited)
+        {
+            keyDeposited = true;
+
+            GameManager.instance.AddKey();
+
+            NPCDialogue npc = FindObjectOfType<NPCDialogue>();
+            if (npc != null)
+            {
+                npc.UpdateDialogue();
+            }
+
+            Debug.Log("Key deposited!");
+        }
     }
 }
