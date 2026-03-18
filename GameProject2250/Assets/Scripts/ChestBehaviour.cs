@@ -2,27 +2,28 @@ using UnityEngine;
 
 public class ChestBehaviour : MonoBehaviour
 {
-    // Assign in Inspector the key this chest will accept
-    public string keyID;
-    private bool used = false;
-
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (used) return;
+        if (!other.CompareTag("Player")) return;
 
-        if (other.CompareTag("Player"))
+        // Get the first key the player has collected but not deposited
+        if (GameManager.instance.keysCollected.Count > 0)
         {
-            used = true;
+            string keyToDeposit = GameManager.instance.keysCollected[0];
 
-            // Deposit key into GameManager
-            GameManager.instance.DepositKey(keyID);
+            // Deposit it
+            GameManager.instance.DepositKey(keyToDeposit);
 
             // Update NPC dialogue
             NPCDialogue npc = FindObjectOfType<NPCDialogue>();
             if (npc != null)
                 npc.UpdateDialogue();
 
-            Debug.Log("Chest deposited key: " + keyID);
+            Debug.Log("Deposited key: " + keyToDeposit);
+        }
+        else
+        {
+            Debug.Log("No keys to deposit.");
         }
     }
 }
