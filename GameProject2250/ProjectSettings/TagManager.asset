@@ -31,7 +31,7 @@ TagManager:
   - Layer 1
   - Layer 2
   - Layer 3
-  - 
+  - keys
   - 
   - 
   - 
@@ -55,6 +55,9 @@ TagManager:
     locked: 0
   - name: Boundary
     uniqueID: 1606462613
+    locked: 0
+  - name: Keys
+    uniqueID: 2133064151
     locked: 0
   m_RenderingLayers:
   - Default
