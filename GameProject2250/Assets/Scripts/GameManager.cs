@@ -24,4 +24,8 @@ public class GameManager : MonoBehaviour
     {
         levelsCompleted++;
     }
+    
+    
+    //add this line to when the level ends in each code
+    //GameManager.instance.CompleteLevel();
 }
