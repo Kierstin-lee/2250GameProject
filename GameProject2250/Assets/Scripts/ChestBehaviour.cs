@@ -12,6 +12,7 @@ public class ChestBehaviour : MonoBehaviour
         {
             used = true;
             Debug.Log("Chest triggered!");
+            
         }
     }
 }

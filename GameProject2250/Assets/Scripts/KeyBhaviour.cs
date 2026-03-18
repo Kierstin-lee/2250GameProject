@@ -8,6 +8,7 @@ public class KeyBehaviour : MonoBehaviour
     {
         if (collected) return;
 
+        // Make sure we detect the player
         if (other.CompareTag("Player"))
         {
             collected = true;
@@ -15,7 +16,7 @@ public class KeyBehaviour : MonoBehaviour
             // Hide key
             gameObject.SetActive(false);
 
-            // Update GameManager
+            // Add key to GameManager
             GameManager.instance.AddKey();
 
             // Update NPC dialogue
