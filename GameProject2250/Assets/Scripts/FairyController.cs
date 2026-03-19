@@ -15,11 +15,18 @@ public class FairyController : MonoBehaviour
         anim = GetComponent<Animator>();
     }
 
+    [SerializeField] private float jumpForce = 10f;
+    private bool isGrounded;
     // Update is called once per frame
     void Update()
     {
+        
         moveInput.x = Input.GetAxisRaw("Horizontal");
-        moveInput.y = Input.GetAxisRaw("Vertical");
+
+        if (Input.GetKeyDown(KeyCode.UpArrow))
+        {
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+        }
 
         UpdateAnimationState();
 
@@ -29,7 +36,7 @@ public class FairyController : MonoBehaviour
     {
         if (moveInput != Vector2.zero)
         {
-            rb.MovePosition(rb.position + moveInput.normalized * moveSpeed * Time.fixedDeltaTime);
+            rb.linearVelocity = new Vector2(moveInput.x * moveSpeed, rb.linearVelocity.y);
         }
     }
 
