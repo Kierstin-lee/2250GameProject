@@ -6,9 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="ceacc756-af91-44a4-9dfc-9876a5d14480" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GameProject2250/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameProject2250/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fairy.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fairy.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gamelauncher Studio/Mini Character/Tiny Fairies/Tiny Fairies 01/Animation/Red Fairy Selected.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Gamelauncher Studio/Mini Character/Tiny Fairies/Tiny Fairies 01/Animation/Red Fairy Selected.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gamelauncher Studio/Mini Character/Tiny Fairies/Tiny Fairies 02/Animation/Green Fairy Selected.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Gamelauncher Studio/Mini Character/Tiny Fairies/Tiny Fairies 02/Animation/Green Fairy Selected.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Gamelauncher Studio/Mini Character/Tiny Fairies/Tiny Fairies 03/Animation/Orange Fairy Selected.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Gamelauncher Studio/Mini Character/Tiny Fairies/Tiny Fairies 03/Animation/Orange Fairy Selected.controller" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Startscreen.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Startscreen.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/QuitButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/QuitButton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/QuitButton.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/QuitButton.cs.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +25,7 @@
     <commands />
     <urls />
   </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -98,12 +102,19 @@
       <workItem from="1773856712805" duration="208000" />
       <workItem from="1773858948113" duration="2000" />
       <workItem from="1773858995378" duration="138000" />
+      <workItem from="1773944274358" duration="41000" />
+      <workItem from="1773944327582" duration="42000" />
+      <workItem from="1773944413244" duration="298000" />
+      <workItem from="1773944902586" duration="158000" />
+      <workItem from="1773947731774" duration="1370000" />
+      <workItem from="1773949136347" duration="1554000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityProjectDiscoverer">
     <option name="hasUnityReference" value="true" />

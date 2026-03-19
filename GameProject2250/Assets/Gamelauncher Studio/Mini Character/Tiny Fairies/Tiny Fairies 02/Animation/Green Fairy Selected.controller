@@ -58,11 +58,11 @@ AnimatorController:
   m_Name: Green Fairy Selected
   serializedVersion: 5
   m_AnimatorParameters:
-  - m_Name: GSelected
+  - m_Name: Selected
     m_Type: 9
     m_DefaultFloat: 0
     m_DefaultInt: 0
-    m_DefaultBool: 1
+    m_DefaultBool: 0
     m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
@@ -113,7 +113,7 @@ AnimatorStateTransition:
   m_Name: 
   m_Conditions:
   - m_ConditionMode: 1
-    m_ConditionEvent: GSelected
+    m_ConditionEvent: Selected
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 355490332275669774}
