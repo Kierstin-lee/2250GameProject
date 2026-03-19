@@ -2,14 +2,21 @@ using UnityEngine;
 
 public class CameraMoving : MonoBehaviour
 {
-    [SerializeField] private float speed;
-    
-    private float horizontal;
+    [SerializeField] private float smoothSpeed = 5f;
 
-    void Update()
+    private Transform player;
+
+    void Start()
     {
-        horizontal  = Input.GetAxis("Horizontal");
+        player = GameObject.FindGameObjectWithTag("Player").transform;
+    }
 
-        transform.Translate(new Vector3(horizontal, 0, 0) * speed * Time.deltaTime);
+    void LateUpdate()
+    {
+        if (player == null) return;
+
+        Vector3 targetPosition = new Vector3(player.position.x, player.position.y, transform.position.z);
+
+        transform.position = Vector3.Lerp(transform.position, targetPosition, smoothSpeed * Time.deltaTime);
     }
 }

@@ -1,4 +1,5 @@
 using UnityEngine;
+using TMPro;
 
 public class FairyController : MonoBehaviour
 {
@@ -7,16 +8,21 @@ public class FairyController : MonoBehaviour
     private Rigidbody2D rb;
     private Animator anim;
     private Vector2 moveInput;
+    
+    public TMP_Text scoreText;
+
+    private int score = 0;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        scoreText.text = "Coins: 0";
     }
 
     [SerializeField] private float jumpForce = 10f;
-    private bool isGrounded;
+    
     // Update is called once per frame
     void Update()
     {
@@ -40,6 +46,20 @@ public class FairyController : MonoBehaviour
         }
     }
 
+    
+    
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Coin"))
+        {
+            other.gameObject.CompareTag("Player");
+            score++;
+            scoreText.text = "Coins: " + score;
+            
+        }
+    }
+    
+    
 
     private void UpdateAnimationState()
     {
