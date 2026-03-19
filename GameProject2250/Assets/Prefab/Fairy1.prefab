@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &3979658910644941265
+--- !u!1 &5487762337204986588
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,23 +8,24 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 5115795131485341815}
-  - component: {fileID: 2321554631975589709}
-  - component: {fileID: 935189694830550794}
+  - component: {fileID: 4461959909825583994}
+  - component: {fileID: 6567714832302867520}
+  - component: {fileID: 8640316852248005639}
+  - component: {fileID: 7113752549699514068}
   m_Layer: 20
-  m_Name: 00_Idle
+  m_Name: Fairy1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &5115795131485341815
+--- !u!4 &4461959909825583994
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3979658910644941265}
+  m_GameObject: {fileID: 5487762337204986588}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.058939096, y: -0.1768173, z: 0}
@@ -33,14 +34,14 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &2321554631975589709
+--- !u!212 &6567714832302867520
 SpriteRenderer:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3979658910644941265}
+  m_GameObject: {fileID: 5487762337204986588}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -92,15 +93,15 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!95 &935189694830550794
+--- !u!95 &8640316852248005639
 Animator:
   serializedVersion: 7
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3979658910644941265}
-  m_Enabled: 0
+  m_GameObject: {fileID: 5487762337204986588}
+  m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: e000bfe29c5c48cbbdc52471bb790453, type: 2}
   m_CullingMode: 0
@@ -114,3 +115,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &7113752549699514068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5487762337204986588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c91925cf6a5fb349a429617d3fd8531, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FairyMovement
+  _speed: 5
+  _rb: {fileID: 0}
+  _wallLayer: 3
+  _boundaryLayer: 6
