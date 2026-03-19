@@ -1,3 +1,4 @@
+using System.Data.Common;
 using UnityEngine;
 
 public class FairyController : MonoBehaviour
@@ -10,15 +11,16 @@ public class FairyController : MonoBehaviour
     private Vector2 moveInput;
 
     private KeyManager keyManager;
+    private NPCDialogue dialogueManager;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    [System.Obsolete]
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
 
-        keyManager = Object.FindObjectOfType<KeyManager>();
+        keyManager = Object.FindFirstObjectByType<KeyManager>();
+        dialogueManager = Object.FindFirstObjectByType<NPCDialogue>();
     }
 
     // Update is called once per frame
@@ -43,11 +45,11 @@ public class FairyController : MonoBehaviour
     {
         if (other.CompareTag("Key"))
         {
-            Debug.Log("Key collected!");
+            if (keyManager != null) keyManager.ShowNextKey();
 
-            if (keyManager != null)
+            if (dialogueManager != null)
             {
-                keyManager.ShowNextKey();
+                dialogueManager.TriggerNextKeySequence();
             }
 
             Destroy(other.gameObject);

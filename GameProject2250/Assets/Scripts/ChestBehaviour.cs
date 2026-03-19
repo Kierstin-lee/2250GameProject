@@ -22,7 +22,9 @@ public class ChestBehaviour : MonoBehaviour
             // Update NPC dialogue
             NPCDialogue npc = FindObjectOfType<NPCDialogue>();
             if (npc != null)
+            {
                 npc.UpdateDialogue();
+            }
 
             Debug.Log("Deposited key: " + keyToDeposit);
         }

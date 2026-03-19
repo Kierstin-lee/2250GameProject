@@ -1,39 +1,75 @@
 using UnityEngine;
 using TMPro;
+using System.Collections;
+using System.Runtime.CompilerServices;
 
 public class NPCDialogue : MonoBehaviour
 {
     public TMP_Text bubbleText;
-    [TextArea]
-    public string[] dialogueLines;
-    private int lastSeen = -1;
+    public TMP_Text objectiveText;
+    [TextArea] public string[] dialogueLines;
+    [TextArea] public string[] objectiveLines;
 
+    [SerializeField] private float waitTime = 5f;
+
+    private int currentKeyIndex = 0;
+    private bool hasDoneFirstTalk = false;
+    private Coroutine textRoutine;
+
+    private void Start()
+    {
+        if (objectiveText != null) objectiveText.gameObject.SetActive(false);
+        if (bubbleText != null) bubbleText.text = "";
+    }
+
+    
     public void UpdateDialogue()
     {
-        int progress = GameManager.instance.KeysDepositedCount();
-
-        if (!GameManager.instance.hasTalkedToNPC)
+        if (!hasDoneFirstTalk)
         {
-            // first talk triggers text 0
-            bubbleText.text = dialogueLines[0];
-            lastSeen = 0;
-            GameManager.instance.hasTalkedToNPC = true;
-            Debug.Log("First NPC talk: " + dialogueLines[0]);
-            return;
-        }
-
-        // after first talk, follow normal progression
-        if (progress >= dialogueLines.Length)
-        {
-            bubbleText.text = "";
-            return;
-        }
-
-        if (progress != lastSeen)
-        {
-            lastSeen = progress;
-            bubbleText.text = dialogueLines[progress];
-            Debug.Log("NPC updated: " + dialogueLines[progress]);
+            hasDoneFirstTalk = true;
+            PlaySequence(0);
+            
+        
         }
     }
-}
+
+    public void TriggerNextKeySequence()
+    {
+        currentKeyIndex++;
+
+        if (currentKeyIndex < dialogueLines.Length)
+        {
+            PlaySequence(currentKeyIndex);
+        }
+    }
+
+    private void PlaySequence(int index)
+    {
+        if (textRoutine != null) StopCoroutine(textRoutine);
+        textRoutine = StartCoroutine(DisplaySequence(dialogueLines[index], objectiveLines[index]));
+    }
+
+
+    private IEnumerator DisplaySequence(string story, string goal)
+    {
+        if (bubbleText != null)
+        {
+            bubbleText.gameObject.SetActive(true);
+            bubbleText.text = story;
+            bubbleText.color = Color.white;
+            Debug.Log("Displaying Story: " + story);
+        }
+        if (objectiveText != null) objectiveText.gameObject.SetActive(false);
+        
+        yield return new WaitForSeconds(waitTime);
+
+        if (bubbleText != null) bubbleText.text = "";
+        if (objectiveText != null)
+        {
+            objectiveText.text = goal;
+            objectiveText.gameObject.SetActive(true);
+        }
+    }
+    }
+

@@ -27306,23 +27306,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPCDialogue
   bubbleText: {fileID: 1590676845}
+  objectiveText: {fileID: 1590676845}
   dialogueLines:
-  - 'Hi! Welcome to Fairy Rescue! The big bad wizard has taken my fairy friend hostage,
-    but she''s stuck in the third world. You must go through each world collect keys
-    to unlock the next portal until you reach the wizard. After each level come to
-    me so I can guide you on this quest. '
-  - Hey! Good job! You have collected the first key, but I think there is another
-    key still in the first world. Drop the key off into the chest and head back into
-    portal 1 to find the next key.
-  - Hey! Good job! You have collected the second key.Drop the key off into the chest
-    and head into portal 2 to find the next key.
-  - Hey! Good job! You have collected the first key, but I think there is another
-    key still in the first world. Drop the key off into the chest and head back into
-    portal 2 to find the next key.
-  - Hey! Good job! You have collected the second key.Drop the key off into the chest
-    and head into portal 3 to find the next key.
-  - Congrats You have finished the mission. You have saved the land from the evil
-    wizard and my fairy friend is free.
+  - Hi! Welcome to Fairy Rescue! An evil wizard has taken my friend hostage in the
+    third world. You must collect keys to unlock each portal to reach him. Come back
+    to me after each level for guidance!
+  - Great work! You found the first key, but there is still another hidden here in
+    the first world. Drop that key in the chest, then head back through Portal 1
+    to find the next one
+  - You've got the second key! Drop it in the chest to power up the gateway, then
+    head through Portal 2 to continue your search.
+  - Excellent! You've secured the first key of this realm, but the wizard's magic
+    is strong. Deposit the key and return to Portal 2; there is one more fragment
+    remaining.
+  - "That's it! You have the second key. Drop it off and prepare yourself\u2014head
+    into Portal 3 for the final key!"
+  - You did it! The land is safe, the wizard is defeated, and my friend is finally
+    free. You are a true hero of the Fairy Realm!
+  objectiveLines:
+  - 'GOAL: Find the first key.'
+  - 'GOAL: Return to portal 1.'
+  - 'GOAL: Enter portal 2.'
+  - 'GOAL: Search portal 2 again.'
+  - 'GOAL: Enter portal 3.'
+  - Mission complete!
+  waitTime: 5
 --- !u!114 &1951022452
 MonoBehaviour:
   m_ObjectHideFlags: 0
