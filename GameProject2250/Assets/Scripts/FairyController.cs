@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Data.Common;
 using UnityEngine;
 
@@ -5,6 +6,7 @@ public class FairyController : MonoBehaviour
 {
 
     [SerializeField] private float moveSpeed = 5f;
+    private bool hasReachedPortal = false; // prevents moving during animation
 
     private Rigidbody2D rb;
     private Animator anim;
@@ -26,6 +28,12 @@ public class FairyController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (hasReachedPortal)
+        {
+            moveInput = Vector2.zero;
+            return;
+        }
+
         moveInput.x = Input.GetAxisRaw("Horizontal");
         moveInput.y = Input.GetAxisRaw("Vertical");
 
@@ -35,7 +43,7 @@ public class FairyController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (moveInput != Vector2.zero)
+        if (!hasReachedPortal && moveInput != Vector2.zero)
         {
             rb.MovePosition(rb.position + moveInput.normalized * moveSpeed * Time.fixedDeltaTime);
         }
@@ -54,6 +62,31 @@ public class FairyController : MonoBehaviour
 
             Destroy(other.gameObject);
         }
+
+        if (other.CompareTag("Portal") && !hasReachedPortal)
+        {
+            StartCoroutine(EnterPortalSequence(other.transform.position));
+        }
+    }
+
+    private IEnumerator EnterPortalSequence(Vector3 portalPos)
+    {
+        hasReachedPortal = true;
+
+        float elapsed = 0;
+        Vector3 startPos = transform.position;
+        while (elapsed < 0.5f)
+        {
+            transform.position = Vector3.Lerp(startPos, portalPos, elapsed / 0.5f);
+            elapsed += Time.deltaTime;
+            yield return null;
+        }
+
+        anim.SetTrigger("OnPortal");
+
+        yield return new WaitForSeconds(2f);
+
+        Debug.Log("Level Complete! Moving to next world...");
     }
 
 
