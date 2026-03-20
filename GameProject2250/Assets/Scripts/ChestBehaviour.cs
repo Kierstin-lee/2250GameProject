@@ -26,6 +26,13 @@ public class ChestBehaviour : MonoBehaviour
                 npc.UpdateDialogue();
             }
 
+            //UPDATE LEVEL UI
+            LevelUI ui = FindObjectOfType<LevelUI>();
+            if (ui != null)
+            {
+                ui.UpdateLevelUI();
+            }
+
             Debug.Log("Deposited key: " + keyToDeposit);
         }
         else
