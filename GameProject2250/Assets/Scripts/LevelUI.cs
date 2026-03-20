@@ -4,13 +4,12 @@ using TMPro;
 public class LevelUI : MonoBehaviour
 {
     public static LevelUI instance;
-
     public TMP_Text levelText;
     public int totalLevels = 6;
 
     void Awake()
     {
-        instance = this; // singleton reference
+        instance = this;
     }
 
     public void UpdateLevelUI()

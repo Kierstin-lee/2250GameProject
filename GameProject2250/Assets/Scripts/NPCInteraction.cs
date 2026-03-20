@@ -2,20 +2,16 @@ using UnityEngine;
 
 public class NPCInteraction : MonoBehaviour
 {
-    private NPCDialogue npc;
-
-    void Start()
-    {
-        npc = GetComponent<NPCDialogue>();
-        if (npc == null)
-            Debug.LogError("NPCDialogue not found on this GameObject!");
-    }
-
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (!other.CompareTag("Player"))
-        {
-            npc.UpdateDialogue();
-        }
-}
+        if (!other.CompareTag("Player")) return;
+        if (GameManager.instance.hasTalkedToNPC) return;
+
+        GameManager.instance.hasTalkedToNPC = true;
+
+        NPCDialogue npc = FindObjectOfType<NPCDialogue>();
+        npc?.UpdateDialogue();
+
+        Debug.Log("Player talked to NPC first time!");
+    }
 }
