@@ -8,6 +8,7 @@ TagManager:
   - Wall
   - Key
   - Portal
+  - Coin
   layers:
   - Default
   - TransparentFX
