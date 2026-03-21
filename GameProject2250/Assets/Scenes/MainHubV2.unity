@@ -75887,10 +75887,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9039164309858604450, guid: b0425f0f8b61a4ad9a5105854024b723,
+        type: 3}
+      propertyPath: m_SortingLayer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 9039164309858604450, guid: b0425f0f8b61a4ad9a5105854024b723,
+        type: 3}
+      propertyPath: m_SortingLayerID
+      value: -114398113
+      objectReference: {fileID: 0}
     - target: {fileID: 9148120914748864271, guid: b0425f0f8b61a4ad9a5105854024b723,
         type: 3}
       propertyPath: m_Name
       value: Coin
+      objectReference: {fileID: 0}
+    - target: {fileID: 9148120914748864271, guid: b0425f0f8b61a4ad9a5105854024b723,
+        type: 3}
+      propertyPath: m_Layer
+      value: 24
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
