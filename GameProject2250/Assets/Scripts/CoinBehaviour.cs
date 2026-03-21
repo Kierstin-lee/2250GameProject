@@ -6,7 +6,12 @@ public class CoinBehaviour : MonoBehaviour
     {
         if (!other.CompareTag("Player")) return;
 
-        GameManager.instance.CollectCoin();
+        if (GameManager.instance != null)
+        {
+            GameManager.instance.CollectCoin();
+        }
+
         Destroy(gameObject);
     }
+    
 }
