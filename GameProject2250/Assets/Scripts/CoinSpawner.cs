@@ -16,7 +16,13 @@ public class CoinSpawner : MonoBehaviour
                 Random.Range(spawnAreaMin.y, spawnAreaMax.y),
                 0f // make sure Z is 0 for 2D
             );
-            Instantiate(coinPrefab, spawnPos, Quaternion.identity);
+            GameObject newCoin = Instantiate(coinPrefab, spawnPos, Quaternion.identity);
+
+            newCoin.transform.localScale = new Vector3(5, 5, 5);
+            SpriteRenderer sr = newCoin.GetComponent<SpriteRenderer>();
+            if (sr != null) sr.color = Color.red;
+
+            Debug.Log("Coin spawned at: " + spawnPos);
         }
     }
 }

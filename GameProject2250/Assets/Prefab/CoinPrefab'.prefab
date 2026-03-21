@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2306943470323864313}
   - component: {fileID: 6921910805578217298}
   - component: {fileID: 1303571238452623299}
-  m_Layer: 0
+  m_Layer: 24
   m_Name: CoinPrefab'
   m_TagString: Coin
   m_Icon: {fileID: 0}
@@ -80,8 +80,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 2133064151
-  m_SortingLayer: 5
+  m_SortingLayerID: -114398113
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 8980438598086963491, guid: ede4b03d4049f481a80ce6756418b385,
