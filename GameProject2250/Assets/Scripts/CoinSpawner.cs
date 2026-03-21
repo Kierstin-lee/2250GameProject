@@ -6,23 +6,42 @@ public class CoinSpawner : MonoBehaviour
     public int numberOfCoins = 10;     // how many coins to spawn
     public Vector2 spawnAreaMin;       // bottom-left corner of spawn area
     public Vector2 spawnAreaMax;       // top-right corner
+    public float coinScale = 0.5f;     // scale of the coins
 
     void Start()
     {
+        if (coinPrefab == null)
+        {
+            Debug.LogError("CoinSpawner: No prefab assigned!");
+            return;
+        }
+
+        GenerateCoins();
+    }
+
+    void GenerateCoins()
+    {
         for (int i = 0; i < numberOfCoins; i++)
         {
-            Vector3 spawnPos = new Vector3(
+            // randomly picks a spot between max and min
+            Vector3 pos = new Vector3(
                 Random.Range(spawnAreaMin.x, spawnAreaMax.x),
                 Random.Range(spawnAreaMin.y, spawnAreaMax.y),
-                0f // make sure Z is 0 for 2D
+                -0.5f
             );
-            GameObject newCoin = Instantiate(coinPrefab, spawnPos, Quaternion.identity);
 
-            newCoin.transform.localScale = new Vector3(5, 5, 5);
-            SpriteRenderer sr = newCoin.GetComponent<SpriteRenderer>();
-            if (sr != null) sr.color = Color.red;
+            GameObject coin = Instantiate(coinPrefab, pos, Quaternion.identity);
 
-            Debug.Log("Coin spawned at: " + spawnPos);
+            coin.transform.localScale = new Vector3(coinScale, coinScale, 1f);
+
+            SpriteRenderer sr = coin.GetComponent<SpriteRenderer>();
+            if (sr != null)
+            {
+                sr.sortingOrder = 100;
+                sr.color = Color.white; // makes sure the layer isn't invisble
+            }
+
+            Debug.Log("Generated coin " + i + " at " + pos);
         }
     }
 }
