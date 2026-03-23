@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2321554631975589709}
   - component: {fileID: 935189694830550794}
   m_Layer: 20
-  m_Name: 00_Idle
+  m_Name: 00_Idle_StartScreen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
