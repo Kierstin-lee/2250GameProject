@@ -9,7 +9,7 @@ public class FairyController : MonoBehaviour
     private Animator anim;
     private Vector2 moveInput;
     
-    public TMP_Text scoreText;
+    public TMP_Text Score;
 
     private int score = 0;
 
@@ -18,7 +18,7 @@ public class FairyController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-        scoreText.text = "Coins: 0";
+        Score.SetText("Coins:  " + score);
     }
 
     [SerializeField] private float jumpForce = 10f;
@@ -32,6 +32,16 @@ public class FairyController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.UpArrow))
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+        }
+        
+        void OnColliderEnter2D(Collider2D collision)
+        {
+            if (collision.gameObject.CompareTag("Coin"))
+            {
+                collision.gameObject.CompareTag("Player");
+                score += 1;
+                Score.text = "Coins: " + score;
+            }
         }
 
         UpdateAnimationState();
@@ -48,16 +58,8 @@ public class FairyController : MonoBehaviour
 
     
     
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.gameObject.CompareTag("Coin"))
-        {
-            other.gameObject.CompareTag("Player");
-            score++;
-            scoreText.text = "Coins: " + score;
-            
-        }
-    }
+    
+    
     
     
 
