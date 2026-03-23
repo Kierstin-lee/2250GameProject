@@ -29,7 +29,7 @@ TagManager:
   - Layer 1
   - Layer 2
   - Layer 3
-  - 
+  - coins
   - 
   - 
   - 
@@ -53,6 +53,9 @@ TagManager:
     locked: 0
   - name: New Layer 4
     uniqueID: 2254517597
+    locked: 0
+  - name: coins
+    uniqueID: 1917035893
     locked: 0
   m_RenderingLayers:
   - Default
