@@ -5,10 +5,16 @@ PlayerSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 28
 <<<<<<< HEAD
+<<<<<<< HEAD
   productGUID: 58b5c8084fc730f42ab33ab1a2ad9e82
 =======
   productGUID: 6871b90067b11664698ad17621f673f3
 >>>>>>> level0-build
+||||||| 5384699
+  productGUID: 00000000000000000000000000000000
+=======
+  productGUID: 3bc45f7046453954d885173b0484be26
+>>>>>>> mainhub-build
   AndroidProfiler: 0
   AndroidFilterTouchesWhenObscured: 0
   AndroidEnableSustainedPerformanceMode: 0
@@ -940,10 +946,16 @@ PlayerSettings:
   apiCompatibilityLevel: 6
   captureStartupLogs: {}
 <<<<<<< HEAD
+<<<<<<< HEAD
   activeInputHandler: 1
 =======
   activeInputHandler: 2
 >>>>>>> level0-build
+||||||| 5384699
+  activeInputHandler: 0
+=======
+  activeInputHandler: 2
+>>>>>>> mainhub-build
   windowsGamepadBackendHint: 0
   cloudProjectId: 
   framebufferDepthMemorylessMode: 0
