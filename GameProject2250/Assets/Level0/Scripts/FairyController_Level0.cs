@@ -3,7 +3,7 @@ using TMPro;
 
 public class FairyController_Level0 : MonoBehaviour
 {
-     [SerializeField] private float moveSpeed = 5f;
+     [SerializeField] private float moveSpeed = 4f;
 
     private Rigidbody2D rb;
     private Animator anim;
@@ -29,7 +29,7 @@ public class FairyController_Level0 : MonoBehaviour
         
         moveInput.x = Input.GetAxisRaw("Horizontal");
 
-        if (Input.GetKeyDown(KeyCode.UpArrow))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
         }
@@ -43,6 +43,7 @@ public class FairyController_Level0 : MonoBehaviour
                 Score.text = "Coins: " + score;
             }
         }
+        
 
         UpdateAnimationState();
 
@@ -55,14 +56,7 @@ public class FairyController_Level0 : MonoBehaviour
             rb.linearVelocity = new Vector2(moveInput.x * moveSpeed, rb.linearVelocity.y);
         }
     }
-
     
-    
-    
-    
-    
-    
-
     private void UpdateAnimationState()
     {
         if (moveInput.x > 0)
@@ -90,6 +84,21 @@ public class FairyController_Level0 : MonoBehaviour
             anim.SetFloat("MoveX", 0);
             anim.SetFloat("MoveY", 0);
         }
+    }
+
+
+    public void ActivateWandPower()
+    {
+        Debug.Log("Activating wand power");
+        
+        
+    }
+
+    public void ActivateWingPower()
+    {
+        Debug.Log("Activating wing power");
+        moveSpeed += 1f;
+
     }
     
     

@@ -7,9 +7,9 @@ public class Wand_Powerup_Behaviour : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             Debug.Log("Fairy hit the wand power-up");
-            Destroy(gameObject);
             
-            PlayerController player = collision.gameObject.GetComponent<PlayerController>();
+            // FairyController_Level0 is reference to the fairy controller script (whatever one you may be using for your given level/scene
+            FairyController_Level0 player = collision.gameObject.GetComponent<FairyController_Level0>();
 
             if (player != null)
             {
