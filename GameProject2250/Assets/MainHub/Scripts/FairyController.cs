@@ -2,7 +2,7 @@ using System.Collections;
 using System.Data.Common;
 using UnityEngine;
 
-public class FairyController : MonoBehaviour
+public class FairyController_MainHub : MonoBehaviour
 {
 
     [SerializeField] private float moveSpeed = 5f;
