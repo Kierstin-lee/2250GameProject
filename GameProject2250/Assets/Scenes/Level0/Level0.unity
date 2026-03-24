@@ -21111,9 +21111,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f8d0229f0ec9804fa3bc8817872caf0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
-  moveSpeed: 5
+  moveSpeed: 4
   Score: {fileID: 0}
-  jumpForce: 10
+  jumpForce: 8
 --- !u!61 &1248114424
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -27330,11 +27330,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 49e6ee33250214a9facc214f3a2fecb7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.89
+      value: -0.47
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 49e6ee33250214a9facc214f3a2fecb7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.95
+      value: 0.69
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 49e6ee33250214a9facc214f3a2fecb7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -30917,7 +30917,7 @@ Transform:
   m_GameObject: {fileID: 1929239791}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.9391117, y: -0.22, z: 0}
+  m_LocalPosition: {x: 2.49, y: -0.22, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

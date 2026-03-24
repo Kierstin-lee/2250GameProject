@@ -3,7 +3,9 @@ using TMPro;
 
 public class FairyController_Level0 : MonoBehaviour
 {
-     [SerializeField] private float moveSpeed = 4f;
+     [SerializeField] private float moveSpeed = 3f;
+
+     private int health = 30;
 
     private Rigidbody2D rb;
     private Animator anim;
@@ -21,7 +23,7 @@ public class FairyController_Level0 : MonoBehaviour
         Score.SetText("Coins:  " + score);
     }
 
-    [SerializeField] private float jumpForce = 10f;
+    [SerializeField] private float jumpForce = 8f;
     
     // Update is called once per frame
     void Update()
@@ -90,8 +92,8 @@ public class FairyController_Level0 : MonoBehaviour
     public void ActivateWandPower()
     {
         Debug.Log("Activating wand power");
-        
-        
+        jumpForce += 2f;
+
     }
 
     public void ActivateWingPower()
