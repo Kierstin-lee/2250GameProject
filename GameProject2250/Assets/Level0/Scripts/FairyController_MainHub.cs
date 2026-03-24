@@ -91,4 +91,6 @@ public class FairyController_Level0 : MonoBehaviour
             anim.SetFloat("MoveY", 0);
         }
     }
+    
+    
 }

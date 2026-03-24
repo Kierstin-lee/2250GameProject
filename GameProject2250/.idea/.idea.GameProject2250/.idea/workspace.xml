@@ -4,7 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5b3795eb-0421-4b52-bb7b-73433f0ab0ec" name="Changes" comment="" />
+    <list default="true" id="5b3795eb-0421-4b52-bb7b-73433f0ab0ec" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameProject2250/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameProject2250/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FanyasyStatusIcons/Icon 2.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FanyasyStatusIcons/Icon 2.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FanyasyStatusIcons/Icon.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FanyasyStatusIcons/Icon.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level0/Scripts/FairyController_MainHub.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level0/Scripts/FairyController_MainHub.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level0/Level0.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level0/Level0.unity" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -86,6 +94,8 @@
       <updated>1774362724725</updated>
       <workItem from="1774362726748" duration="2266000" />
       <workItem from="1774372105760" duration="76000" />
+      <workItem from="1774376291568" duration="4000" />
+      <workItem from="1774376851462" duration="617000" />
     </task>
     <servers />
   </component>
