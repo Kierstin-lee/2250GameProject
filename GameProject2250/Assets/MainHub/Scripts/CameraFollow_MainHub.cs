@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class CameraFollow : MonoBehaviour
+public class CameraFollow_MainHub : MonoBehaviour
 {
     public Transform target;      // the player/fairy
     public float smoothSpeed = 0.125f;

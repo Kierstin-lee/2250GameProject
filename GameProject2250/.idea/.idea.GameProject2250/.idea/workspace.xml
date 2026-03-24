@@ -2,9 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5b3795eb-0421-4b52-bb7b-73433f0ab0ec" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameProject2250/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameProject2250/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fonts/FairyDustB SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/FairyDustB SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fonts/Pix32 SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/Pix32 SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MainHub/Scenes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MainHub/Scenes/Level0.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MainHub/Scenes/Level0/Level0.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MainHub/Scenes/Level0/Level0.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MainHub/Scenes/MainHubV2.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MainHub/Scenes/MainHubV2.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MainHub/Scenes/Mainhub.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MainHub/Scenes/Mainhub.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MainHub/Scenes/Startscreen.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MainHub/Scenes/Startscreen.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MainHub/Scripts/CameraFollow.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MainHub/Scripts/CameraFollow.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StartScreen/Cainos/Pixel Art Top Down - Basic/Script/CameraFollow.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/StartScreen/Cainos/Pixel Art Top Down - Basic/Script/CameraFollow.cs.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -14,12 +25,32 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/MainHub/Scripts/CameraFollow_MainHub.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="false" />
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;git-widget-placeholder&quot;: &quot;startscreen-build&quot;
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 4
+}]]></component>
+  <component name="ProjectId" id="3BOalJkpCiYuHSx7mfCjDnz77Z1" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "git-widget-placeholder": "integration-fullGame",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/6000.3.6f1/Unity.app/Contents/MacOS/Unity" />
@@ -59,9 +90,25 @@
     </configuration>
   </component>
   <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5b3795eb-0421-4b52-bb7b-73433f0ab0ec" name="Changes" comment="" />
+      <created>1774362724725</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1774362724725</updated>
+      <workItem from="1774362726748" duration="434000" />
+    </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="false" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityProjectDiscoverer">
+    <option name="hasUnityReference" value="true" />
+    <option name="unityProject" value="true" />
+    <option name="unityProjectFolder" value="true" />
+  </component>
   <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
 </project>
