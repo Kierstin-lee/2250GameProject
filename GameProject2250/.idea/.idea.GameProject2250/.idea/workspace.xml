@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="5b3795eb-0421-4b52-bb7b-73433f0ab0ec" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/MainHub/Scenes.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MainHub/Scenes/Level0.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MainHub/Scenes/Level0/Level0.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MainHub/Scenes/Level0/Level0.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MainHub/Scenes/MainHubV2.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MainHub/Scenes/MainHubV2.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MainHub/Scenes/Mainhub.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MainHub/Scenes/Mainhub.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MainHub/Scenes/Startscreen.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MainHub/Scenes/Startscreen.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MainHub/Scripts/CameraFollow.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MainHub/Scripts/CameraFollow.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/StartScreen/Cainos/Pixel Art Top Down - Basic/Script/CameraFollow.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/StartScreen/Cainos/Pixel Art Top Down - Basic/Script/CameraFollow.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MainHub/Cainos 2/Pixel Art Top Down - Basic/Texture/TX Plant.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MainHub/Cainos 2/Pixel Art Top Down - Basic/Texture/TX Plant.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MainHub/Cainos 2/Pixel Art Top Down - Basic/Texture/TX Player.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MainHub/Cainos 2/Pixel Art Top Down - Basic/Texture/TX Player.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MainHub/Cainos 2/Pixel Art Top Down - Basic/Texture/TX Props.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MainHub/Cainos 2/Pixel Art Top Down - Basic/Texture/TX Props.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MainHub/Cainos 2/Pixel Art Top Down - Basic/Texture/TX Shadow Plant.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MainHub/Cainos 2/Pixel Art Top Down - Basic/Texture/TX Shadow Plant.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MainHub/Cainos 2/Pixel Art Top Down - Basic/Texture/TX Shadow.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MainHub/Cainos 2/Pixel Art Top Down - Basic/Texture/TX Shadow.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MainHub/Cainos 2/Pixel Art Top Down - Basic/Texture/TX Struct.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MainHub/Cainos 2/Pixel Art Top Down - Basic/Texture/TX Struct.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MainHub/Cainos 2/Pixel Art Top Down - Basic/Texture/TX Tileset Grass.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MainHub/Cainos 2/Pixel Art Top Down - Basic/Texture/TX Tileset Grass.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MainHub/Cainos 2/Pixel Art Top Down - Basic/Texture/TX Tileset Stone Ground.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MainHub/Cainos 2/Pixel Art Top Down - Basic/Texture/TX Tileset Stone Ground.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MainHub/Cainos 2/Pixel Art Top Down - Basic/Texture/TX Tileset Wall.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MainHub/Cainos 2/Pixel Art Top Down - Basic/Texture/TX Tileset Wall.png.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +94,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1774362724725</updated>
-      <workItem from="1774362726748" duration="434000" />
+      <workItem from="1774362726748" duration="880000" />
     </task>
     <servers />
   </component>
