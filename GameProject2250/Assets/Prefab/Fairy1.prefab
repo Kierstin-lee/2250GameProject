@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 4461959909825583994}
   - component: {fileID: 6567714832302867520}
   - component: {fileID: 8640316852248005639}
-  - component: {fileID: 7113752549699514068}
   m_Layer: 20
   m_Name: Fairy1
   m_TagString: Untagged
@@ -80,7 +79,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: -105541197
-  m_SortingLayer: 3
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: d4f0fd002a094184b1d44e36815caaff, type: 3}
@@ -115,19 +114,3 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &7113752549699514068
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5487762337204986588}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c91925cf6a5fb349a429617d3fd8531, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::FairyMovement
-  _speed: 5
-  _rb: {fileID: 0}
-  _wallLayer: 3
-  _boundaryLayer: 6
