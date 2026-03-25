@@ -1,7 +1,15 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:GameProject2250/Assets/MainHub/Prefab/Key 1.prefab.meta
+guid: 699ddae684cb95a48b30c2cc296d7ca6
+PrefabImporter:
+|||||||| b6ac6f3:GameProject2250/Assets/MainHub/Prefab/Fairy 2.prefab.meta
+guid: 8594e7766cdc3744fa2bdd0aefdc3be8
+PrefabImporter:
+========
 guid: da3f3f17d9f704f9e80aa73c06d23c87
 folderAsset: yes
 DefaultImporter:
+>>>>>>>> characterselection-build:GameProject2250/Assets/Cainos.meta
   externalObjects: {}
   userData: 
   assetBundleName: 
