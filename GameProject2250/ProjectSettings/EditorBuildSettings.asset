@@ -9,10 +9,10 @@ EditorBuildSettings:
     path: Assets/Scenes/Startscreen.unity
     guid: 574a99fa0227b4664914631dbf82bdd2
   - enabled: 1
-    path: Assets/Scenes/Level0.unity
-    guid: ccc2ec8d6ff5d43f8a49ee8981107d3c
-  - enabled: 1
     path: Assets/Scenes/MainHubV2.unity
     guid: 60654a97a6291e04cafacf149d1279e0
+  - enabled: 1
+    path: Assets/Scenes/Level0.unity
+    guid: ccc2ec8d6ff5d43f8a49ee8981107d3c
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
