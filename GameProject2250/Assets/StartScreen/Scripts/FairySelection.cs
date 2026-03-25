@@ -6,6 +6,8 @@ public class FairySelection : MonoBehaviour
     Animator anim;
     Camera mainCamera;
     
+    [SerializeField] private string fairyName;  // set in the Inspector for each
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -26,6 +28,7 @@ public class FairySelection : MonoBehaviour
             if (hit && hit.gameObject == gameObject)
             {
                 anim.SetTrigger("Selected"); // runs animation
+                GeneralGameManager.SelectedFairy = fairyName; // sets static field to specific name
             }
             
         }

@@ -78051,6 +78051,53 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1270878349}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1272624455
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1272624457}
+  - component: {fileID: 1272624456}
+  m_Layer: 0
+  m_Name: Fairies
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1272624456
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1272624455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb0d592c87b5ea7429175689d4fa8930, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterSpawner
+  fairyRedCharacter: {fileID: 1196084831}
+  fairyGreenCharacter: {fileID: 1822653196}
+  fairyOrangeCharacter: {fileID: 1833763843}
+--- !u!4 &1272624457
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1272624455}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -15.80917, y: 2.66011, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1274853356
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -87342,7 +87389,7 @@ PrefabInstance:
     - target: {fileID: 3979658910644941265, guid: ea8d65b89dc84d9092703d2ef9b70db7,
         type: 3}
       propertyPath: m_Name
-      value: Fairy
+      value: Red Fairy (1)
       objectReference: {fileID: 0}
     - target: {fileID: 3979658910644941265, guid: ea8d65b89dc84d9092703d2ef9b70db7,
         type: 3}
@@ -110639,13 +110686,19 @@ PrefabInstance:
     - target: {fileID: 7194166884115714197, guid: 8f19645d1dcc4c24a1fe81dfc3bbe9a5,
         type: 3}
       propertyPath: m_Name
-      value: 00_Idle (1)
+      value: Green Fairy (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8f19645d1dcc4c24a1fe81dfc3bbe9a5, type: 3}
+--- !u!1 &1822653196 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7194166884115714197, guid: 8f19645d1dcc4c24a1fe81dfc3bbe9a5,
+    type: 3}
+  m_PrefabInstance: {fileID: 1822653195}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1822898344
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -111343,7 +111396,7 @@ PrefabInstance:
     - target: {fileID: 1671945572645789033, guid: 059790aee4124594910a271a5986e78d,
         type: 3}
       propertyPath: m_Name
-      value: 00_Idle (2)
+      value: Orange Fairy (3)
       objectReference: {fileID: 0}
     - target: {fileID: 7319478287407324983, guid: 059790aee4124594910a271a5986e78d,
         type: 3}
@@ -111400,6 +111453,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 059790aee4124594910a271a5986e78d, type: 3}
+--- !u!1 &1833763843 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1671945572645789033, guid: 059790aee4124594910a271a5986e78d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1833763842}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1838089686
 GameObject:
   m_ObjectHideFlags: 0
@@ -126589,3 +126648,4 @@ SceneRoots:
   - {fileID: 1822653195}
   - {fileID: 1833763842}
   - {fileID: 1224953268}
+  - {fileID: 1272624457}
