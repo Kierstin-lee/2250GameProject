@@ -6,6 +6,8 @@ public class NPCDialogue_Level0 : MonoBehaviour
 {
     public TMP_Text bubbleText;
     public TMP_Text objectiveText;
+    
+    public GameObject dialogueBox;
 
     [TextArea] public string[] introLines;
     [TextArea] public string finalObjective;
