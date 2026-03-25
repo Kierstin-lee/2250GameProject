@@ -13,6 +13,11 @@ public class FairySelection : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         mainCamera = Camera.main;
+        
+        if (mainCamera == null)
+        {
+            enabled = false;  // disables this script if no camera is found
+        }
     }
 
     // Update is called once per frame
@@ -28,7 +33,7 @@ public class FairySelection : MonoBehaviour
             if (hit && hit.gameObject == gameObject)
             {
                 anim.SetTrigger("Selected"); // runs animation
-                GeneralGameManager.SelectedFairy = fairyName; // sets static field to specific name
+                GameManager.instance.selectedFairy = fairyName; // sets static field to specific name
             }
             
         }

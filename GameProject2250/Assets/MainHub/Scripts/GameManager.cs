@@ -13,6 +13,9 @@ public class GameManager : MonoBehaviour
     public int playerLives = 3;
     public int coinsCollected = 0;
     public int coinsPerLife = 10; // gain a life every 10 coins
+    
+    // Character selection
+    public string selectedFairy = "FairyA"; // sets default fairy to red
 
     void Awake()
     {

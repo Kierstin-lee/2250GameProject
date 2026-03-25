@@ -9,13 +9,15 @@ public class CharacterSpawner : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        Debug.Log("Selected fairy is: " + GameManager.instance.selectedFairy);
+        
         // deactivate 
         fairyRedCharacter.SetActive(false);
         fairyGreenCharacter.SetActive(false);
         fairyOrangeCharacter.SetActive(false);
         
         // activate selected one
-        switch (GeneralGameManager.SelectedFairy)
+        switch (GameManager.instance.selectedFairy)
         {
             case "FairyR":
                 fairyRedCharacter.SetActive(true);
