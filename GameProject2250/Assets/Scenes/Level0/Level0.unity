@@ -17050,8 +17050,36 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1000013095924222, guid: a690d269257f44d69af3edd4f9bc043f,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1029751496}
   m_SourcePrefab: {fileID: 100100000, guid: a690d269257f44d69af3edd4f9bc043f, type: 3}
+--- !u!1 &1029751495 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1000013095924222, guid: a690d269257f44d69af3edd4f9bc043f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1029751494}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1029751496
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1029751495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1319e26ff66baac42843f7a9af63de16, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NPCDialogue_Level0
+  bubbleText: {fileID: 0}
+  objectiveText: {fileID: 0}
+  introLines: []
+  finalObjective: 
+  lineDuration: 4
+  delayBetweenLines: 0.5
 --- !u!1 &1041988683
 GameObject:
   m_ObjectHideFlags: 0
