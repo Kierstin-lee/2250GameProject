@@ -48,5 +48,8 @@ TagManager:
   - name: Coins
     uniqueID: 730091649
     locked: 0
+  - name: Keys
+    uniqueID: 1559177833
+    locked: 0
   m_RenderingLayers:
   - Default
