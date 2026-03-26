@@ -4,7 +4,7 @@ using UnityEngine.SceneManagement;
 public class LevelKeyPickup : MonoBehaviour
 {
     public string keyID = "Key1";
-    public string returnSceneName = "MainHub";
+    public string returnSceneName = "MainHubV2";
 
     private bool collected = false;
 

@@ -1036,6 +1036,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Level Fairy Orange
       objectReference: {fileID: 0}
+    - target: {fileID: 1671945572645789033, guid: 059790aee4124594910a271a5986e78d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 7319478287407324983, guid: 059790aee4124594910a271a5986e78d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8916,7 +8921,7 @@ PrefabInstance:
     - target: {fileID: 3718071879863206002, guid: 7e9008ed97ba3aa429fe3c5a92a0317c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.80519485
+      value: -15.81
       objectReference: {fileID: 0}
     - target: {fileID: 3718071879863206002, guid: 7e9008ed97ba3aa429fe3c5a92a0317c,
         type: 3}
@@ -29596,7 +29601,7 @@ Transform:
   m_GameObject: {fileID: 1874069740}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -15.80917, y: 2.66011, z: 0}
+  m_LocalPosition: {x: -19.89, y: 2.66011, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
