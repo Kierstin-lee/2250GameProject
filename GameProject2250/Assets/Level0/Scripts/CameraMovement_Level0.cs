@@ -2,9 +2,9 @@ using UnityEngine;
 
 public class CameraMovement_Level0 : MonoBehaviour
 {
-    public Transform target;      // the player/fairy
+    public Transform target;
     public float smoothSpeed = 0.125f;
-    public Collider2D bounds;     // assign your CameraBounds (any 2D collider works)
+    public Collider2D bounds;
     private float zOffset = -10f;
 
     private float camHalfHeight;
@@ -18,11 +18,20 @@ public class CameraMovement_Level0 : MonoBehaviour
 
     void LateUpdate()
     {
-        if (target == null || bounds == null) return;
+        if (target == null)
+        {
+            Debug.Log("Camera target is null");
+            return;
+        }
+
+        if (bounds == null)
+        {
+            Debug.Log("Camera bounds are null");
+            return;
+        }
 
         Vector3 desiredPos = new Vector3(target.position.x, target.position.y, zOffset);
 
-        // Get the bounds from the collider
         float minX = bounds.bounds.min.x + camHalfWidth;
         float maxX = bounds.bounds.max.x - camHalfWidth;
         float minY = bounds.bounds.min.y + camHalfHeight;

@@ -356,7 +356,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 562, y: 132.21}
+  m_AnchoredPosition: {x: 524, y: 132.21}
   m_SizeDelta: {x: 409.7041, y: 54.9257}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &503914425
@@ -1752,7 +1752,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fce70f7d90e13421fa18465973e1aa56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
-  hasTalkedToNPC: 0
   keysCollected: []
   keysDeposited: []
   playerLives: 3
