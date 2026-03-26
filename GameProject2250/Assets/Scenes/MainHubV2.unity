@@ -2479,8 +2479,18 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7947911505737750455, guid: c5bdca1933fde624698bb8c6d6daa44b,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 485097972}
   m_SourcePrefab: {fileID: 100100000, guid: c5bdca1933fde624698bb8c6d6daa44b, type: 3}
+--- !u!1 &26232399 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7947911505737750455, guid: c5bdca1933fde624698bb8c6d6daa44b,
+    type: 3}
+  m_PrefabInstance: {fileID: 26232398}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &27409402 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2055102311959635375, guid: 7277dd75e907b27448ec1de08238d0bb,
@@ -8922,13 +8932,22 @@ MonoBehaviour:
   bubbleText: {fileID: 1434311714}
   objectiveText: {fileID: 0}
   dialogueLines:
-  - Start Collecting keys
-  - put the first key in the chest
-  - put the second key in the chest
-  - put the third key in the chest
-  - put the fourth key in the chest
-  - congrats the land is saved
-  objectiveLines: []
+  - Help! The wizard has taken over the land, only you can stop him! The first portal
+    is open. Go get the first key.
+  - Great job. Now deposit the key into the chest.
+  - Nice work. Go back through Portal 1 for the next key.
+  - Nice work. Go back through Portal 1 for the next key.
+  - Well done. Go back through Portal 2 for the next key.
+  - One last step. Deposit the key, then enter Portal 3 for the boss fight.
+  objectiveLines:
+  - One last step. Deposit the key, then enter Portal 3 for the boss fight.
+  - 'Objective: Deposit the key in the chest'
+  - 'Objective: Enter Portal 1 again'
+  - 'Objective: Deposit the key in the chest'
+  - 'Objective: Enter Portal 2'
+  - 'Objective: Enter Portal 2 again'
+  - 'Objective: Deposit the key in the chest'
+  - 'Objective: Enter Portal 3'
   waitTime: 5
 --- !u!4 &183470116 stripped
 Transform:
@@ -14000,8 +14019,18 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7947911505737750455, guid: c5bdca1933fde624698bb8c6d6daa44b,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1690573452}
   m_SourcePrefab: {fileID: 100100000, guid: c5bdca1933fde624698bb8c6d6daa44b, type: 3}
+--- !u!1 &309286129 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7947911505737750455, guid: c5bdca1933fde624698bb8c6d6daa44b,
+    type: 3}
+  m_PrefabInstance: {fileID: 309286128}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &309477724 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2055102311959635375, guid: a0a71fda412ad0941ab44f1732ea4c1e,
@@ -22881,6 +22910,19 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 26232398}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &485097972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 26232399}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 503594fa42bec40e2968792dc8edf016, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HubPortal
+  portalNumber: 1
 --- !u!1 &485429115
 GameObject:
   m_ObjectHideFlags: 0
@@ -78536,7 +78578,7 @@ PrefabInstance:
     - target: {fileID: 7947911505737750450, guid: c5bdca1933fde624698bb8c6d6daa44b,
         type: 3}
       propertyPath: m_SortingLayer
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7947911505737750450, guid: c5bdca1933fde624698bb8c6d6daa44b,
         type: 3}
@@ -78556,8 +78598,31 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7947911505737750455, guid: c5bdca1933fde624698bb8c6d6daa44b,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1298517466}
   m_SourcePrefab: {fileID: 100100000, guid: c5bdca1933fde624698bb8c6d6daa44b, type: 3}
+--- !u!1 &1298517465 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7947911505737750455, guid: c5bdca1933fde624698bb8c6d6daa44b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1298517464}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1298517466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1298517465}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 503594fa42bec40e2968792dc8edf016, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HubPortal
+  portalNumber: 1
 --- !u!4 &1300020073 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2055102311959635375, guid: 9e7797bb065982d4497d030f065d6e2f,
@@ -101631,6 +101696,19 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 309286128}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1690573452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 309286129}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 503594fa42bec40e2968792dc8edf016, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::HubPortal
+  portalNumber: 1
 --- !u!1001 &1690616051
 PrefabInstance:
   m_ObjectHideFlags: 0

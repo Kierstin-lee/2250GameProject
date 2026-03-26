@@ -48,26 +48,7 @@ public class FairyController_MainHub : MonoBehaviour
             rb.MovePosition(rb.position + moveInput.normalized * moveSpeed * Time.fixedDeltaTime);
         }
     }
-
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        if (other.CompareTag("Key"))
-        {
-            if (keyManager != null) keyManager.ShowNextKey();
-
-            if (dialogueManager != null)
-            {
-                dialogueManager.TriggerNextKeySequence();
-            }
-
-            Destroy(other.gameObject);
-        }
-
-        if (other.CompareTag("Portal") && !hasReachedPortal)
-        {
-            StartCoroutine(EnterPortalSequence(other.transform.position));
-        }
-    }
+    
 
     private IEnumerator EnterPortalSequence(Vector3 portalPos)
     {
