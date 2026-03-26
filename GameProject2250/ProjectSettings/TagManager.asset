@@ -48,8 +48,11 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: New Layer 1
-    uniqueID: 382847111
+  - name: Coins
+    uniqueID: 730091649
+    locked: 0
+  - name: Keys
+    uniqueID: 1559177833
     locked: 0
   m_RenderingLayers:
   - Default
