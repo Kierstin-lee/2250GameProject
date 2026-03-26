@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a6379071411d0438282157762cccd075
+guid: 403d929263e144c04a858b078ddca7fd
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 9100000
@@ -11,6 +11,6 @@ AssetOrigin:
   productId: 317501
   packageName: Fairies 2D Animated Character (Spriter)
   packageVersion: 1.0.0.1
-  assetPath: Assets/Gamelauncher Studio/Mini Character/Tiny Fairies/Tiny Fairies
-    03/Animation/00_Idle (2).controller
+  assetPath: Assets/External/Gamelauncher Studio/Mini Character/Tiny Fairies/Tiny
+    Fairies 03/Animation/00_Idle (2).controller
   uploadId: 749653
