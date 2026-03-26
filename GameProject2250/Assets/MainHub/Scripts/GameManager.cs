@@ -5,17 +5,14 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
 
-    [HideInInspector] public bool hasTalkedToNPC = false;
     public List<string> keysCollected = new List<string>();
     public List<string> keysDeposited = new List<string>();
 
-    // Player stats
     public int playerLives = 3;
     public int coinsCollected = 0;
-    public int coinsPerLife = 10; // gain a life every 10 coins
-    
-    // Character selection
-    public string selectedFairy = "FairyA"; // sets default fairy to red
+    public int coinsPerLife = 10;
+
+    public string selectedFairy = "FairyA";
 
     void Awake()
     {
@@ -30,11 +27,14 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    // -------------------- Keys --------------------
+    // ---------- Keys ----------
     public void CollectKey(string keyID)
     {
-        keysCollected.Add(keyID);
-        Debug.Log("Key collected: " + keyID);
+        if (!keysCollected.Contains(keyID) && !keysDeposited.Contains(keyID))
+        {
+            keysCollected.Add(keyID);
+            Debug.Log("Key collected: " + keyID);
+        }
     }
 
     public void DepositKey(string keyID)
@@ -43,15 +43,16 @@ public class GameManager : MonoBehaviour
         {
             keysCollected.Remove(keyID);
             keysDeposited.Add(keyID);
+
             Debug.Log("Key deposited: " + keyID);
 
-            // Update Level UI
             LevelUI.instance?.UpdateLevelUI();
 
-            // Trigger next NPC dialogue
             NPCDialogue npc = FindObjectOfType<NPCDialogue>();
             if (npc != null)
+            {
                 npc.TriggerNextKeySequence();
+            }
         }
     }
 
@@ -60,19 +61,19 @@ public class GameManager : MonoBehaviour
         return keysDeposited.Count;
     }
 
-    // -------------------- Lives --------------------
+    // ---------- Lives ----------
     public void LoseLife()
     {
         playerLives--;
         if (playerLives < 0) playerLives = 0;
 
         LivesUI.instance?.UpdateLives(playerLives);
+
         Debug.Log("Player lost a life! Lives remaining: " + playerLives);
 
         if (playerLives == 0)
         {
             Debug.Log("Player has died!");
-            // TODO: Handle respawn or game over
         }
     }
 
@@ -83,21 +84,45 @@ public class GameManager : MonoBehaviour
         Debug.Log("Player gained a life! Lives: " + playerLives);
     }
 
-    // -------------------- Coins --------------------
+    // ---------- Coins ----------
     public void CollectCoin()
     {
         coinsCollected++;
-
-        // Update UI
         CoinsUI.instance?.UpdateCoins(coinsCollected);
 
-        // Check for life bonus every 10 coins
-        if (coinsCollected >= 10)
+        if (coinsCollected >= coinsPerLife)
         {
             coinsCollected = 0;
             CoinsUI.instance?.UpdateCoins(coinsCollected);
-            GainLife(); // give player a life
+            GainLife();
             Debug.Log("10 coins collected! Extra life granted.");
         }
+    }
+
+    // ---------- Portal Logic ----------
+    public bool CanUsePortal(int portalNumber)
+    {
+        int deposited = KeysDepositedCount();
+
+        if (deposited == 0 && portalNumber == 1) return true; // Level0
+        if (deposited == 1 && portalNumber == 1) return true; // Level2
+        if (deposited == 2 && portalNumber == 2) return true; // Level3
+        if (deposited == 3 && portalNumber == 2) return true; // Level4
+        if (deposited == 4 && portalNumber == 3) return true; // Boss
+
+        return false;
+    }
+
+    public string GetNextSceneForPortal(int portalNumber)
+    {
+        int deposited = KeysDepositedCount();
+
+        if (deposited == 0 && portalNumber == 1) return "Level0";
+        if (deposited == 1 && portalNumber == 1) return "Level2";
+        if (deposited == 2 && portalNumber == 2) return "Level3";
+        if (deposited == 3 && portalNumber == 2) return "Level4";
+        if (deposited == 4 && portalNumber == 3) return "BossLevel";
+
+        return "";
     }
 }

@@ -8,7 +8,6 @@ public class KeyBehaviour : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
         if (!other.CompareTag("Player")) return;
-        if (!GameManager.instance.hasTalkedToNPC) return; // can't pick up before NPC
         if (collected) return;
 
         collected = true;
