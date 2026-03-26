@@ -15,8 +15,10 @@ public class LevelKeyPickup : MonoBehaviour
 
         collected = true;
 
+        Debug.Log("Player touched key");
         GameManager.instance.CollectKey(keyID);
         Debug.Log("Collected level key: " + keyID);
+        Debug.Log("About to load scene: " + returnSceneName);
 
         SceneManager.LoadScene(returnSceneName);
     }

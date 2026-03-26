@@ -8971,8 +8971,32 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2227421050508045728, guid: 7e9008ed97ba3aa429fe3c5a92a0317c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 586530234}
   m_SourcePrefab: {fileID: 100100000, guid: 7e9008ed97ba3aa429fe3c5a92a0317c, type: 3}
+--- !u!1 &586530233 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2227421050508045728, guid: 7e9008ed97ba3aa429fe3c5a92a0317c,
+    type: 3}
+  m_PrefabInstance: {fileID: 586530232}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &586530234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 586530233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 679c336b838bc4bb99dee16b1444e887, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::LevelKeyPickup
+  keyID: Key1
+  returnSceneName: MainHubV2
 --- !u!1 &593750084
 GameObject:
   m_ObjectHideFlags: 0
@@ -14888,7 +14912,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 1.0095215, y: -357.34326, z: 136.31201, w: 389.13403}
+  m_margin: {x: -82.06201, y: -357.34326, z: 74.288086, w: 389.13403}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -20343,7 +20367,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 1.0097656, y: -371.64172, z: 125.20557, w: 401.4525}
+  m_margin: {x: -83.021484, y: -371.64172, z: 71.18457, w: 401.4525}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -23181,7 +23205,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 1.0097656, y: -343.2079, z: 136.31201, w: 374.99866}
+  m_margin: {x: -81.933105, y: -343.2079, z: 87.29297, w: 374.99866}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

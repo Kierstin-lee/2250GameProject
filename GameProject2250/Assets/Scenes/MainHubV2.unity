@@ -32058,7 +32058,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 1.0097656, y: -343.2079, z: 136.31201, w: 374.99866}
+  m_margin: {x: -80.97168, y: -343.2079, z: 136.31201, w: 374.99866}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -77382,7 +77382,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 1.0095215, y: -357.34326, z: 136.31201, w: 389.13403}
+  m_margin: {x: -80.971924, y: -357.34326, z: 136.31201, w: 389.13403}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -78816,7 +78816,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 1.0097656, y: -371.64172, z: 125.20557, w: 401.4525}
+  m_margin: {x: -81.59277, y: -371.64172, z: 125.20557, w: 401.4525}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
