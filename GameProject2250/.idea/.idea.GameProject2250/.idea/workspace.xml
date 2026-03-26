@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5b3795eb-0421-4b52-bb7b-73433f0ab0ec" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/MainHub/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MainHub/Scripts/GameManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainHubV2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainHubV2.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +17,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/MainHub/Scripts/CameraFollow_MainHub.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/MainHub/Scripts/HubPortal.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="false" />
   <component name="ProjectColorInfo">{
@@ -92,7 +93,7 @@
       <workItem from="1774376851462" duration="3102000" />
       <workItem from="1774469077570" duration="1437000" />
       <workItem from="1774472391066" duration="3865000" />
-      <workItem from="1774482801547" duration="751000" />
+      <workItem from="1774482801547" duration="1567000" />
     </task>
     <servers />
   </component>

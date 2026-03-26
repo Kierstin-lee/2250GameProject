@@ -26280,8 +26280,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 485097971}
-  - {fileID: 1690573451}
   - {fileID: 340665498}
+  - {fileID: 1690573451}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &535643773
@@ -31965,11 +31965,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2068521611}
+  m_Father: {fileID: 957440514}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -4000.25, y: -1422}
+  m_AnchoredPosition: {x: -3988.546, y: -995.75}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: -20, y: -20}
 --- !u!114 &621599941
@@ -56477,12 +56477,15 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 957440512}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.70389, y: -4.74999, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -279.95392, y: -215.49998, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
+  m_Children:
+  - {fileID: 1311082288}
+  - {fileID: 1263556639}
+  - {fileID: 621599940}
+  m_Father: {fileID: 2068521611}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &957440515
 MonoBehaviour:
@@ -77286,11 +77289,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2068521611}
+  m_Father: {fileID: 957440514}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -4000.25, y: -1422}
+  m_AnchoredPosition: {x: -3988.546, y: -995.75}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: -20, y: -20}
 --- !u!114 &1263556640
@@ -78622,7 +78625,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 503594fa42bec40e2968792dc8edf016, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HubPortal
-  portalNumber: 1
+  portalNumber: 2
 --- !u!4 &1300020073 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2055102311959635375, guid: 9e7797bb065982d4497d030f065d6e2f,
@@ -78839,11 +78842,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 2068521611}
+  m_Father: {fileID: 957440514}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -4000.25, y: -1422}
+  m_AnchoredPosition: {x: -3988.546, y: -995.75}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: -20, y: -20}
 --- !u!1 &1312415341
@@ -101708,7 +101711,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 503594fa42bec40e2968792dc8edf016, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HubPortal
-  portalNumber: 1
+  portalNumber: 3
 --- !u!1001 &1690616051
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -120713,10 +120716,8 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 957440514}
   - {fileID: 1434311716}
-  - {fileID: 1311082288}
-  - {fileID: 1263556639}
-  - {fileID: 621599940}
   m_Father: {fileID: 183470116}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -126393,7 +126394,6 @@ SceneRoots:
   - {fileID: 1035007420}
   - {fileID: 979765268}
   - {fileID: 534842753}
-  - {fileID: 957440514}
   - {fileID: 2076015381}
   - {fileID: 332497942}
   - {fileID: 1224953268}
