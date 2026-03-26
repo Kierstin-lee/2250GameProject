@@ -2,6 +2,26 @@ using UnityEngine;
 
 public class CameraMovement_Level0 : MonoBehaviour
 {
+
+[SerializeField] private float smoothSpeed = 5f;
+
+    private Transform player;
+
+    void Start()
+    {
+        player = GameObject.FindGameObjectWithTag("Player").transform;
+    }
+
+    void LateUpdate()
+    {
+        if (player == null) return;
+
+        Vector3 targetPosition = new Vector3(player.position.x, player.position.y, transform.position.z);
+
+        transform.position = Vector3.Lerp(transform.position, targetPosition, smoothSpeed * Time.deltaTime);
+    }
+
+/*
     public Transform target;
     public float smoothSpeed = 0.125f;
     public Collider2D bounds;
@@ -43,4 +63,5 @@ public class CameraMovement_Level0 : MonoBehaviour
         Vector3 clampedPos = new Vector3(clampedX, clampedY, zOffset);
         transform.position = Vector3.Lerp(transform.position, clampedPos, smoothSpeed);
     }
+    */
 }

@@ -8921,12 +8921,12 @@ PrefabInstance:
     - target: {fileID: 3718071879863206002, guid: 7e9008ed97ba3aa429fe3c5a92a0317c,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -13.16
+      value: 24.41
       objectReference: {fileID: 0}
     - target: {fileID: 3718071879863206002, guid: 7e9008ed97ba3aa429fe3c5a92a0317c,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.8672799
+      value: 1.28
       objectReference: {fileID: 0}
     - target: {fileID: 3718071879863206002, guid: 7e9008ed97ba3aa429fe3c5a92a0317c,
         type: 3}
@@ -19998,9 +19998,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa2811c5e3d32304981792d8391c2bbe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CameraMovement_Level0
-  target: {fileID: 1874069742}
   smoothSpeed: 0.125
-  bounds: {fileID: 0}
 --- !u!114 &1163132784
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29982,8 +29980,8 @@ MonoBehaviour:
   fairyRedCharacter: {fileID: 2046330508}
   fairyGreenCharacter: {fileID: 1975350847}
   fairyOrangeCharacter: {fileID: 87291427}
-  cameraFollow: {fileID: 1163132783}
-  playerSpawn: {fileID: 1874069742}
+  cameraFollow: {fileID: 0}
+  playerSpawn: {fileID: 0}
 --- !u!1 &1874436338
 GameObject:
   m_ObjectHideFlags: 0
@@ -33306,7 +33304,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 23935641}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -36895,3 +36893,11 @@ SceneRoots:
   - {fileID: 6688507521419378905}
   - {fileID: 2463481175225494846}
   - {fileID: 2021315361}
+  - {fileID: 1776619744}
+  - {fileID: 257803937}
+  - {fileID: 87291426}
+  - {fileID: 586530232}
+  - {fileID: 1975350846}
+  - {fileID: 1530164540}
+  - {fileID: 1874069742}
+  - {fileID: 2011554783}

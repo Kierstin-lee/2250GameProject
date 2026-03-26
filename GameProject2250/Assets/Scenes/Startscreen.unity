@@ -1298,6 +1298,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Red Fairy (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 3979658910644941265, guid: ea8d65b89dc84d9092703d2ef9b70db7,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 5115795131485341815, guid: ea8d65b89dc84d9092703d2ef9b70db7,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -1645,6 +1650,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Orange Fairy (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1671945572645789033, guid: 059790aee4124594910a271a5986e78d,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 7319478287407324983, guid: 059790aee4124594910a271a5986e78d,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -1855,6 +1865,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Green Fairy (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7194166884115714197, guid: 8f19645d1dcc4c24a1fe81dfc3bbe9a5,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

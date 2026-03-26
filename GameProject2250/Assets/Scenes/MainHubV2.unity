@@ -8949,12 +8949,6 @@ MonoBehaviour:
   - 'Objective: Deposit the key in the chest'
   - 'Objective: Enter Portal 3'
   waitTime: 5
---- !u!4 &183470116 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5628018141983903106, guid: f3646a8245c8d4b11a7f61294f752a72,
-    type: 3}
-  m_PrefabInstance: {fileID: 1224953268}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &193964867
 GameObject:
   m_ObjectHideFlags: 0
@@ -9570,7 +9564,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d56074e3a96a7406c8ea3fc47f2bd4dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CameraFollow
-  target: {fileID: 0}
+  target: {fileID: 1272624457}
   smoothSpeed: 5
   bounds: {fileID: 244046757}
 --- !u!1001 &217775391
@@ -73345,11 +73339,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 5628018141983903106, guid: f3646a8245c8d4b11a7f61294f752a72,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2068521611}
+    m_AddedGameObjects: []
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 5628018141983903104, guid: f3646a8245c8d4b11a7f61294f752a72,
         type: 3}
@@ -117845,6 +117835,21 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2251813329205410530, guid: ef67ba864d1ecc042b5f4cf48455c0a6,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5628018141983903116, guid: ef67ba864d1ecc042b5f4cf48455c0a6,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5628018141983903117, guid: ef67ba864d1ecc042b5f4cf48455c0a6,
+        type: 3}
+      propertyPath: m_BodyType
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3870748325442708084, guid: c589ff4470e5857469bad0859c60d61a,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -117965,21 +117970,6 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: -0.21596849
       objectReference: {fileID: 0}
-    - target: {fileID: 2251813329205410530, guid: ef67ba864d1ecc042b5f4cf48455c0a6,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5628018141983903116, guid: ef67ba864d1ecc042b5f4cf48455c0a6,
-        type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5628018141983903117, guid: ef67ba864d1ecc042b5f4cf48455c0a6,
-        type: 3}
-      propertyPath: m_BodyType
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2251813329205410530, guid: ef67ba864d1ecc042b5f4cf48455c0a6, type: 3}
     - {fileID: 5628018141983903119, guid: ef67ba864d1ecc042b5f4cf48455c0a6, type: 3}
@@ -117989,19 +117979,7 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 2068521611}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 3870748326076863347, guid: c589ff4470e5857469bad0859c60d61a,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1951022447}
-    - targetCorrespondingSourceObject: {fileID: 3870748326076863347, guid: c589ff4470e5857469bad0859c60d61a,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1951022452}
-    - targetCorrespondingSourceObject: {fileID: 3870748326076863347, guid: c589ff4470e5857469bad0859c60d61a,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1951022454}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c589ff4470e5857469bad0859c60d61a, type: 3}
 --- !u!4 &1951022446 stripped
 Transform:
@@ -118009,102 +117987,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1951022445}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1951022447
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1629227919}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 63e0e3379ff0f4d0e9cdfade3a616a45, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::NPCDialogue
-  bubbleText: {fileID: 1434311714}
-  objectiveText: {fileID: 0}
-  dialogueLines:
-  - Hi! Welcome to Fairy Rescue! An evil wizard has taken my friend hostage in the
-    third world. You must collect keys to unlock each portal to reach him. Come back
-    to me after each level for guidance!
-  - Great work! You found the first key, but there is still another hidden here in
-    the first world. Drop that key in the chest, then head back through Portal 1
-    to find the next one
-  - You've got the second key! Drop it in the chest to power up the gateway, then
-    head through Portal 2 to continue your search.
-  - Excellent! You've secured the first key of this realm, but the wizard's magic
-    is strong. Deposit the key and return to Portal 2; there is one more fragment
-    remaining.
-  - "That's it! You have the second key. Drop it off and prepare yourself\u2014head
-    into Portal 3 for the final key!"
-  - You did it! The land is safe, the wizard is defeated, and my friend is finally
-    free. You are a true hero of the Fairy Realm!
-  objectiveLines:
-  - 'GOAL: Find the first key.'
-  - 'GOAL: Return to portal 1.'
-  - 'GOAL: Enter portal 2.'
-  - 'GOAL: Search portal 2 again.'
-  - 'GOAL: Enter portal 3.'
-  - Mission complete!
-  waitTime: 5
---- !u!114 &1951022452
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1629227919}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 14437de7e6ec444fc992dbce0b1b958b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::NPCInteraction
---- !u!61 &1951022454
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1629227919}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
 --- !u!4 &1951107696 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7947911505737750448, guid: 139b2d65b3145ad45bc13b6d111199de,
@@ -120986,7 +120868,7 @@ RectTransform:
   m_Children:
   - {fileID: 957440514}
   - {fileID: 1434311716}
-  m_Father: {fileID: 183470116}
+  m_Father: {fileID: 1951022446}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -126813,3 +126695,6 @@ SceneRoots:
   - {fileID: 332497942}
   - {fileID: 1951022445}
   - {fileID: 6956996490859124644}
+  - {fileID: 1224953268}
+  - {fileID: 292927205}
+  - {fileID: 1272624457}

@@ -5,9 +5,10 @@ public class CharacterSpawner_Level0 : MonoBehaviour
     [SerializeField] private GameObject fairyRedCharacter;
     [SerializeField] private GameObject fairyGreenCharacter;
     [SerializeField] private GameObject fairyOrangeCharacter;
-
+    
     [SerializeField] private CameraMovement_Level0 cameraFollow;
     [SerializeField] private Transform playerSpawn;
+    
 
     void Start()
     {
@@ -32,7 +33,8 @@ public class CharacterSpawner_Level0 : MonoBehaviour
                 selectedObject = fairyRedCharacter;
                 break;
         }
-
+        
+        
         if (selectedObject != null)
         {
             selectedObject.SetActive(true);
@@ -41,11 +43,14 @@ public class CharacterSpawner_Level0 : MonoBehaviour
             {
                 selectedObject.transform.position = playerSpawn.position;
             }
-
+            /*
             if (cameraFollow != null)
             {
-                cameraFollow.target = selectedObject.transform;
+                cameraFollow.CameraTarget = selectedObject.transform;
             }
+            */
         }
+        
     }
+    
 }
