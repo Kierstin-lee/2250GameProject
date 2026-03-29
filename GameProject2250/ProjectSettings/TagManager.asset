@@ -8,6 +8,7 @@ TagManager:
   - Key
   - Coin
   - Wall
+  - Ground
   layers:
   - Default
   - TransparentFX
