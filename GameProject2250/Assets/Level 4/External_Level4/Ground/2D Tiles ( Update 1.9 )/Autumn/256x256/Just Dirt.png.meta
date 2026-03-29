@@ -1,12 +1,12 @@
 fileFormatVersion: 2
-guid: abc819e191dd6ff48b3f3883b97c7247
+guid: f49938fd5e962834d80abcc368229c65
 AssetOrigin:
   serializedVersion: 1
   productId: 85838
   packageName: Free Platform Game Assets
   packageVersion: 1.9.4
   assetPath: Assets/BayatGames/Free Platform Game Assets/Tiles/2D Tiles ( Update
-    1.9 )/Spring/256x256/GrassJoinHillRight2&Left2.png
+    1.9 )/Autumn/256x256/GrassCliffMid.png
   uploadId: 484258
 TextureImporter:
   internalIDToNameTable: []
@@ -57,7 +57,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 138}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -108,8 +108,8 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 589e5c8f66694ab45af3e89b8e87809b
-    internalID: 0
+    spriteID: d8ef356aa615c7d44a81a8a7380624de
+    internalID: 1654244836
     vertices: []
     indices: 
     edges: []
