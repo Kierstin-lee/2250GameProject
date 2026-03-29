@@ -14771,7 +14771,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_667
+      name: slantceiling_up1
       rect:
         serializedVersion: 2
         x: 48
@@ -14793,7 +14793,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_668
+      name: slantceiling_up2
       rect:
         serializedVersion: 2
         x: 64
@@ -14815,7 +14815,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_669
+      name: slantceiling_up3
       rect:
         serializedVersion: 2
         x: 80
@@ -14837,7 +14837,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_670
+      name: slantceiling_up4
       rect:
         serializedVersion: 2
         x: 96
@@ -14859,7 +14859,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_671
+      name: slantceiling_up5
       rect:
         serializedVersion: 2
         x: 112
@@ -14881,7 +14881,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_672
+      name: slantceiling_up6
       rect:
         serializedVersion: 2
         x: 128
@@ -15299,7 +15299,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_691
+      name: slantceiling_down1
       rect:
         serializedVersion: 2
         x: 560
@@ -15321,7 +15321,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_692
+      name: slantceiling_down2
       rect:
         serializedVersion: 2
         x: 576
@@ -15343,7 +15343,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_693
+      name: slantceiling_down3
       rect:
         serializedVersion: 2
         x: 592
@@ -15365,7 +15365,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_694
+      name: slantceiling_down4
       rect:
         serializedVersion: 2
         x: 608
@@ -15387,7 +15387,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_695
+      name: slantceiling_down5
       rect:
         serializedVersion: 2
         x: 624
@@ -15409,7 +15409,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_696
+      name: slantceiling_down6
       rect:
         serializedVersion: 2
         x: 640
@@ -15739,7 +15739,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_711
+      name: slantceiling_up7
       rect:
         serializedVersion: 2
         x: 48
@@ -15761,7 +15761,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_712
+      name: slantceiling_up8
       rect:
         serializedVersion: 2
         x: 64
@@ -15783,7 +15783,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_713
+      name: slantceiling_up9
       rect:
         serializedVersion: 2
         x: 80
@@ -15805,7 +15805,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_714
+      name: slantceiling_up10
       rect:
         serializedVersion: 2
         x: 96
@@ -15827,7 +15827,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_715
+      name: slantceiling_up11
       rect:
         serializedVersion: 2
         x: 112
@@ -15849,7 +15849,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_716
+      name: slantceiling_up12
       rect:
         serializedVersion: 2
         x: 128
@@ -16267,7 +16267,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_735
+      name: slantceiling_down7
       rect:
         serializedVersion: 2
         x: 560
@@ -16289,7 +16289,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_736
+      name: slantceiling_down8
       rect:
         serializedVersion: 2
         x: 576
@@ -16311,7 +16311,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_737
+      name: slantceiling_down9
       rect:
         serializedVersion: 2
         x: 592
@@ -16333,7 +16333,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_738
+      name: slantceiling_down10
       rect:
         serializedVersion: 2
         x: 608
@@ -16355,7 +16355,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_739
+      name: slantceiling_down11
       rect:
         serializedVersion: 2
         x: 624
@@ -16377,7 +16377,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_740
+      name: slantceiling_down12
       rect:
         serializedVersion: 2
         x: 640
@@ -16861,7 +16861,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_762
+      name: slantceiling_up13
       rect:
         serializedVersion: 2
         x: 48
@@ -16883,7 +16883,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_763
+      name: slantceiling_up14
       rect:
         serializedVersion: 2
         x: 64
@@ -16905,7 +16905,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_764
+      name: slantceiling_up15
       rect:
         serializedVersion: 2
         x: 80
@@ -16927,7 +16927,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_765
+      name: slantceiling_up16
       rect:
         serializedVersion: 2
         x: 96
@@ -16949,7 +16949,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_766
+      name: slantceiling_up17
       rect:
         serializedVersion: 2
         x: 112
@@ -16971,7 +16971,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_767
+      name: slantceiling_up18
       rect:
         serializedVersion: 2
         x: 128
@@ -17169,7 +17169,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_776
+      name: slantceiling_down13
       rect:
         serializedVersion: 2
         x: 560
@@ -17191,7 +17191,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_777
+      name: slantceiling_down14
       rect:
         serializedVersion: 2
         x: 576
@@ -17213,7 +17213,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_778
+      name: slantceiling_down15
       rect:
         serializedVersion: 2
         x: 592
@@ -17235,7 +17235,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_779
+      name: slantceiling_down16
       rect:
         serializedVersion: 2
         x: 608
@@ -17257,7 +17257,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_780
+      name: slantceiling_down17
       rect:
         serializedVersion: 2
         x: 624
@@ -17279,7 +17279,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_781
+      name: slantceiling_down18
       rect:
         serializedVersion: 2
         x: 640
@@ -17763,7 +17763,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_803
+      name: slantceiling_up19
       rect:
         serializedVersion: 2
         x: 48
@@ -17785,7 +17785,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_804
+      name: slantceiling_up20
       rect:
         serializedVersion: 2
         x: 64
@@ -17807,7 +17807,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_805
+      name: slantceiling_up21
       rect:
         serializedVersion: 2
         x: 80
@@ -17829,7 +17829,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_806
+      name: slantceiling_up22
       rect:
         serializedVersion: 2
         x: 96
@@ -18225,7 +18225,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_824
+      name: slantceiling_down19
       rect:
         serializedVersion: 2
         x: 592
@@ -18247,7 +18247,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_825
+      name: slantceiling_down20
       rect:
         serializedVersion: 2
         x: 608
@@ -18269,7 +18269,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_826
+      name: slantceiling_down21
       rect:
         serializedVersion: 2
         x: 624
@@ -18291,7 +18291,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_827
+      name: slantceiling_down22
       rect:
         serializedVersion: 2
         x: 640
@@ -19699,7 +19699,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_891
+      name: topleftcorner
       rect:
         serializedVersion: 2
         x: 176
@@ -19765,7 +19765,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_894
+      name: toprightcorner
       rect:
         serializedVersion: 2
         x: 512
@@ -25155,7 +25155,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_1139
+      name: slant_up1
       rect:
         serializedVersion: 2
         x: 112
@@ -25177,7 +25177,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_1140
+      name: slant_up2
       rect:
         serializedVersion: 2
         x: 128
@@ -25199,7 +25199,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_1141
+      name: slant_down1
       rect:
         serializedVersion: 2
         x: 560
@@ -25221,7 +25221,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_1142
+      name: slant_down2
       rect:
         serializedVersion: 2
         x: 576
@@ -25331,7 +25331,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_1147
+      name: slant_up3
       rect:
         serializedVersion: 2
         x: 112
@@ -25353,7 +25353,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_1148
+      name: slant_up4
       rect:
         serializedVersion: 2
         x: 128
@@ -25749,7 +25749,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_1166
+      name: dropdown
       rect:
         serializedVersion: 2
         x: 480
@@ -25815,7 +25815,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_1169
+      name: slant_down3
       rect:
         serializedVersion: 2
         x: 560
@@ -25837,7 +25837,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_1170
+      name: slant_down4
       rect:
         serializedVersion: 2
         x: 576
@@ -25947,7 +25947,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_1175
+      name: slant_up5
       rect:
         serializedVersion: 2
         x: 112
@@ -25969,7 +25969,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_1176
+      name: slant_up6
       rect:
         serializedVersion: 2
         x: 128
@@ -26431,7 +26431,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_1197
+      name: slant_down5
       rect:
         serializedVersion: 2
         x: 560
@@ -26453,7 +26453,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_1198
+      name: slant_down6
       rect:
         serializedVersion: 2
         x: 576
@@ -39553,6 +39553,7 @@ TextureImporter:
       door_num2_4: 915394942
       door_num2_5: 1939240364
       door_num2_6: 1738958848
+      dropdown: 1123064061
       end_stairs1: -1077798133
       end_stairs2: -1098945154
       end_stairs3: -1835169037
@@ -39720,28 +39721,15 @@ TextureImporter:
       main_lev_build_1133: -1561098057
       main_lev_build_1134: 718904802
       main_lev_build_1135: 1516881346
-      main_lev_build_1139: 583937908
       main_lev_build_114: 2092240512
-      main_lev_build_1140: -1565302391
-      main_lev_build_1141: -1735589632
-      main_lev_build_1142: -954889145
-      main_lev_build_1147: 263252378
-      main_lev_build_1148: -806212310
       main_lev_build_115: 931166040
       main_lev_build_1151: 315957258
       main_lev_build_116: 102985871
-      main_lev_build_1166: 1123064061
-      main_lev_build_1169: -104833352
       main_lev_build_117: 673303038
-      main_lev_build_1170: 1958505798
-      main_lev_build_1175: -1933013817
-      main_lev_build_1176: 323165082
       main_lev_build_1179: 520750901
       main_lev_build_118: -2126723066
       main_lev_build_119: -1284945828
       main_lev_build_1194: 1925631096
-      main_lev_build_1197: 1473226994
-      main_lev_build_1198: 895296598
       main_lev_build_12: -1836785277
       main_lev_build_120: 831414351
       main_lev_build_1201: -493204788
@@ -40890,21 +40878,9 @@ TextureImporter:
       main_lev_build_658: -673350049
       main_lev_build_659: -1094186994
       main_lev_build_66: 1209420790
-      main_lev_build_667: -1122341265
-      main_lev_build_668: 69112465
-      main_lev_build_669: -493261497
       main_lev_build_67: -952264351
-      main_lev_build_670: -1062730161
-      main_lev_build_671: -1382301377
-      main_lev_build_672: -327951521
       main_lev_build_68: 138928053
       main_lev_build_69: 1603245859
-      main_lev_build_691: 476776769
-      main_lev_build_692: 1328826922
-      main_lev_build_693: -1078936350
-      main_lev_build_694: 1421496564
-      main_lev_build_695: -131213699
-      main_lev_build_696: -2132133141
       main_lev_build_697: -305433703
       main_lev_build_698: -271884324
       main_lev_build_699: -1038606424
@@ -40922,21 +40898,9 @@ TextureImporter:
       main_lev_build_709: 1424653264
       main_lev_build_71: 592445156
       main_lev_build_710: -863442703
-      main_lev_build_711: 1873193135
-      main_lev_build_712: -2021278115
-      main_lev_build_713: -1656832573
-      main_lev_build_714: 1315260623
-      main_lev_build_715: 727428517
-      main_lev_build_716: 1944932786
       main_lev_build_72: -2093820708
       main_lev_build_73: -2031777179
-      main_lev_build_735: -1499311381
-      main_lev_build_736: 855662527
-      main_lev_build_737: 629958869
-      main_lev_build_738: -461924369
-      main_lev_build_739: 409607035
       main_lev_build_74: -737693527
-      main_lev_build_740: -359477578
       main_lev_build_75: 1253949572
       main_lev_build_753: 1489669443
       main_lev_build_754: -2144604167
@@ -40946,20 +40910,8 @@ TextureImporter:
       main_lev_build_758: -1302098926
       main_lev_build_759: 1551429874
       main_lev_build_76: 20463139
-      main_lev_build_762: 1379029312
-      main_lev_build_763: 2018990636
-      main_lev_build_764: 96989899
-      main_lev_build_765: 356792207
-      main_lev_build_766: 837636354
-      main_lev_build_767: -796291542
       main_lev_build_77: 1288616698
-      main_lev_build_776: -1439381061
-      main_lev_build_777: -721276009
-      main_lev_build_778: 1216615460
-      main_lev_build_779: -1920971171
       main_lev_build_78: -1000787844
-      main_lev_build_780: -777059304
-      main_lev_build_781: -770295052
       main_lev_build_79: -1269722795
       main_lev_build_794: 425830863
       main_lev_build_795: 1854359374
@@ -40970,10 +40922,6 @@ TextureImporter:
       main_lev_build_8: 1876685960
       main_lev_build_80: 1542592087
       main_lev_build_800: -672276951
-      main_lev_build_803: 1016129798
-      main_lev_build_804: -1601755422
-      main_lev_build_805: -565713782
-      main_lev_build_806: -708984732
       main_lev_build_81: 347138558
       main_lev_build_810: 1750380991
       main_lev_build_811: -1395325025
@@ -40987,10 +40935,6 @@ TextureImporter:
       main_lev_build_819: -867771152
       main_lev_build_82: -771063191
       main_lev_build_820: -819172827
-      main_lev_build_824: -1233501190
-      main_lev_build_825: -117065000
-      main_lev_build_826: 254555514
-      main_lev_build_827: -1095646752
       main_lev_build_828: -1147555412
       main_lev_build_83: 1129901028
       main_lev_build_831: -1432580197
@@ -41033,10 +40977,8 @@ TextureImporter:
       main_lev_build_889: 140273163
       main_lev_build_89: -2144648835
       main_lev_build_890: -628541014
-      main_lev_build_891: 2002493608
       main_lev_build_892: -324807468
       main_lev_build_893: 163649408
-      main_lev_build_894: 321609728
       main_lev_build_895: 1740444985
       main_lev_build_896: -35864987
       main_lev_build_897: 1173010965
@@ -41125,6 +41067,62 @@ TextureImporter:
       right_wall7: 1232137482
       right_wall8: -1617994073
       short_platform1: 1268485295
+      slant_down1: -1735589632
+      slant_down2: -954889145
+      slant_down3: -104833352
+      slant_down4: 1958505798
+      slant_down5: 1473226994
+      slant_down6: 895296598
+      slant_up1: 583937908
+      slant_up2: -1565302391
+      slant_up3: 263252378
+      slant_up4: -806212310
+      slant_up5: -1933013817
+      slant_up6: 323165082
+      slantceiling_down1: 476776769
+      slantceiling_down10: -461924369
+      slantceiling_down11: 409607035
+      slantceiling_down12: -359477578
+      slantceiling_down13: -1439381061
+      slantceiling_down14: -721276009
+      slantceiling_down15: 1216615460
+      slantceiling_down16: -1920971171
+      slantceiling_down17: -777059304
+      slantceiling_down18: -770295052
+      slantceiling_down19: -1233501190
+      slantceiling_down2: 1328826922
+      slantceiling_down20: -117065000
+      slantceiling_down21: 254555514
+      slantceiling_down22: -1095646752
+      slantceiling_down3: -1078936350
+      slantceiling_down4: 1421496564
+      slantceiling_down5: -131213699
+      slantceiling_down6: -2132133141
+      slantceiling_down7: -1499311381
+      slantceiling_down8: 855662527
+      slantceiling_down9: 629958869
+      slantceiling_up1: -1122341265
+      slantceiling_up10: 1315260623
+      slantceiling_up11: 727428517
+      slantceiling_up12: 1944932786
+      slantceiling_up13: 1379029312
+      slantceiling_up14: 2018990636
+      slantceiling_up15: 96989899
+      slantceiling_up16: 356792207
+      slantceiling_up17: 837636354
+      slantceiling_up18: -796291542
+      slantceiling_up19: 1016129798
+      slantceiling_up2: 69112465
+      slantceiling_up20: -1601755422
+      slantceiling_up21: -565713782
+      slantceiling_up22: -708984732
+      slantceiling_up3: -493261497
+      slantceiling_up4: -1062730161
+      slantceiling_up5: -1382301377
+      slantceiling_up6: -327951521
+      slantceiling_up7: 1873193135
+      slantceiling_up8: -2021278115
+      slantceiling_up9: -1656832573
       spike_top1: 451121951
       spike_top2: -270796082
       stairs_down1: -1668124818
@@ -41146,6 +41144,8 @@ TextureImporter:
       start_stairs3: -912887558
       start_stairs4: -986518664
       start_stairs5: -1196262311
+      topleftcorner: 2002493608
+      toprightcorner: 321609728
       wall1: -240702837
       wall11: 1774278514
       wall12: 546021278
