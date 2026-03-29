@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: fc125cd2b902af1428138adb4c7f6ec4
+guid: ba2fd75adf82d094da08dbad27588d27
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -89,10 +89,3 @@ TextureImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-AssetOrigin:
-  serializedVersion: 1
-  productId: 150023
-  packageName: Platformer Set1
-  packageVersion: 1.0
-  assetPath: Assets/Level 5/External-Level5/PlatformerSet1/other_and_decorative.png
-  uploadId: 319166
