@@ -19473,7 +19473,7 @@ Transform:
   m_GameObject: {fileID: 1185690019}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.44, y: -1.33, z: 0}
+  m_LocalPosition: {x: -0.23, y: -1.12, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -33731,7 +33731,7 @@ PrefabInstance:
     - target: {fileID: 5115795131485341815, guid: ea8d65b89dc84d9092703d2ef9b70db7,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.51
+      value: -2.72
       objectReference: {fileID: 0}
     - target: {fileID: 5115795131485341815, guid: ea8d65b89dc84d9092703d2ef9b70db7,
         type: 3}
@@ -33835,7 +33835,7 @@ CapsuleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 3.24, y: 2.98}
+  m_Size: {x: 2, y: 2}
   m_Direction: 0
 --- !u!50 &1949510121
 Rigidbody2D:

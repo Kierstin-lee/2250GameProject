@@ -1,14 +1,13 @@
 using UnityEngine;
 
-public class FairyMovement_Level4 : MonoBehaviour
+public class FairyMovement : MonoBehaviour
 {
     [SerializeField] private float moveSpeed = 5f;
     [SerializeField] private float jumpForce = 10f;
     [SerializeField] private Transform groundCheck;
-    [SerializeField] private float groundCheckRadius = 0.2f;
+    [SerializeField] private float groundCheckRadius = 0.35f;
     [SerializeField] private LayerMask groundLayer;
-    
-    
+
     private Rigidbody2D rb;
     private SpriteRenderer spriteRenderer;
 
@@ -20,6 +19,7 @@ public class FairyMovement_Level4 : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         spriteRenderer = GetComponent<SpriteRenderer>();
     }
+
     void Update()
     {
         moveInput = Input.GetAxisRaw("Horizontal");
@@ -31,18 +31,17 @@ public class FairyMovement_Level4 : MonoBehaviour
 
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
 
+        Debug.Log("Grounded: " + isGrounded);
+
         if (Input.GetButtonDown("Jump") && isGrounded)
         {
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+            rb.velocity = new Vector2(rb.velocity.x, jumpForce);
         }
-        
-        //debuging to make jump function work 
-        Debug.Log("Grounded: " + isGrounded);
     }
 
     void FixedUpdate()
     {
-        rb.linearVelocity = new Vector2(moveInput * moveSpeed, rb.linearVelocity.y);
+        rb.velocity = new Vector2(moveInput * moveSpeed, rb.velocity.y);
     }
 
     void OnDrawGizmosSelected()
