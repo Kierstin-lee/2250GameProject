@@ -25441,7 +25441,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_1152
+      name: floor1
       rect:
         serializedVersion: 2
         x: 240
@@ -25463,7 +25463,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_1153
+      name: floor2
       rect:
         serializedVersion: 2
         x: 256
@@ -25485,7 +25485,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_1154
+      name: floor3
       rect:
         serializedVersion: 2
         x: 272
@@ -25507,7 +25507,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_1155
+      name: floor4
       rect:
         serializedVersion: 2
         x: 288
@@ -25529,7 +25529,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_1156
+      name: floor5
       rect:
         serializedVersion: 2
         x: 304
@@ -25551,7 +25551,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_1157
+      name: floor6
       rect:
         serializedVersion: 2
         x: 320
@@ -25573,7 +25573,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_1158
+      name: floor7
       rect:
         serializedVersion: 2
         x: 336
@@ -25595,7 +25595,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_1159
+      name: floor8
       rect:
         serializedVersion: 2
         x: 352
@@ -25617,7 +25617,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_1160
+      name: floor9
       rect:
         serializedVersion: 2
         x: 368
@@ -25639,7 +25639,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_1161
+      name: floor10
       rect:
         serializedVersion: 2
         x: 384
@@ -25661,7 +25661,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_1162
+      name: floor11
       rect:
         serializedVersion: 2
         x: 400
@@ -25683,7 +25683,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_1163
+      name: floor12
       rect:
         serializedVersion: 2
         x: 416
@@ -25705,7 +25705,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_1164
+      name: floor13
       rect:
         serializedVersion: 2
         x: 432
@@ -25727,7 +25727,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_1165
+      name: floor14
       rect:
         serializedVersion: 2
         x: 448
@@ -26057,7 +26057,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_1180
+      name: floor15
       rect:
         serializedVersion: 2
         x: 240
@@ -26079,7 +26079,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_1181
+      name: floor16
       rect:
         serializedVersion: 2
         x: 256
@@ -26101,7 +26101,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_1182
+      name: floor17
       rect:
         serializedVersion: 2
         x: 272
@@ -26123,7 +26123,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_1183
+      name: floor18
       rect:
         serializedVersion: 2
         x: 288
@@ -26145,7 +26145,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_1184
+      name: floor19
       rect:
         serializedVersion: 2
         x: 304
@@ -26167,7 +26167,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_1185
+      name: floor20
       rect:
         serializedVersion: 2
         x: 320
@@ -26189,7 +26189,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_1186
+      name: floor21
       rect:
         serializedVersion: 2
         x: 336
@@ -26211,7 +26211,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_1187
+      name: floor22
       rect:
         serializedVersion: 2
         x: 352
@@ -26233,7 +26233,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_1188
+      name: floor23
       rect:
         serializedVersion: 2
         x: 368
@@ -26255,7 +26255,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_1189
+      name: floor24
       rect:
         serializedVersion: 2
         x: 384
@@ -26277,7 +26277,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_1190
+      name: floor25
       rect:
         serializedVersion: 2
         x: 400
@@ -26299,7 +26299,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_1191
+      name: floor26
       rect:
         serializedVersion: 2
         x: 416
@@ -26321,7 +26321,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_1192
+      name: floor27
       rect:
         serializedVersion: 2
         x: 432
@@ -26343,7 +26343,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_1193
+      name: floor28
       rect:
         serializedVersion: 2
         x: 448
@@ -39470,6 +39470,34 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":16.0,"y":16.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":1,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
+      floor1: 43123733
+      floor10: -912069007
+      floor11: -1177147553
+      floor12: -921475836
+      floor13: -1128442147
+      floor14: -279839745
+      floor15: 1411125985
+      floor16: -2008726786
+      floor17: -2055205824
+      floor18: -1905452838
+      floor19: 492744105
+      floor2: 1918703543
+      floor20: -1986086328
+      floor21: 1760462615
+      floor22: -134616008
+      floor23: 896200689
+      floor24: 1625082632
+      floor25: 1916078332
+      floor26: 1237779095
+      floor27: -1743468959
+      floor28: -15498738
+      floor3: 436580386
+      floor4: 1651021361
+      floor5: -1954135174
+      floor6: 1927439437
+      floor7: -1902551525
+      floor8: -1674071405
+      floor9: -231666457
       main_lev_build_0: 1446674661
       main_lev_build_1: 1802352354
       main_lev_build_10: 88825663
@@ -39642,21 +39670,7 @@ TextureImporter:
       main_lev_build_115: 931166040
       main_lev_build_1150: -1880841861
       main_lev_build_1151: 315957258
-      main_lev_build_1152: 43123733
-      main_lev_build_1153: 1918703543
-      main_lev_build_1154: 436580386
-      main_lev_build_1155: 1651021361
-      main_lev_build_1156: -1954135174
-      main_lev_build_1157: 1927439437
-      main_lev_build_1158: -1902551525
-      main_lev_build_1159: -1674071405
       main_lev_build_116: 102985871
-      main_lev_build_1160: -231666457
-      main_lev_build_1161: -912069007
-      main_lev_build_1162: -1177147553
-      main_lev_build_1163: -921475836
-      main_lev_build_1164: -1128442147
-      main_lev_build_1165: -279839745
       main_lev_build_1166: 1123064061
       main_lev_build_1167: 2064151952
       main_lev_build_1168: 3841376
@@ -39673,21 +39687,7 @@ TextureImporter:
       main_lev_build_1178: -698824662
       main_lev_build_1179: 520750901
       main_lev_build_118: -2126723066
-      main_lev_build_1180: 1411125985
-      main_lev_build_1181: -2008726786
-      main_lev_build_1182: -2055205824
-      main_lev_build_1183: -1905452838
-      main_lev_build_1184: 492744105
-      main_lev_build_1185: -1986086328
-      main_lev_build_1186: 1760462615
-      main_lev_build_1187: -134616008
-      main_lev_build_1188: 896200689
-      main_lev_build_1189: 1625082632
       main_lev_build_119: -1284945828
-      main_lev_build_1190: 1916078332
-      main_lev_build_1191: 1237779095
-      main_lev_build_1192: -1743468959
-      main_lev_build_1193: -15498738
       main_lev_build_1194: 1925631096
       main_lev_build_1195: 218227139
       main_lev_build_1196: 1772151165
