@@ -8583,6 +8583,7 @@ GameObject:
   - component: {fileID: 535427360}
   - component: {fileID: 535427359}
   - component: {fileID: 535427358}
+  - component: {fileID: 535427361}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: Untagged
@@ -8633,7 +8634,7 @@ Camera:
   far clip plane: 1000
   field of view: 0.34491745
   orthographic: 1
-  orthographic size: 5.968347
+  orthographic size: 6.4702272
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -8658,12 +8659,25 @@ Transform:
   m_GameObject: {fileID: 535427357}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.7, y: 0.79, z: -10}
+  m_LocalPosition: {x: -2.06, y: 0.25, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &535427361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 535427357}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2d0b01bbd7014f429c42a79da626c6d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CameraMovement_Level4
+  smoothSpeed: 5
 --- !u!1 &544425571
 GameObject:
   m_ObjectHideFlags: 0
