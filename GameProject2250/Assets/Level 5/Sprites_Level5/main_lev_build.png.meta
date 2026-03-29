@@ -24649,7 +24649,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_1116
+      name: stairs_up1
       rect:
         serializedVersion: 2
         x: 80
@@ -25111,7 +25111,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_1137
+      name: stairs_up5
       rect:
         serializedVersion: 2
         x: 64
@@ -25133,7 +25133,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_1138
+      name: stairs_up2
       rect:
         serializedVersion: 2
         x: 80
@@ -25287,7 +25287,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_1145
+      name: stairs_up6
       rect:
         serializedVersion: 2
         x: 64
@@ -25309,7 +25309,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_1146
+      name: stairs_up3
       rect:
         serializedVersion: 2
         x: 80
@@ -25466,7 +25466,7 @@ TextureImporter:
       name: floor2
       rect:
         serializedVersion: 2
-        x: 256
+        x: 255
         y: 544
         width: 16
         height: 16
@@ -25903,7 +25903,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_1173
+      name: stairs_up7
       rect:
         serializedVersion: 2
         x: 64
@@ -25925,7 +25925,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_1174
+      name: stairs_up4
       rect:
         serializedVersion: 2
         x: 80
@@ -39630,7 +39630,6 @@ TextureImporter:
       main_lev_build_1113: 100466781
       main_lev_build_1114: -2080826825
       main_lev_build_1115: -498214864
-      main_lev_build_1116: -868630765
       main_lev_build_1117: 963317578
       main_lev_build_1118: 533126474
       main_lev_build_1119: 577902824
@@ -39653,8 +39652,6 @@ TextureImporter:
       main_lev_build_1134: 718904802
       main_lev_build_1135: 1516881346
       main_lev_build_1136: -1668124818
-      main_lev_build_1137: -1971998915
-      main_lev_build_1138: 116058161
       main_lev_build_1139: 583937908
       main_lev_build_114: 2092240512
       main_lev_build_1140: -1565302391
@@ -39662,8 +39659,6 @@ TextureImporter:
       main_lev_build_1142: -954889145
       main_lev_build_1143: -385072260
       main_lev_build_1144: 709184051
-      main_lev_build_1145: -1748488853
-      main_lev_build_1146: 719534005
       main_lev_build_1147: 263252378
       main_lev_build_1148: -806212310
       main_lev_build_1149: 76345633
@@ -39679,8 +39674,6 @@ TextureImporter:
       main_lev_build_1170: 1958505798
       main_lev_build_1171: -2030078186
       main_lev_build_1172: -1197270984
-      main_lev_build_1173: -136369528
-      main_lev_build_1174: -91065454
       main_lev_build_1175: -1933013817
       main_lev_build_1176: 323165082
       main_lev_build_1177: 350491511
@@ -41196,6 +41189,13 @@ TextureImporter:
       main_lev_build_997: 2106349682
       main_lev_build_998: 2098834394
       main_lev_build_999: -1540780629
+      stairs_up1: -868630765
+      stairs_up2: 116058161
+      stairs_up3: 719534005
+      stairs_up4: -91065454
+      stairs_up5: -1971998915
+      stairs_up6: -1748488853
+      stairs_up7: -136369528
       wall1: -240702837
       wall11: 1774278514
       wall12: 546021278
