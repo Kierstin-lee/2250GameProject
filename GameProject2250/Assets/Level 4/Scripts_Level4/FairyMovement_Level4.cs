@@ -35,6 +35,9 @@ public class FairyMovement_Level4 : MonoBehaviour
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
         }
+        
+        //debuging to make jump function work 
+        Debug.Log("Grounded: " + isGrounded);
     }
 
     void FixedUpdate()
