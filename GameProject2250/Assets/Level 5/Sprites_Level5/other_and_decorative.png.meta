@@ -251,7 +251,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: other_and_decorative_7
+      name: chains1
       rect:
         serializedVersion: 2
         x: 192
@@ -273,7 +273,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: other_and_decorative_8
+      name: chains4
       rect:
         serializedVersion: 2
         x: 224
@@ -295,7 +295,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: other_and_decorative_9
+      name: chains7
       rect:
         serializedVersion: 2
         x: 256
@@ -735,7 +735,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: other_and_decorative_29
+      name: chains2
       rect:
         serializedVersion: 2
         x: 192
@@ -757,7 +757,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: other_and_decorative_30
+      name: chains5
       rect:
         serializedVersion: 2
         x: 224
@@ -779,7 +779,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: other_and_decorative_31
+      name: chains8
       rect:
         serializedVersion: 2
         x: 256
@@ -1131,7 +1131,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: other_and_decorative_47
+      name: chains3
       rect:
         serializedVersion: 2
         x: 192
@@ -1153,7 +1153,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: other_and_decorative_48
+      name: chains6
       rect:
         serializedVersion: 2
         x: 224
@@ -1175,7 +1175,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: other_and_decorative_49
+      name: chains9
       rect:
         serializedVersion: 2
         x: 256
@@ -3661,7 +3661,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: other_and_decorative_162
+      name: spike_top
       rect:
         serializedVersion: 2
         x: 208
@@ -4321,7 +4321,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: other_and_decorative_192
+      name: spike_bottom
       rect:
         serializedVersion: 2
         x: 208
@@ -11332,6 +11332,15 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":16.0,"y":16.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":1,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
+      chains1: 1550501584
+      chains2: 563844528
+      chains3: 1684286183
+      chains4: 1583117170
+      chains5: 1040207435
+      chains6: 1247626400
+      chains7: -1211113393
+      chains8: 1359164810
+      chains9: 326855158
       other_and_decorative_0: 101772787
       other_and_decorative_1: 1047812564
       other_and_decorative_10: -1166264191
@@ -11403,7 +11412,6 @@ TextureImporter:
       other_and_decorative_16: 2122042906
       other_and_decorative_160: -1069542929
       other_and_decorative_161: 1352518431
-      other_and_decorative_162: 187016963
       other_and_decorative_163: -294085404
       other_and_decorative_164: 1989987994
       other_and_decorative_165: -2067908581
@@ -11436,7 +11444,6 @@ TextureImporter:
       other_and_decorative_19: 1420806338
       other_and_decorative_190: 1654802833
       other_and_decorative_191: -1697218560
-      other_and_decorative_192: -1891619535
       other_and_decorative_193: -450910441
       other_and_decorative_194: 75756807
       other_and_decorative_195: -1998892338
@@ -11544,7 +11551,6 @@ TextureImporter:
       other_and_decorative_287: 1358622450
       other_and_decorative_288: 1024063106
       other_and_decorative_289: 1713589590
-      other_and_decorative_29: 563844528
       other_and_decorative_290: 30145982
       other_and_decorative_291: 2030729375
       other_and_decorative_292: -330637212
@@ -11556,7 +11562,6 @@ TextureImporter:
       other_and_decorative_298: 1924038567
       other_and_decorative_299: 676538119
       other_and_decorative_3: 397952965
-      other_and_decorative_30: 1040207435
       other_and_decorative_300: -1234623641
       other_and_decorative_301: -409606899
       other_and_decorative_302: -384871972
@@ -11567,7 +11572,6 @@ TextureImporter:
       other_and_decorative_307: 1554410865
       other_and_decorative_308: 989779878
       other_and_decorative_309: -180027873
-      other_and_decorative_31: 1359164810
       other_and_decorative_310: -1637078083
       other_and_decorative_311: 435538055
       other_and_decorative_312: -367452078
@@ -11744,7 +11748,6 @@ TextureImporter:
       other_and_decorative_467: -855974370
       other_and_decorative_468: -2023036606
       other_and_decorative_469: -765057253
-      other_and_decorative_47: 1684286183
       other_and_decorative_470: 1972468124
       other_and_decorative_471: 264247556
       other_and_decorative_472: -1954376463
@@ -11755,7 +11758,6 @@ TextureImporter:
       other_and_decorative_477: 188144156
       other_and_decorative_478: 1652328802
       other_and_decorative_479: 513721942
-      other_and_decorative_48: 1247626400
       other_and_decorative_480: -966171322
       other_and_decorative_481: -1881984109
       other_and_decorative_482: 304623649
@@ -11766,7 +11768,6 @@ TextureImporter:
       other_and_decorative_487: 503467000
       other_and_decorative_488: 493976381
       other_and_decorative_489: -678417269
-      other_and_decorative_49: 326855158
       other_and_decorative_490: -1569371457
       other_and_decorative_491: 1586160235
       other_and_decorative_492: -943594950
@@ -11809,7 +11810,6 @@ TextureImporter:
       other_and_decorative_67: 1334572694
       other_and_decorative_68: -1104174971
       other_and_decorative_69: -1747882777
-      other_and_decorative_7: 1550501584
       other_and_decorative_70: 892308498
       other_and_decorative_71: 563571960
       other_and_decorative_72: -655630126
@@ -11820,7 +11820,6 @@ TextureImporter:
       other_and_decorative_77: -1807521530
       other_and_decorative_78: -139946999
       other_and_decorative_79: 797403705
-      other_and_decorative_8: 1583117170
       other_and_decorative_80: 335616425
       other_and_decorative_81: -1924230140
       other_and_decorative_82: 1407935706
@@ -11831,7 +11830,6 @@ TextureImporter:
       other_and_decorative_87: -456108972
       other_and_decorative_88: 1104589958
       other_and_decorative_89: -1023220894
-      other_and_decorative_9: -1211113393
       other_and_decorative_90: 1843765935
       other_and_decorative_91: -738080501
       other_and_decorative_92: 1452360786
@@ -11842,6 +11840,8 @@ TextureImporter:
       other_and_decorative_97: -1164125970
       other_and_decorative_98: 2039664545
       other_and_decorative_99: -1660310738
+      spike_bottom: -1891619535
+      spike_top: 187016963
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
