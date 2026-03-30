@@ -11,6 +11,12 @@ public class FairyController_level6 : MonoBehaviour
     private Vector2 moveInput;
     private SpriteRenderer spriteRenderer;
     
+    [SerializeField] private Transform groundCheck;
+    [SerializeField] private float groundCheckRadius = 0.2f;
+    [SerializeField] private LayerMask groundLayer;
+
+    private bool isGrounded;
+    
     void Start()
     {
         rb = GetComponent<Rigidbody2D>(); 
@@ -21,8 +27,9 @@ public class FairyController_level6 : MonoBehaviour
     void Update()
     {
         moveInput.x = Input.GetAxisRaw("Horizontal");
+        isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
         
-        if (Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.UpArrow) && isGrounded || Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
         }
@@ -33,6 +40,8 @@ public class FairyController_level6 : MonoBehaviour
             spriteRenderer.flipX = false;
 
         UpdateAnimationState();
+        
+        Debug.Log("Grounded: " + isGrounded);
     }
     
     private void FixedUpdate()

@@ -1146,7 +1146,7 @@ GameObject:
   - component: {fileID: 78830437}
   - component: {fileID: 78830436}
   - component: {fileID: 78830438}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: main_lev_build_24 (4)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -2121,7 +2121,7 @@ GameObject:
   - component: {fileID: 122986632}
   - component: {fileID: 122986631}
   - component: {fileID: 122986633}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: main_lev_build_24 (5)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -2447,7 +2447,7 @@ GameObject:
   - component: {fileID: 171036947}
   - component: {fileID: 171036949}
   - component: {fileID: 171036950}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: main_lev_build_2 (6)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -2909,7 +2909,7 @@ GameObject:
   - component: {fileID: 207942345}
   - component: {fileID: 207942344}
   - component: {fileID: 207942346}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: main_lev_build_24 (11)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -4230,7 +4230,7 @@ CapsuleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
@@ -4252,7 +4252,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDamping: 0
   m_AngularDamping: 0.05
-  m_GravityScale: 0
+  m_GravityScale: 2
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -4262,7 +4262,7 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 1
+  m_CollisionDetection: 0
   m_Constraints: 0
 --- !u!114 &286960783
 MonoBehaviour:
@@ -4281,7 +4281,7 @@ MonoBehaviour:
   jumpForce: 10
   patrolPoints: []
   attackRange: 2
-  attackCooldown: 2
+  attackCooldown: 10
   healthBarPrefab: {fileID: 838258886}
 --- !u!95 &286960784
 Animator:
@@ -5273,7 +5273,7 @@ GameObject:
   - component: {fileID: 384739810}
   - component: {fileID: 384739809}
   - component: {fileID: 384739808}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: main_lev_build_2 (51)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -5552,7 +5552,7 @@ GameObject:
   - component: {fileID: 395729581}
   - component: {fileID: 395729580}
   - component: {fileID: 395729582}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: main_lev_build_2 (9)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -7087,7 +7087,7 @@ GameObject:
   - component: {fileID: 536381714}
   - component: {fileID: 536381713}
   - component: {fileID: 536381715}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: main_lev_build_24 (2)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -7412,7 +7412,7 @@ GameObject:
   - component: {fileID: 551118318}
   - component: {fileID: 551118317}
   - component: {fileID: 551118319}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: main_lev_build_2 (8)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -7745,7 +7745,7 @@ GameObject:
   - component: {fileID: 567631968}
   - component: {fileID: 567631967}
   - component: {fileID: 567631969}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: main_lev_build_24 (14)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -8486,7 +8486,7 @@ GameObject:
   - component: {fileID: 618961318}
   - component: {fileID: 618961317}
   - component: {fileID: 618961319}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: main_lev_build_2 (3)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -8629,7 +8629,7 @@ GameObject:
   - component: {fileID: 620338529}
   - component: {fileID: 620338528}
   - component: {fileID: 620338530}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: main_lev_build_24 (10)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -8863,7 +8863,7 @@ GameObject:
   - component: {fileID: 636913565}
   - component: {fileID: 636913564}
   - component: {fileID: 636913566}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: main_lev_build_24 (15)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -10189,7 +10189,7 @@ GameObject:
   - component: {fileID: 747474204}
   - component: {fileID: 747474203}
   - component: {fileID: 747474205}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: main_lev_build_24 (3)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -10332,7 +10332,7 @@ GameObject:
   - component: {fileID: 756620482}
   - component: {fileID: 756620481}
   - component: {fileID: 756620483}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: main_lev_build_24 (8)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -10709,7 +10709,7 @@ GameObject:
   - component: {fileID: 774164311}
   - component: {fileID: 774164310}
   - component: {fileID: 774164312}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: main_lev_build_24 (12)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -11483,7 +11483,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 2
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 1686094902}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -11493,8 +11493,8 @@ Canvas:
   m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingLayerID: 1038092625
+  m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!224 &838258890
 RectTransform:
@@ -11505,7 +11505,7 @@ RectTransform:
   m_GameObject: {fileID: 838258885}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1168310650}
@@ -14431,7 +14431,7 @@ GameObject:
   - component: {fileID: 1056321638}
   - component: {fileID: 1056321637}
   - component: {fileID: 1056321639}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: main_lev_build_24 (6)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -15043,7 +15043,7 @@ GameObject:
   - component: {fileID: 1073696112}
   - component: {fileID: 1073696111}
   - component: {fileID: 1073696113}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: main_lev_build_24 (13)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -15266,6 +15266,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1817760719}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1078543154
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1078543155}
+  m_Layer: 0
+  m_Name: GroundCheck
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1078543155
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1078543154}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.06, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1796854542}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1096534562
 GameObject:
   m_ObjectHideFlags: 0
@@ -15368,7 +15399,7 @@ GameObject:
   - component: {fileID: 1097034270}
   - component: {fileID: 1097034269}
   - component: {fileID: 1097034271}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: main_lev_build_24 (7)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -16326,7 +16357,7 @@ RectTransform:
   m_GameObject: {fileID: 1168310648}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1740358180}
@@ -18185,7 +18216,7 @@ GameObject:
   - component: {fileID: 1324743615}
   - component: {fileID: 1324743617}
   - component: {fileID: 1324743618}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: main_lev_build_2 (5)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -20064,7 +20095,7 @@ GameObject:
   - component: {fileID: 1506233660}
   - component: {fileID: 1506233659}
   - component: {fileID: 1506233661}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: main_lev_build_2 (13)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -20298,7 +20329,7 @@ GameObject:
   - component: {fileID: 1510783922}
   - component: {fileID: 1510783921}
   - component: {fileID: 1510783923}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: main_lev_build_2 (11)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -22468,7 +22499,7 @@ GameObject:
   - component: {fileID: 1634752969}
   - component: {fileID: 1634752968}
   - component: {fileID: 1634752970}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: main_lev_build_2 (4)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -23209,7 +23240,7 @@ GameObject:
   - component: {fileID: 1679787379}
   - component: {fileID: 1679787378}
   - component: {fileID: 1679787380}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: main_lev_build_24 (9)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -25226,7 +25257,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 5115795131485341815, guid: ea8d65b89dc84d9092703d2ef9b70db7,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1078543155}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 3979658910644941265, guid: ea8d65b89dc84d9092703d2ef9b70db7,
         type: 3}
@@ -25261,6 +25296,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FairyController_level6
   moveSpeed: 5
   jumpForce: 10
+  groundCheck: {fileID: 1078543155}
+  groundCheckRadius: 0.2
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 512
 --- !u!50 &1796854538
 Rigidbody2D:
   serializedVersion: 5
@@ -25325,6 +25365,12 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 2, y: 2}
   m_Direction: 0
+--- !u!4 &1796854542 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5115795131485341815, guid: ea8d65b89dc84d9092703d2ef9b70db7,
+    type: 3}
+  m_PrefabInstance: {fileID: 1796854531}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1800525902
 GameObject:
   m_ObjectHideFlags: 0
@@ -27010,7 +27056,7 @@ GameObject:
   - component: {fileID: 1910776478}
   - component: {fileID: 1910776477}
   - component: {fileID: 1910776479}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: main_lev_build_2 (12)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -27350,7 +27396,7 @@ GameObject:
   - component: {fileID: 1951980199}
   - component: {fileID: 1951980198}
   - component: {fileID: 1951980197}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: main_lev_build_2 (48)
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -27939,7 +27985,7 @@ GameObject:
   - component: {fileID: 2042157657}
   - component: {fileID: 2042157656}
   - component: {fileID: 2042157658}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: main_lev_build_4 (1)
   m_TagString: Wall
   m_Icon: {fileID: 0}

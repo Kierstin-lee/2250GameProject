@@ -19,7 +19,7 @@ TagManager:
   - Characters
   - Background
   - In front of Background
-  - 
+  - Ground
   - 
   - 
   - 
@@ -66,6 +66,9 @@ TagManager:
     locked: 0
   - name: Borders top
     uniqueID: 3200846103
+    locked: 0
+  - name: health bar
+    uniqueID: 1038092625
     locked: 0
   m_RenderingLayers:
   - Default
