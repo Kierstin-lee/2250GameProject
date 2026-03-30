@@ -2,22 +2,38 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-    [SerializeField] private float smoothSpeed = 5f; // Speed at which the camera moves
+    private float smoothSpeed = 0.125f; // Speed at which the camera moves
 
-    private Transform player;
+    private Transform target;
+    public Collider2D bounds;
+    private float zOffset = -10f;
+    private float camHalfHeight;
+    private float camHalfWidth;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player").transform; // Find the player by tag
+        camHalfHeight = Camera.main.orthographicSize;
+        camHalfWidth = camHalfHeight * Camera.main.aspect;
     }
 
     // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
-        if (player == null) return; 
+        if (target == null || bounds == null) return; 
 
-        Vector3 targetPosition = new Vector3(player.position.x, player.position.y, transform.position.z); // Keep the camera's z position
-        transform.position = Vector3.Lerp(transform.position, targetPosition, smoothSpeed * Time.deltaTime); // Smoothly move the camera towards the target position
+        Vector3 desiredPos = new Vector3(target.position.x, target.position.y, zOffset);
+
+        // Get the bounds from the collider
+        float minX = bounds.bounds.min.x + camHalfWidth;
+        float maxX = bounds.bounds.max.x - camHalfWidth;
+        float minY = bounds.bounds.min.y + camHalfHeight;
+        float maxY = bounds.bounds.max.y - camHalfHeight;
+
+        float clampedX = Mathf.Clamp(desiredPos.x, minX, maxX);
+        float clampedY = Mathf.Clamp(desiredPos.y, minY, maxY);
+
+        Vector3 clampedPos = new Vector3(clampedX, clampedY, zOffset);
+        transform.position = Vector3.Lerp(transform.position, clampedPos, smoothSpeed);
     }
 }
