@@ -33,14 +33,6 @@ namespace Level5.Scripts_Level5
             {
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
             }
-
-            void OnColliderEnter2D(Collider2D collision)
-            {
-                if (collision.gameObject.CompareTag("Coin"))
-                {
-                    collision.gameObject.CompareTag("Player");
-                }
-            }
             
             float vertical = Input.GetAxis("Vertical");
 
