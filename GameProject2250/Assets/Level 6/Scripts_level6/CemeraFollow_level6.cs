@@ -11,11 +11,15 @@ public class CemeraFollow_level6 : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player").transform;
     }
 
-    void LaterUpdate()
+    void LateUpdate()
     {
         if (player == null) return;
 
-        Vector3 targetPosition = new Vector3(player.position.x, player.position.y, transform.position.z);
+        float target = player.position.x;
+
+        //target = Mathf.Clamp(target, -1, 1);
+
+        Vector3 targetPosition = new Vector3(target, player.position.y, transform.position.z);
 
         transform.position = Vector3.Lerp(transform.position, targetPosition, smoothSpeed * Time.deltaTime);
     }
