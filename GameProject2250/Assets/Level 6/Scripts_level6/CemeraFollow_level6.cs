@@ -3,6 +3,12 @@ using UnityEngine;
 public class CemeraFollow_level6 : MonoBehaviour
 {
     [SerializeField] private float smoothSpeed = 5f;
+    
+    [SerializeField] private float minY = 11.35f;
+    [SerializeField] private float maxY = 26.7f;
+
+    [SerializeField] private float minX = 10.47f;
+    [SerializeField] private float maxX = 62.76f;
 
     private Transform player;
 
@@ -14,12 +20,13 @@ public class CemeraFollow_level6 : MonoBehaviour
     void LateUpdate()
     {
         if (player == null) return;
+        
+        float camHalfHeight = Camera.main.orthographicSize;
 
-        float target = player.position.x;
+        float targetX = Mathf.Clamp(player.position.x, minX + camHalfHeight, maxX - camHalfHeight);
+        float targetY = Mathf.Clamp(player.position.y, minY + camHalfHeight, maxY - camHalfHeight);
 
-        //target = Mathf.Clamp(target, -1, 1);
-
-        Vector3 targetPosition = new Vector3(target, player.position.y, transform.position.z);
+        Vector3 targetPosition = new Vector3(targetX, targetY, transform.position.z);
 
         transform.position = Vector3.Lerp(transform.position, targetPosition, smoothSpeed * Time.deltaTime);
     }
