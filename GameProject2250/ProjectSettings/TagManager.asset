@@ -18,8 +18,8 @@ TagManager:
   - Water
   - UI
   - Ground
-  - Characters
-  - 
+  - Obstacles
+  - Character
   - 
   - 
   - 
@@ -49,6 +49,9 @@ TagManager:
     locked: 0
   - name: Ground
     uniqueID: 3760004233
+    locked: 0
+  - name: Obstacles
+    uniqueID: 4128545077
     locked: 0
   - name: Characters
     uniqueID: 3051057135
