@@ -4,7 +4,7 @@ public class RandomCoconutDrop_Level4 : MonoBehaviour
 {
     [SerializeField] private float minDropTime = 2f;
     [SerializeField] private float maxDropTime = 5f;
-    [SerializeField] private float horizontalForce = 200f;
+    [SerializeField] private float horizontalForce = 350;
     [SerializeField] private float torqueAmount = 5f;
 
     private Rigidbody2D rb;

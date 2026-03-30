@@ -2,15 +2,24 @@ using UnityEngine;
 
 public class NPCDIalogue_Level4 : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    
+    [SerializeField] private GameObject dialogueUI;
+    private bool hasShown = false;
+
+    void OnTriggerEnter2D(Collider2D collision)
     {
-        
+        if (collision.CompareTag("Player") && !hasShown)
+        {
+            dialogueUI.SetActive(true);
+            hasShown = true;
+            
+            Invoke(nameof(HideDialogue), 8f);
+
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    void HideDialogue()
     {
-        
+        dialogueUI.SetActive(false);
     }
 }

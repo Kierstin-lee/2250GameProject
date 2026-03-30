@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class FairyController : MonoBehaviour
+public class FairyMovement_Level4 : MonoBehaviour
 {
     [SerializeField] private float moveSpeed = 5f;
     [SerializeField] private float jumpForce = 10f;
@@ -94,4 +94,6 @@ public class FairyController : MonoBehaviour
         Gizmos.color = Color.green;
         Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
     }
+    
+    
 }
