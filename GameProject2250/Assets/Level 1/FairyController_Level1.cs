@@ -6,13 +6,11 @@ public class FairyController_Level1 : MonoBehaviour
     [SerializeField] private float jumpForce = 8f;
 
     private Rigidbody2D rb;
-    private Animator anim;
     private Vector2 moveInput;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        anim = GetComponent<Animator>();
     }
 
     void Update()
@@ -23,32 +21,11 @@ public class FairyController_Level1 : MonoBehaviour
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
         }
-
-        UpdateAnimationState();
     }
 
-    private void FixedUpdate()
+    void FixedUpdate()
     {
         rb.linearVelocity = new Vector2(moveInput.x * moveSpeed, rb.linearVelocity.y);
-    }
-
-    private void UpdateAnimationState()
-    {
-        if (moveInput.x > 0)
-        {
-            anim.SetFloat("MoveX", 1);
-            anim.SetFloat("MoveY", 0);
-        }
-        else if (moveInput.x < 0)
-        {
-            anim.SetFloat("MoveX", -1);
-            anim.SetFloat("MoveY", 0);
-        }
-        else
-        {
-            anim.SetFloat("MoveX", 0);
-            anim.SetFloat("MoveY", 0);
-        }
     }
 
     public void ActivateWandPower()
