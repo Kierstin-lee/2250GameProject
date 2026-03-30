@@ -35,7 +35,6 @@ public class RandomCoconutDrop_Level4 : MonoBehaviour
         if (Camera.main != null)
         {
             cameraTransform = Camera.main.transform;
-            Debug.Log("Camera found for coconut: " + gameObject.name);
         }
         else
         {
@@ -56,7 +55,6 @@ public class RandomCoconutDrop_Level4 : MonoBehaviour
             {
                 isActivated = true;
                 dropTimer = 0f;
-                Debug.Log(gameObject.name + " activated. DistanceX = " + distanceX);
             }
             else
             {
@@ -80,14 +78,35 @@ public class RandomCoconutDrop_Level4 : MonoBehaviour
         float randomX = Random.Range(-horizontalForce, horizontalForce);
         rb.AddForce(new Vector2(randomX, 0f));
         rb.AddTorque(Random.Range(-torqueAmount, torqueAmount));
-
-        Debug.Log(gameObject.name + " dropped!");
-
-        Destroy(gameObject, 5f);
     }
 
-    void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D other)
     {
+        if (!other.CompareTag("Player")) return;
+
+        PlayerDamage damage = other.GetComponent<PlayerDamage>();
+        if (damage != null)
+        {
+            damage.TakeDamage();
+        }
+
+        Destroy(gameObject);
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            PlayerDamage damage = collision.gameObject.GetComponent<PlayerDamage>();
+            if (damage != null)
+            {
+                damage.TakeDamage();
+            }
+
+            Destroy(gameObject);
+            return;
+        }
+
         if (collision.gameObject.CompareTag("Ground"))
         {
             Destroy(gameObject);

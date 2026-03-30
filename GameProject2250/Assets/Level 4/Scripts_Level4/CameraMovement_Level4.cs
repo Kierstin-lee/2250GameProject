@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class CameraMovement_Level4 : MonoBehaviour
 {
-    [SerializeField] private float moveSpeed = 4f;   // speed of camera
-    [SerializeField] private float startDelay = 3f;  // delay before camera starts moving
+    [SerializeField] private float moveSpeed = 4f;
+    [SerializeField] private float startDelay = 3f;
 
     [Header("Bounds")]
     [SerializeField] private float maxX;
@@ -21,13 +21,11 @@ public class CameraMovement_Level4 : MonoBehaviour
     {
         timer += Time.deltaTime;
 
-        // Wait for delay before moving
         if (!canMove && timer >= startDelay)
         {
             canMove = true;
         }
 
-        // Move camera to the right until maxX
         if (canMove && transform.position.x < maxX)
         {
             transform.position += Vector3.right * moveSpeed * Time.deltaTime;

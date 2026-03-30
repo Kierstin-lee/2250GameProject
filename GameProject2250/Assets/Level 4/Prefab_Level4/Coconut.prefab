@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 1769224821324188836}
   m_Layer: 0
   m_Name: Coconut
-  m_TagString: Untagged
+  m_TagString: Hazard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -134,8 +134,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1903ecc67ea824f4d8c5210bff35f0c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RandomCoconutDrop_Level4
-  minDropTime: 2
-  maxDropTime: 10
+  minDropTime: 1
+  maxDropTime: 6
   horizontalForce: 200
   torqueAmount: 5
   activationDistance: 8

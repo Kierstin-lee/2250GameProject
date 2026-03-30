@@ -9,8 +9,8 @@
       <change beforePath="$PROJECT_DIR$/Assets/Level 4/Prefab_Level4/Coconut.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level 4/Prefab_Level4/Coconut.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Level 4/Scripts_Level4/CameraMovement_Level4.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level 4/Scripts_Level4/CameraMovement_Level4.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Level 4/Scripts_Level4/FairyMovement_Level4.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level 4/Scripts_Level4/FairyMovement_Level4.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 4/Scripts_Level4/RandomCoconutDrop_Level4.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level 4/Scripts_Level4/RandomCoconutDrop_Level4.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/MainHub/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MainHub/Scripts/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MainHub/Scripts/LivesUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MainHub/Scripts/LivesUI.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level4.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level4.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
@@ -30,6 +30,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/MainHub/Scripts/CameraFollow_MainHub.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/MainHub/Scripts/HubPortal.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/MainHub/Scripts/LevelUI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CameraResetable.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@1e87cf1dccb8/Shaders/Lit.shader" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="McpProjectServerCommands">
@@ -123,7 +124,7 @@
       <workItem from="1774891946574" duration="392000" />
       <workItem from="1774892345517" duration="14000" />
       <workItem from="1774892457074" duration="6872000" />
-      <workItem from="1774906311254" duration="1113000" />
+      <workItem from="1774906311254" duration="3198000" />
     </task>
     <servers />
   </component>

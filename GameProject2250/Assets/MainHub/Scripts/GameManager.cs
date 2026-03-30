@@ -10,7 +10,10 @@ public class GameManager : MonoBehaviour
     public List<string> keysCollected = new List<string>();
     public List<string> keysDeposited = new List<string>();
 
-    public float playerLives = 3f;
+    [Header("Lives")]
+    public float startingLives = 5f;   // 🔥 CHANGE THIS VALUE ONLY
+    public float playerLives;
+
     public int coinsCollected = 0;
     public int coinsPerLife = 10;
 
@@ -22,6 +25,9 @@ public class GameManager : MonoBehaviour
         {
             instance = this;
             DontDestroyOnLoad(gameObject);
+
+            // Set starting lives
+            playerLives = startingLives;
         }
         else
         {
@@ -110,12 +116,13 @@ public class GameManager : MonoBehaviour
     {
         yield return new WaitForSeconds(1.5f);
 
-        playerLives = 3f;
+        // Reset everything
+        playerLives = startingLives;
         coinsCollected = 0;
         keysCollected.Clear();
         keysDeposited.Clear();
 
-        SceneManager.LoadScene("StartScreen");
+        SceneManager.LoadScene("StartScreen"); // make sure this matches your scene name
     }
 
     // ---------- Portal Logic ----------

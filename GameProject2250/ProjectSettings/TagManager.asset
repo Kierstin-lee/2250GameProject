@@ -13,6 +13,8 @@ TagManager:
   - NPC
   - Water
   - Coconut
+  - Hazard
+  - Hole
   layers:
   - Default
   - TransparentFX
