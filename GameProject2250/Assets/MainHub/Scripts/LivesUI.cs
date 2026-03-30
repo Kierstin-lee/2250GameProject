@@ -11,15 +11,16 @@ public class LivesUI : MonoBehaviour
         instance = this;
     }
 
-    public void UpdateLives(int currentLives)
+    public void UpdateLives(float currentLives)
     {
         if (livesText != null)
-            livesText.text = "Lives: " + currentLives;
+        {
+            livesText.text = "Lives: " + currentLives.ToString("0.#");
+        }
     }
 
     private void Start()
     {
-        // Initialize to GameManager's lives
         UpdateLives(GameManager.instance.playerLives);
     }
 }

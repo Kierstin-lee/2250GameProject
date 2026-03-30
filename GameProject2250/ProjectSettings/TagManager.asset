@@ -11,6 +11,8 @@ TagManager:
   - Ground
   - menuButton
   - NPC
+  - Water
+  - Coconut
   layers:
   - Default
   - TransparentFX

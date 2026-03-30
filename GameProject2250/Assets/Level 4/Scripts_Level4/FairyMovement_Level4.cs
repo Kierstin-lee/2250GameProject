@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class FairyMovement_Level4 : MonoBehaviour
@@ -10,22 +11,23 @@ public class FairyMovement_Level4 : MonoBehaviour
     [SerializeField] private float groundCheckRadius = 0.35f;
     [SerializeField] private LayerMask groundLayer;
 
+    [Header("Respawn / Damage")]
+    [SerializeField] private Transform respawnPoint;
+    [SerializeField] private float damageCooldown = 1f;
+
     private Rigidbody2D rb;
     private Animator anim;
     private SpriteRenderer spriteRenderer;
 
     private Vector2 moveInput;
     private bool isGrounded;
+    private bool canTakeDamage = true;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
-
-        // If you have a score UI system later, put it back here.
-        // Example:
-        // Score.SetText("Coins: " + score);
     }
 
     void Update()
@@ -39,13 +41,12 @@ public class FairyMovement_Level4 : MonoBehaviour
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
         }
 
-        // Optional: also allow Space to jump
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
         }
 
-        // Flip sprite left/right
+        // Flip sprite
         if (moveInput.x < 0)
             spriteRenderer.flipX = true;
         else if (moveInput.x > 0)
@@ -61,30 +62,81 @@ public class FairyMovement_Level4 : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        // Coin collection
         if (collision.CompareTag("Coin"))
         {
-            Destroy(collision.gameObject);
+            if (GameManager.instance != null)
+            {
+                GameManager.instance.CollectCoin();
+            }
 
-            // Add score logic here if needed
-            // score++;
-            // Score.SetText("Coins: " + score);
+            Destroy(collision.gameObject);
+            return;
         }
+
+        // Water or coconut trigger damage
+        if (canTakeDamage && (collision.CompareTag("Water") || collision.CompareTag("Coconut")))
+        {
+            TakeDamage();
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        // Coconut physical hit damage
+        if (canTakeDamage && collision.gameObject.CompareTag("Coconut"))
+        {
+            TakeDamage();
+        }
+    }
+
+    private void TakeDamage()
+    {
+        canTakeDamage = false;
+
+        if (GameManager.instance != null)
+        {
+            GameManager.instance.LoseLife(0.5f);
+        }
+
+        // Respawn player
+        if (respawnPoint != null)
+        {
+            transform.position = respawnPoint.position;
+        }
+
+        // Stop movement after respawn
+        if (rb != null)
+        {
+            rb.linearVelocity = Vector2.zero;
+            rb.angularVelocity = 0f;
+        }
+
+        // Reset camera
+        CameraMovement_Level4 cam = FindObjectOfType<CameraMovement_Level4>();
+        if (cam != null)
+        {
+            cam.ResetCamera();
+        }
+
+        StartCoroutine(DamageCooldownRoutine());
+    }
+
+    private IEnumerator DamageCooldownRoutine()
+    {
+        yield return new WaitForSeconds(damageCooldown);
+        canTakeDamage = true;
     }
 
     private void UpdateAnimationState()
     {
-        // Platformer version: only care about horizontal movement + grounded/jumping
         anim.SetFloat("MoveX", moveInput.x);
         anim.SetBool("isGrounded", isGrounded);
 
         if (!isGrounded)
-        {
             anim.SetBool("isJumping", true);
-        }
         else
-        {
             anim.SetBool("isJumping", false);
-        }
     }
 
     private void OnDrawGizmosSelected()
@@ -94,6 +146,4 @@ public class FairyMovement_Level4 : MonoBehaviour
         Gizmos.color = Color.green;
         Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
     }
-    
-    
 }
