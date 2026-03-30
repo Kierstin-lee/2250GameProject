@@ -5,6 +5,14 @@ public class NPCDialogueL2 : MonoBehaviour
     [SerializeField] private GameObject dialogueUI;
     private bool hasShownDialogue = false;
 
+    void Start()
+    {
+        if (dialogueUI != null)
+        {
+            dialogueUI.SetActive(false); // Ensure dialogue UI is hidden at the start
+        }
+    }
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void OnTriggerEnter2D(Collider2D collision)
     {
