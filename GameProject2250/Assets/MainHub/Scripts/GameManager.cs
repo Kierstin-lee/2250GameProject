@@ -104,11 +104,11 @@ public class GameManager : MonoBehaviour
     {
         int deposited = KeysDepositedCount();
 
-        if (deposited == 0 && portalNumber == 1) return true; // Level0
-        if (deposited == 1 && portalNumber == 1) return true; // Level2
-        if (deposited == 2 && portalNumber == 2) return true; // Level3
-        if (deposited == 3 && portalNumber == 2) return true; // Level4
-        if (deposited == 4 && portalNumber == 3) return true; // Boss
+        if (deposited == 0 && portalNumber == 1) return true;
+        if (deposited == 1 && portalNumber == 1) return true;
+        if (deposited == 2 && portalNumber == 2) return true;
+        if (deposited == 3 && portalNumber == 2) return true;
+        if (deposited == 4 && portalNumber == 3) return true;
 
         return false;
     }
@@ -117,11 +117,11 @@ public class GameManager : MonoBehaviour
     {
         int deposited = KeysDepositedCount();
 
-        if (deposited == 0 && portalNumber == 1) return "Level0";
+        if (deposited == 0 && portalNumber == 1) return "Level4";
         if (deposited == 1 && portalNumber == 1) return "Level2";
         if (deposited == 2 && portalNumber == 2) return "Level3";
         if (deposited == 3 && portalNumber == 2) return "Level4";
-        if (deposited == 4 && portalNumber == 3) return "BossLevel";
+        if (deposited == 4 && portalNumber == 3) return "Level5";
 
         return "";
     }

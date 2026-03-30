@@ -3,14 +3,20 @@ using UnityEngine.SceneManagement;
 
 public class HubPortal : MonoBehaviour
 {
-    public int portalNumber = 1; // 1, 2, or 3
-
+    public int portalNumber = 1;
     private bool isLoading = false;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        Debug.Log("TRIGGER HIT by: " + other.name + " | tag = " + other.tag);
+
         if (isLoading) return;
-        if (!other.CompareTag("Player")) return;
+
+        if (!other.CompareTag("Player"))
+        {
+            Debug.Log("Not tagged Player");
+            return;
+        }
 
         if (!GameManager.instance.CanUsePortal(portalNumber))
         {
@@ -19,11 +25,11 @@ public class HubPortal : MonoBehaviour
         }
 
         string sceneToLoad = GameManager.instance.GetNextSceneForPortal(portalNumber);
+        Debug.Log("Loading scene: " + sceneToLoad);
 
         if (!string.IsNullOrEmpty(sceneToLoad))
         {
             isLoading = true;
-            Debug.Log("Loading scene: " + sceneToLoad);
             SceneManager.LoadScene(sceneToLoad);
         }
     }

@@ -3,7 +3,7 @@ using UnityEngine;
 public class CameraMovement_Level4 : MonoBehaviour
 {
     [SerializeField] private float moveSpeed = 2f;
-    [SerializeField] private float startDelay = 6f; // ⬅️ delay time
+    [SerializeField] private float startDelay = 5f; // ⬅️ delay time
 
     [Header("Bounds")]
     [SerializeField] private float maxX;
