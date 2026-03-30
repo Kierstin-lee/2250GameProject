@@ -3,8 +3,8 @@ using UnityEngine;
 
 public class SineMovementLevel5 : MonoBehaviour
 {
-    [SerializeField] private float amplitude = 1f; // The height of the movement
-    [SerializeField] private float frequency = 1f; // The speed of the movement
+    [SerializeField] private float amplitude = 4f; // The height of the movement
+    [SerializeField] private float frequency = 2f; // The speed of the movement
     
     
     private Vector2 startPosition;
@@ -19,6 +19,6 @@ public class SineMovementLevel5 : MonoBehaviour
     void Update()
     {
         float yOffset = Mathf.Sin(Time.time * frequency) * amplitude;
-        transform.position = new Vector3(startPosition.x + yOffset, startPosition.y + yOffset);
+        transform.position = new Vector3(startPosition.x, startPosition.y + yOffset);
     }
 }
