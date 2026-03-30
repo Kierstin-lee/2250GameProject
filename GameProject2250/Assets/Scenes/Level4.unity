@@ -33283,7 +33283,7 @@ Transform:
   m_GameObject: {fileID: 1404470026}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.7224, y: 0, z: 0}
+  m_LocalPosition: {x: -2.72, y: -0.21, z: 0}
   m_LocalScale: {x: 1.1269, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -34646,8 +34646,6 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
-  respawnPoint: {fileID: 0}
-  damageCooldown: 1
 --- !u!50 &1481449109
 Rigidbody2D:
   serializedVersion: 5
@@ -35929,7 +35927,7 @@ Transform:
   m_GameObject: {fileID: 1526248816}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.0014648836, w: 0.999999}
-  m_LocalPosition: {x: 0.1626, y: -0.0005, z: 0}
+  m_LocalPosition: {x: 0.16499944, y: -0.21050003, z: 0}
   m_LocalScale: {x: 1.127, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -36152,7 +36150,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_MaskInteraction: 0
   m_Sprite: {fileID: -1929900687, guid: d2e5333787caeaf4ebffc05559c3d256, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -36416,8 +36414,6 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
-  respawnPoint: {fileID: 0}
-  damageCooldown: 1
 --- !u!50 &1529184419
 Rigidbody2D:
   serializedVersion: 5
@@ -47406,8 +47402,6 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
-  respawnPoint: {fileID: 0}
-  damageCooldown: 1
 --- !u!4 &1949510125 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5115795131485341815, guid: ea8d65b89dc84d9092703d2ef9b70db7,
@@ -48616,8 +48610,6 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
-  respawnPoint: {fileID: 0}
-  damageCooldown: 1
 --- !u!50 &2011269774
 Rigidbody2D:
   serializedVersion: 5
