@@ -16,8 +16,8 @@ TagManager:
   - Water
   - UI
   - Characters
-  - 
-  - 
+  - Background
+  - In front of Background
   - 
   - 
   - 
@@ -53,6 +53,12 @@ TagManager:
     locked: 0
   - name: Keys
     uniqueID: 1559177833
+    locked: 0
+  - name: Background
+    uniqueID: 3654974931
+    locked: 0
+  - name: Decor
+    uniqueID: 3966678647
     locked: 0
   m_RenderingLayers:
   - Default
