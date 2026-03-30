@@ -135,9 +135,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RandomCoconutDrop_Level4
   minDropTime: 2
-  maxDropTime: 120
+  maxDropTime: 15
   horizontalForce: 200
   torqueAmount: 5
+  activationDistance: 8
 --- !u!60 &1769224821324188836
 PolygonCollider2D:
   m_ObjectHideFlags: 0
