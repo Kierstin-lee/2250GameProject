@@ -4,7 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5b3795eb-0421-4b52-bb7b-73433f0ab0ec" name="Changes" comment="" />
+    <list default="true" id="5b3795eb-0421-4b52-bb7b-73433f0ab0ec" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/Assets/Level5/TileMap_Level5/(tile)main_lev_build.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level5/TileMap_Level5/(tile)main_lev_build.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level5/TileMap_Level5/(tile)main_lev_build.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level5/TileMap_Level5/(tile)main_lev_build.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level5/TileMap_Level5/Palettes/L5_WeaponAndComponents.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level5/TileMap_Level5/Palettes/L5_WeaponAndComponents.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level5/TileMap_Level5/main_lev_build.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level5/TileMap_Level5/main_lev_build.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level5.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level5.unity" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -102,7 +108,7 @@
       <workItem from="1774472391066" duration="3865000" />
       <workItem from="1774482801547" duration="4475000" />
       <workItem from="1774560639905" duration="2650000" />
-      <workItem from="1774815333795" duration="3009000" />
+      <workItem from="1774815333795" duration="3723000" />
     </task>
     <servers />
   </component>

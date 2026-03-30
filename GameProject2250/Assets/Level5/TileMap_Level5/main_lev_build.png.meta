@@ -2517,7 +2517,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: main_lev_build_110
+      name: zhalfsquare
       rect:
         serializedVersion: 2
         x: 1936
@@ -39682,7 +39682,6 @@ TextureImporter:
       main_lev_build_1098: -430785357
       main_lev_build_1099: 1209133929
       main_lev_build_11: -1157423679
-      main_lev_build_110: -1483344371
       main_lev_build_1100: -35621199
       main_lev_build_1101: -131585499
       main_lev_build_1102: -843551021
@@ -41259,6 +41258,7 @@ TextureImporter:
       windows7: -51244591
       windows8: 101762128
       windows9: -249773283
+      zhalfsquare: -1483344371
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

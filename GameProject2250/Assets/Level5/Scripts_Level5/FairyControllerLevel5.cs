@@ -41,6 +41,13 @@ namespace Level5.Scripts_Level5
                     collision.gameObject.CompareTag("Player");
                 }
             }
+            
+            float vertical = Input.GetAxis("Vertical");
+
+            if (isOnLadder)
+            {
+                rb.linearVelocity = new Vector2(rb.linearVelocity.x, vertical * climbSpeed);
+            }
 
             UpdateAnimationState();
 
