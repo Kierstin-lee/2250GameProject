@@ -36,7 +36,7 @@ public class FairyControllerLevel5 : MonoBehaviour
         vertical = Input.GetAxis("Vertical");
         
         // jump mechanics 
-        if (Input.GetKeyDown(KeyCode.UpArrow))
+        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.UpArrow))
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
         }
@@ -101,7 +101,12 @@ public class FairyControllerLevel5 : MonoBehaviour
         transform.position = startPosition;
     }
     
-    
+    // for speed wing power up
+    public void ActivateWingPower()
+    {
+        Debug.Log("Activating wing power");
+        moveSpeed += 1f;
+    }
 
     private void UpdateAnimationState()
     {
