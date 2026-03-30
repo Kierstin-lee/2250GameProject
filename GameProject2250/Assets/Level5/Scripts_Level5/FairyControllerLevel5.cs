@@ -12,9 +12,10 @@ namespace Level5.Scripts_Level5
         private Vector2 moveInput;
         
         // for ladders
-        private bool isOnLadder = false;
-        private bool isClimbing = false;
-        public float climbSpeed = 5f;
+        private float vertical;
+        private float speed = 8f;
+        private bool isLadder;
+        private bool isClimbing;
 
         // Start is called once before the first execution of Update after the MonoBehaviour is created
         void Start()
@@ -28,26 +29,17 @@ namespace Level5.Scripts_Level5
         {
 
             moveInput.x = Input.GetAxisRaw("Horizontal");
+            vertical = Input.GetAxis("Vertical");
 
             if (Input.GetKeyDown(KeyCode.UpArrow))
             {
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
             }
             
-            float vertical = Input.GetAxis("Vertical");
-
-            if (isOnLadder)
-            {
-                rb.linearVelocity = new Vector2(rb.linearVelocity.x, vertical * climbSpeed);
-            }
-            
-            if (isOnLadder && Input.GetKey(KeyCode.L))
+            // for ladder
+            if (isLadder && Mathf.Abs(vertical) > 0f)
             {
                 isClimbing = true;
-            }
-            else
-            {
-                isClimbing = false;
             }
 
             UpdateAnimationState();
@@ -61,25 +53,37 @@ namespace Level5.Scripts_Level5
                 rb.linearVelocity = new Vector2(moveInput.x * moveSpeed, rb.linearVelocity.y);
             }
             
+            // for ladder
             if (isClimbing)
             {
-                rb.gravityScale = -3f;
-                rb.linearVelocity = new Vector2(rb.linearVelocity.x, climbSpeed);
+                rb.gravityScale = 0f;
+                rb.linearVelocity = new Vector2(rb.linearVelocity.x, vertical * speed);
             }
-        }
-        
-        // for ladder movement
-        public void SetOnLadder(bool value)
-        {
-            isOnLadder = value;
-
-            if (!isOnLadder)
+            else
             {
-                isClimbing = false;
-                rb.gravityScale = 1f;
+                rb.gravityScale = 4f;
             }
         }
         
+        // for ladder
+        private void OnTriggerEnter2D(Collider2D collision)
+        {
+            if (collision.CompareTag("Ladder"))
+            {
+                isLadder = true;
+            }
+        }
+        
+        
+        // for ladder
+        private void OnTriggerExit2D(Collider2D collision)
+        {
+            if (collision.CompareTag("Ladder"))
+            {
+                isLadder = false;
+                isClimbing = false;
+            }
+        }
 
         private void UpdateAnimationState()
         {

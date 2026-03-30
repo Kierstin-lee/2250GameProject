@@ -4,19 +4,21 @@ namespace Level5.Scripts_Level5
 {
     public class LadderFunctionLevel5 : MonoBehaviour
     {
-        private void OnTriggerEnter2D(Collider2D other)
+        private bool isLadder;
+        
+        private void OnTriggerEnter2D(Collider2D collision)
         {
-            if (other.CompareTag("Player"))
+            if (collision.CompareTag("Ladder"))
             {
-                other.GetComponent<FairyControllerLevel5>()?.SetOnLadder(true);
+                isLadder = true;
             }
         }
 
-        private void OnTriggerExit2D(Collider2D other)
+        private void OnTriggerExit2D(Collider2D collision)
         {
-            if (other.CompareTag("Player"))
+            if (collision.CompareTag("Ladder"))
             {
-                other.GetComponent<FairyControllerLevel5>()?.SetOnLadder(false);
+                isLadder = false;
             }
         }
     }
