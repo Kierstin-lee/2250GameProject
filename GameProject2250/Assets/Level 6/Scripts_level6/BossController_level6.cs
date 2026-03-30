@@ -66,8 +66,8 @@ public class BossController : MonoBehaviour
         // Simple AI: move toward player horizontally
         float direction = Mathf.Sign(player.position.x - transform.position.x);
 
-        rb.velocity = new Vector2(direction * moveSpeed, rb.velocity.y);
-        anim.SetFloat("Speed", Mathf.Abs(rb.velocity.x));
+        rb.linearVelocity = new Vector2(direction * moveSpeed, rb.linearVelocity.y);
+        anim.SetFloat("Speed", Mathf.Abs(rb.linearVelocity.x));
 
         // Optional: jumping logic for platforms
         RaycastHit2D groundHit = Physics2D.Raycast(transform.position, Vector2.down, 1.1f, LayerMask.GetMask("Ground"));
@@ -76,7 +76,7 @@ public class BossController : MonoBehaviour
             // If player is above and close horizontally, jump
             if (player.position.y > transform.position.y + 1f && Mathf.Abs(player.position.x - transform.position.x) < 3f)
             {
-                rb.velocity = new Vector2(rb.velocity.x, jumpForce);
+                rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
                 anim.SetTrigger("Jump");
             }
         }
@@ -121,7 +121,7 @@ public class BossController : MonoBehaviour
     private void Die()
     {
         anim.SetTrigger("Die");
-        rb.velocity = Vector2.zero;
+        rb.linearVelocity = Vector2.zero;
         this.enabled = false; // stop all boss behavior
 
         // Optional: destroy after death animation
