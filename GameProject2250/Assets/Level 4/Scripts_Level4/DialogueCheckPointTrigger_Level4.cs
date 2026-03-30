@@ -1,5 +1,5 @@
 using UnityEngine;
-
+/*
 public class DialogueCheckPointTrigger_Level4 : MonoBehaviour
 {
     public NPCSpeechBubble_Level4 speechBubble;
@@ -35,3 +35,5 @@ public class DialogueCheckPointTrigger_Level4 : MonoBehaviour
         }
     }
 }
+
+*/

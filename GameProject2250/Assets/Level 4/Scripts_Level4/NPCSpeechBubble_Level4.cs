@@ -1,5 +1,5 @@
 using UnityEngine;
-
+/*
 public class NPCSpeechBubble_Level4 : MonoBehaviour
 {
     [Header("UI")]
@@ -61,3 +61,5 @@ public class NPCSpeechBubble_Level4 : MonoBehaviour
         ShowDialogue(point2Dialogue);
     }
 }
+
+*/

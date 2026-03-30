@@ -2,35 +2,30 @@ using UnityEngine;
 
 public class CameraMovement_Level4 : MonoBehaviour
 {
-    [SerializeField] private float smoothSpeed = 5f;
+    [SerializeField] private float moveSpeed = 2f;
+    [SerializeField] private float startDelay = 6f; // ⬅️ delay time
 
     [Header("Bounds")]
-    [SerializeField] private float minX;
     [SerializeField] private float maxX;
 
-    private Transform player;
-    private float fixedY;
+    private float timer = 0f;
+    private bool canMove = false;
 
-    void Start()
+    void Update()
     {
-        player = GameObject.FindGameObjectWithTag("Player").transform;
+        // Count time
+        timer += Time.deltaTime;
 
-        // Lock the starting Y position
-        fixedY = transform.position.y;
-    }
+        // Wait for delay
+        if (!canMove && timer >= startDelay)
+        {
+            canMove = true;
+        }
 
-    void LateUpdate()
-    {
-        if (player == null) return;
-
-        // Follow player X only
-        float targetX = player.position.x;
-
-        // Clamp between bounds
-        targetX = Mathf.Clamp(targetX, minX, maxX);
-
-        Vector3 targetPosition = new Vector3(targetX, fixedY, transform.position.z);
-
-        transform.position = Vector3.Lerp(transform.position, targetPosition, smoothSpeed * Time.deltaTime);
+        // Move camera only after delay
+        if (canMove && transform.position.x < maxX)
+        {
+            transform.position += Vector3.right * moveSpeed * Time.deltaTime;
+        }
     }
 }

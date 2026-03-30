@@ -1,5 +1,6 @@
 using UnityEngine;
 
+/*
 public class NPCSpeechTrigger_Level4 : MonoBehaviour
 {
     public NPCSpeechBubble_Level4 speechBubble;
@@ -14,3 +15,5 @@ public class NPCSpeechTrigger_Level4 : MonoBehaviour
         }
     }
 }
+
+*/
