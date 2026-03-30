@@ -4,7 +4,7 @@ using UnityEngine;
 public class ScarecrowController : MonoBehaviour
 {
 
-    public Transform player;
+    public GameObject player;
     public float moveSpeed = 2f; // Speed of scarecrow movement
     public float chaseRange = 5f; // Distance it starts chasing
     public float attackRange = 1f; // Distance it starts attacking
