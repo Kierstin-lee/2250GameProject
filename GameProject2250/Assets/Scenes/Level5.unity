@@ -2548,7 +2548,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 6
+  m_SortingOrder: 4
   m_MaskInteraction: 0
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -27078,37 +27078,37 @@ PrefabInstance:
     - target: {fileID: 8553639808232751349, guid: 2a1dafdcc9f3468458682536bdfd0c96,
         type: 3}
       propertyPath: m_SortingOrder
-      value: 6
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8553639808572756527, guid: 2a1dafdcc9f3468458682536bdfd0c96,
         type: 3}
       propertyPath: m_SortingOrder
-      value: 6
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8553639808745851015, guid: 2a1dafdcc9f3468458682536bdfd0c96,
         type: 3}
       propertyPath: m_SortingOrder
-      value: 6
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8553639809845078011, guid: 2a1dafdcc9f3468458682536bdfd0c96,
         type: 3}
       propertyPath: m_SortingOrder
-      value: 6
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8553639811192372161, guid: 2a1dafdcc9f3468458682536bdfd0c96,
         type: 3}
       propertyPath: m_SortingOrder
-      value: 6
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8553639814861772439, guid: 2a1dafdcc9f3468458682536bdfd0c96,
         type: 3}
       propertyPath: m_SortingOrder
-      value: 6
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8553639815082335875, guid: 2a1dafdcc9f3468458682536bdfd0c96,
         type: 3}
       propertyPath: m_SortingOrder
-      value: 6
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
