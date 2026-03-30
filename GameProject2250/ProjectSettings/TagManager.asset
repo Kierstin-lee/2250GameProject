@@ -9,6 +9,8 @@ TagManager:
   - Coin
   - Wall
   - Ground
+  - menuButton
+  - NPC
   layers:
   - Default
   - TransparentFX

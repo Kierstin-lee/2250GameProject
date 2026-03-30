@@ -877,8 +877,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72e393ec9817944f4bfc5e3baec69d2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WaveBobbing_Level4
-  amplitude: 0.1
-  frequency: 2
+  verticalAmplitude: 0.15
+  horizontalAmplitude: 0.1
+  speed: 5
 --- !u!1 &34718413
 GameObject:
   m_ObjectHideFlags: 0
@@ -1368,8 +1369,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72e393ec9817944f4bfc5e3baec69d2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WaveBobbing_Level4
-  amplitude: 0.1
-  frequency: 2
+  verticalAmplitude: 0.15
+  horizontalAmplitude: 0.1
+  speed: 5
 --- !u!212 &57360040
 SpriteRenderer:
   serializedVersion: 2
@@ -1441,8 +1443,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72e393ec9817944f4bfc5e3baec69d2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WaveBobbing_Level4
-  amplitude: 0.1
-  frequency: 2
+  verticalAmplitude: 0.15
+  horizontalAmplitude: 0.1
+  speed: 5
 --- !u!1001 &60099918
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2310,8 +2313,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72e393ec9817944f4bfc5e3baec69d2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WaveBobbing_Level4
-  amplitude: 0.1
-  frequency: 2
+  verticalAmplitude: 0.15
+  horizontalAmplitude: 0.1
+  speed: 5
 --- !u!212 &124333554
 SpriteRenderer:
   serializedVersion: 2
@@ -2383,8 +2387,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72e393ec9817944f4bfc5e3baec69d2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WaveBobbing_Level4
-  amplitude: 0.1
-  frequency: 2
+  verticalAmplitude: 0.15
+  horizontalAmplitude: 0.1
+  speed: 5
 --- !u!1 &134844696
 GameObject:
   m_ObjectHideFlags: 0
@@ -2535,8 +2540,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72e393ec9817944f4bfc5e3baec69d2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WaveBobbing_Level4
-  amplitude: 0.1
-  frequency: 2
+  verticalAmplitude: 0.15
+  horizontalAmplitude: 0.1
+  speed: 5
 --- !u!1 &139698738
 GameObject:
   m_ObjectHideFlags: 0
@@ -3251,8 +3257,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72e393ec9817944f4bfc5e3baec69d2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WaveBobbing_Level4
-  amplitude: 0.1
-  frequency: 2
+  verticalAmplitude: 0.15
+  horizontalAmplitude: 0.1
+  speed: 5
 --- !u!4 &184720560 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6412300969123266883, guid: fbef961ca5ed544dbb1d54f2cdbfc0c3,
@@ -6317,8 +6324,8 @@ Transform:
   m_GameObject: {fileID: 294832076}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 35.440002, y: 0.28999996, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 35.2505, y: 0.28999996, z: 0}
+  m_LocalScale: {x: 1.148, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1908956205}
@@ -6394,8 +6401,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72e393ec9817944f4bfc5e3baec69d2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WaveBobbing_Level4
-  amplitude: 0.1
-  frequency: 2
+  verticalAmplitude: 0.15
+  horizontalAmplitude: 0.1
+  speed: 5
 --- !u!114 &294832080
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6408,8 +6416,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72e393ec9817944f4bfc5e3baec69d2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WaveBobbing_Level4
-  amplitude: 0.1
-  frequency: 2
+  verticalAmplitude: 0.15
+  horizontalAmplitude: 0.1
+  speed: 5
 --- !u!1 &299956767
 GameObject:
   m_ObjectHideFlags: 0
@@ -11134,8 +11143,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72e393ec9817944f4bfc5e3baec69d2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WaveBobbing_Level4
-  amplitude: 0.1
-  frequency: 2
+  verticalAmplitude: 0.15
+  horizontalAmplitude: 0.1
+  speed: 5
 --- !u!1001 &478686445
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11884,7 +11894,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: a38077da8ace4b8448295159bdbfa350, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -12435,8 +12445,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72e393ec9817944f4bfc5e3baec69d2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WaveBobbing_Level4
-  amplitude: 0.1
-  frequency: 2
+  verticalAmplitude: 0.15
+  horizontalAmplitude: 0.1
+  speed: 5
 --- !u!114 &506547375
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12449,8 +12460,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72e393ec9817944f4bfc5e3baec69d2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WaveBobbing_Level4
-  amplitude: 0.1
-  frequency: 2
+  verticalAmplitude: 0.15
+  horizontalAmplitude: 0.1
+  speed: 5
 --- !u!1 &507547553
 GameObject:
   m_ObjectHideFlags: 0
@@ -12959,7 +12971,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: 0e046149a23c8604189ebedb79436c9d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -13328,6 +13340,108 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fbef961ca5ed544dbb1d54f2cdbfc0c3, type: 3}
+--- !u!1 &568195590
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 568195591}
+  - component: {fileID: 568195594}
+  - component: {fileID: 568195593}
+  - component: {fileID: 568195592}
+  m_Layer: 5
+  m_Name: Canvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &568195591
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 568195590}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1492050063}
+  m_Father: {fileID: 1137121971}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
+--- !u!114 &568195592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 568195590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.GraphicRaycaster
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &568195593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 568195590}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.CanvasScaler
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
+--- !u!223 &568195594
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 568195590}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
+  m_AdditionalShaderChannelsFlag: 25
+  m_UpdateRectTransformForStandalone: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
 --- !u!1 &569726696
 GameObject:
   m_ObjectHideFlags: 0
@@ -13355,8 +13469,8 @@ Transform:
   m_GameObject: {fileID: 569726696}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 40.52, y: 0.28999996, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 40.7366, y: 0.28999996, z: 0}
+  m_LocalScale: {x: 1.1692, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1908956205}
@@ -13432,8 +13546,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72e393ec9817944f4bfc5e3baec69d2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WaveBobbing_Level4
-  amplitude: 0.1
-  frequency: 2
+  verticalAmplitude: 0.15
+  horizontalAmplitude: 0.1
+  speed: 5
 --- !u!1 &581653108
 GameObject:
   m_ObjectHideFlags: 0
@@ -15195,8 +15310,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72e393ec9817944f4bfc5e3baec69d2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WaveBobbing_Level4
-  amplitude: 0.1
-  frequency: 2
+  verticalAmplitude: 0.15
+  horizontalAmplitude: 0.1
+  speed: 5
 --- !u!1 &683620940
 GameObject:
   m_ObjectHideFlags: 0
@@ -16140,6 +16256,96 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1969977089}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &709261677
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 709261680}
+  - component: {fileID: 709261679}
+  - component: {fileID: 709261678}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &709261678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 709261677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01614664b831546d2ae94a42149d80ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.InputSystem::UnityEngine.InputSystem.UI.InputSystemUIInputModule
+  m_SendPointerHoverToParent: 1
+  m_MoveRepeatDelay: 0.5
+  m_MoveRepeatRate: 0.1
+  m_XRTrackingOrigin: {fileID: 0}
+  m_ActionsAsset: {fileID: -944628639613478452, guid: ca9f5fa95ffab41fb9a615ab714db018,
+    type: 3}
+  m_PointAction: {fileID: -1654692200621890270, guid: ca9f5fa95ffab41fb9a615ab714db018,
+    type: 3}
+  m_MoveAction: {fileID: -8784545083839296357, guid: ca9f5fa95ffab41fb9a615ab714db018,
+    type: 3}
+  m_SubmitAction: {fileID: 392368643174621059, guid: ca9f5fa95ffab41fb9a615ab714db018,
+    type: 3}
+  m_CancelAction: {fileID: 7727032971491509709, guid: ca9f5fa95ffab41fb9a615ab714db018,
+    type: 3}
+  m_LeftClickAction: {fileID: 3001919216989983466, guid: ca9f5fa95ffab41fb9a615ab714db018,
+    type: 3}
+  m_MiddleClickAction: {fileID: -2185481485913320682, guid: ca9f5fa95ffab41fb9a615ab714db018,
+    type: 3}
+  m_RightClickAction: {fileID: -4090225696740746782, guid: ca9f5fa95ffab41fb9a615ab714db018,
+    type: 3}
+  m_ScrollWheelAction: {fileID: 6240969308177333660, guid: ca9f5fa95ffab41fb9a615ab714db018,
+    type: 3}
+  m_TrackedDevicePositionAction: {fileID: 6564999863303420839, guid: ca9f5fa95ffab41fb9a615ab714db018,
+    type: 3}
+  m_TrackedDeviceOrientationAction: {fileID: 7970375526676320489, guid: ca9f5fa95ffab41fb9a615ab714db018,
+    type: 3}
+  m_DeselectOnBackgroundClick: 1
+  m_PointerBehavior: 0
+  m_CursorLockBehavior: 0
+  m_ScrollDeltaPerTick: 6
+--- !u!114 &709261679
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 709261677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.EventSystems.EventSystem
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!4 &709261680
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 709261677}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &715253484
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18764,8 +18970,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72e393ec9817944f4bfc5e3baec69d2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WaveBobbing_Level4
-  amplitude: 0.1
-  frequency: 2
+  verticalAmplitude: 0.15
+  horizontalAmplitude: 0.1
+  speed: 5
 --- !u!1001 &822348078
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20313,7 +20520,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: b18cc5ea85fc62740aea736cbf271b00, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -21529,8 +21736,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72e393ec9817944f4bfc5e3baec69d2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WaveBobbing_Level4
-  amplitude: 0.1
-  frequency: 2
+  verticalAmplitude: 0.15
+  horizontalAmplitude: 0.1
+  speed: 5
 --- !u!212 &909764234
 SpriteRenderer:
   serializedVersion: 2
@@ -21602,8 +21810,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72e393ec9817944f4bfc5e3baec69d2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WaveBobbing_Level4
-  amplitude: 0.1
-  frequency: 2
+  verticalAmplitude: 0.15
+  horizontalAmplitude: 0.1
+  speed: 5
 --- !u!1001 &926956977
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22977,8 +23186,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72e393ec9817944f4bfc5e3baec69d2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WaveBobbing_Level4
-  amplitude: 0.1
-  frequency: 2
+  verticalAmplitude: 0.15
+  horizontalAmplitude: 0.1
+  speed: 5
 --- !u!114 &986192025
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22991,8 +23201,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72e393ec9817944f4bfc5e3baec69d2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WaveBobbing_Level4
-  amplitude: 0.1
-  frequency: 2
+  verticalAmplitude: 0.15
+  horizontalAmplitude: 0.1
+  speed: 5
 --- !u!1 &992673411
 GameObject:
   m_ObjectHideFlags: 0
@@ -27556,7 +27767,7 @@ GameObject:
   - component: {fileID: 1137121970}
   - component: {fileID: 1137121972}
   m_Layer: 0
-  m_Name: Textbox
+  m_Name: SpeechBubble
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -27631,11 +27842,11 @@ Transform:
   m_GameObject: {fileID: 1137121969}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: 0.06712596, w: 0.99774456}
-  m_LocalPosition: {x: 11.2892, y: 15.428, z: 0}
+  m_LocalPosition: {x: -648, y: -74, z: 0}
   m_LocalScale: {x: 7.7470894, y: 8.97465, z: 4}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1914022294}
+  - {fileID: 568195591}
   m_Father: {fileID: 1481037855}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 7.698}
 --- !u!114 &1137121972
@@ -27766,8 +27977,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72e393ec9817944f4bfc5e3baec69d2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WaveBobbing_Level4
-  amplitude: 0.1
-  frequency: 2
+  verticalAmplitude: 0.15
+  horizontalAmplitude: 0.1
+  speed: 5
 --- !u!1 &1161267767
 GameObject:
   m_ObjectHideFlags: 0
@@ -27873,8 +28085,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72e393ec9817944f4bfc5e3baec69d2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WaveBobbing_Level4
-  amplitude: 0.1
-  frequency: 2
+  verticalAmplitude: 0.15
+  horizontalAmplitude: 0.1
+  speed: 5
 --- !u!114 &1161267771
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27887,8 +28100,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72e393ec9817944f4bfc5e3baec69d2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WaveBobbing_Level4
-  amplitude: 0.1
-  frequency: 2
+  verticalAmplitude: 0.15
+  horizontalAmplitude: 0.1
+  speed: 5
 --- !u!1001 &1162345555
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29109,8 +29323,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72e393ec9817944f4bfc5e3baec69d2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WaveBobbing_Level4
-  amplitude: 0.1
-  frequency: 2
+  verticalAmplitude: 0.15
+  horizontalAmplitude: 0.1
+  speed: 5
 --- !u!114 &1187623258
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29123,8 +29338,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72e393ec9817944f4bfc5e3baec69d2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WaveBobbing_Level4
-  amplitude: 0.1
-  frequency: 2
+  verticalAmplitude: 0.15
+  horizontalAmplitude: 0.1
+  speed: 5
 --- !u!1 &1190171166
 GameObject:
   m_ObjectHideFlags: 0
@@ -30028,7 +30244,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: b18cc5ea85fc62740aea736cbf271b00, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -35922,8 +36138,8 @@ Transform:
   m_GameObject: {fileID: 1404470026}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.56, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -2.7224, y: 0, z: 0}
+  m_LocalScale: {x: 1.1269, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2108297921}
@@ -35999,8 +36215,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72e393ec9817944f4bfc5e3baec69d2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WaveBobbing_Level4
-  amplitude: 0.1
-  frequency: 2
+  verticalAmplitude: 0.15
+  horizontalAmplitude: 0.1
+  speed: 5
 --- !u!114 &1404470030
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36013,8 +36230,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72e393ec9817944f4bfc5e3baec69d2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WaveBobbing_Level4
-  amplitude: 0.1
-  frequency: 2
+  verticalAmplitude: 0.15
+  horizontalAmplitude: 0.1
+  speed: 5
 --- !u!1001 &1411109036
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37050,6 +37268,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013095924222, guid: a690d269257f44d69af3edd4f9bc043f, type: 3}
+      propertyPath: m_TagString
+      value: NPC
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010041545974, guid: a690d269257f44d69af3edd4f9bc043f, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.08
@@ -37205,6 +37427,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1481037856}
+    - targetCorrespondingSourceObject: {fileID: 1000013095924222, guid: a690d269257f44d69af3edd4f9bc043f,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1481037858}
   m_SourcePrefab: {fileID: 100100000, guid: a690d269257f44d69af3edd4f9bc043f, type: 3}
 --- !u!4 &1481037855 stripped
 Transform:
@@ -37236,6 +37462,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0eec30bc28e7441498e745d15e7aadb6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPCSpeechBubble_Level4
+--- !u!114 &1481037858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1024794053}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e8cc51c671304ebf98cac5d79413ab3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NPCSpeech_Level4
+  speechBubbleObject: {fileID: 1137121969}
+  bubbleText: {fileID: 1492050061}
+  firstLine: Welcome to your next mission! Find the key and return back to the chest
+    to save the land!
+  secondLine: 'Avoid the water and don''t get hit by coconuts! '
+  timeBetweenLines: 2
 --- !u!1001 &1481449104
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37426,6 +37670,143 @@ CapsuleCollider2D:
   m_Offset: {x: 0.0000019073486, y: 0}
   m_Size: {x: 2, y: 2}
   m_Direction: 0
+--- !u!1 &1492050060
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1492050063}
+  - component: {fileID: 1492050062}
+  - component: {fileID: 1492050061}
+  m_Layer: 5
+  m_Name: BubbleText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1492050061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1492050060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 'Hello '
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 15
+  m_fontSizeBase: 15
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_characterHorizontalScale: 1
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 29.450256, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1492050062
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1492050060}
+  m_CullTransparentMesh: 1
+--- !u!224 &1492050063
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1492050060}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 568195591}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -102, y: -2}
+  m_SizeDelta: {x: 200, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1495278946
 GameObject:
   m_ObjectHideFlags: 0
@@ -38553,8 +38934,8 @@ Transform:
   m_GameObject: {fileID: 1526248816}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.0014648836, w: 0.999999}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.1626, y: -0.0005, z: 0}
+  m_LocalScale: {x: 1.127, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2108297921}
@@ -38630,8 +39011,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72e393ec9817944f4bfc5e3baec69d2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WaveBobbing_Level4
-  amplitude: 0.1
-  frequency: 2
+  verticalAmplitude: 0.15
+  horizontalAmplitude: 0.1
+  speed: 5
 --- !u!114 &1526248820
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38644,8 +39026,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72e393ec9817944f4bfc5e3baec69d2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WaveBobbing_Level4
-  amplitude: 0.1
-  frequency: 2
+  verticalAmplitude: 0.15
+  horizontalAmplitude: 0.1
+  speed: 5
 --- !u!1 &1527621973
 GameObject:
   m_ObjectHideFlags: 0
@@ -39531,8 +39914,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72e393ec9817944f4bfc5e3baec69d2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WaveBobbing_Level4
-  amplitude: 0.1
-  frequency: 2
+  verticalAmplitude: 0.15
+  horizontalAmplitude: 0.1
+  speed: 5
 --- !u!114 &1565287709
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39545,8 +39929,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72e393ec9817944f4bfc5e3baec69d2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WaveBobbing_Level4
-  amplitude: 0.1
-  frequency: 2
+  verticalAmplitude: 0.15
+  horizontalAmplitude: 0.1
+  speed: 5
 --- !u!1 &1566372750
 GameObject:
   m_ObjectHideFlags: 0
@@ -39652,8 +40037,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72e393ec9817944f4bfc5e3baec69d2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WaveBobbing_Level4
-  amplitude: 0.1
-  frequency: 2
+  verticalAmplitude: 0.15
+  horizontalAmplitude: 0.1
+  speed: 5
 --- !u!114 &1566372754
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39666,8 +40052,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72e393ec9817944f4bfc5e3baec69d2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WaveBobbing_Level4
-  amplitude: 0.1
-  frequency: 2
+  verticalAmplitude: 0.15
+  horizontalAmplitude: 0.1
+  speed: 5
 --- !u!1 &1566658922
 GameObject:
   m_ObjectHideFlags: 0
@@ -39714,8 +40101,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72e393ec9817944f4bfc5e3baec69d2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WaveBobbing_Level4
-  amplitude: 0.1
-  frequency: 2
+  verticalAmplitude: 0.15
+  horizontalAmplitude: 0.1
+  speed: 5
 --- !u!212 &1566658925
 SpriteRenderer:
   serializedVersion: 2
@@ -39787,8 +40175,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72e393ec9817944f4bfc5e3baec69d2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WaveBobbing_Level4
-  amplitude: 0.1
-  frequency: 2
+  verticalAmplitude: 0.15
+  horizontalAmplitude: 0.1
+  speed: 5
 --- !u!4 &1567728971 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6412300969123266883, guid: fbef961ca5ed544dbb1d54f2cdbfc0c3,
@@ -40129,8 +40518,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72e393ec9817944f4bfc5e3baec69d2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WaveBobbing_Level4
-  amplitude: 0.1
-  frequency: 2
+  verticalAmplitude: 0.15
+  horizontalAmplitude: 0.1
+  speed: 5
 --- !u!212 &1571667692
 SpriteRenderer:
   serializedVersion: 2
@@ -40202,8 +40592,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72e393ec9817944f4bfc5e3baec69d2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WaveBobbing_Level4
-  amplitude: 0.1
-  frequency: 2
+  verticalAmplitude: 0.15
+  horizontalAmplitude: 0.1
+  speed: 5
 --- !u!1001 &1573314601
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -41506,7 +41897,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: b18cc5ea85fc62740aea736cbf271b00, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -42554,8 +42945,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72e393ec9817944f4bfc5e3baec69d2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WaveBobbing_Level4
-  amplitude: 0.1
-  frequency: 2
+  verticalAmplitude: 0.15
+  horizontalAmplitude: 0.1
+  speed: 5
 --- !u!1 &1617526415
 GameObject:
   m_ObjectHideFlags: 0
@@ -46623,8 +47015,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72e393ec9817944f4bfc5e3baec69d2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WaveBobbing_Level4
-  amplitude: 0.1
-  frequency: 2
+  verticalAmplitude: 0.15
+  horizontalAmplitude: 0.1
+  speed: 5
 --- !u!114 &1789123813
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -46637,8 +47030,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72e393ec9817944f4bfc5e3baec69d2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WaveBobbing_Level4
-  amplitude: 0.1
-  frequency: 2
+  verticalAmplitude: 0.15
+  horizontalAmplitude: 0.1
+  speed: 5
 --- !u!1 &1791302175
 GameObject:
   m_ObjectHideFlags: 0
@@ -47493,8 +47887,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72e393ec9817944f4bfc5e3baec69d2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WaveBobbing_Level4
-  amplitude: 0.1
-  frequency: 2
+  verticalAmplitude: 0.15
+  horizontalAmplitude: 0.1
+  speed: 5
 --- !u!1 &1841104247
 GameObject:
   m_ObjectHideFlags: 0
@@ -48565,8 +48960,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72e393ec9817944f4bfc5e3baec69d2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WaveBobbing_Level4
-  amplitude: 0.1
-  frequency: 2
+  verticalAmplitude: 0.15
+  horizontalAmplitude: 0.1
+  speed: 5
 --- !u!1001 &1859000169
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -48699,8 +49095,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72e393ec9817944f4bfc5e3baec69d2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WaveBobbing_Level4
-  amplitude: 0.1
-  frequency: 2
+  verticalAmplitude: 0.15
+  horizontalAmplitude: 0.1
+  speed: 5
 --- !u!4 &1878397451 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6412300969123266883, guid: fbef961ca5ed544dbb1d54f2cdbfc0c3,
@@ -49141,8 +49538,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72e393ec9817944f4bfc5e3baec69d2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WaveBobbing_Level4
-  amplitude: 0.1
-  frequency: 2
+  verticalAmplitude: 0.15
+  horizontalAmplitude: 0.1
+  speed: 5
 --- !u!4 &1910498722 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6412300969123266883, guid: fbef961ca5ed544dbb1d54f2cdbfc0c3,
@@ -49240,144 +49638,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!1 &1914022293
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1914022294}
-  - component: {fileID: 1914022296}
-  - component: {fileID: 1914022295}
-  m_Layer: 6
-  m_Name: NPC_Text
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &1914022294
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1914022293}
-  m_LocalRotation: {x: -0, y: -0, z: 0.020088678, w: 0.9997982}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.51619095, y: 0.44579822, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1137121971}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 10}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 96.452515, y: 65.601074}
-  m_SizeDelta: {x: 200, y: 50}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1914022295
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1914022293}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: Collect the keys and coins to complete this mission, but be sure to avoid
-    the coconuts!
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4279900698
-  m_fontColor: {r: 0.1, g: 0.1, b: 0.1, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 13
-  m_fontSizeBase: 13
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 2
-  m_VerticalAlignment: 256
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_characterHorizontalScale: 1
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_TextWrappingMode: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 0
-  m_ActiveFontFeatures: 6e72656b
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_EmojiFallbackSupport: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: 19.393799, y: 0, z: 46.78342, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &1914022296
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1914022293}
-  m_CullTransparentMesh: 1
 --- !u!1 &1926591175
 GameObject:
   m_ObjectHideFlags: 0
@@ -50112,8 +50372,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72e393ec9817944f4bfc5e3baec69d2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WaveBobbing_Level4
-  amplitude: 0.1
-  frequency: 2
+  verticalAmplitude: 0.15
+  horizontalAmplitude: 0.1
+  speed: 5
 --- !u!114 &1942406345
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50126,8 +50387,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72e393ec9817944f4bfc5e3baec69d2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WaveBobbing_Level4
-  amplitude: 0.1
-  frequency: 2
+  verticalAmplitude: 0.15
+  horizontalAmplitude: 0.1
+  speed: 5
 --- !u!1001 &1949510118
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -50595,8 +50857,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72e393ec9817944f4bfc5e3baec69d2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WaveBobbing_Level4
-  amplitude: 0.1
-  frequency: 2
+  verticalAmplitude: 0.15
+  horizontalAmplitude: 0.1
+  speed: 5
 --- !u!1 &1985434614
 GameObject:
   m_ObjectHideFlags: 0
@@ -50701,8 +50964,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72e393ec9817944f4bfc5e3baec69d2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WaveBobbing_Level4
-  amplitude: 0.1
-  frequency: 2
+  verticalAmplitude: 0.15
+  horizontalAmplitude: 0.1
+  speed: 5
 --- !u!1 &1988334878
 GameObject:
   m_ObjectHideFlags: 0
@@ -52001,8 +52265,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72e393ec9817944f4bfc5e3baec69d2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WaveBobbing_Level4
-  amplitude: 0.1
-  frequency: 2
+  verticalAmplitude: 0.15
+  horizontalAmplitude: 0.1
+  speed: 5
 --- !u!4 &2049259332 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6412300969123266883, guid: fbef961ca5ed544dbb1d54f2cdbfc0c3,
@@ -52778,7 +53043,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 3
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: a38077da8ace4b8448295159bdbfa350, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -53415,8 +53680,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72e393ec9817944f4bfc5e3baec69d2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WaveBobbing_Level4
-  amplitude: 0.1
-  frequency: 2
+  verticalAmplitude: 0.15
+  horizontalAmplitude: 0.1
+  speed: 5
 --- !u!4 &2111286128 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6412300969123266883, guid: fbef961ca5ed544dbb1d54f2cdbfc0c3,
@@ -53475,8 +53741,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72e393ec9817944f4bfc5e3baec69d2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WaveBobbing_Level4
-  amplitude: 0.1
-  frequency: 2
+  verticalAmplitude: 0.15
+  horizontalAmplitude: 0.1
+  speed: 5
 --- !u!212 &2124279390
 SpriteRenderer:
   serializedVersion: 2
@@ -53548,8 +53815,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72e393ec9817944f4bfc5e3baec69d2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WaveBobbing_Level4
-  amplitude: 0.1
-  frequency: 2
+  verticalAmplitude: 0.15
+  horizontalAmplitude: 0.1
+  speed: 5
 --- !u!1 &2125267855
 GameObject:
   m_ObjectHideFlags: 0
@@ -54555,3 +54823,4 @@ SceneRoots:
   - {fileID: 164245974}
   - {fileID: 1481037854}
   - {fileID: 1600131922}
+  - {fileID: 709261680}
