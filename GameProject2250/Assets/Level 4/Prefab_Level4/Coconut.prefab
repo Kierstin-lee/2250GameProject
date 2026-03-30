@@ -135,7 +135,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::RandomCoconutDrop_Level4
   minDropTime: 2
-  maxDropTime: 15
+  maxDropTime: 10
   horizontalForce: 200
   torqueAmount: 5
   activationDistance: 8
