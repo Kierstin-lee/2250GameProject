@@ -51,4 +51,12 @@ public class RandomCoconutDrop_Level4 : MonoBehaviour
 
         Destroy(gameObject, 5f);
     }
+    
+    void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            Destroy(gameObject);
+        }
+    }
 }
