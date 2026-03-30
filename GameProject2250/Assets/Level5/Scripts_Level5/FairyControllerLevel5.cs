@@ -13,8 +13,8 @@ namespace Level5.Scripts_Level5
         
         // for ladders
         private bool isOnLadder = false;
-        public float climbSpeed = 3f;
-        
+        private bool isClimbing = false;
+        public float climbSpeed = 5f;
 
         // Start is called once before the first execution of Update after the MonoBehaviour is created
         void Start()
@@ -40,6 +40,15 @@ namespace Level5.Scripts_Level5
             {
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, vertical * climbSpeed);
             }
+            
+            if (isOnLadder && Input.GetKey(KeyCode.L))
+            {
+                isClimbing = true;
+            }
+            else
+            {
+                isClimbing = false;
+            }
 
             UpdateAnimationState();
 
@@ -51,6 +60,12 @@ namespace Level5.Scripts_Level5
             {
                 rb.linearVelocity = new Vector2(moveInput.x * moveSpeed, rb.linearVelocity.y);
             }
+            
+            if (isClimbing)
+            {
+                rb.gravityScale = -3f;
+                rb.linearVelocity = new Vector2(rb.linearVelocity.x, climbSpeed);
+            }
         }
         
         // for ladder movement
@@ -58,13 +73,9 @@ namespace Level5.Scripts_Level5
         {
             isOnLadder = value;
 
-            if (isOnLadder)
+            if (!isOnLadder)
             {
-                rb.gravityScale = 0f;
-                rb.linearVelocity = Vector2.zero;
-            }
-            else
-            {
+                isClimbing = false;
                 rb.gravityScale = 1f;
             }
         }
