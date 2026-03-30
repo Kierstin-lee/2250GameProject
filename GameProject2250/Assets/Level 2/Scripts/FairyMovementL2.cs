@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class FairyMovement : MonoBehaviour
+public class FairyMovementL2 : MonoBehaviour
 {
     [SerializeField] private float moveSpeed = 3f; // Speed of the fairy movement
     [SerializeField] private float jumpForce = 8f; // Force applied when jumping

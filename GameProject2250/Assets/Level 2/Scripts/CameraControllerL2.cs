@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class CameraController : MonoBehaviour
+public class CameraControllerL2 : MonoBehaviour
 {
     [SerializeField] private float smoothSpeed = 5f; // Speed at which the camera moves
 
