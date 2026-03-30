@@ -58,9 +58,12 @@ TagManager:
     uniqueID: 3654974931
     locked: 0
   - name: Decor
+    uniqueID: 837978581
+    locked: 0
+  - name: Borders
     uniqueID: 3966678647
     locked: 0
-  - name: top top
+  - name: Borders top
     uniqueID: 3200846103
     locked: 0
   m_RenderingLayers:
