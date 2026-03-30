@@ -3,8 +3,8 @@ using UnityEngine;
 
 public class SineMovementLevel5 : MonoBehaviour
 {
-    [SerializeField] private float amplitude = 4f; // The height of the movement
-    [SerializeField] private float frequency = 2f; // The speed of the movement
+    [SerializeField] private float amplitude = 7f; // The height of the movement
+    [SerializeField] private float frequency = 6f; // The speed of the movement
     
     
     private Vector2 startPosition;

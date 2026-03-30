@@ -1,25 +1,24 @@
 using UnityEngine;
 
-namespace Level5.Scripts_Level5
-{
-    public class LadderFunctionLevel5 : MonoBehaviour
-    {
-        private bool isLadder;
-        
-        private void OnTriggerEnter2D(Collider2D collision)
-        {
-            if (collision.CompareTag("Ladder"))
-            {
-                isLadder = true;
-            }
-        }
 
-        private void OnTriggerExit2D(Collider2D collision)
+public class LadderFunctionLevel5 : MonoBehaviour
+{
+    private bool isLadder;
+        
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Ladder"))
         {
-            if (collision.CompareTag("Ladder"))
-            {
-                isLadder = false;
-            }
+            isLadder = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Ladder"))
+        {
+            isLadder = false;
         }
     }
 }
+
