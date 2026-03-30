@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5b3795eb-0421-4b52-bb7b-73433f0ab0ec" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Fonts/FairyDustB SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/FairyDustB SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fonts/Pix32 SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/Pix32 SDF.asset" afterDir="false" />
-    </list>
+    <list default="true" id="5b3795eb-0421-4b52-bb7b-73433f0ab0ec" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -39,7 +36,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "git-widget-placeholder": "FullGame-updated-new2",
+    "git-widget-placeholder": "Level6-build",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -101,6 +98,7 @@
       <workItem from="1774472391066" duration="3865000" />
       <workItem from="1774482801547" duration="4475000" />
       <workItem from="1774560639905" duration="2650000" />
+      <workItem from="1774885358506" duration="388000" />
     </task>
     <servers />
   </component>
