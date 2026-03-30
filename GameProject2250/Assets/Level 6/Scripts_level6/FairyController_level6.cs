@@ -13,7 +13,6 @@ public class FairyController_level6 : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>(); 
         anim = GetComponent<Animator>();
-        //Score.SetText("Coins: " + score);
     }
 
     [SerializeField] private float jumpForce = 10f;
@@ -21,22 +20,14 @@ public class FairyController_level6 : MonoBehaviour
     void Update()
     {
         moveInput.x = Input.GetAxisRaw("Horizontal");
+        
         if (Input.GetKeyDown(KeyCode.UpArrow))
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
         }
-
-        void OnColliderEnter2D(Collider2D collision)
-        {
-            if (collision.gameObject.CompareTag("Coin"))
-            {
-                collision.gameObject.CompareTag("Player");
-            }
-        }
-
         UpdateAnimationState();
     }
-
+    
     private void FixedUpdate()
     {
         if (moveInput != Vector2.zero)
