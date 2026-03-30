@@ -1923,7 +1923,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: other_and_decorative_83
+      name: armor5
       rect:
         serializedVersion: 2
         x: 160
@@ -2165,7 +2165,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: other_and_decorative_94
+      name: armor1
       rect:
         serializedVersion: 2
         x: 128
@@ -2187,7 +2187,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: other_and_decorative_95
+      name: armor2
       rect:
         serializedVersion: 2
         x: 144
@@ -2209,7 +2209,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: other_and_decorative_96
+      name: armor6
       rect:
         serializedVersion: 2
         x: 160
@@ -2231,7 +2231,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: other_and_decorative_97
+      name: armor8
       rect:
         serializedVersion: 2
         x: 176
@@ -2319,7 +2319,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: other_and_decorative_101
+      name: bench1
       rect:
         serializedVersion: 2
         x: 64
@@ -2341,7 +2341,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: other_and_decorative_102
+      name: bench2
       rect:
         serializedVersion: 2
         x: 80
@@ -2363,7 +2363,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: other_and_decorative_103
+      name: bench3
       rect:
         serializedVersion: 2
         x: 96
@@ -2385,7 +2385,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: other_and_decorative_104
+      name: armor3
       rect:
         serializedVersion: 2
         x: 128
@@ -2407,7 +2407,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: other_and_decorative_105
+      name: armor4
       rect:
         serializedVersion: 2
         x: 144
@@ -2429,7 +2429,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: other_and_decorative_106
+      name: armor7
       rect:
         serializedVersion: 2
         x: 160
@@ -2451,7 +2451,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: other_and_decorative_107
+      name: armor9
       rect:
         serializedVersion: 2
         x: 176
@@ -2473,7 +2473,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: other_and_decorative_108
+      name: box
       rect:
         serializedVersion: 2
         x: 208
@@ -2495,7 +2495,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: other_and_decorative_109
+      name: skull1
       rect:
         serializedVersion: 2
         x: 240
@@ -2517,7 +2517,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: other_and_decorative_110
+      name: skull2
       rect:
         serializedVersion: 2
         x: 256
@@ -11332,6 +11332,19 @@ TextureImporter:
       - key: SpriteEditor.SliceSettings
         value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":16.0,"y":16.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":1,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
     nameFileIdTable:
+      armor1: 1130036110
+      armor2: -1380188785
+      armor3: -1022604949
+      armor4: -13693544
+      armor5: 1573341059
+      armor6: 1724923225
+      armor7: 960718485
+      armor8: -1164125970
+      armor9: 613029648
+      bench1: -224836720
+      bench2: -1229116748
+      bench3: -740291076
+      box: -1329862687
       chains1: 1550501584
       chains2: 563844528
       chains3: 1684286183
@@ -11345,17 +11358,7 @@ TextureImporter:
       other_and_decorative_1: 1047812564
       other_and_decorative_10: -1166264191
       other_and_decorative_100: -2119928305
-      other_and_decorative_101: -224836720
-      other_and_decorative_102: -1229116748
-      other_and_decorative_103: -740291076
-      other_and_decorative_104: -1022604949
-      other_and_decorative_105: -13693544
-      other_and_decorative_106: 960718485
-      other_and_decorative_107: 613029648
-      other_and_decorative_108: -1329862687
-      other_and_decorative_109: -305406864
       other_and_decorative_11: -1401764921
-      other_and_decorative_110: 221294667
       other_and_decorative_111: 61772805
       other_and_decorative_112: 528132241
       other_and_decorative_113: -105597517
@@ -11823,7 +11826,6 @@ TextureImporter:
       other_and_decorative_80: 335616425
       other_and_decorative_81: -1924230140
       other_and_decorative_82: 1407935706
-      other_and_decorative_83: 1573341059
       other_and_decorative_84: -788504667
       other_and_decorative_85: -1031213493
       other_and_decorative_86: 1910938491
@@ -11834,12 +11836,10 @@ TextureImporter:
       other_and_decorative_91: -738080501
       other_and_decorative_92: 1452360786
       other_and_decorative_93: -2044821324
-      other_and_decorative_94: 1130036110
-      other_and_decorative_95: -1380188785
-      other_and_decorative_96: 1724923225
-      other_and_decorative_97: -1164125970
       other_and_decorative_98: 2039664545
       other_and_decorative_99: -1660310738
+      skull1: -305406864
+      skull2: 221294667
       spike_bottom: -1891619535
       spike_top: 187016963
   mipmapLimitGroupName: 
