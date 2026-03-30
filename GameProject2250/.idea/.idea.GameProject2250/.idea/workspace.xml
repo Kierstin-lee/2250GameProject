@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5b3795eb-0421-4b52-bb7b-73433f0ab0ec" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameProject2250/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameProject2250/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level 4/Scripts_Level4/FairyMovement_Level4.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level 4/Scripts_Level4/FairyMovement_Level4.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level 4/Scripts_Level4/NPCDIalogue_Level4.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level 4/Scripts_Level4/NPCDIalogue_Level4.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level 4/Scripts_Level4/RandomCoconutDrop_Level4.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level 4/Scripts_Level4/RandomCoconutDrop_Level4.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level0/Scripts/CameraMovement_Level0.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level0/Scripts/CameraMovement_Level0.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level4.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level4.unity" afterDir="false" />
-    </list>
+    <list default="true" id="5b3795eb-0421-4b52-bb7b-73433f0ab0ec" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -110,7 +103,7 @@
       <workItem from="1774813243597" duration="2000" />
       <workItem from="1774814978762" duration="3698000" />
       <workItem from="1774822426117" duration="2689000" />
-      <workItem from="1774840237955" duration="1160000" />
+      <workItem from="1774840237955" duration="1758000" />
     </task>
     <servers />
   </component>
