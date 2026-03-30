@@ -1,16 +1,13 @@
 using UnityEngine;
-using UnityEngine.SocialPlatforms.Impl;
-using UnityEngine.UI;
 
 public class FairyMovement : MonoBehaviour
 {
-    [SerializeField] private float moveSpeed = 5f; // Speed of the fairy movement
-    [SerializeField] private Text scoreText; // Reference to the UI Text component
+    [SerializeField] private float moveSpeed = 3f; // Speed of the fairy movement
+    [SerializeField] private float jumpForce = 8f; // Force applied when jumping
 
     private Rigidbody2D rb; // Reference to the Rigidbody2D component
     private Animator anim;
     private Vector2 moveInput;
-    private int score = 0;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -18,37 +15,25 @@ public class FairyMovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>(); // Get the Rigidbody2D component attached to the fairy
         anim = GetComponent<Animator>();
-        scoreText.text = "Coins: " + score;
     }
-
-    [SerializeField] private float jumpForce = 10f;
 
     // Update is called once per frame
     void Update()
     {
-        moveInput.x = Input.GetAxisRaw("Horizontal"); // Get horizontal input (A/D or Left/Right arrow keys)
+        moveInput.x = Input.GetAxisRaw("Horizontal"); // Get horizontal input (A/D or Left/Right)
 
-        if (Input.GetKeyDown(KeyCode.UpArrow))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce); // Apply a vertical force to make the fairy jump
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce); // Apply jump force to the fairy
         }
 
-        void OnColliderEnter2D(Collider2D collision)
-        {
-            if (collision.gameObject.CompareTag("Coin"))
-            {
-                collision.gameObject.CompareTag("Player");
-            }
-        }
-        UpdateAnimationState();
+        UpdateAnimationState(); // Update the animation state based on movement input
     }
 
     private void FixedUpdate()
     {
-        if (moveInput != Vector2.zero)
-        {
-            rb.linearVelocity = new Vector2(moveInput.x * moveSpeed, rb.linearVelocity.y); // Move the fairy horizontally based on input
-        }
+        rb.linearVelocity = new Vector2(moveInput.x * moveSpeed, rb.linearVelocity.y); // Move the fairy horizontally based on input
+
     }
 
     private void UpdateAnimationState()
@@ -63,20 +48,21 @@ public class FairyMovement : MonoBehaviour
             anim.SetFloat("MoveX", -1);
             anim.SetFloat("MoveY", 0);
         }
-        else if (moveInput.y > 0)
-        {
-            anim.SetFloat("MoveX", 0);
-            anim.SetFloat("MoveY", 1);
-        }
-        else if (moveInput.y < 0)
-        {
-            anim.SetFloat("MoveX", 0);
-            anim.SetFloat("MoveY", -1);
-        }
         else
         {
             anim.SetFloat("MoveX", 0);
             anim.SetFloat("MoveY", 0);
         }
+    }
+
+    public void ActivateWandPower()
+    {
+        Debug.Log("Activating wand power");
+        jumpForce += 2f; // Increase jump force when wand power is activated
+    }
+    public void ActivateWingPower()
+    {
+        Debug.Log("Activating wing power");
+        moveSpeed += 1f; // Increase move speed when wing power is activated
     }
 }
