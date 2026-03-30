@@ -8,9 +8,8 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GameProject2250/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameProject2250/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Level5/Scripts_Level5/CameraMovementLevel5.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level5/Scripts_Level5/CameraMovementLevel5.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Level5/Scripts_Level5/FairyControllerLevel5.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level5/Scripts_Level5/FairyControllerLevel5.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level5/Scripts_Level5/LadderFunctionLevel5.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level5/Scripts_Level5/LadderFunctionLevel5.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level5/Scripts_Level5/SineMovementLevel5.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level5/Scripts_Level5/SineMovementLevel5.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level5.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level5.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +109,7 @@
       <workItem from="1774472391066" duration="3865000" />
       <workItem from="1774482801547" duration="4475000" />
       <workItem from="1774560639905" duration="2650000" />
-      <workItem from="1774815333795" duration="11009000" />
+      <workItem from="1774815333795" duration="13652000" />
     </task>
     <servers />
   </component>

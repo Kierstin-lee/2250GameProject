@@ -9,6 +9,7 @@ TagManager:
   - Coin
   - Wall
   - Ladder
+  - Spike
   layers:
   - Default
   - TransparentFX

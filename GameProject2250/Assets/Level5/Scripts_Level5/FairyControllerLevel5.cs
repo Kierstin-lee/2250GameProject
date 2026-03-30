@@ -2,6 +2,10 @@ using UnityEngine;
 
 public class FairyControllerLevel5 : MonoBehaviour
 {
+    // for spawn point
+    private Vector3 startPosition;
+    
+    // for player movement
     [SerializeField] private float moveSpeed = 5f;
     [SerializeField] private float jumpForce = 10f;
 
@@ -20,6 +24,8 @@ public class FairyControllerLevel5 : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+
+        startPosition = transform.position; // saves where you spawned
     }
     
     // Update is called once per frame
@@ -29,6 +35,7 @@ public class FairyControllerLevel5 : MonoBehaviour
         moveInput.x = Input.GetAxisRaw("Horizontal");
         vertical = Input.GetAxis("Vertical");
         
+        // jump mechanics 
         if (Input.GetKeyDown(KeyCode.UpArrow))
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
@@ -46,10 +53,7 @@ public class FairyControllerLevel5 : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (moveInput != Vector2.zero)
-        {
             rb.linearVelocity = new Vector2(moveInput.x * moveSpeed, rb.linearVelocity.y);
-        }
             
         // for ladder
         if (isClimbing) 
@@ -63,12 +67,19 @@ public class FairyControllerLevel5 : MonoBehaviour
         }
     }
         
-    // for ladder
+    
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        // ladder
         if (collision.CompareTag("Ladder"))
         {
             isLadder = true;
+        }
+        
+        // spikes
+        if (collision.CompareTag("Spike"))
+        {
+            ResetToStart();
         }
     }
         
@@ -82,6 +93,15 @@ public class FairyControllerLevel5 : MonoBehaviour
             isClimbing = false;
         }
     }
+    
+    // to respawn if hit spike
+    private void ResetToStart()
+    {
+        rb.linearVelocity = Vector2.zero; // stop movement
+        transform.position = startPosition;
+    }
+    
+    
 
     private void UpdateAnimationState()
     {
