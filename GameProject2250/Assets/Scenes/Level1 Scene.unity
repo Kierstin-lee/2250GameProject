@@ -900,7 +900,7 @@ Transform:
   m_GameObject: {fileID: 39150001}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 80.098, y: 7.07309, z: 0}
+  m_LocalPosition: {x: 84.3, y: 6.9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3650,7 +3650,7 @@ Transform:
   m_GameObject: {fileID: 204668804}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -1, w: -0.00025103544}
-  m_LocalPosition: {x: 8.541531, y: -2.7788744, z: 0}
+  m_LocalPosition: {x: 8.52, y: -2.7788744, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3819,7 +3819,6 @@ GameObject:
   - component: {fileID: 209581106}
   - component: {fileID: 209581107}
   - component: {fileID: 209581108}
-  - component: {fileID: 209581109}
   - component: {fileID: 209581110}
   m_Layer: 0
   m_Name: Player
@@ -3836,9 +3835,9 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 209581102}
-  m_Enabled: 0
+  m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 58d2d480f697468e9b0fb334a0e43f21, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -4011,20 +4010,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FairyController_Level1
   moveSpeed: 10
   jumpForce: 10
---- !u!114 &209581109
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 209581102}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dbd6c529e3a38485684a1e75d20527ca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CoinPickup_Level1
-  scoreText: {fileID: 0}
-  coinSound: {fileID: 8300000, guid: 1af1d96111cf74c0bad9b6c59749d7ab, type: 3}
 --- !u!114 &209581110
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4415,7 +4400,6 @@ GameObject:
   - component: {fileID: 246127588}
   - component: {fileID: 246127587}
   - component: {fileID: 246127586}
-  - component: {fileID: 246127585}
   - component: {fileID: 246127584}
   m_Layer: 0
   m_Name: Coin- 6
@@ -4437,21 +4421,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CoinPickup_Level1
   scoreText: {fileID: 747378478}
-  coinSound: {fileID: 0}
---- !u!114 &246127585
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 246127583}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dbd6c529e3a38485684a1e75d20527ca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CoinPickup_Level1
-  scoreText: {fileID: 0}
-  coinSound: {fileID: 0}
+  coinSound: {fileID: 8300000, guid: 1af1d96111cf74c0bad9b6c59749d7ab, type: 3}
 --- !u!58 &246127586
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -9571,7 +9541,6 @@ GameObject:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
-  - component: {fileID: 519420033}
   - component: {fileID: 519420034}
   - component: {fileID: 519420035}
   - component: {fileID: 519420036}
@@ -9657,20 +9626,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &519420033
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 519420028}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1a49df7e30829545b191ee0d5f5f5d6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cameraPosition: {x: 0, y: 0, z: 0}
-  cameraSpeed: 1
 --- !u!114 &519420034
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11295,7 +11250,6 @@ GameObject:
   - component: {fileID: 602478791}
   - component: {fileID: 602478790}
   - component: {fileID: 602478789}
-  - component: {fileID: 602478788}
   - component: {fileID: 602478787}
   m_Layer: 0
   m_Name: Coin- 8
@@ -11317,21 +11271,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CoinPickup_Level1
   scoreText: {fileID: 747378478}
-  coinSound: {fileID: 0}
---- !u!114 &602478788
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 602478786}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dbd6c529e3a38485684a1e75d20527ca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CoinPickup_Level1
-  scoreText: {fileID: 0}
-  coinSound: {fileID: 0}
+  coinSound: {fileID: 8300000, guid: 1af1d96111cf74c0bad9b6c59749d7ab, type: 3}
 --- !u!58 &602478789
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -15077,7 +15017,7 @@ Transform:
   m_GameObject: {fileID: 771070610}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 84.5, y: 2.5, z: 0}
+  m_LocalPosition: {x: 87.7, y: 2.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -16258,7 +16198,6 @@ GameObject:
   - component: {fileID: 844873861}
   - component: {fileID: 844873860}
   - component: {fileID: 844873859}
-  - component: {fileID: 844873858}
   - component: {fileID: 844873857}
   m_Layer: 0
   m_Name: Coin- 7
@@ -16280,21 +16219,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CoinPickup_Level1
   scoreText: {fileID: 747378478}
-  coinSound: {fileID: 0}
---- !u!114 &844873858
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 844873856}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dbd6c529e3a38485684a1e75d20527ca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CoinPickup_Level1
-  scoreText: {fileID: 0}
-  coinSound: {fileID: 0}
+  coinSound: {fileID: 8300000, guid: 1af1d96111cf74c0bad9b6c59749d7ab, type: 3}
 --- !u!58 &844873859
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -16421,7 +16346,7 @@ Transform:
   m_GameObject: {fileID: 844873856}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 135, y: 11.2, z: 0}
+  m_LocalPosition: {x: 137.9, y: 8.7, z: 0}
   m_LocalScale: {x: 0.1, y: 0.1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -20053,7 +19978,6 @@ GameObject:
   - component: {fileID: 1033365979}
   - component: {fileID: 1033365981}
   - component: {fileID: 1033365982}
-  - component: {fileID: 1033365983}
   - component: {fileID: 1033365984}
   m_Layer: 0
   m_Name: Coin-1
@@ -20195,20 +20119,6 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 10.24
---- !u!114 &1033365983
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1033365978}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dbd6c529e3a38485684a1e75d20527ca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CoinPickup_Level1
-  scoreText: {fileID: 0}
-  coinSound: {fileID: 0}
 --- !u!114 &1033365984
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20222,7 +20132,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CoinPickup_Level1
   scoreText: {fileID: 747378478}
-  coinSound: {fileID: 0}
+  coinSound: {fileID: 8300000, guid: 1af1d96111cf74c0bad9b6c59749d7ab, type: 3}
 --- !u!1 &1040033049
 GameObject:
   m_ObjectHideFlags: 0
@@ -21441,7 +21351,6 @@ GameObject:
   - component: {fileID: 1091859037}
   - component: {fileID: 1091859036}
   - component: {fileID: 1091859035}
-  - component: {fileID: 1091859034}
   - component: {fileID: 1091859033}
   m_Layer: 0
   m_Name: Coin-3
@@ -21463,21 +21372,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CoinPickup_Level1
   scoreText: {fileID: 747378478}
-  coinSound: {fileID: 0}
---- !u!114 &1091859034
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1091859032}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dbd6c529e3a38485684a1e75d20527ca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CoinPickup_Level1
-  scoreText: {fileID: 0}
-  coinSound: {fileID: 0}
+  coinSound: {fileID: 8300000, guid: 1af1d96111cf74c0bad9b6c59749d7ab, type: 3}
 --- !u!58 &1091859035
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -24596,7 +24491,6 @@ GameObject:
   - component: {fileID: 1269261210}
   - component: {fileID: 1269261209}
   - component: {fileID: 1269261208}
-  - component: {fileID: 1269261207}
   - component: {fileID: 1269261206}
   m_Layer: 0
   m_Name: Coin- 4
@@ -24618,21 +24512,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CoinPickup_Level1
   scoreText: {fileID: 747378478}
-  coinSound: {fileID: 0}
---- !u!114 &1269261207
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1269261205}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dbd6c529e3a38485684a1e75d20527ca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CoinPickup_Level1
-  scoreText: {fileID: 0}
-  coinSound: {fileID: 0}
+  coinSound: {fileID: 8300000, guid: 1af1d96111cf74c0bad9b6c59749d7ab, type: 3}
 --- !u!58 &1269261208
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -27976,7 +27856,6 @@ GameObject:
   - component: {fileID: 1479618406}
   - component: {fileID: 1479618405}
   - component: {fileID: 1479618404}
-  - component: {fileID: 1479618403}
   - component: {fileID: 1479618402}
   m_Layer: 0
   m_Name: Coin- 10
@@ -27998,21 +27877,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CoinPickup_Level1
   scoreText: {fileID: 747378478}
-  coinSound: {fileID: 0}
---- !u!114 &1479618403
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1479618401}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dbd6c529e3a38485684a1e75d20527ca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CoinPickup_Level1
-  scoreText: {fileID: 0}
-  coinSound: {fileID: 0}
+  coinSound: {fileID: 8300000, guid: 1af1d96111cf74c0bad9b6c59749d7ab, type: 3}
 --- !u!58 &1479618404
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -30989,7 +30854,6 @@ GameObject:
   - component: {fileID: 1652288847}
   - component: {fileID: 1652288846}
   - component: {fileID: 1652288845}
-  - component: {fileID: 1652288844}
   - component: {fileID: 1652288843}
   m_Layer: 0
   m_Name: Coin- 9
@@ -31011,21 +30875,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CoinPickup_Level1
   scoreText: {fileID: 747378478}
-  coinSound: {fileID: 0}
---- !u!114 &1652288844
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1652288842}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dbd6c529e3a38485684a1e75d20527ca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CoinPickup_Level1
-  scoreText: {fileID: 0}
-  coinSound: {fileID: 0}
+  coinSound: {fileID: 8300000, guid: 1af1d96111cf74c0bad9b6c59749d7ab, type: 3}
 --- !u!58 &1652288845
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -33080,7 +32930,7 @@ Transform:
   m_GameObject: {fileID: 1753339031}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.827431, y: -1.528204, z: 0}
+  m_LocalPosition: {x: 9.77, y: -1.528204, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -34200,7 +34050,6 @@ GameObject:
   - component: {fileID: 1836255066}
   - component: {fileID: 1836255065}
   - component: {fileID: 1836255064}
-  - component: {fileID: 1836255063}
   - component: {fileID: 1836255062}
   m_Layer: 0
   m_Name: Coin-2
@@ -34222,21 +34071,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CoinPickup_Level1
   scoreText: {fileID: 747378478}
-  coinSound: {fileID: 0}
---- !u!114 &1836255063
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1836255061}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dbd6c529e3a38485684a1e75d20527ca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CoinPickup_Level1
-  scoreText: {fileID: 0}
-  coinSound: {fileID: 0}
+  coinSound: {fileID: 8300000, guid: 1af1d96111cf74c0bad9b6c59749d7ab, type: 3}
 --- !u!58 &1836255064
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -36238,7 +36073,6 @@ GameObject:
   - component: {fileID: 1933139355}
   - component: {fileID: 1933139354}
   - component: {fileID: 1933139353}
-  - component: {fileID: 1933139352}
   - component: {fileID: 1933139351}
   m_Layer: 0
   m_Name: Coin- 5
@@ -36260,21 +36094,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CoinPickup_Level1
   scoreText: {fileID: 747378478}
-  coinSound: {fileID: 0}
---- !u!114 &1933139352
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1933139350}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dbd6c529e3a38485684a1e75d20527ca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CoinPickup_Level1
-  scoreText: {fileID: 0}
-  coinSound: {fileID: 0}
+  coinSound: {fileID: 8300000, guid: 1af1d96111cf74c0bad9b6c59749d7ab, type: 3}
 --- !u!58 &1933139353
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -37373,7 +37193,7 @@ Transform:
   m_GameObject: {fileID: 2017122077}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.70926005, w: 0.704947}
-  m_LocalPosition: {x: 9.808033, y: -2.7773304, z: 0}
+  m_LocalPosition: {x: 9.77, y: -2.7773304, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
