@@ -8,6 +8,8 @@ TagManager:
   - Key
   - Coin
   - Wall
+  - Ladder
+  - Spike
   - Ground
   - menuButton
   - NPC
