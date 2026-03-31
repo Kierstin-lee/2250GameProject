@@ -131,8 +131,7 @@ public class BossController : MonoBehaviour
 
             if (playerScript != null)
             {
-                // Uncomment when ready
-                // playerScript.TakeDamage(1);
+                playerScript.TakeDamage(1);
             }
         }
     }

@@ -1,5 +1,5 @@
+using System.Collections;
 using UnityEngine;
-using UnityEngine.SocialPlatforms.Impl;
 
 public class FairyController_level6 : MonoBehaviour
 {
@@ -17,11 +17,18 @@ public class FairyController_level6 : MonoBehaviour
 
     private bool isGrounded;
     
+    [SerializeField] private int maxLives = 5;
+    private int currentLives;
+    private bool canTakeDamage = true;
+    [SerializeField] private float damageCooldown = 1f;
+    
     void Start()
     {
         rb = GetComponent<Rigidbody2D>(); 
         anim = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
+        
+        currentLives = maxLives;
     }
 
     void Update()
@@ -84,5 +91,43 @@ public class FairyController_level6 : MonoBehaviour
             anim.SetFloat("MoveX", 0);
             anim.SetFloat("MoveY", 0);
         }
+    }
+
+    public void TakeDamage(int damage)
+    {
+        if (!canTakeDamage) return;
+        
+        canTakeDamage = false;
+        currentLives -= damage;
+        
+        Debug.Log("Lives: " + currentLives);
+
+        if (currentLives <= 0)
+        {
+            Die();
+        }
+
+        StartCoroutine(DamageCooldownRoutine());
+    }
+    
+    private IEnumerator DamageCooldownRoutine()
+    {
+        yield return new WaitForSeconds(damageCooldown);
+        canTakeDamage = true;
+    }
+
+    private void Die()
+    {
+        Debug.Log("Fairy Died");
+
+        rb.linearVelocity = Vector2.zero;
+        this.enabled = false;
+        
+        anim.SetTrigger("Dying");
+        
+        //For now, fairy dies restart the level 6 scene
+        UnityEngine.SceneManagement.SceneManager.LoadScene(
+            UnityEngine.SceneManagement.SceneManager.GetActiveScene().name
+        );
     }
 }
