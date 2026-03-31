@@ -7,7 +7,7 @@ public class PlayerDamage : MonoBehaviour
     [SerializeField] private Transform respawnPoint;
 
     [Header("Damage")]
-    [SerializeField] private float damageAmount = 0.5f;
+    [SerializeField] private float damageAmount = 1f;
     [SerializeField] private float damageCooldown = 1f;
 
     private bool canTakeDamage = true;
@@ -20,7 +20,7 @@ public class PlayerDamage : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Hole") || other.CompareTag("Hazard"))
+        if (other.CompareTag("Hole") || other.CompareTag("Hazard") || other.CompareTag("Spike"))
         {
             TakeDamage();
         }
@@ -28,7 +28,7 @@ public class PlayerDamage : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.CompareTag("Hazard"))
+        if (collision.gameObject.CompareTag("Hazard") || collision.gameObject.CompareTag("Spike"))
         {
             TakeDamage();
         }
@@ -56,14 +56,12 @@ public class PlayerDamage : MonoBehaviour
             rb.angularVelocity = 0f;
         }
 
-        // Reset shared resettable camera if used in other levels
         CameraResettable resettableCam = FindObjectOfType<CameraResettable>();
         if (resettableCam != null)
         {
             resettableCam.ResetCamera();
         }
 
-        // Reset Level 4 scrolling camera
         CameraMovement_Level4 level4Cam = FindObjectOfType<CameraMovement_Level4>();
         if (level4Cam != null)
         {
