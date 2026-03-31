@@ -4024,6 +4024,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CoinPickup_Level1
   scoreText: {fileID: 0}
+  coinSound: {fileID: 8300000, guid: 1af1d96111cf74c0bad9b6c59749d7ab, type: 3}
 --- !u!114 &209581110
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4037,6 +4038,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CoinPickup_Level1
   scoreText: {fileID: 747378478}
+  coinSound: {fileID: 8300000, guid: 1af1d96111cf74c0bad9b6c59749d7ab, type: 3}
 --- !u!1 &213972122
 GameObject:
   m_ObjectHideFlags: 0
@@ -4435,6 +4437,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CoinPickup_Level1
   scoreText: {fileID: 747378478}
+  coinSound: {fileID: 0}
 --- !u!114 &246127585
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4448,6 +4451,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CoinPickup_Level1
   scoreText: {fileID: 0}
+  coinSound: {fileID: 0}
 --- !u!58 &246127586
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -11313,6 +11317,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CoinPickup_Level1
   scoreText: {fileID: 747378478}
+  coinSound: {fileID: 0}
 --- !u!114 &602478788
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11326,6 +11331,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CoinPickup_Level1
   scoreText: {fileID: 0}
+  coinSound: {fileID: 0}
 --- !u!58 &602478789
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -15071,7 +15077,7 @@ Transform:
   m_GameObject: {fileID: 771070610}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 85.2, y: 2.5, z: 0}
+  m_LocalPosition: {x: 84.5, y: 2.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -16274,6 +16280,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CoinPickup_Level1
   scoreText: {fileID: 747378478}
+  coinSound: {fileID: 0}
 --- !u!114 &844873858
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16287,6 +16294,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CoinPickup_Level1
   scoreText: {fileID: 0}
+  coinSound: {fileID: 0}
 --- !u!58 &844873859
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -20200,6 +20208,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CoinPickup_Level1
   scoreText: {fileID: 0}
+  coinSound: {fileID: 0}
 --- !u!114 &1033365984
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20213,6 +20222,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CoinPickup_Level1
   scoreText: {fileID: 747378478}
+  coinSound: {fileID: 0}
 --- !u!1 &1040033049
 GameObject:
   m_ObjectHideFlags: 0
@@ -21453,6 +21463,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CoinPickup_Level1
   scoreText: {fileID: 747378478}
+  coinSound: {fileID: 0}
 --- !u!114 &1091859034
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21466,6 +21477,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CoinPickup_Level1
   scoreText: {fileID: 0}
+  coinSound: {fileID: 0}
 --- !u!58 &1091859035
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -24606,6 +24618,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CoinPickup_Level1
   scoreText: {fileID: 747378478}
+  coinSound: {fileID: 0}
 --- !u!114 &1269261207
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24619,6 +24632,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CoinPickup_Level1
   scoreText: {fileID: 0}
+  coinSound: {fileID: 0}
 --- !u!58 &1269261208
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -27984,6 +27998,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CoinPickup_Level1
   scoreText: {fileID: 747378478}
+  coinSound: {fileID: 0}
 --- !u!114 &1479618403
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27997,6 +28012,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CoinPickup_Level1
   scoreText: {fileID: 0}
+  coinSound: {fileID: 0}
 --- !u!58 &1479618404
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -30995,6 +31011,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CoinPickup_Level1
   scoreText: {fileID: 747378478}
+  coinSound: {fileID: 0}
 --- !u!114 &1652288844
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -31008,6 +31025,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CoinPickup_Level1
   scoreText: {fileID: 0}
+  coinSound: {fileID: 0}
 --- !u!58 &1652288845
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -34204,6 +34222,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CoinPickup_Level1
   scoreText: {fileID: 747378478}
+  coinSound: {fileID: 0}
 --- !u!114 &1836255063
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34217,6 +34236,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CoinPickup_Level1
   scoreText: {fileID: 0}
+  coinSound: {fileID: 0}
 --- !u!58 &1836255064
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -36240,6 +36260,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CoinPickup_Level1
   scoreText: {fileID: 747378478}
+  coinSound: {fileID: 0}
 --- !u!114 &1933139352
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -36253,6 +36274,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CoinPickup_Level1
   scoreText: {fileID: 0}
+  coinSound: {fileID: 0}
 --- !u!58 &1933139353
 CircleCollider2D:
   m_ObjectHideFlags: 0
