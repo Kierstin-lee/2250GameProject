@@ -6,11 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="5b3795eb-0421-4b52-bb7b-73433f0ab0ec" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GameProject2250/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameProject2250/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level 1/Coin-0Annimator.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level 1/Coin-0Annimator.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level 1/GamedevDreamer/Animations/Coin.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level 1/GamedevDreamer/Animations/Coin.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level 1/GamedevDreamer/Scenes.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level 1/GamedevDreamer/Scenes/SampleScene.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level 1/GamedevDreamer/Scenes/SampleScene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/GamedevDreamer/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/GamedevDreamer/Scripts/CamMovement.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/GamedevDreamer/Scripts/CamMovement.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/GamedevDreamer/Scripts/CoinPickup_Level1.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/GamedevDreamer/Scripts/CoinPickup_Level1.cs.meta" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,6 +116,10 @@
       <workItem from="1774916975180" duration="1916000" />
       <workItem from="1774930165987" duration="25000" />
       <workItem from="1774930248185" duration="9000" />
+      <workItem from="1774930501614" duration="51000" />
+      <workItem from="1774931991320" duration="43000" />
+      <workItem from="1774932447590" duration="123000" />
+      <workItem from="1774934139103" duration="11000" />
     </task>
     <servers />
   </component>
