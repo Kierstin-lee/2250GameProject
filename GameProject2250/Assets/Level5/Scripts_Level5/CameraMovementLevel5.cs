@@ -1,25 +1,26 @@
 using UnityEngine;
 
-
 public class CameraMovementLevel5 : MonoBehaviour
 {
     [SerializeField] private float smoothSpeed = 5f;
-    
+
     private Transform player;
 
-    void Start()
+    public void SetTarget(Transform newTarget)
     {
-        player = GameObject.FindGameObjectWithTag("Player").transform;
+        player = newTarget;
     }
 
     void LateUpdate()
     {
         if (player == null) return;
 
-        Vector3 targetPosition = new Vector3(player.position.x, player.position.y, transform.position.z);
+        Vector3 targetPosition = new Vector3(
+            player.position.x,
+            player.position.y,
+            transform.position.z
+        );
 
         transform.position = Vector3.Lerp(transform.position, targetPosition, smoothSpeed * Time.deltaTime);
     }
-    
 }
-

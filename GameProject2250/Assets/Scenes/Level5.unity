@@ -346,6 +346,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1875155805}
     m_Modifications:
+    - target: {fileID: 3205784271185447661, guid: 8f19645d1dcc4c24a1fe81dfc3bbe9a5,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 200
+      objectReference: {fileID: 0}
     - target: {fileID: 6791773619916367834, guid: 8f19645d1dcc4c24a1fe81dfc3bbe9a5,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -3855,8 +3860,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4279900698
-  m_fontColor: {r: 0.1, g: 0.1, b: 0.1, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -4196,7 +4201,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 11.95957
+  orthographic size: 10.043457
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -25850,8 +25855,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4279900698
-  m_fontColor: {r: 0.1, g: 0.1, b: 0.1, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -26543,6 +26548,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_TagString
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 6246303286739165591, guid: 059790aee4124594910a271a5986e78d,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 7319478287407324983, guid: 059790aee4124594910a271a5986e78d,
         type: 3}
@@ -27402,8 +27412,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4279900698
-  m_fontColor: {r: 0.1, g: 0.1, b: 0.1, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -27846,31 +27856,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1875155805}
-  - component: {fileID: 1875155804}
+  - component: {fileID: 1875155806}
   m_Layer: 0
-  m_Name: Fairy Spawner
+  m_Name: Fairy Spawner _Level 5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1875155804
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1875155803}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5aad9df0578544aaae704d54cebf2f1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CharacterSpawner_Level0
-  fairyRedCharacter: {fileID: 2108434486}
-  fairyGreenCharacter: {fileID: 112913847}
-  fairyOrangeCharacter: {fileID: 1368973144}
-  cameraFollow: {fileID: 0}
-  playerSpawn: {fileID: 0}
 --- !u!4 &1875155805
 Transform:
   m_ObjectHideFlags: 0
@@ -27889,6 +27882,22 @@ Transform:
   - {fileID: 112913848}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1875155806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1875155803}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4807930e68b1c4db9bbd1dbada05752d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterSpawner_Level5
+  fairyRedCharacter: {fileID: 2108434486}
+  fairyGreenCharacter: {fileID: 112913847}
+  fairyOrangeCharacter: {fileID: 1368973144}
+  level5Camera: {fileID: 763120420}
 --- !u!1 &1911454374
 GameObject:
   m_ObjectHideFlags: 0
@@ -561891,6 +561900,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1875155805}
     m_Modifications:
+    - target: {fileID: 2321554631975589709, guid: ea8d65b89dc84d9092703d2ef9b70db7,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 200
+      objectReference: {fileID: 0}
     - target: {fileID: 3979658910644941265, guid: ea8d65b89dc84d9092703d2ef9b70db7,
         type: 3}
       propertyPath: m_Name

@@ -2,25 +2,28 @@ using UnityEngine;
 
 public class FairyControllerLevel5 : MonoBehaviour
 {
+    [Header("Movement")]
     [SerializeField] private float moveSpeed = 5f;
     [SerializeField] private float jumpForce = 10f;
+
+    [Header("Ground Check")]
+    [SerializeField] private Transform groundCheck;
+    [SerializeField] private float groundCheckRadius = 0.25f;
+    [SerializeField] private LayerMask groundLayer;
+
+    [Header("Ladder")]
+    [SerializeField] private float climbSpeed = 8f;
+    [SerializeField] private float normalGravity = 4f;
 
     private Rigidbody2D rb;
     private Animator anim;
     private SpriteRenderer spriteRenderer;
-    private Vector2 moveInput;
 
+    private Vector2 moveInput;
     private float vertical;
-    private float climbSpeed = 8f;
+    private bool isGrounded;
     private bool isLadder;
     private bool isClimbing;
-
-    [Header("Ground Check")]
-    [SerializeField] private Transform groundCheck;
-    [SerializeField] private float groundCheckRadius = 0.35f;
-    [SerializeField] private LayerMask groundLayer;
-
-    private bool isGrounded;
 
     void Start()
     {
@@ -34,20 +37,27 @@ public class FairyControllerLevel5 : MonoBehaviour
         moveInput.x = Input.GetAxisRaw("Horizontal");
         vertical = Input.GetAxisRaw("Vertical");
 
-        isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
-
-        if ((Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.UpArrow)) && isGrounded && !isClimbing)
+        if (groundCheck != null)
         {
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+            isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
+        }
+        else
+        {
+            isGrounded = false;
         }
 
-        if (isLadder && Mathf.Abs(vertical) > 0f)
+        if (isLadder && Mathf.Abs(vertical) > 0.01f)
         {
             isClimbing = true;
         }
         else if (!isLadder)
         {
             isClimbing = false;
+        }
+
+        if ((Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.UpArrow)) && isGrounded && !isClimbing)
+        {
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
         }
 
         if (moveInput.x < 0)
@@ -58,7 +68,7 @@ public class FairyControllerLevel5 : MonoBehaviour
         UpdateAnimationState();
     }
 
-    private void FixedUpdate()
+    void FixedUpdate()
     {
         if (isClimbing)
         {
@@ -67,7 +77,7 @@ public class FairyControllerLevel5 : MonoBehaviour
         }
         else
         {
-            rb.gravityScale = 4f;
+            rb.gravityScale = normalGravity;
             rb.linearVelocity = new Vector2(moveInput.x * moveSpeed, rb.linearVelocity.y);
         }
     }
@@ -97,6 +107,8 @@ public class FairyControllerLevel5 : MonoBehaviour
 
     private void UpdateAnimationState()
     {
+        if (anim == null) return;
+
         anim.SetFloat("MoveX", Mathf.Abs(moveInput.x));
         anim.SetBool("isGrounded", isGrounded);
         anim.SetBool("isJumping", !isGrounded && !isClimbing);

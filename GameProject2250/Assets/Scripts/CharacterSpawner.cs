@@ -17,11 +17,14 @@ public class CharacterSpawner : MonoBehaviour
         if (GameManager.instance == null)
         {
             Debug.LogWarning("GameManager.instance is null. Defaulting to red fairy.");
+
             if (fairyRedCharacter != null)
             {
                 fairyRedCharacter.SetActive(true);
                 fairyRedCharacter.tag = "Player";
+                Debug.Log("Spawned default red fairy because GameManager was null.");
             }
+
             return;
         }
 
@@ -67,7 +70,7 @@ public class CharacterSpawner : MonoBehaviour
         }
         else
         {
-            Debug.LogWarning("No fairy was selected/spawned.");
+            Debug.LogWarning("No fairy was selected/spawned. Check your fairy references in the Inspector.");
         }
     }
 }
