@@ -16,15 +16,22 @@ public class LivesSystem_Level1 : MonoBehaviour
 
         if (lives == 2) heart3.enabled = false;
         else if (lives == 1) heart2.enabled = false;
-        else if (lives == 0)
+        else if (lives <= 0)
         {
             heart1.enabled = false;
-            // Game over - respawn
-            Respawn();
+            GameOver();
+            return;
         }
+
+        Respawn();
     }
 
     void Respawn()
+    {
+        transform.position = spawnPoint.position;
+    }
+
+    void GameOver()
     {
         lives = 3;
         heart1.enabled = true;
