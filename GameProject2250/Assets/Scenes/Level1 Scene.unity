@@ -2274,7 +2274,7 @@ GameObject:
   - component: {fileID: 118773798}
   - component: {fileID: 118773797}
   m_Layer: 5
-  m_Name: Heart 1 (2)
+  m_Name: Heart 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -23866,7 +23866,7 @@ GameObject:
   - component: {fileID: 1203576393}
   - component: {fileID: 1203576392}
   m_Layer: 5
-  m_Name: Heart 1 (1)
+  m_Name: Heart 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35019,7 +35019,7 @@ GameObject:
   - component: {fileID: 1855053467}
   - component: {fileID: 1855053466}
   m_Layer: 5
-  m_Name: Heart 1
+  m_Name: Heart 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
