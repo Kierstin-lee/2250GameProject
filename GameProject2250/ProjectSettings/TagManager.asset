@@ -9,6 +9,7 @@ TagManager:
   - Coin
   - Wall
   - Boss
+  - Ground
   layers:
   - Default
   - TransparentFX

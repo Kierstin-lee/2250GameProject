@@ -41,7 +41,7 @@ public class FairyController_level6 : MonoBehaviour
 
         UpdateAnimationState();
         
-        Debug.Log("Grounded: " + isGrounded);
+        //Debug.Log("Grounded: " + isGrounded);
     }
     
     private void FixedUpdate()
