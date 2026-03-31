@@ -6,9 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="5b3795eb-0421-4b52-bb7b-73433f0ab0ec" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GameProject2250/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameProject2250/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level 6/Scripts_level6/FairyController_level6.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level 6/Scripts_level6/FairyController_level6.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 6/Evil_Wizard_level6/Animations/Attack1_0.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level 6/Evil_Wizard_level6/Animations/Attack1_0.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 6/Evil_Wizard_level6/Animations/Evil Wizard.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level 6/Evil_Wizard_level6/Animations/Evil Wizard.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 6/Evil_Wizard_level6/Animations/Take hit_0.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level 6/Evil_Wizard_level6/Animations/Take hit_0.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 6/Scripts_level6/BossController_level6.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level 6/Scripts_level6/BossController_level6.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level6.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level6.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,6 +108,7 @@
       <workItem from="1774885358506" duration="3435000" />
       <workItem from="1774895325632" duration="3859000" />
       <workItem from="1774908789635" duration="1163000" />
+      <workItem from="1774966459340" duration="2499000" />
     </task>
     <servers />
   </component>

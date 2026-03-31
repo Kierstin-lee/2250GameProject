@@ -9,27 +9,38 @@ public class BossController : MonoBehaviour
     [Header("Movement")]
     [SerializeField] private float moveSpeed = 3f;
     [SerializeField] private float jumpForce = 10f;
-    [SerializeField] private Transform[] patrolPoints; // Optional: points to move between
-    private Rigidbody2D rb;
-    private Animator anim;
+    [SerializeField] private float leftBound;
+    [SerializeField] private float rightBound;
+    
+    [Header("Ground Check")]
+    [SerializeField] private Transform groundCheck;
+    [SerializeField] private float groundCheckRadius = 0.2f;
+    [SerializeField] private LayerMask groundLayer;
+    private bool isGrounded;
 
     [Header("Combat")]
     [SerializeField] private float attackRange = 2f;
     [SerializeField] private float attackCooldown = 2f;
+    [SerializeField] private int numberOfAttackAnimations = 2;
     private float lastAttackTime;
+    
     private Transform player;
+    private Rigidbody2D rb;
+    private Animator anim;
+    private SpriteRenderer spriteRenderer;
 
     [Header("Health UI")]
     [SerializeField] private BossHealthBar healthBarPrefab;
     private BossHealthBar healthBar;
 
-    private int currentPatrolIndex = 0;
-
     void Start()
     {
         currentHealth = maxHealth;
+        
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        
         player = GameObject.FindGameObjectWithTag("Player").transform;
 
         // Instantiate health bar above boss
@@ -45,14 +56,10 @@ public class BossController : MonoBehaviour
         if (player == null) return;
 
         // Handle movement
-        Move();
+        isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
 
-        // Handle attacking
-        float distanceToPlayer = Vector2.Distance(transform.position, player.position);
-        if (distanceToPlayer <= attackRange && Time.time - lastAttackTime >= attackCooldown)
-        {
-            Attack();
-        }
+        HandleMovement();
+        HandleAttack();
 
         // Update health bar position
         if (healthBar != null)
@@ -61,24 +68,51 @@ public class BossController : MonoBehaviour
         }
     }
 
-    private void Move()
+    private void HandleMovement()
     {
-        // Simple AI: move toward player horizontally
         float direction = Mathf.Sign(player.position.x - transform.position.x);
 
+        // Clamp movement inside bounds
+        if ((direction < 0 && transform.position.x <= leftBound) ||
+            (direction > 0 && transform.position.x >= rightBound))
+        {
+            rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
+            anim.SetFloat("Speed", 0);
+            return;
+        }
+
+        // Move toward player
         rb.linearVelocity = new Vector2(direction * moveSpeed, rb.linearVelocity.y);
         anim.SetFloat("Speed", Mathf.Abs(rb.linearVelocity.x));
 
-        // Optional: jumping logic for platforms
-        RaycastHit2D groundHit = Physics2D.Raycast(transform.position, Vector2.down, 1.1f, LayerMask.GetMask("Ground"));
-        if (groundHit.collider != null)
+        // Flip sprite
+        if (direction < 0)
+            spriteRenderer.flipX = true;
+        else if (direction > 0)
+            spriteRenderer.flipX = false;
+
+        // Jump logic (platform chasing)
+        if (isGrounded)
         {
-            // If player is above and close horizontally, jump
-            if (player.position.y > transform.position.y + 1f && Mathf.Abs(player.position.x - transform.position.x) < 3f)
+            bool playerAbove = player.position.y > transform.position.y + 1f;
+            bool closeHorizontally = Mathf.Abs(player.position.x - transform.position.x) < 3f;
+
+            if (playerAbove && closeHorizontally)
             {
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
                 anim.SetTrigger("Jump");
             }
+        }
+    }
+    
+    private void HandleAttack()
+    {
+        float distanceToPlayer = Vector2.Distance(transform.position, player.position);
+
+        // Proper cooldown enforcement
+        if (distanceToPlayer <= attackRange && Time.time >= lastAttackTime + attackCooldown)
+        {
+            Attack();
         }
     }
 
@@ -86,18 +120,20 @@ public class BossController : MonoBehaviour
     {
         lastAttackTime = Time.time;
 
-        // Pick random attack animation
-        int attackAnim = Random.Range(1, 3); // 1 or 2
-        anim.SetTrigger("Attack" + attackAnim);
+        // Random attack animation from 1 to N
+        int attackIndex = Random.Range(1, numberOfAttackAnimations + 1);
+        anim.SetTrigger("Attack" + attackIndex);
 
-        // Check if player is within attack range at the moment of attack
+        // Damage check
         if (Vector2.Distance(transform.position, player.position) <= attackRange)
         {
             FairyController_level6 playerScript = player.GetComponent<FairyController_level6>();
-            //if (playerScript != null)
-            //{
-                //playerScript.TakeDamage(1); // player loses 1 life per hit
-            //}
+
+            if (playerScript != null)
+            {
+                // Uncomment when ready
+                // playerScript.TakeDamage(1);
+            }
         }
     }
 
@@ -110,7 +146,7 @@ public class BossController : MonoBehaviour
             healthBar.SetHealth(currentHealth);
         }
 
-        anim.SetTrigger("Hurt");
+        //anim.SetTrigger("Take hit_0");
 
         if (currentHealth <= 0)
         {
@@ -120,11 +156,10 @@ public class BossController : MonoBehaviour
 
     private void Die()
     {
-        anim.SetTrigger("Die");
+        anim.SetTrigger("Death");
         rb.linearVelocity = Vector2.zero;
         this.enabled = false; // stop all boss behavior
 
-        // Optional: destroy after death animation
         Destroy(gameObject, 2f);
         if (healthBar != null) Destroy(healthBar.gameObject);
     }
