@@ -2,7 +2,6 @@ using UnityEngine;
 
 public class FairyController_Level1 : MonoBehaviour
 {
-    
     [SerializeField] private float moveSpeed = 3f;
     [SerializeField] private float jumpForce = 8f;
 
@@ -21,6 +20,13 @@ public class FairyController_Level1 : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+        }
+
+        
+        if (transform.position.y < -23f)
+        {
+            Debug.Log("Game Over");
+            Time.timeScale = 0f;
         }
     }
 
