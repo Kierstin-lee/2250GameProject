@@ -1,26 +1,41 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class LevelUI : MonoBehaviour
 {
     public static LevelUI instance;
     public TMP_Text levelText;
-    public int totalLevels = 6;
 
     void Awake()
     {
         instance = this;
     }
 
-    public void UpdateLevelUI()
-    {
-        int progress = GameManager.instance.KeysDepositedCount();
-        levelText.text = "Level: " + progress + " / " + totalLevels;
-        Debug.Log("UI Updated: " + levelText.text);
-    }
-
     void Start()
     {
         UpdateLevelUI();
+    }
+
+    public void UpdateLevelUI()
+    {
+        string sceneName = SceneManager.GetActiveScene().name;
+
+        // Convert scene name → level number
+        if (sceneName.StartsWith("Level"))
+        {
+            string levelNumber = sceneName.Replace("Level", "");
+            levelText.text = "Level: " + levelNumber;
+        }
+        else if (sceneName == "MainHubV2")
+        {
+            levelText.text = "Main Hub";
+        }
+        else
+        {
+            levelText.text = sceneName; // fallback
+        }
+
+        Debug.Log("Current Scene: " + sceneName);
     }
 }

@@ -10,11 +10,18 @@ TagManager:
   - Wall
   - Ladder
   - Spike
+  - Ground
+  - menuButton
+  - NPC
+  - Water
+  - Coconut
+  - Hazard
+  - Hole
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Ground
   - Water
   - UI
   - Characters
