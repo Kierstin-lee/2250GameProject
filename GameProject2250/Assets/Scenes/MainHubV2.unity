@@ -56539,7 +56539,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LevelUI
   levelText: {fileID: 1311082286}
-  totalLevels: 6
 --- !u!4 &957440514
 Transform:
   m_ObjectHideFlags: 0
@@ -77866,7 +77865,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1272624457}
-  - component: {fileID: 1272624456}
+  - component: {fileID: 1272624458}
   m_Layer: 0
   m_Name: Fairy Spawner
   m_TagString: Untagged
@@ -77874,22 +77873,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1272624456
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1272624455}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eb0d592c87b5ea7429175689d4fa8930, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CharacterSpawner
-  fairyRedCharacter: {fileID: 1196084831}
-  fairyGreenCharacter: {fileID: 1822653196}
-  fairyOrangeCharacter: {fileID: 1833763843}
-  cameraFollow: {fileID: 213857501}
 --- !u!4 &1272624457
 Transform:
   m_ObjectHideFlags: 0
@@ -77905,6 +77888,22 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1272624458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1272624455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d472a02a4ab45475bb1ca71360dfb921, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CharacterSpawner_MainHub
+  fairyRedCharacter: {fileID: 1196084831}
+  fairyGreenCharacter: {fileID: 1822653196}
+  fairyOrangeCharacter: {fileID: 1833763843}
+  cameraFollow: {fileID: 213857501}
 --- !u!1001 &1274853356
 PrefabInstance:
   m_ObjectHideFlags: 0

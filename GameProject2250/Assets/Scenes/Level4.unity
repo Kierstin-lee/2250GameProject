@@ -39223,7 +39223,6 @@ MonoBehaviour:
   fairyGreenCharacter: {fileID: 1529184415}
   fairyOrangeCharacter: {fileID: 2011269770}
   cameraFollow: {fileID: 0}
-  playerSpawn: {fileID: 1949510125}
 --- !u!4 &1600131922
 Transform:
   m_ObjectHideFlags: 0
