@@ -30,9 +30,10 @@ public class FairyMovementL2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        moveInput.x = Input.GetAxisRaw("Horizontal"); // Get horizontal input for movement
+
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, whatIsGround); // Check if the fairy is on the ground using an overlap circle
 
-        moveInput.x = Input.GetAxisRaw("Horizontal"); // Get horizontal input (A/D or Left/Right arrow keys)
 
         if (Input.GetKeyDown(KeyCode.UpArrow) && isGrounded)
         {
@@ -95,14 +96,4 @@ public class FairyMovementL2 : MonoBehaviour
         }
     }
 
-    public void ActivateWandPower()
-    {
-        Debug.Log("Activating wand power");
-        jumpForce += 2f; // Increase jump force when wand power is activated
-    }
-    public void ActivateWingPower()
-    {
-        Debug.Log("Activating wing power");
-        moveSpeed += 1f; // Increase move speed when wing power is activated
-    }
 }
