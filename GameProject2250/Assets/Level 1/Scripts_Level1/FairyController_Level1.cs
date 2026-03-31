@@ -7,27 +7,32 @@ public class FairyController_Level1 : MonoBehaviour
 
     private Rigidbody2D rb;
     private Vector2 moveInput;
+    private SpriteRenderer spriteRenderer;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     void Update()
     {
         moveInput.x = Input.GetAxisRaw("Horizontal");
 
+        if (moveInput.x < 0)
+        {
+            spriteRenderer.flipX = true;
+        }
+        else if (moveInput.x > 0)
+        {
+            spriteRenderer.flipX = false;
+        }
+
         if (Input.GetKeyDown(KeyCode.Space))
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
         }
-
         
-        if (transform.position.y < -23f)
-        {
-            Debug.Log("Game Over");
-            Time.timeScale = 0f;
-        }
     }
 
     void FixedUpdate()
