@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class FairyController_Level1 : MonoBehaviour
 {
+    
     [SerializeField] private float moveSpeed = 3f;
     [SerializeField] private float jumpForce = 8f;
 
