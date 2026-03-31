@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class LivesSystem : MonoBehaviour
+public class LivesSystem_Level1 : MonoBehaviour
 {
     public Image heart1;
     public Image heart2;
@@ -23,4 +23,13 @@ public class LivesSystem : MonoBehaviour
             Respawn();
         }
     }
-    
+
+    void Respawn()
+    {
+        lives = 3;
+        heart1.enabled = true;
+        heart2.enabled = true;
+        heart3.enabled = true;
+        transform.position = spawnPoint.position;
+    }
+}
