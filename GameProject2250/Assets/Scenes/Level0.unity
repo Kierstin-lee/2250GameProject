@@ -1200,7 +1200,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!4 &87291431 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7319478287407324983, guid: 059790aee4124594910a271a5986e78d,
@@ -17346,7 +17346,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LevelUI
   levelText: {fileID: 1187161196}
-  totalLevels: 6
 --- !u!1 &1055504791
 GameObject:
   m_ObjectHideFlags: 0
@@ -29995,8 +29994,8 @@ MonoBehaviour:
   fairyRedCharacter: {fileID: 2046330508}
   fairyGreenCharacter: {fileID: 1975350847}
   fairyOrangeCharacter: {fileID: 87291427}
-  cameraFollow: {fileID: 0}
-  playerSpawn: {fileID: 0}
+  cameraFollow: {fileID: 1163132783}
+  playerSpawn: {fileID: 1874069742}
 --- !u!1 &1874436338
 GameObject:
   m_ObjectHideFlags: 0
@@ -32496,7 +32495,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!4 &1975350851 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6791773619916367834, guid: 8f19645d1dcc4c24a1fe81dfc3bbe9a5,
@@ -34312,7 +34311,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!1 &2099068534
 GameObject:
   m_ObjectHideFlags: 0
