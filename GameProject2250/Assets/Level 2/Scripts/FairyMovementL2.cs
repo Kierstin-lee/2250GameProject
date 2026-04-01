@@ -1,3 +1,4 @@
+using NUnit.Framework;
 using UnityEngine;
 
 public class FairyMovementL2 : MonoBehaviour
@@ -47,11 +48,11 @@ public class FairyMovementL2 : MonoBehaviour
 
         if (moveInput.x > 0)
         {
-            spriteRenderer.flipX = true; // Face right when moving right
+            spriteRenderer.flipX = false; // Face right when moving right
         }
         else if (moveInput.x < 0)
         {
-            spriteRenderer.flipX = false; // Face left when moving left
+            spriteRenderer.flipX = true; // Face left when moving left
         }
         
         UpdateAnimationState(); // Update the animation state based on movement input
@@ -71,11 +72,11 @@ public class FairyMovementL2 : MonoBehaviour
         }
     }
 
-    private void OnDrawGizmosSelected()
+    private void OnDrawGizmos()
     {
         if (groundCheck != null)
         {
-            Gizmos.color = Color.red; // Set the gizmo color to red
+            Gizmos.color = isGrounded ? Color.green : Color.red; // Set the gizmo color to green if grounded, otherwise red
             Gizmos.DrawWireSphere(groundCheck.position, checkRadius); // Draw a wire sphere at the ground check position to visualize the ground check area
         }
     }

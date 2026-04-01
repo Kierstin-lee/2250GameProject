@@ -223,7 +223,7 @@ GameObject:
   - component: {fileID: 7714139}
   m_Layer: 0
   m_Name: Spikes
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -288,8 +288,8 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -534963063
+  m_SortingLayer: 1
   m_SortingOrder: 2
   m_MaskInteraction: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
@@ -1785,11 +1785,11 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1023640371}
   - {fileID: 1911709763}
   - {fileID: 339764776}
   - {fileID: 7714138}
   - {fileID: 624766991}
+  - {fileID: 1023640371}
   - {fileID: 949920196}
   - {fileID: 457906000}
   m_Father: {fileID: 1495722309}
@@ -2045,7 +2045,7 @@ GameObject:
   - component: {fileID: 339764777}
   m_Layer: 0
   m_Name: Plants
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2110,8 +2110,8 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -534963063
+  m_SortingLayer: 1
   m_SortingOrder: 1
   m_MaskInteraction: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
@@ -3469,20 +3469,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1591988246}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &452346067
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 452346062}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f8d0229f0ec9804fa3bc8817872caf0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::FairyController_Level0
-  moveSpeed: 3
-  jumpForce: 8
 --- !u!61 &452346068
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3556,6 +3542,25 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 1
   m_Constraints: 4
+--- !u!114 &452346071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 452346062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5d1b7b482f1c594e98caa6624f06d62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FairyMovementL2
+  moveSpeed: 3
+  jumpForce: 8
+  groundCheck: {fileID: 273593136}
+  whatIsGround:
+    serializedVersion: 2
+    m_Bits: 64
+  checkRadius: 0.35
 --- !u!1 &457905999
 GameObject:
   m_ObjectHideFlags: 0
@@ -5279,7 +5284,7 @@ GameObject:
   - component: {fileID: 624766992}
   m_Layer: 0
   m_Name: Fences
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5344,8 +5349,8 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -534963063
+  m_SortingLayer: 1
   m_SortingOrder: -3
   m_MaskInteraction: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
@@ -9569,6 +9574,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CameraController
   smoothSpeed: 5
+  minX: -5
+  maxX: 106
+  minY: -4
+  maxY: 4
 --- !u!1 &1174780779
 GameObject:
   m_ObjectHideFlags: 0
@@ -11941,7 +11950,7 @@ PrefabInstance:
     - target: {fileID: 6246303286739165591, guid: 059790aee4124594910a271a5986e78d,
         type: 3}
       propertyPath: m_SortingLayer
-      value: -1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6246303286739165591, guid: 059790aee4124594910a271a5986e78d,
         type: 3}
@@ -12015,15 +12024,15 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1671945572645789033, guid: 059790aee4124594910a271a5986e78d,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 452346067}
-    - targetCorrespondingSourceObject: {fileID: 1671945572645789033, guid: 059790aee4124594910a271a5986e78d,
-        type: 3}
-      insertIndex: -1
       addedObject: {fileID: 452346069}
     - targetCorrespondingSourceObject: {fileID: 1671945572645789033, guid: 059790aee4124594910a271a5986e78d,
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 452346068}
+    - targetCorrespondingSourceObject: {fileID: 1671945572645789033, guid: 059790aee4124594910a271a5986e78d,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 452346071}
   m_SourcePrefab: {fileID: 100100000, guid: 059790aee4124594910a271a5986e78d, type: 3}
 --- !u!1 &1601827763
 GameObject:
@@ -13803,7 +13812,7 @@ GameObject:
   - component: {fileID: 1911709764}
   m_Layer: 0
   m_Name: BackGround
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13868,8 +13877,8 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: -534963063
+  m_SortingLayer: 1
   m_SortingOrder: -5
   m_MaskInteraction: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
