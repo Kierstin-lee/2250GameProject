@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class BossController : MonoBehaviour
+public class BossController_level6 : MonoBehaviour
 {
     [Header("Boss Stats")]
     [SerializeField] private int maxHealth = 3;        // Boss dies after 3 hits
@@ -9,8 +9,8 @@ public class BossController : MonoBehaviour
     [Header("Movement")]
     [SerializeField] private float moveSpeed = 2f;
     //[SerializeField] private float jumpForce = 10f;
-    [SerializeField] private float leftBound;
-    [SerializeField] private float rightBound;
+    [SerializeField] private float leftBound = 40f;
+    [SerializeField] private float rightBound = 67f;
     
     //[Header("Ground Check")]
     //[SerializeField] private Transform groundCheck;
@@ -48,7 +48,7 @@ public class BossController : MonoBehaviour
         if (playerObj != null)
         {
             player = playerObj.transform;
-            Debug.Log(playerObj.name); //i see this
+            Debug.Log("Player found: " + playerObj.name); //i see this
         }
 
         // Instantiate health bar above boss
@@ -56,40 +56,44 @@ public class BossController : MonoBehaviour
         {
             healthBar = Instantiate(healthBarPrefab, transform.position + Vector3.up * 2f, Quaternion.identity);
             healthBar.SetMaxHealth(maxHealth);
-            Debug.Log(healthBar.gameObject.name); //i see this
         }
     }
 
     void Update()
     {
         if (player == null) return;
-
+        
         // Handle movement
         //isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
-
-        Debug.Log("Update function running"); //i see this
-        Move();
+        
+        //Debug.Log("Update function running"); //i see this
         TryAttack();
 
-        // Update health bar position
         if (healthBar != null)
         {
             healthBar.transform.position = transform.position + Vector3.up * 2f;
         }
     }
 
+    void FixedUpdate()
+    {
+        if (player == null) return;
+        Move();
+
+    }
+
     private void Move()
     {
         Debug.Log("Move function running"); //i see this
+        
         float direction = Mathf.Sign(player.position.x - transform.position.x);
 
         // Clamp movement inside bounds
         if ((direction < 0 && transform.position.x <= leftBound) ||
             (direction > 0 && transform.position.x >= rightBound))
         {
-            rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
+            rb.linearVelocity = new Vector2(0f, rb.linearVelocity.y);
             //anim.SetFloat("Speed", 0);
-            Debug.Log(rb.linearVelocity.y);
             return;
         }
 
