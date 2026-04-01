@@ -3,42 +3,54 @@ using TMPro;
 
 public class NPCDialogue_Level1 : MonoBehaviour
 {
-    public GameObject speechBubble;
-    public TMP_Text dialogueText;
+    [SerializeField] private GameObject dialogueBox;
+    [SerializeField] private TMP_Text dialogueText;
+    [SerializeField] private FairyController_Level1 fairyController_Level1;
 
-    private string[] messages = {
-        "Hi! Welcome to the Enchanted Forest!",
-        "Use the arrow keys to move around!",
-        "Press Space to jump!",
-        "Collect coins as you explore!",
+    private string[] lines =
+    {
+        "Welcome to the Enchanted Forest!\nPress Space to keep reading.",
+        "Use the arrow keys to move around.",
+        "Press Space to jump between platforms.",
+        "Collect coins as you explore.",
+        "Be careful—if you fall, you'll lose a life \nand restart the level.",
         "Reach the blue portal to go back home!"
     };
 
-    private int currentMessage = 0;
-    private bool isActive = true;
+    private int currentLine = 0;
 
     void Start()
     {
-        speechBubble.SetActive(true);
-        dialogueText.text = messages[0];
+        dialogueBox.SetActive(true);
+        dialogueText.text = lines[currentLine];
+
+        if (fairyController_Level1 != null)
+        {
+            fairyController_Level1.enabled = false;
+        }
     }
 
     void Update()
     {
-        if (isActive && Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space))
         {
-            currentMessage++;
+            currentLine++;
 
-            if (currentMessage >= messages.Length)
+            if (currentLine < lines.Length)
             {
-                speechBubble.SetActive(false);
-                isActive = false;
+                dialogueText.text = lines[currentLine];
             }
             else
             {
-                dialogueText.text = messages[currentMessage];
+                dialogueBox.SetActive(false);
+
+                if (fairyController_Level1 != null)
+                {
+                    fairyController_Level1.enabled = true;
+                }
+
+                enabled = false;
             }
         }
     }
 }
-
