@@ -76,8 +76,8 @@ public class GameManager : MonoBehaviour
     {
         playerLives -= amount;
 
-        if (playerLives < 0f)
-            playerLives = 0f;
+       // if (playerLives < 0f)
+       //     playerLives = 0f;
 
         LivesUI.instance?.UpdateLives(playerLives);
 
@@ -85,9 +85,11 @@ public class GameManager : MonoBehaviour
 
         if (playerLives <= 0f)
         {
+            playerLives = 0f;
             Debug.Log("Player has died!");
             deathScreen.SetActive(true);
-            StartCoroutine(RestartGame());
+            Time.timeScale = 0f;
+            //StartCoroutine(RestartGame());
         }
     }
 
