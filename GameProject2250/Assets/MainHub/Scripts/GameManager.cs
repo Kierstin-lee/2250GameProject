@@ -75,9 +75,9 @@ public class GameManager : MonoBehaviour
     public void LoseLife(float amount = 0.5f)
     {
         playerLives -= amount;
-
-       // if (playerLives < 0f)
-       //     playerLives = 0f;
+        
+        if (playerLives < 0f)
+            playerLives = 0f;
 
         LivesUI.instance?.UpdateLives(playerLives);
 
@@ -85,7 +85,6 @@ public class GameManager : MonoBehaviour
 
         if (playerLives <= 0f)
         {
-            playerLives = 0f;
             Debug.Log("Player has died!");
             deathScreen.SetActive(true);
             Time.timeScale = 0f;
@@ -155,5 +154,23 @@ public class GameManager : MonoBehaviour
         if (deposited == 4 && portalNumber == 3) return "Level5";
 
         return "";
+    }
+    
+    
+    // ---------- Located DeathScreen in new scenes that load ----------
+    void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        // Try to find DeathScreen in the new scene
+        deathScreen = GameObject.Find("DeathScreen");
     }
 }

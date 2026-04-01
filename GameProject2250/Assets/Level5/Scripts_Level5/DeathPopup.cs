@@ -1,16 +1,17 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class DeathPopup : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    public void RestartGame()
     {
-        
-    }
+        Time.timeScale = 1f;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        GameManager.instance.playerLives = GameManager.instance.startingLives;
+        GameManager.instance.coinsCollected = 0;
+        GameManager.instance.keysCollected.Clear();
+        GameManager.instance.keysDeposited.Clear();
+
+        SceneManager.LoadScene("StartScreen");
     }
 }
