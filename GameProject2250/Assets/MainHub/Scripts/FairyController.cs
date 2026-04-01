@@ -23,6 +23,8 @@ public class FairyController_MainHub : MonoBehaviour
 
         keyManager = Object.FindFirstObjectByType<KeyManager>();
         dialogueManager = Object.FindFirstObjectByType<NPCDialogue>();
+        
+        rb.gravityScale = 0f; // so fairy will nt have gravity, but physics will still work since it will be dynamic instead of kinematic
     }
 
     // Update is called once per frame
