@@ -395,12 +395,12 @@ PrefabInstance:
     - target: {fileID: 6791773619916367834, guid: 8f19645d1dcc4c24a1fe81dfc3bbe9a5,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.4262
+      value: -0.91
       objectReference: {fileID: 0}
     - target: {fileID: 6791773619916367834, guid: 8f19645d1dcc4c24a1fe81dfc3bbe9a5,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.821
+      value: -1.67
       objectReference: {fileID: 0}
     - target: {fileID: 6791773619916367834, guid: 8f19645d1dcc4c24a1fe81dfc3bbe9a5,
         type: 3}
@@ -3639,12 +3639,12 @@ PrefabInstance:
     - target: {fileID: 6297866199032724493, guid: 774eb6337e9357f40a4d92ccb03c9dc0,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -14.5
+      value: 42.47
       objectReference: {fileID: 0}
     - target: {fileID: 6297866199032724493, guid: 774eb6337e9357f40a4d92ccb03c9dc0,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -7.2
+      value: -2
       objectReference: {fileID: 0}
     - target: {fileID: 6297866199032724493, guid: 774eb6337e9357f40a4d92ccb03c9dc0,
         type: 3}
@@ -4049,7 +4049,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -229.0498, y: -371.64172, z: 71.18457, w: 401.4525}
+  m_margin: {x: -63.63916, y: -371.64172, z: 4.7695312, w: 401.4525}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -4333,7 +4333,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 8.478837
+  orthographic size: 6.8691993
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -4358,7 +4358,7 @@ Transform:
   m_GameObject: {fileID: 763120416}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -12.1, y: -2.75, z: -10}
+  m_LocalPosition: {x: -17.9, y: -3.3, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -26223,7 +26223,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -229.68628, y: -357.34326, z: 74.288086, w: 389.13403}
+  m_margin: {x: -63.022705, y: -357.34326, z: 31.682129, w: 389.13403}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -26878,12 +26878,12 @@ PrefabInstance:
     - target: {fileID: 7319478287407324983, guid: 059790aee4124594910a271a5986e78d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.427
+      value: -1.01
       objectReference: {fileID: 0}
     - target: {fileID: 7319478287407324983, guid: 059790aee4124594910a271a5986e78d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.94
+      value: -1.67
       objectReference: {fileID: 0}
     - target: {fileID: 7319478287407324983, guid: 059790aee4124594910a271a5986e78d,
         type: 3}
@@ -27786,7 +27786,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -228.75952, y: -343.2079, z: 87.29297, w: 374.99866}
+  m_margin: {x: -62.095947, y: -343.2079, z: 38.421875, w: 374.99866}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -562326,12 +562326,12 @@ PrefabInstance:
     - target: {fileID: 5115795131485341815, guid: ea8d65b89dc84d9092703d2ef9b70db7,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.354
+      value: -0.99
       objectReference: {fileID: 0}
     - target: {fileID: 5115795131485341815, guid: ea8d65b89dc84d9092703d2ef9b70db7,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.0273
+      value: -1.74
       objectReference: {fileID: 0}
     - target: {fileID: 5115795131485341815, guid: ea8d65b89dc84d9092703d2ef9b70db7,
         type: 3}
@@ -562545,7 +562545,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -474.1, y: -10.5}
+  m_AnchoredPosition: {x: -225.1, y: 1.300003}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &2112112003
