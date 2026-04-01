@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class LivesSystem_Level1 : MonoBehaviour
 {
@@ -7,6 +8,8 @@ public class LivesSystem_Level1 : MonoBehaviour
     public Image heart2;
     public Image heart3;
     public Transform spawnPoint;
+    public GameObject gameOverPanel;
+    public TMP_Text gameOverText;
 
     private int lives = 3;
 
@@ -33,10 +36,12 @@ public class LivesSystem_Level1 : MonoBehaviour
 
     void GameOver()
     {
-        lives = 3;
-        heart1.enabled = true;
-        heart2.enabled = true;
-        heart3.enabled = true;
-        transform.position = spawnPoint.position;
+        Time.timeScale = 0f;
+        gameOverPanel.SetActive(true);
+        gameOverText.text = "Game Over!";
+    }
+    void Start()
+    {
+        gameOverPanel.SetActive(false);
     }
 }

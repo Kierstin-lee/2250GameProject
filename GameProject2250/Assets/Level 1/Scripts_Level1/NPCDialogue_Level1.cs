@@ -7,7 +7,7 @@ public class NPCDialogue_Level1 : MonoBehaviour
     [SerializeField] private TMP_Text dialogueText;
     [SerializeField] private FairyController_Level1 fairyController_Level1;
 
-    private string[] lines =
+    private string[] fullLines =
     {
         "Welcome to the Enchanted Forest!\nPress Space to keep reading.",
         "Use the arrow keys to move around.",
@@ -17,8 +17,15 @@ public class NPCDialogue_Level1 : MonoBehaviour
         "Reach the blue portal to go back home!"
     };
 
+    private string[] shortLines =
+    {
+        "One life gone, be careful!\nPress Space to continue."
+    };
+
+    private string[] currentLines;
     private int currentLine = 0;
     private bool isDialogueActive = false;
+    private bool hasSeenDialogue = false;
 
     void Start()
     {
@@ -30,8 +37,9 @@ public class NPCDialogue_Level1 : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             currentLine = 0;
+            currentLines = hasSeenDialogue ? shortLines : fullLines;
             dialogueBox.SetActive(true);
-            dialogueText.text = lines[currentLine];
+            dialogueText.text = currentLines[currentLine];
             isDialogueActive = true;
 
             if (fairyController_Level1 != null)
@@ -45,19 +53,18 @@ public class NPCDialogue_Level1 : MonoBehaviour
         {
             currentLine++;
 
-            if (currentLine < lines.Length)
+            if (currentLine < currentLines.Length)
             {
-                dialogueText.text = lines[currentLine];
+                dialogueText.text = currentLines[currentLine];
             }
             else
             {
                 dialogueBox.SetActive(false);
                 isDialogueActive = false;
+                hasSeenDialogue = true;
 
                 if (fairyController_Level1 != null)
                     fairyController_Level1.enabled = true;
-
-                enabled = false;
             }
         }
     }

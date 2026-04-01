@@ -6,7 +6,18 @@
   <component name="ChangeListManager">
     <list default="true" id="5b3795eb-0421-4b52-bb7b-73433f0ab0ec" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GameProject2250/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameProject2250/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fonts/FairyDustB SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/FairyDustB SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fonts/Pix32 SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/Pix32 SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/Scripts_Level1/LivesSystem_Level1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level 1/Scripts_Level1/LivesSystem_Level1.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Level 1/Scripts_Level1/NPCDialogue_Level1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level 1/Scripts_Level1/NPCDialogue_Level1.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MainHub/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Anton SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MainHub/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Anton SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MainHub/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MainHub/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MainHub/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Electronic Highway Sign SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MainHub/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Electronic Highway Sign SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MainHub/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Oswald Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MainHub/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Oswald Bold SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MainHub/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MainHub/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MainHub/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MainHub/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MainHub/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MainHub/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1 Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1 Scene.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +134,7 @@
       <workItem from="1774976506974" duration="3354000" />
       <workItem from="1774985930846" duration="20000" />
       <workItem from="1775003204152" duration="4116000" />
-      <workItem from="1775012129010" duration="6872000" />
+      <workItem from="1775012129010" duration="8788000" />
     </task>
     <servers />
   </component>
