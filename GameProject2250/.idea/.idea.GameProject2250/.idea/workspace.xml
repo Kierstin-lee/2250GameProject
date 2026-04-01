@@ -6,8 +6,16 @@
   <component name="ChangeListManager">
     <list default="true" id="5b3795eb-0421-4b52-bb7b-73433f0ab0ec" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GameProject2250/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameProject2250/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level 1/Scripts_Level1/NPCDialogue_Level1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level 1/Scripts_Level1/NPCDialogue_Level1.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1 Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1 Scene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Sprites/Speechbox_Black_0001.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Sprites/Speechbox_Black_0001.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Sprites/Speechbox_Universalcolor_0001.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Sprites/Speechbox_Universalcolor_0001.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Sprites/Speechbubble_0001.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Sprites/Speechbubble_0001.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Sprites/Speechbubble_0002.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Sprites/Speechbubble_0002.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Sprites/Speechbubble_0003.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Sprites/Speechbubble_0003.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Sprites/Speechbubble_0004.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Sprites/Speechbubble_0004.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Sprites/Speechbubble_0005.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Sprites/Speechbubble_0005.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Sprites/Speechbubble_0006.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Sprites/Speechbubble_0006.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Sprites/Speechbubble_0007.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Sprites/Speechbubble_0007.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Sprites/Speechbubble_0008.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Sprites/Speechbubble_0008.png.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +131,7 @@
       <workItem from="1774976136864" duration="21000" />
       <workItem from="1774976506974" duration="3354000" />
       <workItem from="1774985930846" duration="20000" />
-      <workItem from="1775003204152" duration="2767000" />
+      <workItem from="1775003204152" duration="4116000" />
     </task>
     <servers />
   </component>
