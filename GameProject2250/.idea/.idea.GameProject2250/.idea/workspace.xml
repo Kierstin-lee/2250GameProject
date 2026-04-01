@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5b3795eb-0421-4b52-bb7b-73433f0ab0ec" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Level5/ChatGPT Image Mar 29, 2026, 09_56_43 PM 1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level5/ChatGPT Image Mar 29, 2026, 09_56_43 PM 1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level5/ChatGPT Image Mar 29, 2026, 09_56_43 PM.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level5/ChatGPT Image Mar 29, 2026, 09_56_43 PM.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level5.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level5.unity" afterDir="false" />
-    </list>
+    <list default="true" id="5b3795eb-0421-4b52-bb7b-73433f0ab0ec" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -132,7 +126,7 @@
       <workItem from="1774976365018" duration="1480000" />
       <workItem from="1774977880936" duration="452000" />
       <workItem from="1775014518618" duration="608000" />
-      <workItem from="1775065819673" duration="3742000" />
+      <workItem from="1775065819673" duration="4338000" />
     </task>
     <servers />
   </component>
