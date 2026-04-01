@@ -580,8 +580,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2261269a6e7dfe54d8ef5c47f3c7cf21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FairyControllerLevel5
-  moveSpeed: 5
-  jumpForce: 10
+  moveSpeed: 6
+  jumpForce: 13
   groundCheck: {fileID: 920177104}
   groundCheckRadius: 0.25
   groundLayer:
@@ -3639,12 +3639,12 @@ PrefabInstance:
     - target: {fileID: 6297866199032724493, guid: 774eb6337e9357f40a4d92ccb03c9dc0,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 41.11
+      value: -14.5
       objectReference: {fileID: 0}
     - target: {fileID: 6297866199032724493, guid: 774eb6337e9357f40a4d92ccb03c9dc0,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.98
+      value: -7.2
       objectReference: {fileID: 0}
     - target: {fileID: 6297866199032724493, guid: 774eb6337e9357f40a4d92ccb03c9dc0,
         type: 3}
@@ -27053,8 +27053,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2261269a6e7dfe54d8ef5c47f3c7cf21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FairyControllerLevel5
-  moveSpeed: 5
-  jumpForce: 10
+  moveSpeed: 6
+  jumpForce: 13
   groundCheck: {fileID: 1216014851}
   groundCheckRadius: 0.25
   groundLayer:
@@ -562501,8 +562501,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2261269a6e7dfe54d8ef5c47f3c7cf21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FairyControllerLevel5
-  moveSpeed: 5
-  jumpForce: 12
+  moveSpeed: 6
+  jumpForce: 13
   groundCheck: {fileID: 19399340}
   groundCheckRadius: 0.25
   groundLayer:

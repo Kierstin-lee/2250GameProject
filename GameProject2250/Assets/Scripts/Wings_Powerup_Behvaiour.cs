@@ -7,8 +7,8 @@ public class Wings_Powerup_Behvaiour : MonoBehaviour
         if (collision.gameObject.tag == "Player")
         {
             Debug.Log("Fairy hit the wings power-up");
-            // FairyController_Level0 is reference to the fairy controller script (whatever one you may be using for your given level/scene
-            FairyController_Level0 player = collision.gameObject.GetComponent<FairyController_Level0>();
+            // FairyControllerLevel5 is reference to the fairy controller script (whatever one you may be using for your given level/scene)
+            FairyControllerLevel5 player = collision.gameObject.GetComponent<FairyControllerLevel5>();
 
             if (player != null)
             {

@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5b3795eb-0421-4b52-bb7b-73433f0ab0ec" name="Changes" comment="" />
+    <list default="true" id="5b3795eb-0421-4b52-bb7b-73433f0ab0ec" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameProject2250/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameProject2250/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level5.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level5.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainHubV2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainHubV2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Wings_Powerup_Behvaiour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Wings_Powerup_Behvaiour.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -126,7 +131,7 @@
       <workItem from="1774976365018" duration="1480000" />
       <workItem from="1774977880936" duration="452000" />
       <workItem from="1775014518618" duration="608000" />
-      <workItem from="1775065819673" duration="1760000" />
+      <workItem from="1775065819673" duration="3083000" />
     </task>
     <servers />
   </component>
