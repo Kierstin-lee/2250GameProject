@@ -588,7 +588,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   climbSpeed: 8
-  normalGravity: 3.5
+  normalGravity: 4
 --- !u!1 &137973143
 GameObject:
   m_ObjectHideFlags: 0
@@ -3630,11 +3630,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Wings_Powerup
-      objectReference: {fileID: 0}
-    - target: {fileID: 1255697360158978432, guid: 774eb6337e9357f40a4d92ccb03c9dc0,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4345264998636632710, guid: 774eb6337e9357f40a4d92ccb03c9dc0,
         type: 3}
@@ -27066,7 +27061,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   climbSpeed: 8
-  normalGravity: 3.5
+  normalGravity: 4
 --- !u!4 &1383480650 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2372335333158448450, guid: 77565fe06784c7043b91057c28da01c2,
@@ -562514,7 +562509,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   climbSpeed: 8
-  normalGravity: 3.5
+  normalGravity: 4
 --- !u!1 &2112112001
 GameObject:
   m_ObjectHideFlags: 0

@@ -73,30 +73,12 @@ public class FairyController_MainHub : MonoBehaviour
 
     private void UpdateAnimationState()
     {
-        if (moveInput.x > 0)
-        {
-            anim.SetFloat("MoveX", 1);
-            anim.SetFloat("MoveY", 0);
-        }
-        else if (moveInput.x < 0)
-        {
-            anim.SetFloat("MoveX", -1);
-            anim.SetFloat("MoveY", 0);
-        }
-        else if (moveInput.y > 0)
-        {
-            anim.SetFloat("MoveX", 0);
-            anim.SetFloat("MoveY", 1);
-        }
-        else if (moveInput.y < 0)
-        {
-            anim.SetFloat("MoveX", 0);
-            anim.SetFloat("MoveY", -1);
-        }
-        else
-        {
-            anim.SetFloat("MoveX", 0);
-            anim.SetFloat("MoveY", 0);
-        }
+        // Flip sprite
+        if (moveInput.x != 0)
+            GetComponent<SpriteRenderer>().flipX = moveInput.x < 0;
+        
+        // Animation direction
+        anim.SetFloat("MoveX",moveInput.x);
+        anim.SetFloat("MoveY",moveInput.y);
     }
 }
