@@ -66,6 +66,9 @@ public class FairyControllerLevel5 : MonoBehaviour
             spriteRenderer.flipX = false;
 
         UpdateAnimationState();
+        
+        //debug line 
+        Debug.Log("Grounded: " + isGrounded + " | Ladder: " + isLadder + " | Climbing: " + isClimbing);
     }
 
     void FixedUpdate()

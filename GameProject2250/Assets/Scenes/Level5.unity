@@ -156,6 +156,37 @@ Transform:
   - {fileID: 1018563293}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &19399339
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 19399340}
+  m_Layer: 0
+  m_Name: Ground check
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &19399340
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 19399339}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -1.23, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2108434487}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &53313199
 GameObject:
   m_ObjectHideFlags: 0
@@ -423,7 +454,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 6791773619916367834, guid: 8f19645d1dcc4c24a1fe81dfc3bbe9a5,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 920177104}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 7194166884115714197, guid: 8f19645d1dcc4c24a1fe81dfc3bbe9a5,
         type: 3}
@@ -520,7 +555,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FairyMovement_Level4
   moveSpeed: 5
   jumpForce: 13
-  groundCheck: {fileID: 0}
+  groundCheck: {fileID: 920177104}
   groundCheckRadius: 0.2
   groundLayer:
     serializedVersion: 2
@@ -5081,6 +5116,37 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0
   m_SpriteSortPoint: 0
+--- !u!1 &920177103
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 920177104}
+  m_Layer: 0
+  m_Name: Ground check
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &920177104
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 920177103}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.1185354, y: -1.7868443, z: 0}
+  m_LocalScale: {x: 1.0499096, y: 1.1582088, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 112913848}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &976201561
 GameObject:
   m_ObjectHideFlags: 0
@@ -5286,9 +5352,9 @@ GameObject:
   - component: {fileID: 978272940}
   - component: {fileID: 978272939}
   - component: {fileID: 978272938}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Tilemap_FairyLayer
-  m_TagString: Untagged
+  m_TagString: Ground
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -25995,6 +26061,37 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
+--- !u!1 &1216014850
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1216014851}
+  m_Layer: 0
+  m_Name: Ground check
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1216014851
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1216014850}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.120441996, y: -1.5112809, z: 0}
+  m_LocalScale: {x: 1.0551063, y: 1.1093171, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1368973145}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1220231017 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7941510191009950314, guid: 60bde70e37085514e83ddb43c317fb87,
@@ -26828,7 +26925,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 7319478287407324983, guid: 059790aee4124594910a271a5986e78d,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1216014851}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 1671945572645789033, guid: 059790aee4124594910a271a5986e78d,
         type: 3}
@@ -26925,7 +27026,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FairyMovement_Level4
   moveSpeed: 5
   jumpForce: 13
-  groundCheck: {fileID: 0}
+  groundCheck: {fileID: 1216014851}
   groundCheckRadius: 0.2
   groundLayer:
     serializedVersion: 2
@@ -562270,7 +562371,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 5115795131485341815, guid: ea8d65b89dc84d9092703d2ef9b70db7,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 19399340}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 3979658910644941265, guid: ea8d65b89dc84d9092703d2ef9b70db7,
         type: 3}
@@ -562367,7 +562472,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FairyMovement_Level4
   moveSpeed: 5
   jumpForce: 13
-  groundCheck: {fileID: 0}
+  groundCheck: {fileID: 19399340}
   groundCheckRadius: 0.2
   groundLayer:
     serializedVersion: 2
