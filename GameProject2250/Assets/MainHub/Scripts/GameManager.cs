@@ -16,6 +16,8 @@ public class GameManager : MonoBehaviour
 
     public int coinsCollected = 0;
     public int coinsPerLife = 10;
+    
+    public GameObject deathScreen;
 
     public string selectedFairy = "FairyA";
 
@@ -84,6 +86,7 @@ public class GameManager : MonoBehaviour
         if (playerLives <= 0f)
         {
             Debug.Log("Player has died!");
+            deathScreen.SetActive(true);
             StartCoroutine(RestartGame());
         }
     }
