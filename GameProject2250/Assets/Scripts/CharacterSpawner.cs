@@ -6,39 +6,71 @@ public class CharacterSpawner : MonoBehaviour
     [SerializeField] private GameObject fairyGreenCharacter;
     [SerializeField] private GameObject fairyOrangeCharacter;
 
-    [SerializeField] private CameraFollow_MainHub cameraFollow;
-
     void Start()
     {
-        fairyRedCharacter.SetActive(false);
-        fairyGreenCharacter.SetActive(false);
-        fairyOrangeCharacter.SetActive(false);
+        if (fairyRedCharacter != null) fairyRedCharacter.SetActive(false);
+        if (fairyGreenCharacter != null) fairyGreenCharacter.SetActive(false);
+        if (fairyOrangeCharacter != null) fairyOrangeCharacter.SetActive(false);
 
         GameObject selectedObject = null;
+
+        if (GameManager.instance == null)
+        {
+            Debug.LogWarning("GameManager.instance is null. Defaulting to red fairy.");
+
+            if (fairyRedCharacter != null)
+            {
+                fairyRedCharacter.SetActive(true);
+                fairyRedCharacter.tag = "Player";
+                Debug.Log("Spawned default red fairy because GameManager was null.");
+            }
+
+            return;
+        }
 
         switch (GameManager.instance.selectedFairy)
         {
             case "FairyR":
-                fairyRedCharacter.SetActive(true);
-                selectedObject = fairyRedCharacter;
+                if (fairyRedCharacter != null)
+                {
+                    fairyRedCharacter.SetActive(true);
+                    selectedObject = fairyRedCharacter;
+                }
                 break;
+
             case "FairyG":
-                fairyGreenCharacter.SetActive(true);
-                selectedObject = fairyGreenCharacter;
+                if (fairyGreenCharacter != null)
+                {
+                    fairyGreenCharacter.SetActive(true);
+                    selectedObject = fairyGreenCharacter;
+                }
                 break;
+
             case "FairyO":
-                fairyOrangeCharacter.SetActive(true);
-                selectedObject = fairyOrangeCharacter;
+                if (fairyOrangeCharacter != null)
+                {
+                    fairyOrangeCharacter.SetActive(true);
+                    selectedObject = fairyOrangeCharacter;
+                }
                 break;
+
             default:
-                fairyRedCharacter.SetActive(true);
-                selectedObject = fairyRedCharacter;
+                if (fairyRedCharacter != null)
+                {
+                    fairyRedCharacter.SetActive(true);
+                    selectedObject = fairyRedCharacter;
+                }
                 break;
         }
 
-        if (selectedObject != null && cameraFollow != null)
+        if (selectedObject != null)
         {
-            cameraFollow.target = selectedObject.transform;
+            selectedObject.tag = "Player";
+            Debug.Log("Spawned fairy: " + selectedObject.name + " | tag set to Player");
+        }
+        else
+        {
+            Debug.LogWarning("No fairy was selected/spawned. Check your fairy references in the Inspector.");
         }
     }
 }

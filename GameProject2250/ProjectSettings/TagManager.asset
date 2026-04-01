@@ -8,13 +8,20 @@ TagManager:
   - Key
   - Coin
   - Wall
-  - menuButton
+  - Ladder
+  - Spike
   - Ground
+  - menuButton
+  - NPC
+  - Water
+  - Coconut
+  - Hazard
+  - Hole
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Ground
   - Water
   - UI
   - Ground

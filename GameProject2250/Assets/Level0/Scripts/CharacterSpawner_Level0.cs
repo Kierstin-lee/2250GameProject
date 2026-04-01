@@ -5,52 +5,54 @@ public class CharacterSpawner_Level0 : MonoBehaviour
     [SerializeField] private GameObject fairyRedCharacter;
     [SerializeField] private GameObject fairyGreenCharacter;
     [SerializeField] private GameObject fairyOrangeCharacter;
-    
-    [SerializeField] private CameraMovement_Level0 cameraFollow;
-    [SerializeField] private Transform playerSpawn;
-    
+
+    [SerializeField] private CameraFollow_MainHub cameraFollow;
 
     void Start()
     {
-        fairyRedCharacter.SetActive(false);
-        fairyGreenCharacter.SetActive(false);
-        fairyOrangeCharacter.SetActive(false);
+        if (fairyRedCharacter != null) fairyRedCharacter.SetActive(false);
+        if (fairyGreenCharacter != null) fairyGreenCharacter.SetActive(false);
+        if (fairyOrangeCharacter != null) fairyOrangeCharacter.SetActive(false);
 
         GameObject selectedObject = null;
 
         switch (GameManager.instance.selectedFairy)
         {
             case "FairyR":
+                fairyRedCharacter.SetActive(true);
                 selectedObject = fairyRedCharacter;
                 break;
+
             case "FairyG":
+                fairyGreenCharacter.SetActive(true);
                 selectedObject = fairyGreenCharacter;
                 break;
+
             case "FairyO":
+                fairyOrangeCharacter.SetActive(true);
                 selectedObject = fairyOrangeCharacter;
                 break;
+
             default:
+                fairyRedCharacter.SetActive(true);
                 selectedObject = fairyRedCharacter;
                 break;
         }
-        
-        
+
         if (selectedObject != null)
         {
-            selectedObject.SetActive(true);
+            selectedObject.tag = "Player";
 
-            if (playerSpawn != null)
-            {
-                selectedObject.transform.position = playerSpawn.position;
-            }
-            /*
             if (cameraFollow != null)
             {
-                cameraFollow.CameraTarget = selectedObject.transform;
+                cameraFollow.target = selectedObject.transform;
             }
-            */
+
+            Debug.Log("Spawned fairy: " + selectedObject.name);
         }
-        
+        else
+        {
+            Debug.LogWarning("No fairy was selected/spawned.");
+        }
     }
-    
 }

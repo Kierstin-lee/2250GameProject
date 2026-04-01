@@ -1,5 +1,7 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -8,7 +10,10 @@ public class GameManager : MonoBehaviour
     public List<string> keysCollected = new List<string>();
     public List<string> keysDeposited = new List<string>();
 
-    public int playerLives = 3;
+    [Header("Lives")]
+    public float startingLives = 5f;   
+    public float playerLives;
+
     public int coinsCollected = 0;
     public int coinsPerLife = 10;
 
@@ -20,6 +25,9 @@ public class GameManager : MonoBehaviour
         {
             instance = this;
             DontDestroyOnLoad(gameObject);
+
+            // Set starting lives
+            playerLives = startingLives;
         }
         else
         {
@@ -62,26 +70,30 @@ public class GameManager : MonoBehaviour
     }
 
     // ---------- Lives ----------
-    public void LoseLife()
+    public void LoseLife(float amount = 0.5f)
     {
-        playerLives--;
-        if (playerLives < 0) playerLives = 0;
+        playerLives -= amount;
+
+        if (playerLives < 0f)
+            playerLives = 0f;
 
         LivesUI.instance?.UpdateLives(playerLives);
 
-        Debug.Log("Player lost a life! Lives remaining: " + playerLives);
+        Debug.Log("Player lost life! Lives remaining: " + playerLives);
 
-        if (playerLives == 0)
+        if (playerLives <= 0f)
         {
             Debug.Log("Player has died!");
+            StartCoroutine(RestartGame());
         }
     }
 
-    public void GainLife()
+    public void GainLife(float amount = 1f)
     {
-        playerLives++;
+        playerLives += amount;
         LivesUI.instance?.UpdateLives(playerLives);
-        Debug.Log("Player gained a life! Lives: " + playerLives);
+
+        Debug.Log("Player gained life! Lives: " + playerLives);
     }
 
     // ---------- Coins ----------
@@ -94,9 +106,23 @@ public class GameManager : MonoBehaviour
         {
             coinsCollected = 0;
             CoinsUI.instance?.UpdateCoins(coinsCollected);
-            GainLife();
+            GainLife(1f);
             Debug.Log("10 coins collected! Extra life granted.");
         }
+    }
+
+    // ---------- Restart Game ----------
+    private IEnumerator RestartGame()
+    {
+        yield return new WaitForSeconds(1.5f);
+
+        // Reset everything
+        playerLives = startingLives;
+        coinsCollected = 0;
+        keysCollected.Clear();
+        keysDeposited.Clear();
+
+        SceneManager.LoadScene("StartScreen"); // make sure this matches your scene name
     }
 
     // ---------- Portal Logic ----------
@@ -104,11 +130,11 @@ public class GameManager : MonoBehaviour
     {
         int deposited = KeysDepositedCount();
 
-        if (deposited == 0 && portalNumber == 1) return true; // Level0
-        if (deposited == 1 && portalNumber == 1) return true; // Level2
-        if (deposited == 2 && portalNumber == 2) return true; // Level3
-        if (deposited == 3 && portalNumber == 2) return true; // Level4
-        if (deposited == 4 && portalNumber == 3) return true; // Boss
+        if (deposited == 0 && portalNumber == 1) return true;
+        if (deposited == 1 && portalNumber == 1) return true;
+        if (deposited == 2 && portalNumber == 2) return true;
+        if (deposited == 3 && portalNumber == 2) return true;
+        if (deposited == 4 && portalNumber == 3) return true;
 
         return false;
     }
@@ -117,11 +143,11 @@ public class GameManager : MonoBehaviour
     {
         int deposited = KeysDepositedCount();
 
-        if (deposited == 0 && portalNumber == 1) return "Level0";
+        if (deposited == 0 && portalNumber == 1) return "Level4";
         if (deposited == 1 && portalNumber == 1) return "Level2";
         if (deposited == 2 && portalNumber == 2) return "Level3";
         if (deposited == 3 && portalNumber == 2) return "Level4";
-        if (deposited == 4 && portalNumber == 3) return "BossLevel";
+        if (deposited == 4 && portalNumber == 1) return "Level5";
 
         return "";
     }

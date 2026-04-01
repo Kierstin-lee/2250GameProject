@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class KeyBehaviour : MonoBehaviour
 {
@@ -15,5 +16,11 @@ public class KeyBehaviour : MonoBehaviour
 
         GameManager.instance.CollectKey(keyID);
         Debug.Log("Key " + keyID + " collected!");
+        
+        //temp code for in class demo to make one scene go to another 
+        if (SceneManager.GetActiveScene().name == "Level4")
+        {
+            SceneManager.LoadScene("Level5");
+        }
     }
 }
