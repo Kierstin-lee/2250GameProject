@@ -18,21 +18,30 @@ public class NPCDialogue_Level1 : MonoBehaviour
     };
 
     private int currentLine = 0;
+    private bool isDialogueActive = false;
 
     void Start()
     {
-        dialogueBox.SetActive(true);
-        dialogueText.text = lines[currentLine];
+        dialogueBox.SetActive(false);
+    }
 
-        if (fairyController_Level1 != null)
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
         {
-            fairyController_Level1.enabled = false;
+            currentLine = 0;
+            dialogueBox.SetActive(true);
+            dialogueText.text = lines[currentLine];
+            isDialogueActive = true;
+
+            if (fairyController_Level1 != null)
+                fairyController_Level1.enabled = false;
         }
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (isDialogueActive && Input.GetKeyDown(KeyCode.Space))
         {
             currentLine++;
 
@@ -43,11 +52,10 @@ public class NPCDialogue_Level1 : MonoBehaviour
             else
             {
                 dialogueBox.SetActive(false);
+                isDialogueActive = false;
 
                 if (fairyController_Level1 != null)
-                {
                     fairyController_Level1.enabled = true;
-                }
 
                 enabled = false;
             }
