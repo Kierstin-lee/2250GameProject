@@ -24,9 +24,9 @@ TagManager:
   - Ground
   - Water
   - UI
-  - Characters
-  - 
-  - 
+  - Ground
+  - Obstacles
+  - Character
   - 
   - 
   - 
@@ -51,11 +51,17 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Characters
-    uniqueID: 3051057135
-    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Ground
+    uniqueID: 3760004233
+    locked: 0
+  - name: Obstacles
+    uniqueID: 4128545077
+    locked: 0
+  - name: Characters
+    uniqueID: 3051057135
     locked: 0
   - name: Coins
     uniqueID: 730091649
