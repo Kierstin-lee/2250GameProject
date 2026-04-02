@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class GroundfishController : MonoBehaviour // moves fish up and down
+public class GroundfishControllerLevel3 : MonoBehaviour // moves fish up and down
 {
     [Header("Movement Settings")]
     public float moveDistance = 1f;   // how far up it goes

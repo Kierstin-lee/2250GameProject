@@ -9,6 +9,8 @@ public class FairyControllerLevel3 : MonoBehaviour
     public float gravityScale = 3f;
     public float groundCheckDistance = 0.1f;
     public LayerMask groundLayer;
+    
+    
 
     private Rigidbody2D rb;
     private bool isGrounded;
