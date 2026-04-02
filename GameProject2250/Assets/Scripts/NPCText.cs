@@ -1,7 +1,7 @@
 using UnityEngine;
 using TMPro;
 
-public class NPCDialogue_Level1 : MonoBehaviour
+public class NPCText : MonoBehaviour
 {
     [Header("Dialogue UI")]
     [SerializeField] private GameObject dialogueBox;
@@ -57,6 +57,11 @@ public class NPCDialogue_Level1 : MonoBehaviour
         playerInRange = false;
     }
 
+    public void TriggerNextKeySequence()
+    {
+        StartDialogue();
+    }
+
     private void StartDialogue()
     {
         if (dialogueLines == null || dialogueLines.Length == 0) return;
@@ -67,6 +72,7 @@ public class NPCDialogue_Level1 : MonoBehaviour
         dialogueBox.SetActive(true);
         dialogueText.text = dialogueLines[currentLine];
     }
+    
 
     private void EndDialogue()
     {

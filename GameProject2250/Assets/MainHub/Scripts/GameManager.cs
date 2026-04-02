@@ -10,7 +10,8 @@ public class GameManager : MonoBehaviour
     public List<string> keysCollected = new List<string>();
     public List<string> keysDeposited = new List<string>();
 
-    [Header("Lives")] public float startingLives = 5f;
+    [Header("Lives")]
+    public float startingLives = 5f;
     public float playerLives;
 
     public int coinsCollected = 0;
@@ -24,8 +25,6 @@ public class GameManager : MonoBehaviour
         {
             instance = this;
             DontDestroyOnLoad(gameObject);
-
-            // Set starting lives
             playerLives = startingLives;
         }
         else
@@ -34,7 +33,6 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    // ---------- Keys ----------
     public void CollectKey(string keyID)
     {
         if (!keysCollected.Contains(keyID) && !keysDeposited.Contains(keyID))
@@ -55,7 +53,7 @@ public class GameManager : MonoBehaviour
 
             LevelUI.instance?.UpdateLevelUI();
 
-            NPCDialogue npc = FindObjectOfType<NPCDialogue>();
+            NPCText npc = FindObjectOfType<NPCText>();
             if (npc != null)
             {
                 npc.TriggerNextKeySequence();
@@ -67,13 +65,12 @@ public class GameManager : MonoBehaviour
     {
         return keysDeposited.Count;
     }
-    
+
     public string GetGameOverScene()
     {
         return "GameOver";
     }
 
-    // ---------- Lives ----------
     public void LoseLife(float amount = 0.5f)
     {
         playerLives -= amount;
@@ -96,7 +93,6 @@ public class GameManager : MonoBehaviour
             {
                 SceneManager.LoadScene(scene);
             }
-            
         }
     }
 
@@ -108,7 +104,6 @@ public class GameManager : MonoBehaviour
         Debug.Log("Player gained life! Lives: " + playerLives);
     }
 
-    // ---------- Coins ----------
     public void CollectCoin()
     {
         coinsCollected++;
@@ -123,21 +118,18 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    // ---------- Restart Game ----------
     private IEnumerator RestartGame()
     {
         yield return new WaitForSeconds(1.5f);
 
-        // Reset everything
         playerLives = startingLives;
         coinsCollected = 0;
         keysCollected.Clear();
         keysDeposited.Clear();
 
-        SceneManager.LoadScene("StartScreen"); // make sure this matches your scene name
+        SceneManager.LoadScene("StartScreen");
     }
 
-    // ---------- Portal Logic ----------
     public bool CanUsePortal(int portalNumber)
     {
         int deposited = KeysDepositedCount();
@@ -155,7 +147,7 @@ public class GameManager : MonoBehaviour
     {
         int deposited = KeysDepositedCount();
 
-        if (deposited == 0 && portalNumber == 1) return "Level4";
+        if (deposited == 0 && portalNumber == 1) return "Level2";
         if (deposited == 1 && portalNumber == 1) return "Level2";
         if (deposited == 2 && portalNumber == 2) return "Level3";
         if (deposited == 3 && portalNumber == 2) return "Level4";

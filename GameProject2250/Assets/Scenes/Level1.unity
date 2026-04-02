@@ -10926,18 +10926,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 335681390}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d98b73cf96d794d30a5a88c164d551f8, type: 3}
+  m_Script: {fileID: 11500000, guid: 66f8340e1dc664997a34d5866862aab7, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::NPCDialogue_Level1
+  m_EditorClassIdentifier: Assembly-CSharp::NPCText
   dialogueBox: {fileID: 1870549003}
   dialogueText: {fileID: 1176350954}
   dialogueLines:
-  - Welcome to the Enchanted Forest!
+  - Welcome to the Enchanted forest!
   - Use the arrow keys to move around
-  - Use the up arrow key to jump
-  - Collect coins as you explore
-  - Be careful if you fall, you'll lose a life and restart the level
-  - Don't forget to collect the key to finish the mission!
+  - 'Collect coins as you explore '
+  - Be careful if you fall you will lose a life
+  - 'Don''t forget to collect the key '
 --- !u!1 &347788408
 GameObject:
   m_ObjectHideFlags: 0
@@ -58952,7 +58951,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1870549004
 RectTransform:
   m_ObjectHideFlags: 0
@@ -69432,7 +69431,6 @@ SceneRoots:
   - {fileID: 1840416565}
   - {fileID: 1477322922}
   - {fileID: 1464470061}
-  - {fileID: 322614335}
   - {fileID: 2085239030}
   - {fileID: 1120807206}
   - {fileID: 1511745988}
@@ -69440,4 +69438,5 @@ SceneRoots:
   - {fileID: 1150743828}
   - {fileID: 2014974503}
   - {fileID: 997679013}
+  - {fileID: 322614335}
   - {fileID: 335681389}
