@@ -14,7 +14,6 @@ public class NPCDialogue_Level1 : MonoBehaviour
         "Press Space to jump between platforms.",
         "Collect coins as you explore.",
         "Be careful—if you fall, you'll lose a life \nand restart the level.",
-        "Reach the blue portal to go back home!"
     };
 
     private string[] shortLines =

@@ -8,15 +8,103 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GameProject2250/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameProject2250/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Fonts/FairyDustB SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/FairyDustB SDF.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Fonts/Pix32 SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/Pix32 SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level 1/Scripts_Level1/LivesSystem_Level1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level 1/Scripts_Level1/LivesSystem_Level1.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level 1/Scripts_Level1/NPCDialogue_Level1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level 1/Scripts_Level1/NPCDialogue_Level1.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Animations.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Animations/Blackbox-Wait.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Animations/Blackbox-Wait.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Animations/Blackbox.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Animations/Blackbox.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Animations/Blackbox.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Animations/Blackbox.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Animations/Knight Speechbubble.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Animations/Knight Speechbubble.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Animations/Knight_Heal.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Animations/Knight_Heal.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Animations/Knight_Speechbubble_1.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Animations/Knight_Speechbubble_1.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Animations/Knight_wait.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Animations/Knight_wait.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Animations/Wizzard Speechbubble.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Animations/Wizzard Speechbubble.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Animations/Wizzard_Speechbubble.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Animations/Wizzard_Speechbubble.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Animations/Wizzard_Wait.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Animations/Wizzard_Wait.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Documentation.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Documentation/Change LOG.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Documentation/Change LOG.pdf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Documentation/Documentation 2D Speech bubbles Alphabet Numbers.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Documentation/Documentation 2D Speech bubbles Alphabet Numbers.pdf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Prefabs/+Speechbox_Black.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Prefabs/+Speechbox_Black.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Prefabs/+Speechbox_Universalcolor.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Prefabs/+Speechbox_Universalcolor.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Prefabs/+Speechbubble_1.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Prefabs/+Speechbubble_1.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Prefabs/+Speechbubble_2.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Prefabs/+Speechbubble_2.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Prefabs/+Speechbubble_3.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Prefabs/+Speechbubble_3.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Prefabs/+Speechbubble_4.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Prefabs/+Speechbubble_4.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Prefabs/+Speechbubble_5.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Prefabs/+Speechbubble_5.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Prefabs/+Speechbubble_6.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Prefabs/+Speechbubble_6.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Prefabs/+Speechbubble_7.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Prefabs/+Speechbubble_7.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Prefabs/+Speechbubble_Infobox.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Prefabs/+Speechbubble_Infobox.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Prefabs/Speechbubble_0001.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Prefabs/Speechbubble_0001.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Prefabs/Speechbubble_0002.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Prefabs/Speechbubble_0002.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Prefabs/Speechbubble_0003.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Prefabs/Speechbubble_0003.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Prefabs/Speechbubble_0004.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Prefabs/Speechbubble_0004.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Scenes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Scenes/Example_Demo_Scene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Scenes/Example_Demo_Scene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Scenes/Example_Demo_SceneSettings.lighting" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Scenes/Example_Demo_SceneSettings.lighting.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Sprites.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Sprites/Atlas_Example_Scene0000.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Sprites/Atlas_Example_Scene0000.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Sprites/Atlas_Speechbubbles_Aphabet_Numbers0000.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Sprites/Atlas_Speechbubbles_Aphabet_Numbers0000.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Sprites/Speechbox_Black_0001.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Sprites/Speechbox_Black_0001.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Sprites/Speechbox_Universalcolor_0001.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Sprites/Speechbox_Universalcolor_0001.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Sprites/Speechbubble_0001.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Sprites/Speechbubble_0001.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Sprites/Speechbubble_0002.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Sprites/Speechbubble_0002.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Sprites/Speechbubble_0003.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Sprites/Speechbubble_0003.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Sprites/Speechbubble_0004.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Sprites/Speechbubble_0004.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Sprites/Speechbubble_0005.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Sprites/Speechbubble_0005.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Sprites/Speechbubble_0006.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Sprites/Speechbubble_0006.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Sprites/Speechbubble_0007.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Sprites/Speechbubble_0007.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Sprites/Speechbubble_0008.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/2D Atlas Speechbubbles_Level1/Assets/Sprites/Speechbubble_0008.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/Scripts_Level1/LivesSystem_Level1.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/Scripts_Level1/LivesSystem_Level1.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/Scripts_Level1/PortalTransition_Level1.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 1/Scripts_Level1/PortalTransition_Level1.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/MainHub/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Anton SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MainHub/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Anton SDF.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/MainHub/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MainHub/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/MainHub/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Electronic Highway Sign SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MainHub/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Electronic Highway Sign SDF.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/MainHub/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Oswald Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MainHub/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Oswald Bold SDF.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/MainHub/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MainHub/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/MainHub/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MainHub/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MainHub/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MainHub/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1 Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1 Scene.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -134,7 +222,8 @@
       <workItem from="1774976506974" duration="3354000" />
       <workItem from="1774985930846" duration="20000" />
       <workItem from="1775003204152" duration="4116000" />
-      <workItem from="1775012129010" duration="8788000" />
+      <workItem from="1775012129010" duration="9649000" />
+      <workItem from="1775069101816" duration="990000" />
     </task>
     <servers />
   </component>
