@@ -35,10 +35,10 @@ public class FairyMovement_Level4 : MonoBehaviour
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
         }
 
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
-        {
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
-        }
+        //if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
+        //{
+       //     rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+        //}
 
         if (moveInput.x < 0)
             spriteRenderer.flipX = true;
