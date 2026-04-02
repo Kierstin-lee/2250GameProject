@@ -30302,9 +30302,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::NPCSpeech_Level5
   dialogueBox: {fileID: 319583130}
   dialogueText: {fileID: 5414929}
-  FairyControllerLevel5: {fileID: 0}
---- !u!61 &1969146337
-BoxCollider2D:
+  FairyControllerLevel5: {fileID: 2108434492}
+--- !u!60 &1969146337
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -30347,8 +30347,20 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.0001, y: 0.0001}
-  m_EdgeRadius: 0
+  m_Points:
+    m_Paths:
+    - - {x: 5.018112, y: 3.666359}
+      - {x: 1.9812088, y: 5.4431725}
+      - {x: -2.42305, y: 5.4350376}
+      - {x: -6.3352585, y: 2.0607204}
+      - {x: -5.740288, y: -2.5683937}
+      - {x: -3.5277786, y: -3.7817879}
+      - {x: -1.1818838, y: -4.120455}
+      - {x: 0.21062332, y: -3.7253666}
+      - {x: 1.4404312, y: -4.1553974}
+      - {x: 2.4524994, y: -4.5504932}
+      - {x: 6.8298254, y: -0.94751364}
+  m_UseDelaunayMesh: 1
 --- !u!1 &1970205110
 GameObject:
   m_ObjectHideFlags: 0
