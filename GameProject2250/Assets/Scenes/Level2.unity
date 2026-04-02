@@ -1270,6 +1270,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1463349623}
     m_Modifications:
+    - target: {fileID: 1303571238452623299, guid: b0425f0f8b61a4ad9a5105854024b723,
+        type: 3}
+      propertyPath: coinSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 1af1d96111cf74c0bad9b6c59749d7ab, type: 3}
     - target: {fileID: 2115799859585022951, guid: b0425f0f8b61a4ad9a5105854024b723,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3870,6 +3875,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1463349623}
     m_Modifications:
+    - target: {fileID: 1303571238452623299, guid: b0425f0f8b61a4ad9a5105854024b723,
+        type: 3}
+      propertyPath: coinSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 1af1d96111cf74c0bad9b6c59749d7ab, type: 3}
     - target: {fileID: 2115799859585022951, guid: b0425f0f8b61a4ad9a5105854024b723,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7205,6 +7215,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1463349623}
     m_Modifications:
+    - target: {fileID: 1303571238452623299, guid: b0425f0f8b61a4ad9a5105854024b723,
+        type: 3}
+      propertyPath: coinSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 1af1d96111cf74c0bad9b6c59749d7ab, type: 3}
     - target: {fileID: 2115799859585022951, guid: b0425f0f8b61a4ad9a5105854024b723,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -8941,6 +8956,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1463349623}
     m_Modifications:
+    - target: {fileID: 1303571238452623299, guid: b0425f0f8b61a4ad9a5105854024b723,
+        type: 3}
+      propertyPath: coinSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 1af1d96111cf74c0bad9b6c59749d7ab, type: 3}
     - target: {fileID: 2115799859585022951, guid: b0425f0f8b61a4ad9a5105854024b723,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10528,6 +10548,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1463349623}
     m_Modifications:
+    - target: {fileID: 1303571238452623299, guid: b0425f0f8b61a4ad9a5105854024b723,
+        type: 3}
+      propertyPath: coinSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 1af1d96111cf74c0bad9b6c59749d7ab, type: 3}
     - target: {fileID: 2115799859585022951, guid: b0425f0f8b61a4ad9a5105854024b723,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -10982,6 +11007,7 @@ GameObject:
   - component: {fileID: 1161068388}
   - component: {fileID: 1161068392}
   - component: {fileID: 1161068393}
+  - component: {fileID: 1161068394}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -11112,6 +11138,103 @@ MonoBehaviour:
   maxX: 106
   minY: -4
   maxY: 3
+--- !u!82 &1161068394
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1161068387}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: 4cb3fb2e7587d4443af6faa66e31cd06, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1174780779
 GameObject:
   m_ObjectHideFlags: 0
@@ -11434,6 +11557,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1463349623}
     m_Modifications:
+    - target: {fileID: 1303571238452623299, guid: b0425f0f8b61a4ad9a5105854024b723,
+        type: 3}
+      propertyPath: coinSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 1af1d96111cf74c0bad9b6c59749d7ab, type: 3}
     - target: {fileID: 2115799859585022951, guid: b0425f0f8b61a4ad9a5105854024b723,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11747,6 +11875,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1463349623}
     m_Modifications:
+    - target: {fileID: 1303571238452623299, guid: b0425f0f8b61a4ad9a5105854024b723,
+        type: 3}
+      propertyPath: coinSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 1af1d96111cf74c0bad9b6c59749d7ab, type: 3}
     - target: {fileID: 2115799859585022951, guid: b0425f0f8b61a4ad9a5105854024b723,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -11831,6 +11964,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1463349623}
     m_Modifications:
+    - target: {fileID: 1303571238452623299, guid: b0425f0f8b61a4ad9a5105854024b723,
+        type: 3}
+      propertyPath: coinSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 1af1d96111cf74c0bad9b6c59749d7ab, type: 3}
     - target: {fileID: 2115799859585022951, guid: b0425f0f8b61a4ad9a5105854024b723,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14671,6 +14809,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1463349623}
     m_Modifications:
+    - target: {fileID: 1303571238452623299, guid: b0425f0f8b61a4ad9a5105854024b723,
+        type: 3}
+      propertyPath: coinSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 1af1d96111cf74c0bad9b6c59749d7ab, type: 3}
     - target: {fileID: 2115799859585022951, guid: b0425f0f8b61a4ad9a5105854024b723,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15022,6 +15165,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1463349623}
     m_Modifications:
+    - target: {fileID: 1303571238452623299, guid: b0425f0f8b61a4ad9a5105854024b723,
+        type: 3}
+      propertyPath: coinSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 1af1d96111cf74c0bad9b6c59749d7ab, type: 3}
     - target: {fileID: 2115799859585022951, guid: b0425f0f8b61a4ad9a5105854024b723,
         type: 3}
       propertyPath: m_LocalPosition.x
