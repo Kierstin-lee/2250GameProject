@@ -8,7 +8,7 @@ public class FairyMovementL2 : MonoBehaviour
     [Header("Ground Check")]
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask whatIsGround;
-    [SerializeField] private float checkRadius = 0.2f;
+    [SerializeField] private float checkRadius = 0.15f;
 
     private Rigidbody2D rb;
     private Animator anim;
@@ -28,12 +28,15 @@ public class FairyMovementL2 : MonoBehaviour
     {
         moveInput.x = Input.GetAxisRaw("Horizontal");
 
-        isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, whatIsGround);
+        if (groundCheck != null)
+        {
+            isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, whatIsGround);
+        }
 
-        if ((Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.Space)) && isGrounded)
+        if (Input.GetKeyDown(KeyCode.UpArrow) && isGrounded)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
-            isGrounded = false; // immediately prevent another jump
+            isGrounded = false;
         }
 
         if (moveInput.x > 0)
@@ -42,6 +45,14 @@ public class FairyMovementL2 : MonoBehaviour
             spriteRenderer.flipX = true;
 
         UpdateAnimationState();
+        
+        Debug.Log("Active fairy: " + gameObject.name);
+        Debug.Log("Grounded: " + isGrounded);
+
+        if (Input.GetKeyDown(KeyCode.UpArrow))
+        {
+            Debug.Log("Up pressed");
+        }
     }
 
     void FixedUpdate()
@@ -49,28 +60,36 @@ public class FairyMovementL2 : MonoBehaviour
         rb.linearVelocity = new Vector2(moveInput.x * moveSpeed, rb.linearVelocity.y);
     }
 
+    private void UpdateAnimationState()
+    {
+        if (anim == null) return;
+
+        foreach (AnimatorControllerParameter param in anim.parameters)
+        {
+            if (param.name == "MoveX")
+                anim.SetFloat("MoveX", moveInput.x);
+
+            if (param.name == "isGrounded")
+                anim.SetBool("isGrounded", isGrounded);
+
+            if (param.name == "isJumping")
+                anim.SetBool("isJumping", !isGrounded);
+        }
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag("Coin"))
+        if (collision.CompareTag("Coin"))
         {
             Destroy(collision.gameObject);
         }
     }
 
-    private void UpdateAnimationState()
-    {
-        if (anim == null) return;
-
-        anim.SetFloat("MoveX", moveInput.x);
-        anim.SetBool("isGrounded", isGrounded);
-        anim.SetBool("isJumping", !isGrounded);
-    }
-
-    private void OnDrawGizmos()
+    private void OnDrawGizmosSelected()
     {
         if (groundCheck != null)
         {
-            Gizmos.color = isGrounded ? Color.green : Color.red;
+            Gizmos.color = Color.yellow;
             Gizmos.DrawWireSphere(groundCheck.position, checkRadius);
         }
     }
