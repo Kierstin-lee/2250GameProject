@@ -24,6 +24,11 @@ public class FairyControllerLevel5 : MonoBehaviour
     private bool isGrounded;
     private bool isLadder;
     private bool isClimbing;
+    
+    // for wing powerup
+    private bool hasWingPower = false;
+    private int extraJumps;
+    private int maxExtraJumps = 1; // ONLY ONE extra jump
 
     void Start()
     {
@@ -55,9 +60,20 @@ public class FairyControllerLevel5 : MonoBehaviour
             isClimbing = false;
         }
 
-        if ((Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.UpArrow)) && isGrounded && !isClimbing)
+        if (Input.GetKeyDown(KeyCode.UpArrow) && !isClimbing)
         {
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+            if (isGrounded)
+            {
+                rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+
+                if (hasWingPower)
+                    extraJumps = maxExtraJumps; // reset when touching ground
+            }
+            else if (hasWingPower && extraJumps > 0)
+            {
+                rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+                extraJumps--;
+            }
         }
 
         if (moveInput.x < 0)
@@ -102,12 +118,6 @@ public class FairyControllerLevel5 : MonoBehaviour
         }
     }
 
-    public void ActivateWingPower()
-    {
-        Debug.Log("Activating wing power");
-        moveSpeed += 1f;
-    }
-
     private void UpdateAnimationState()
     {
         if (anim == null) return;
@@ -124,5 +134,19 @@ public class FairyControllerLevel5 : MonoBehaviour
 
         Gizmos.color = Color.green;
         Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
+    }
+    
+    
+    public void ActivateWingPower()
+    {
+        Debug.Log("Activating wing power");
+        hasWingPower = true;
+        extraJumps = maxExtraJumps;
+    }
+    
+    public void ActivateSpeedPower()
+    {
+        Debug.Log("Activating speed power");
+        moveSpeed += 1f;
     }
 }

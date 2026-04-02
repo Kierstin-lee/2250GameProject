@@ -87,4 +87,9 @@ public class FairyMovementL2 : MonoBehaviour
         Gizmos.color = Color.green;
         Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
     }
+    
+    public void ActivateHeartPower()
+    {
+        Debug.Log("Activating heart power");
+    }
 }
