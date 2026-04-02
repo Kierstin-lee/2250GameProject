@@ -9,7 +9,7 @@ public class Wand_Powerup_Behaviour : MonoBehaviour
             Debug.Log("Fairy hit the wand power-up");
             
             // FairyController_Level0 is reference to the fairy controller script (whatever one you may be using for your given level/scene
-            FairyController_Level0 player = collision.gameObject.GetComponent<FairyController_Level0>();
+            FairyMovement_Level4 player = collision.gameObject.GetComponent<FairyMovement_Level4>();
 
             if (player != null)
             {

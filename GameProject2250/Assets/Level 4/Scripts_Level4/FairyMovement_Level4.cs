@@ -67,4 +67,20 @@ public class FairyMovement_Level4 : MonoBehaviour
         Gizmos.color = Color.green;
         Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
     }
+    
+    
+    public void ActivateWandPower()
+    {
+        Debug.Log("Activating wand power");
+
+        if (GameManager.instance != null)
+        {
+            GameManager.instance.GainLife(1f);
+        }
+        else
+        {
+            Debug.LogWarning("GameManager instance not found. Did you forget to load StartScreen first?");
+        }
+    }
+    
 }

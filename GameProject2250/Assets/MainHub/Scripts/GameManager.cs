@@ -68,6 +68,12 @@ public class GameManager : MonoBehaviour
     {
         return keysDeposited.Count;
     }
+    
+    // ---------- Game Over Scene ----------
+    public string GetGameOverScene()
+    {
+        return "GameOver";
+    }
 
     // ---------- Lives ----------
     public void LoseLife(float amount = 0.5f)
@@ -84,9 +90,15 @@ public class GameManager : MonoBehaviour
         if (playerLives <= 0f)
         {
             Debug.Log("Player has died!");
-            Time.timeScale = 1f; // reset time before changing scenes
-            SceneManager.LoadScene("GameOver");
-            //StartCoroutine(RestartGame());
+            Time.timeScale = 1f;
+
+            string scene = GetGameOverScene();
+
+            if (!string.IsNullOrEmpty(scene))
+            {
+                Debug.Log("GameOver Scene: " + scene);
+                SceneManager.LoadScene(scene);
+            }
         }
     }
 
