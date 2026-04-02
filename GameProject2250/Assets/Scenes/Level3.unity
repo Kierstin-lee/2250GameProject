@@ -313,6 +313,7 @@ GameObject:
   m_Component:
   - component: {fileID: 56007562}
   - component: {fileID: 56007563}
+  - component: {fileID: 56007564}
   m_Layer: 0
   m_Name: fish_grey_long_b_outline_0
   m_TagString: Untagged
@@ -395,6 +396,20 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &56007564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 56007561}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6dfc6ec45f3272458ba7e9683579d49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GroundfishController
+  moveDistance: 1
+  moveSpeed: 2
 --- !u!1 &65347350
 GameObject:
   m_ObjectHideFlags: 0
@@ -806,6 +821,7 @@ GameObject:
   m_Component:
   - component: {fileID: 104689029}
   - component: {fileID: 104689030}
+  - component: {fileID: 104689031}
   m_Layer: 0
   m_Name: fish_grey_long_b_outline_0 (1)
   m_TagString: Untagged
@@ -888,6 +904,20 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &104689031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 104689028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6dfc6ec45f3272458ba7e9683579d49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GroundfishController
+  moveDistance: 1
+  moveSpeed: 2
 --- !u!1 &108112831
 GameObject:
   m_ObjectHideFlags: 0
@@ -1042,6 +1072,53 @@ PolygonCollider2D:
       - {x: 0.39999998, y: 0.12}
       - {x: 0.24, y: 0.24}
   m_UseDelaunayMesh: 1
+--- !u!1 &112801222
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 112801223}
+  m_Layer: 0
+  m_Name: Coins
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &112801223
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 112801222}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -22.93, y: 6.33, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2045337138}
+  - {fileID: 329315434}
+  - {fileID: 817057789}
+  - {fileID: 1879512279}
+  - {fileID: 1069196088}
+  - {fileID: 1079803279}
+  - {fileID: 121174412}
+  - {fileID: 1222697557}
+  - {fileID: 1252435966}
+  - {fileID: 727556054}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &121174412 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7941510191009950314, guid: 60bde70e37085514e83ddb43c317fb87,
+    type: 3}
+  m_PrefabInstance: {fileID: 262755997}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &146960866
 GameObject:
   m_ObjectHideFlags: 0
@@ -1209,6 +1286,7 @@ GameObject:
   m_Component:
   - component: {fileID: 169217187}
   - component: {fileID: 169217188}
+  - component: {fileID: 169217189}
   m_Layer: 0
   m_Name: fish_grey_long_b_outline_0
   m_TagString: Untagged
@@ -1291,6 +1369,20 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &169217189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 169217186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6dfc6ec45f3272458ba7e9683579d49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GroundfishController
+  moveDistance: 1
+  moveSpeed: 2
 --- !u!1 &182704737
 GameObject:
   m_ObjectHideFlags: 0
@@ -1485,6 +1577,7 @@ GameObject:
   m_Component:
   - component: {fileID: 205532586}
   - component: {fileID: 205532587}
+  - component: {fileID: 205532588}
   m_Layer: 0
   m_Name: fish_grey_long_b_outline_0
   m_TagString: Untagged
@@ -1567,6 +1660,20 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &205532588
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 205532585}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6dfc6ec45f3272458ba7e9683579d49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GroundfishController
+  moveDistance: 1
+  moveSpeed: 2
 --- !u!1 &211303702
 GameObject:
   m_ObjectHideFlags: 0
@@ -1913,7 +2020,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 112801223}
     m_Modifications:
     - target: {fileID: 1073793426971027129, guid: 60bde70e37085514e83ddb43c317fb87,
         type: 3}
@@ -1923,12 +2030,12 @@ PrefabInstance:
     - target: {fileID: 7941510191009950314, guid: 60bde70e37085514e83ddb43c317fb87,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 125.27162
+      value: 148.20163
       objectReference: {fileID: 0}
     - target: {fileID: 7941510191009950314, guid: 60bde70e37085514e83ddb43c317fb87,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.881928
+      value: -4.448072
       objectReference: {fileID: 0}
     - target: {fileID: 7941510191009950314, guid: 60bde70e37085514e83ddb43c317fb87,
         type: 3}
@@ -1981,7 +2088,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 112801223}
     m_Modifications:
     - target: {fileID: 1073793426971027129, guid: 60bde70e37085514e83ddb43c317fb87,
         type: 3}
@@ -1996,12 +2103,12 @@ PrefabInstance:
     - target: {fileID: 7941510191009950314, guid: 60bde70e37085514e83ddb43c317fb87,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 42.9
+      value: 65.83
       objectReference: {fileID: 0}
     - target: {fileID: 7941510191009950314, guid: 60bde70e37085514e83ddb43c317fb87,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.14
+      value: 1.8100004
       objectReference: {fileID: 0}
     - target: {fileID: 7941510191009950314, guid: 60bde70e37085514e83ddb43c317fb87,
         type: 3}
@@ -2877,6 +2984,12 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!4 &329315434 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7941510191009950314, guid: 60bde70e37085514e83ddb43c317fb87,
+    type: 3}
+  m_PrefabInstance: {fileID: 2029030317}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &332294455
 GameObject:
   m_ObjectHideFlags: 0
@@ -4629,7 +4742,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 112801223}
     m_Modifications:
     - target: {fileID: 1073793426971027129, guid: 60bde70e37085514e83ddb43c317fb87,
         type: 3}
@@ -4644,12 +4757,12 @@ PrefabInstance:
     - target: {fileID: 7941510191009950314, guid: 60bde70e37085514e83ddb43c317fb87,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 29.685873
+      value: 52.615875
       objectReference: {fileID: 0}
     - target: {fileID: 7941510191009950314, guid: 60bde70e37085514e83ddb43c317fb87,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.746206
+      value: 2.4162064
       objectReference: {fileID: 0}
     - target: {fileID: 7941510191009950314, guid: 60bde70e37085514e83ddb43c317fb87,
         type: 3}
@@ -5384,7 +5497,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 112801223}
     m_Modifications:
     - target: {fileID: 1073793426971027129, guid: 60bde70e37085514e83ddb43c317fb87,
         type: 3}
@@ -5399,12 +5512,12 @@ PrefabInstance:
     - target: {fileID: 7941510191009950314, guid: 60bde70e37085514e83ddb43c317fb87,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.055487
+      value: 17.874514
       objectReference: {fileID: 0}
     - target: {fileID: 7941510191009950314, guid: 60bde70e37085514e83ddb43c317fb87,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.792907
+      value: 2.4629068
       objectReference: {fileID: 0}
     - target: {fileID: 7941510191009950314, guid: 60bde70e37085514e83ddb43c317fb87,
         type: 3}
@@ -6217,6 +6330,12 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!4 &727556054 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7941510191009950314, guid: 60bde70e37085514e83ddb43c317fb87,
+    type: 3}
+  m_PrefabInstance: {fileID: 1781046800}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &733138265 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3979658910644941265, guid: ea8d65b89dc84d9092703d2ef9b70db7,
@@ -7191,6 +7310,12 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &817057789 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7941510191009950314, guid: 60bde70e37085514e83ddb43c317fb87,
+    type: 3}
+  m_PrefabInstance: {fileID: 637139669}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &826577345
 GameObject:
   m_ObjectHideFlags: 0
@@ -7379,7 +7504,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 112801223}
     m_Modifications:
     - target: {fileID: 1073793426971027129, guid: 60bde70e37085514e83ddb43c317fb87,
         type: 3}
@@ -7394,12 +7519,12 @@ PrefabInstance:
     - target: {fileID: 7941510191009950314, guid: 60bde70e37085514e83ddb43c317fb87,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -22.93
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7941510191009950314, guid: 60bde70e37085514e83ddb43c317fb87,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.33
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7941510191009950314, guid: 60bde70e37085514e83ddb43c317fb87,
         type: 3}
@@ -9278,6 +9403,12 @@ Transform:
   - {fileID: 1712092938}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1069196088 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7941510191009950314, guid: 60bde70e37085514e83ddb43c317fb87,
+    type: 3}
+  m_PrefabInstance: {fileID: 1685435991}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1075867375
 GameObject:
   m_ObjectHideFlags: 0
@@ -9462,6 +9593,12 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!4 &1079803279 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7941510191009950314, guid: 60bde70e37085514e83ddb43c317fb87,
+    type: 3}
+  m_PrefabInstance: {fileID: 559911270}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1093945511
 GameObject:
   m_ObjectHideFlags: 0
@@ -9790,7 +9927,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_MaskInteraction: 0
   m_Sprite: {fileID: -2075244778863723209, guid: 5cddd8fb74e2d5c45abc4288e22cb5f9,
     type: 3}
@@ -10446,6 +10583,12 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!4 &1222697557 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7941510191009950314, guid: 60bde70e37085514e83ddb43c317fb87,
+    type: 3}
+  m_PrefabInstance: {fileID: 1680609172}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1236954815
 GameObject:
   m_ObjectHideFlags: 0
@@ -10857,6 +11000,12 @@ PolygonCollider2D:
       - {x: 0.48, y: -0.375}
       - {x: 0.53999996, y: -0.145}
   m_UseDelaunayMesh: 1
+--- !u!4 &1252435966 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7941510191009950314, guid: 60bde70e37085514e83ddb43c317fb87,
+    type: 3}
+  m_PrefabInstance: {fileID: 235502806}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1266869883
 GameObject:
   m_ObjectHideFlags: 0
@@ -13937,6 +14086,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1562958861}
   - component: {fileID: 1562958862}
+  - component: {fileID: 1562958863}
   m_Layer: 0
   m_Name: fish_grey_long_b_outline_0
   m_TagString: Untagged
@@ -13953,7 +14103,7 @@ Transform:
   m_GameObject: {fileID: 1562958860}
   serializedVersion: 2
   m_LocalRotation: {x: -0.003908132, y: 0.0038760367, z: 0.71000546, w: 0.7041747}
-  m_LocalPosition: {x: 0.048297882, y: -0.72683, z: 0}
+  m_LocalPosition: {x: -0.04, y: -2.23, z: 0}
   m_LocalScale: {x: 3.4379997, y: 2.5471, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -14019,6 +14169,20 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1562958863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1562958860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6dfc6ec45f3272458ba7e9683579d49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GroundfishController
+  moveDistance: 1.5
+  moveSpeed: 0.5
 --- !u!1 &1583012184
 GameObject:
   m_ObjectHideFlags: 0
@@ -14531,7 +14695,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 112801223}
     m_Modifications:
     - target: {fileID: 1073793426971027129, guid: 60bde70e37085514e83ddb43c317fb87,
         type: 3}
@@ -14541,12 +14705,12 @@ PrefabInstance:
     - target: {fileID: 7941510191009950314, guid: 60bde70e37085514e83ddb43c317fb87,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 8.252697
+      value: 31.182697
       objectReference: {fileID: 0}
     - target: {fileID: 7941510191009950314, guid: 60bde70e37085514e83ddb43c317fb87,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.4890304
+      value: -3.8409696
       objectReference: {fileID: 0}
     - target: {fileID: 7941510191009950314, guid: 60bde70e37085514e83ddb43c317fb87,
         type: 3}
@@ -15118,7 +15282,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 112801223}
     m_Modifications:
     - target: {fileID: 1073793426971027129, guid: 60bde70e37085514e83ddb43c317fb87,
         type: 3}
@@ -15133,12 +15297,12 @@ PrefabInstance:
     - target: {fileID: 7941510191009950314, guid: 60bde70e37085514e83ddb43c317fb87,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 71.104744
+      value: 94.034744
       objectReference: {fileID: 0}
     - target: {fileID: 7941510191009950314, guid: 60bde70e37085514e83ddb43c317fb87,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.55
+      value: 0.22000027
       objectReference: {fileID: 0}
     - target: {fileID: 7941510191009950314, guid: 60bde70e37085514e83ddb43c317fb87,
         type: 3}
@@ -15191,7 +15355,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 112801223}
     m_Modifications:
     - target: {fileID: 1073793426971027129, guid: 60bde70e37085514e83ddb43c317fb87,
         type: 3}
@@ -15206,12 +15370,12 @@ PrefabInstance:
     - target: {fileID: 7941510191009950314, guid: 60bde70e37085514e83ddb43c317fb87,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 101.46
+      value: 124.39
       objectReference: {fileID: 0}
     - target: {fileID: 7941510191009950314, guid: 60bde70e37085514e83ddb43c317fb87,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.37
+      value: -4.96
       objectReference: {fileID: 0}
     - target: {fileID: 7941510191009950314, guid: 60bde70e37085514e83ddb43c317fb87,
         type: 3}
@@ -16256,7 +16420,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 112801223}
     m_Modifications:
     - target: {fileID: 1073793426971027129, guid: 60bde70e37085514e83ddb43c317fb87,
         type: 3}
@@ -16271,12 +16435,12 @@ PrefabInstance:
     - target: {fileID: 7941510191009950314, guid: 60bde70e37085514e83ddb43c317fb87,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 138.34633
+      value: 161.27634
       objectReference: {fileID: 0}
     - target: {fileID: 7941510191009950314, guid: 60bde70e37085514e83ddb43c317fb87,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.7
+      value: 2.37
       objectReference: {fileID: 0}
     - target: {fileID: 7941510191009950314, guid: 60bde70e37085514e83ddb43c317fb87,
         type: 3}
@@ -16612,6 +16776,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1844460374}
   - component: {fileID: 1844460375}
+  - component: {fileID: 1844460376}
   m_Layer: 0
   m_Name: fish_grey_long_b_0
   m_TagString: Untagged
@@ -16694,6 +16859,20 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1844460376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1844460373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6dfc6ec45f3272458ba7e9683579d49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GroundfishController
+  moveDistance: 1
+  moveSpeed: 2
 --- !u!1 &1849836789
 GameObject:
   m_ObjectHideFlags: 0
@@ -16783,6 +16962,12 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 6.253395, y: 0.9346056}
   m_EdgeRadius: 0
+--- !u!4 &1879512279 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7941510191009950314, guid: 60bde70e37085514e83ddb43c317fb87,
+    type: 3}
+  m_PrefabInstance: {fileID: 1621186018}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1901222709
 GameObject:
   m_ObjectHideFlags: 0
@@ -17529,7 +17714,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 112801223}
     m_Modifications:
     - target: {fileID: 1073793426971027129, guid: 60bde70e37085514e83ddb43c317fb87,
         type: 3}
@@ -17544,12 +17729,12 @@ PrefabInstance:
     - target: {fileID: 7941510191009950314, guid: 60bde70e37085514e83ddb43c317fb87,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -42.6
+      value: -19.669998
       objectReference: {fileID: 0}
     - target: {fileID: 7941510191009950314, guid: 60bde70e37085514e83ddb43c317fb87,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8.79
+      value: 2.46
       objectReference: {fileID: 0}
     - target: {fileID: 7941510191009950314, guid: 60bde70e37085514e83ddb43c317fb87,
         type: 3}
@@ -17596,6 +17781,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60bde70e37085514e83ddb43c317fb87, type: 3}
+--- !u!4 &2045337138 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7941510191009950314, guid: 60bde70e37085514e83ddb43c317fb87,
+    type: 3}
+  m_PrefabInstance: {fileID: 830365162}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2047524302
 GameObject:
   m_ObjectHideFlags: 0
@@ -18564,13 +18755,4 @@ SceneRoots:
   - {fileID: 1588529096}
   - {fileID: 1550427071}
   - {fileID: 361463982}
-  - {fileID: 830365162}
-  - {fileID: 2029030317}
-  - {fileID: 637139669}
-  - {fileID: 1621186018}
-  - {fileID: 1685435991}
-  - {fileID: 559911270}
-  - {fileID: 262755997}
-  - {fileID: 1680609172}
-  - {fileID: 235502806}
-  - {fileID: 1781046800}
+  - {fileID: 112801223}
