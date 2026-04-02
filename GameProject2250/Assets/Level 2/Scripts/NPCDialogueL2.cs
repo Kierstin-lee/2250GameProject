@@ -3,42 +3,47 @@ using UnityEngine;
 public class NPCDialogueL2 : MonoBehaviour
 {
     [SerializeField] private GameObject dialogueUI;
-    [SerializeField] private float dialogueDuration = 8f;
 
-    private bool hasShownDialogue = false;
-
-    void Start()
+    private void Start()
     {
+        Debug.Log("NPC script started on " + gameObject.name);
+
         if (dialogueUI != null)
         {
             dialogueUI.SetActive(false);
+            Debug.Log("Dialogue UI found: " + dialogueUI.name);
         }
         else
         {
-            Debug.LogWarning("Dialogue UI is not assigned on " + gameObject.name);
+            Debug.LogError("Dialogue UI is NOT assigned.");
         }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("Triggered by: " + collision.name);
+        Debug.Log("NPC trigger entered by: " + collision.name + " tag = " + collision.tag);
 
-        if (collision.CompareTag("Player") && !hasShownDialogue)
+        if (collision.CompareTag("Player"))
         {
+            Debug.Log("PLAYER detected by NPC trigger");
+
             if (dialogueUI != null)
             {
                 dialogueUI.SetActive(true);
-                hasShownDialogue = true;
-                Invoke(nameof(HideDialogue), dialogueDuration);
             }
         }
     }
 
-    private void HideDialogue()
+    private void OnTriggerExit2D(Collider2D collision)
     {
-        if (dialogueUI != null)
+        Debug.Log("NPC trigger exited by: " + collision.name + " tag = " + collision.tag);
+
+        if (collision.CompareTag("Player"))
         {
-            dialogueUI.SetActive(false);
+            if (dialogueUI != null)
+            {
+                dialogueUI.SetActive(false);
+            }
         }
     }
 }

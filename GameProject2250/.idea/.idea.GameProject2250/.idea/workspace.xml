@@ -6,10 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="5b3795eb-0421-4b52-bb7b-73433f0ab0ec" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GameProject2250/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameProject2250/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fonts/FairyDustB SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/FairyDustB SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Fonts/Pix32 SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/Pix32 SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 2/Scripts/FairyMovementL2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level 2/Scripts/FairyMovementL2.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Level 2/Scripts/NPCDialogueL2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level 2/Scripts/NPCDialogueL2.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level 2/Scripts/ScarecrowController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level 2/Scripts/ScarecrowController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefab/Roboto-Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Roboto-Bold SDF.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level2.unity" afterDir="false" />
     </list>
@@ -139,7 +137,7 @@
       <workItem from="1775065819673" duration="4937000" />
       <workItem from="1775074686778" duration="6130000" />
       <workItem from="1775090134337" duration="3867000" />
-      <workItem from="1775134376561" duration="709000" />
+      <workItem from="1775134376561" duration="1715000" />
     </task>
     <servers />
   </component>

@@ -3781,8 +3781,8 @@ MonoBehaviour:
   groundCheck: {fileID: 1117174685}
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 8
-  checkRadius: 4
+    m_Bits: 9
+  checkRadius: 0.2
 --- !u!114 &434591276
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6726,7 +6726,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 30}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &662312436
@@ -11111,7 +11111,7 @@ MonoBehaviour:
   minX: -5
   maxX: 106
   minY: -4
-  maxY: 4
+  maxY: 3
 --- !u!1 &1174780779
 GameObject:
   m_ObjectHideFlags: 0
@@ -14333,7 +14333,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPCDialogueL2
   dialogueUI: {fileID: 1974782645}
-  dialogueDuration: 8
 --- !u!50 &1662530835
 Rigidbody2D:
   serializedVersion: 5
@@ -14342,7 +14341,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1662530831}
-  m_BodyType: 1
+  m_BodyType: 2
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -16793,7 +16792,7 @@ MonoBehaviour:
   whatIsGround:
     serializedVersion: 2
     m_Bits: 9
-  checkRadius: 4
+  checkRadius: 2
 --- !u!114 &1971614064
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17432,8 +17431,8 @@ MonoBehaviour:
   groundCheck: {fileID: 1117174685}
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 8
-  checkRadius: 4
+    m_Bits: 9
+  checkRadius: 0.2
 --- !u!114 &2053726103
 MonoBehaviour:
   m_ObjectHideFlags: 0
