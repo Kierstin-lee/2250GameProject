@@ -4,6 +4,7 @@ public class KeyBehaviour : MonoBehaviour
 {
     public string keyID;
     private bool collected = false;
+    public AudioClip keyCollectSound;
 
     void OnTriggerEnter2D(Collider2D other)
     {
@@ -15,5 +16,10 @@ public class KeyBehaviour : MonoBehaviour
 
         GameManager.instance.CollectKey(keyID);
         Debug.Log("Key " + keyID + " collected!");
+
+        if (keyCollectSound != null)
+        {
+            AudioSource.PlayClipAtPoint(keyCollectSound, transform.position);
+        }
     }
 }
