@@ -9,47 +9,44 @@ public class NPCSpeech_Level5 : MonoBehaviour
 
     [TextArea] [SerializeField] private string firstLine;
     [TextArea] [SerializeField] private string secondLine;
-    [SerializeField] private float timeBetweenLines = 2f;
 
-    private Coroutine dialogueRoutine;
+    private string[] lines;
+    private int currentLine = 0;
+    private bool isDialogueActive = false;
 
     void Start()
     {
-        if (speechBubbleObject != null)
-        {
-            speechBubbleObject.SetActive(false);
-        }
+        speechBubbleObject.SetActive(false);
+
+        // Put your lines into an array like Level 1
+        lines = new string[] { firstLine, secondLine };
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (!other.CompareTag("Player")) return;
 
-        if (dialogueRoutine != null)
-        {
-            StopCoroutine(dialogueRoutine);
-        }
-
-        dialogueRoutine = StartCoroutine(ShowDialogueSequence());
+        currentLine = 0;
+        speechBubbleObject.SetActive(true);
+        bubbleText.text = lines[currentLine];
+        isDialogueActive = true;
     }
 
-    private IEnumerator ShowDialogueSequence()
+    void Update()
     {
-        if (speechBubbleObject != null)
+        if (isDialogueActive && Input.GetKeyDown(KeyCode.Space))
         {
-            speechBubbleObject.SetActive(true);
-        }
+            currentLine++;
 
-        if (bubbleText != null)
-        {
-            bubbleText.text = firstLine;
-        }
-
-        yield return new WaitForSeconds(timeBetweenLines);
-
-        if (bubbleText != null)
-        {
-            bubbleText.text = secondLine;
+            if (currentLine < lines.Length)
+            {
+                bubbleText.text = lines[currentLine];
+            }
+            else
+            {
+                speechBubbleObject.SetActive(false);
+                isDialogueActive = false;
+            }
         }
     }
 }
