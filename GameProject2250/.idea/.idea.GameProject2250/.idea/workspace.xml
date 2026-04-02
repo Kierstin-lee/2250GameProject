@@ -6,18 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="5b3795eb-0421-4b52-bb7b-73433f0ab0ec" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GameProject2250/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameProject2250/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level 2/Scripts/FairyMovementL2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level 2/Scripts/FairyMovementL2.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level 4/Scripts_Level4/FairyMovement_Level4.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level 4/Scripts_Level4/FairyMovement_Level4.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Level5/Scripts_Level5/FairyControllerLevel5.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level5/Scripts_Level5/FairyControllerLevel5.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MainHub/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Anton SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MainHub/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Anton SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MainHub/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MainHub/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Wand_Powerup.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Wand_Powerup.prefab.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameOver.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameOver.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level5.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level5.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Wand_Powerup_Behaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Heart_Powerup_Behaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Wand_Powerup_Behaviour.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Heart_Powerup_Behaviour.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Wings_Powerup_Behvaiour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Wings_Powerup_Behvaiour.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -155,7 +145,7 @@
       <workItem from="1775136159014" duration="1214000" />
       <workItem from="1775139211184" duration="593000" />
       <workItem from="1775144575194" duration="5100000" />
-      <workItem from="1775153303571" duration="3772000" />
+      <workItem from="1775153303571" duration="5360000" />
     </task>
     <servers />
   </component>
