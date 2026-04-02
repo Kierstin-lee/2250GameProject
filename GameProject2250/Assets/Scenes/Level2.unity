@@ -1412,7 +1412,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: -166422219
+  m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
@@ -1780,7 +1780,7 @@ GameObject:
   - component: {fileID: 255095800}
   - component: {fileID: 255095799}
   - component: {fileID: 255095798}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Tilemap
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -3774,7 +3774,7 @@ MonoBehaviour:
   whatIsGround:
     serializedVersion: 2
     m_Bits: 8
-  checkRadius: 0.35
+  checkRadius: 4
 --- !u!114 &434591276
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4242,7 +4242,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: -166422219
+  m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
@@ -5074,7 +5074,7 @@ GameObject:
   - component: {fileID: 585969788}
   - component: {fileID: 585969787}
   - component: {fileID: 585969786}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Tilemap
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -5334,7 +5334,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: -166422219
+  m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
@@ -7012,7 +7012,7 @@ GameObject:
   - component: {fileID: 732681396}
   - component: {fileID: 732681395}
   - component: {fileID: 732681394}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Tilemap
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -7885,7 +7885,7 @@ GameObject:
   - component: {fileID: 829073707}
   - component: {fileID: 829073706}
   - component: {fileID: 829073705}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Tilemap
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -9777,7 +9777,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: -166422219
+  m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
@@ -10778,7 +10778,7 @@ GameObject:
   - component: {fileID: 1150412274}
   - component: {fileID: 1150412273}
   - component: {fileID: 1150412272}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Tilemap
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -12369,10 +12369,10 @@ MonoBehaviour:
   projectilePrefab: {fileID: 969034562865458596, guid: 2633710d37b358841881cfc80d826834,
     type: 3}
   throwPoint: {fileID: 318472247}
-  throwRange: 2
-  throwForce: 10
-  fireRate: 6
-  mushroomCount: 5
+  throwRange: 4
+  throwForce: 8
+  fireRate: 2
+  mushroomCount: 3
   spreadAngle: 15
 --- !u!1 &1386634295
 GameObject:
@@ -12385,7 +12385,7 @@ GameObject:
   - component: {fileID: 1386634296}
   m_Layer: 0
   m_Name: Scarecrow
-  m_TagString: Player
+  m_TagString: Scarecrow
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13044,7 +13044,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: -166422219
+  m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
@@ -16752,7 +16752,7 @@ MonoBehaviour:
   whatIsGround:
     serializedVersion: 2
     m_Bits: 9
-  checkRadius: 0.35
+  checkRadius: 4
 --- !u!114 &1971614064
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17392,7 +17392,7 @@ MonoBehaviour:
   whatIsGround:
     serializedVersion: 2
     m_Bits: 8
-  checkRadius: 0.35
+  checkRadius: 4
 --- !u!114 &2053726103
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17559,7 +17559,7 @@ TilemapRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: -166422219
+  m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_MaskInteraction: 0
@@ -17953,7 +17953,7 @@ GameObject:
   - component: {fileID: 2125014675}
   - component: {fileID: 2125014674}
   - component: {fileID: 2125014673}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Tilemap
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -18898,17 +18898,17 @@ PrefabInstance:
     - target: {fileID: 4694472612709206455, guid: 837fac0e5a361bc4aac8abbd66e74d72,
         type: 3}
       propertyPath: m_Layer
-      value: 7
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5927178166573592462, guid: 837fac0e5a361bc4aac8abbd66e74d72,
         type: 3}
       propertyPath: m_SortingLayer
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5927178166573592462, guid: 837fac0e5a361bc4aac8abbd66e74d72,
         type: 3}
       propertyPath: m_SortingLayerID
-      value: -166422219
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

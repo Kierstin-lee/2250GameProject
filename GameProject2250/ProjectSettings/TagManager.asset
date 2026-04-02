@@ -17,6 +17,7 @@ TagManager:
   - Coconut
   - Hazard
   - Hole
+  - Scarecrow
   layers:
   - Default
   - TransparentFX
