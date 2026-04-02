@@ -149,9 +149,4 @@ public class FairyControllerLevel5 : MonoBehaviour
         Debug.Log("Activating speed power");
         moveSpeed += 1f;
     }
-    
-    public void ActivateHeartPower()
-    {
-        Debug.Log("Activating heart power");
-    }
 }
