@@ -1438,12 +1438,12 @@ PrefabInstance:
     - target: {fileID: 4780841189091397398, guid: a54740158a902d04c97005a3264e2688,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 38.96
+      value: 47.98
       objectReference: {fileID: 0}
     - target: {fileID: 4780841189091397398, guid: a54740158a902d04c97005a3264e2688,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.29
+      value: 1.09
       objectReference: {fileID: 0}
     - target: {fileID: 4780841189091397398, guid: a54740158a902d04c97005a3264e2688,
         type: 3}
@@ -1484,6 +1484,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4780841189091397399, guid: a54740158a902d04c97005a3264e2688,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2314,7 +2319,7 @@ GameObject:
   - component: {fileID: 87245655}
   - component: {fileID: 87245654}
   m_Layer: 0
-  m_Name: DialogueManager
+  m_Name: DialogueManager_Level1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6214,7 +6219,7 @@ PrefabInstance:
     - target: {fileID: 2227421050508045728, guid: 7e9008ed97ba3aa429fe3c5a92a0317c,
         type: 3}
       propertyPath: m_Name
-      value: Key 1
+      value: Key_Level1
       objectReference: {fileID: 0}
     - target: {fileID: 3718071879863206002, guid: 7e9008ed97ba3aa429fe3c5a92a0317c,
         type: 3}
@@ -10879,37 +10884,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
---- !u!1 &574302245
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 574302246}
-  m_Layer: 0
-  m_Name: SpawnPoint
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &574302246
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 574302245}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.32, y: 5.37, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &578083339
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14467,7 +14441,7 @@ GameObject:
   - component: {fileID: 747378479}
   - component: {fileID: 747378478}
   m_Layer: 5
-  m_Name: Coin Text
+  m_Name: Coin Text_Level1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -16025,7 +15999,7 @@ PrefabInstance:
     - target: {fileID: 4793969210077390191, guid: 9541dbf57122b42c5890ba06388e0235,
         type: 3}
       propertyPath: m_Name
-      value: NPC_level0
+      value: NPC_level1
       objectReference: {fileID: 0}
     - target: {fileID: 7020128973176526707, guid: 9541dbf57122b42c5890ba06388e0235,
         type: 3}
@@ -16253,7 +16227,7 @@ GameObject:
   m_Component:
   - component: {fileID: 840989346}
   m_Layer: 5
-  m_Name: Dialogue
+  m_Name: Dialogue_Level1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -18550,7 +18524,7 @@ GameObject:
   - component: {fileID: 953712153}
   - component: {fileID: 953712152}
   m_Layer: 5
-  m_Name: DialogueText
+  m_Name: DialogueText_Level1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20972,7 +20946,7 @@ GameObject:
   - component: {fileID: 1080535159}
   - component: {fileID: 1080535161}
   m_Layer: 0
-  m_Name: DeathZone
+  m_Name: DeathZone_Level1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -20999,7 +20973,7 @@ Transform:
   m_GameObject: {fileID: 1080535158}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -15, z: 0}
+  m_LocalPosition: {x: 0, y: -20, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -39238,7 +39212,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2142411303}
   m_Layer: 0
-  m_Name: Coins
+  m_Name: Coins_Level1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -39378,7 +39352,6 @@ SceneRoots:
   - {fileID: 1719468641}
   - {fileID: 737703875}
   - {fileID: 1974766049}
-  - {fileID: 574302246}
   - {fileID: 1080535160}
   - {fileID: 818177301}
   - {fileID: 87245655}
