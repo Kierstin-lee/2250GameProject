@@ -10,13 +10,12 @@ public class GameManager : MonoBehaviour
     public List<string> keysCollected = new List<string>();
     public List<string> keysDeposited = new List<string>();
 
-    [Header("Lives")]
-    public float startingLives = 5f;   
+    [Header("Lives")] public float startingLives = 5f;
     public float playerLives;
 
     public int coinsCollected = 0;
     public int coinsPerLife = 10;
-    
+
     public GameObject deathScreen;
 
     public string selectedFairy = "FairyA";
@@ -75,7 +74,7 @@ public class GameManager : MonoBehaviour
     public void LoseLife(float amount = 0.5f)
     {
         playerLives -= amount;
-        
+
         if (playerLives < 0f)
             playerLives = 0f;
 
@@ -155,22 +154,6 @@ public class GameManager : MonoBehaviour
 
         return "";
     }
-    
-    
-    // ---------- Located DeathScreen in new scenes that load ----------
-    void OnEnable()
-    {
-        SceneManager.sceneLoaded += OnSceneLoaded;
-    }
 
-    void OnDisable()
-    {
-        SceneManager.sceneLoaded -= OnSceneLoaded;
-    }
 
-    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
-    {
-        // Try to find DeathScreen in the new scene
-        deathScreen = GameObject.Find("DeathScreen");
-    }
 }
