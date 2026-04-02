@@ -16,6 +16,11 @@ public class FairyMovement_Level4 : MonoBehaviour
 
     private Vector2 moveInput;
     private bool isGrounded;
+    
+    // for wing powerup
+    private bool hasWingPower = false;
+    private int extraJumps;
+    private int maxExtraJumps = 1; // ONLY ONE extra jump
 
     void Start()
     {
@@ -71,6 +76,7 @@ public class FairyMovement_Level4 : MonoBehaviour
     public void ActivateWingPower()
     {
         Debug.Log("Activating wing power");
-        //moveSpeed += 1f;
+        hasWingPower = true;
+        extraJumps = maxExtraJumps;
     }
 }
