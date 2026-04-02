@@ -4,52 +4,67 @@ using TMPro;
 
 public class NPCSpeech_Level5 : MonoBehaviour
 {
-    [SerializeField] private GameObject speechBubbleObject;
-    [SerializeField] private TMP_Text bubbleText;
+    [SerializeField] private GameObject dialogueBox;
+    [SerializeField] private TMP_Text dialogueText;
+    [SerializeField] private FairyControllerLevel5 FairyControllerLevel5;
 
-    [TextArea] [SerializeField] private string firstLine;
-    [TextArea] [SerializeField] private string secondLine;
-    [SerializeField] private float timeBetweenLines = 2f;
+    private string[] fullLines =
+    {
+        "Welcome to the Castle!\nPress Space to keep reading.",
+        "Spikes are your enemy here,\n avoid them at all costs!",
+        "If you see wings,\n pick them up for a speed boost!",
+        "Dont forget to collect the key!"
+    };
 
-    private Coroutine dialogueRoutine;
+    private string[] shortLines =
+    {
+        "One life gone, be careful!\nPress Space to continue."
+    };
+
+    private string[] currentLines;
+    private int currentLine = 0;
+    private bool isDialogueActive = false;
+    private bool hasSeenDialogue = false;
 
     void Start()
     {
-        if (speechBubbleObject != null)
+        dialogueBox.SetActive(false);
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
         {
-            speechBubbleObject.SetActive(false);
+            currentLine = 0;
+            currentLines = hasSeenDialogue ? shortLines : fullLines;
+            dialogueBox.SetActive(true);
+            dialogueText.text = currentLines[currentLine];
+            isDialogueActive = true;
+
+            if (FairyControllerLevel5 != null)
+                FairyControllerLevel5.enabled = false;
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    void Update()
     {
-        if (!other.CompareTag("Player")) return;
-
-        if (dialogueRoutine != null)
+        if (isDialogueActive && Input.GetKeyDown(KeyCode.Space))
         {
-            StopCoroutine(dialogueRoutine);
-        }
+            currentLine++;
 
-        dialogueRoutine = StartCoroutine(ShowDialogueSequence());
-    }
+            if (currentLine < currentLines.Length)
+            {
+                dialogueText.text = currentLines[currentLine];
+            }
+            else
+            {
+                dialogueBox.SetActive(false);
+                isDialogueActive = false;
+                hasSeenDialogue = true;
 
-    private IEnumerator ShowDialogueSequence()
-    {
-        if (speechBubbleObject != null)
-        {
-            speechBubbleObject.SetActive(true);
-        }
-
-        if (bubbleText != null)
-        {
-            bubbleText.text = firstLine;
-        }
-
-        yield return new WaitForSeconds(timeBetweenLines);
-
-        if (bubbleText != null)
-        {
-            bubbleText.text = secondLine;
+                if (FairyControllerLevel5 != null)
+                    FairyControllerLevel5.enabled = true;
+            }
         }
     }
 }
