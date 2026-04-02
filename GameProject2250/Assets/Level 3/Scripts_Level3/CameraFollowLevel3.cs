@@ -7,9 +7,9 @@ public class CameraFollowLevel3 : MonoBehaviour
 
     [Header("Bounds")]
 
-    [SerializeField] private float minX; // Left limit
+    [SerializeField] private float minX = -40; // Left limit
 
-    [SerializeField] private float maxX; // Right limit
+    [SerializeField] private float maxX = 147; // Right limit
     
 
 

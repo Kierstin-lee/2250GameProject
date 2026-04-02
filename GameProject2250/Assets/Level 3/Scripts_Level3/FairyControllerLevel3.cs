@@ -10,7 +10,8 @@ public class FairyControllerLevel3 : MonoBehaviour
     public float groundCheckDistance = 0.1f;
     public LayerMask groundLayer;
     
-    
+    [Header("Bounds")]
+    public Collider2D boundaryCollider;
 
     private Rigidbody2D rb;
     private bool isGrounded;
@@ -28,6 +29,7 @@ public class FairyControllerLevel3 : MonoBehaviour
     void Update()
     {
         HandleMovement();
+        ClampPosition();
     }
     
     // MOVEMENT
@@ -67,5 +69,13 @@ public class FairyControllerLevel3 : MonoBehaviour
                 rb.gravityScale = 0f;
             }
         }
+    }
+    
+    void ClampPosition()
+    {
+        Vector3 pos = transform.position;
+        pos.x = Mathf.Clamp(pos.x, boundaryCollider.bounds.min.x, boundaryCollider.bounds.max.x);
+        pos.y = Mathf.Clamp(pos.y, boundaryCollider.bounds.min.y, boundaryCollider.bounds.max.y);
+        transform.position = pos;
     }
 }

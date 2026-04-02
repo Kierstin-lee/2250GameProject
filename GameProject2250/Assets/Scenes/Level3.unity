@@ -3318,7 +3318,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -95.74897, y: -1.6970122}
+  m_Offset: {x: -95.196655, y: -1.697012}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -3328,7 +3328,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 206.58397, y: 10.132877}
+  m_Size: {x: 205.47934, y: 10.132877}
   m_EdgeRadius: 0
 --- !u!4 &393246780
 Transform:
@@ -6361,6 +6361,7 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
+  boundaryCollider: {fileID: 393246779}
 --- !u!50 &733138270
 Rigidbody2D:
   serializedVersion: 5
@@ -7325,8 +7326,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CameraFollowLevel3
   smoothSpeed: 5
-  minX: -49
-  maxX: 100
+  minX: -40
+  maxX: 147
 --- !u!4 &817057789 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7941510191009950314, guid: 60bde70e37085514e83ddb43c317fb87,
@@ -18156,7 +18157,7 @@ Transform:
   m_GameObject: {fileID: 2073525313}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -32.95, y: -1.5799999, z: 0}
+  m_LocalPosition: {x: -31.01, y: -1.5799999, z: 0}
   m_LocalScale: {x: 2.6561, y: 2.0201, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
