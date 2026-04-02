@@ -10,6 +10,7 @@ public class NPCSpeech_Level4 : MonoBehaviour
     [TextArea] [SerializeField] private string firstLine;
     [TextArea] [SerializeField] private string secondLine;
     [SerializeField] private float timeBetweenLines = 2f;
+    
 
     private Coroutine dialogueRoutine;
 
@@ -33,11 +34,11 @@ public class NPCSpeech_Level4 : MonoBehaviour
         speechBubbleObject.SetActive(true);
         bubbleText.text = firstLine;
 
-        yield return new WaitForSeconds(timeBetweenLines);
-
+        yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.Space));
+        
         bubbleText.text = secondLine;
         
-        yield return new WaitForSeconds(timeBetweenLines);
+        yield return new WaitUntil(() => Input.GetKeyDown(KeyCode.Space));
         
         speechBubbleObject.SetActive(false);
     }
