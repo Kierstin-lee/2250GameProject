@@ -146,7 +146,7 @@ public class GameManager : MonoBehaviour
     {
         int deposited = KeysDepositedCount();
 
-        if (deposited == 0 && portalNumber == 1) return "Level1";
+        if (deposited == 0 && portalNumber == 1) return "Level2";
         if (deposited == 1 && portalNumber == 1) return "Level2";
         if (deposited == 2 && portalNumber == 2) return "Level3";
         if (deposited == 3 && portalNumber == 2) return "Level4";

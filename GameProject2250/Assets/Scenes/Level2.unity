@@ -878,6 +878,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8532332620679452209, guid: 60bde70e37085514e83ddb43c317fb87,
+        type: 3}
+      propertyPath: m_Radius
+      value: 0.88985604
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1651,6 +1656,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8532332620679452209, guid: 60bde70e37085514e83ddb43c317fb87,
+        type: 3}
+      propertyPath: m_Radius
+      value: 1.0449201
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1724,6 +1734,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8532332620679452209, guid: 60bde70e37085514e83ddb43c317fb87,
+        type: 3}
+      propertyPath: m_Radius
+      value: 1.0132599
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3977,7 +3992,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FairyControllerLevel5
   moveSpeed: 3
-  jumpForce: 10
+  jumpForce: 13
   groundCheck: {fileID: 2092885996}
   groundCheckRadius: 0.25
   groundLayer:
@@ -10016,6 +10031,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8532332620679452209, guid: 60bde70e37085514e83ddb43c317fb87,
+        type: 3}
+      propertyPath: m_Radius
+      value: 1.122789
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -10303,6 +10323,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8532332620679452209, guid: 60bde70e37085514e83ddb43c317fb87,
+        type: 3}
+      propertyPath: m_Radius
+      value: 1.1355305
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11097,6 +11122,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8532332620679452209, guid: 60bde70e37085514e83ddb43c317fb87,
+        type: 3}
+      propertyPath: m_Radius
+      value: 1.0601443
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12727,6 +12757,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8532332620679452209, guid: 60bde70e37085514e83ddb43c317fb87,
+        type: 3}
+      propertyPath: m_Radius
+      value: 1.0294288
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -13375,6 +13410,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8532332620679452209, guid: 60bde70e37085514e83ddb43c317fb87,
+        type: 3}
+      propertyPath: m_Radius
+      value: 1.0368872
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14375,6 +14415,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8532332620679452209, guid: 60bde70e37085514e83ddb43c317fb87,
+        type: 3}
+      propertyPath: m_Radius
+      value: 1.0823497
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -15133,6 +15178,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7371739401957804688, guid: 61adac23bdffd92408f5698dbb4d40ff,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.5184427
+      objectReference: {fileID: 0}
+    - target: {fileID: 7371739401957804688, guid: 61adac23bdffd92408f5698dbb4d40ff,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 1.3709407
+      objectReference: {fileID: 0}
+    - target: {fileID: 7371739401957804688, guid: 61adac23bdffd92408f5698dbb4d40ff,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 0.36672452
+      objectReference: {fileID: 0}
+    - target: {fileID: 7371739401957804688, guid: 61adac23bdffd92408f5698dbb4d40ff,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -0.13027847
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -17990,8 +18055,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5d1b7b482f1c594e98caa6624f06d62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FairyMovementL2
-  moveSpeed: 3
-  jumpForce: 10
+  moveSpeed: 4
+  jumpForce: 15
   groundCheck: {fileID: 1117174685}
   groundCheckRadius: 0.25
   groundLayer:
@@ -19050,6 +19115,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8532332620679452209, guid: 60bde70e37085514e83ddb43c317fb87,
+        type: 3}
+      propertyPath: m_Radius
+      value: 1.2246116
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
