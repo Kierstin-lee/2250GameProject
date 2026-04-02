@@ -1,39 +1,47 @@
-using System.Numerics;
 using UnityEngine;
-using UnityEngine.Rendering;
 
 public class CameraControllerL2 : MonoBehaviour
 {
-    [SerializeField] private float smoothSpeed = 5f; // Speed at which the camera moves
+    [SerializeField] private float smoothSpeed = 5f; // How smooth the camera follows
 
     [Header("Bounds")]
-    [SerializeField] private float minX; // Minimum x position of the camera
-    [SerializeField] private float maxX; // Maximum x position of the camera
-    [SerializeField] private float minY; // Minimum y position of the camera
-    [SerializeField] private float maxY; // Maximum y position of the camera
+    [SerializeField] private float minX; // Left limit
+    [SerializeField] private float maxX; // Right limit
+    [SerializeField] private float minY; // Bottom limit
+    [SerializeField] private float maxY; // Top limit
 
     private Transform player;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player").transform; // Find the player object by tag and get its transform
+        // Try to find player automatically at start
+        GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
 
+        if (playerObj != null)
+        {
+            player = playerObj.transform;
+        }
     }
 
-    // Update is called once per frame
+    // This lets the spawner manually assign the player (more reliable)
+    public void SetTarget(Transform target)
+    {
+        player = target;
+    }
+
     void LateUpdate()
     {
-        if (player == null) return; 
+        // If player doesn't exist yet, do nothing
+        if (player == null) return;
 
-        float targetX = player.position.x;
-        float targetY = player.position.y;
+        // Clamp player position within camera bounds
+        float targetX = Mathf.Clamp(player.position.x, minX, maxX);
+        float targetY = Mathf.Clamp(player.position.y, minY, maxY);
 
-        targetX = Mathf.Clamp(targetX, minX, maxX); // Clamp the target x position within the defined bounds
-        targetY = Mathf.Clamp(targetY, minY, maxY); // Clamp the target y position within the defined bounds
+        // Create the final camera position
+        Vector3 targetPosition = new Vector3(targetX, targetY, transform.position.z);
 
-        UnityEngine.Vector3 targetPosition = new UnityEngine.Vector3(targetX, targetY, transform.position.z); // Create a target position with the clamped x and current y
-
-        transform.position = UnityEngine.Vector3.Lerp(transform.position, targetPosition, smoothSpeed * Time.deltaTime); // Smoothly move the camera towards the target position
+        // Smoothly move camera toward target
+        transform.position = Vector3.Lerp(transform.position, targetPosition, smoothSpeed * Time.deltaTime);
     }
 }

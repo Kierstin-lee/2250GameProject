@@ -55,7 +55,7 @@ public class FairyMovementL2 : MonoBehaviour
             spriteRenderer.flipX = true; // Face left when moving left
         }
         
-        UpdateAnimationState(); // Update the animation state based on movement input
+        Debug.Log("Grounded: " + isGrounded);
     }
 
     private void FixedUpdate()
