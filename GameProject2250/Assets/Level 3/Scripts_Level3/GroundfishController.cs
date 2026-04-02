@@ -4,7 +4,7 @@ public class GroundfishController : MonoBehaviour // moves fish up and down
 {
     [Header("Movement Settings")]
     public float moveDistance = 1f;   // how far up it goes
-    public float moveSpeed = 2f;      // how fast it moves
+    public float moveSpeed = 0.5f;      // how fast it moves
 
     private Vector3 startPosition;
     private Vector3 topPosition;
