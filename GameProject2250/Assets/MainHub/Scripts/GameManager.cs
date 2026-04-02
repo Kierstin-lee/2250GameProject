@@ -16,8 +16,6 @@ public class GameManager : MonoBehaviour
 
     public int coinsCollected = 0;
     public int coinsPerLife = 10;
-    
-    public GameObject deathScreen;
 
     public string selectedFairy = "FairyA";
 
@@ -86,8 +84,8 @@ public class GameManager : MonoBehaviour
         if (playerLives <= 0f)
         {
             Debug.Log("Player has died!");
-            deathScreen.SetActive(true);
-            Time.timeScale = 0f;
+            Time.timeScale = 1f; // reset time before changing scenes
+            SceneManager.LoadScene("GameOver");
             //StartCoroutine(RestartGame());
         }
     }
@@ -147,30 +145,12 @@ public class GameManager : MonoBehaviour
     {
         int deposited = KeysDepositedCount();
 
-        if (deposited == 0 && portalNumber == 1) return "Level1";
+        if (deposited == 0 && portalNumber == 1) return "Level5";
         if (deposited == 1 && portalNumber == 1) return "Level2";
         if (deposited == 2 && portalNumber == 2) return "Level3";
         if (deposited == 3 && portalNumber == 2) return "Level4";
         if (deposited == 4 && portalNumber == 3) return "Level5";
 
         return "";
-    }
-    
-    
-    // ---------- Located DeathScreen in new scenes that load ----------
-    void OnEnable()
-    {
-        SceneManager.sceneLoaded += OnSceneLoaded;
-    }
-
-    void OnDisable()
-    {
-        SceneManager.sceneLoaded -= OnSceneLoaded;
-    }
-
-    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
-    {
-        // Try to find DeathScreen in the new scene
-        deathScreen = GameObject.Find("DeathScreen");
     }
 }
