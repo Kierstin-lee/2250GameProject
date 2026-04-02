@@ -36,5 +36,9 @@ public class NPCSpeech_Level4 : MonoBehaviour
         yield return new WaitForSeconds(timeBetweenLines);
 
         bubbleText.text = secondLine;
+        
+        yield return new WaitForSeconds(timeBetweenLines);
+        
+        speechBubbleObject.SetActive(false);
     }
 }
