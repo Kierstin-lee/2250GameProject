@@ -2272,6 +2272,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: BearCatOwl
       objectReference: {fileID: 0}
+    - target: {fileID: 1000013095924222, guid: a690d269257f44d69af3edd4f9bc043f, type: 3}
+      propertyPath: m_TagString
+      value: NPC
+      objectReference: {fileID: 0}
     - target: {fileID: 4000010807341252, guid: a690d269257f44d69af3edd4f9bc043f, type: 3}
       propertyPath: m_LocalScale.x
       value: 0.3
@@ -2336,6 +2340,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1662530834}
+    - targetCorrespondingSourceObject: {fileID: 1000013095924222, guid: a690d269257f44d69af3edd4f9bc043f,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1662530835}
   m_SourcePrefab: {fileID: 100100000, guid: a690d269257f44d69af3edd4f9bc043f, type: 3}
 --- !u!1 &318472246
 GameObject:
@@ -9287,6 +9295,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2633710d37b358841881cfc80d826834, type: 3}
+--- !u!1 &975020054 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 969034562865458596, guid: 2633710d37b358841881cfc80d826834,
+    type: 3}
+  m_PrefabInstance: {fileID: 975020053}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &989839587
 GameObject:
   m_ObjectHideFlags: 0
@@ -11018,7 +11032,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 4.0146666
+  orthographic size: 4.3460064
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -12365,14 +12379,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac63ed75d8c5aba4f89b451727af2e83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ScarecrowController
-  player: {fileID: 452346062}
-  projectilePrefab: {fileID: 969034562865458596, guid: 2633710d37b358841881cfc80d826834,
-    type: 3}
+  player: {fileID: 0}
+  projectilePrefab: {fileID: 975020054}
   throwPoint: {fileID: 318472247}
   throwRange: 4
   throwForce: 8
   fireRate: 2
-  mushroomCount: 3
+  mushroomCount: 1
   spreadAngle: 15
 --- !u!1 &1386634295
 GameObject:
@@ -14305,7 +14318,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 2, y: 2}
   m_EdgeRadius: 0
 --- !u!114 &1662530834
 MonoBehaviour:
@@ -14320,6 +14333,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NPCDialogueL2
   dialogueUI: {fileID: 1974782645}
+  dialogueDuration: 8
+--- !u!50 &1662530835
+Rigidbody2D:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1662530831}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!1 &1664153913
 GameObject:
   m_ObjectHideFlags: 0
@@ -16866,8 +16907,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -402, y: -147.25}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: -353.69006, y: -129.7664}
+  m_SizeDelta: {x: 114.4223, y: 84.9672}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1974782647
 MonoBehaviour:
@@ -16957,7 +16998,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 71.17195, y: -18.540367, z: -279.26465, w: 0}
+  m_margin: {x: 71.17195, y: -18.540367, z: -318.8328, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

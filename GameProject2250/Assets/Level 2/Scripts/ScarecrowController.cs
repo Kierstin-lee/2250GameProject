@@ -1,77 +1,86 @@
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class ScarecrowController : MonoBehaviour
 {
-
+    [Header("References")]
     public GameObject player;
+    public GameObject projectilePrefab;
+    public Transform throwPoint;
 
-    public GameObject projectilePrefab; // The projectile the scarecrow throws
-    public Transform throwPoint; // The point from which the projectile is thrown
+    [Header("Attack Settings")]
+    public float throwRange = 4f;
+    public float throwForce = 8f;
+    public float fireRate = 2f;
 
-    public float throwRange = 8f; // How far he can throw
-    public float throwForce = 10f; // How hard he throws
-    public float fireRate = 2f; // How often he fires
-
-    public int mushroomCount = 3; // Number of mushrooms to throw
+    [Header("Spread Shot")]
+    public int mushroomCount = 3;
     public float spreadAngle = 15f;
 
-    private float nextFireTime; // Time until the next throw
-    private SpriteRenderer SpriteRenderer;
+    private float nextFireTime;
+    private SpriteRenderer spriteRenderer;
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        SpriteRenderer = GetComponent<SpriteRenderer>();
-
-        if (player == null)
-        {
-            player = GameObject.FindGameObjectWithTag("Player");
-        }
+        spriteRenderer = GetComponent<SpriteRenderer>();
+        nextFireTime = Time.time + fireRate;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if (player == null) return; // If player is not assigned, do nothing
+        // If player is missing, keep trying to find the spawned player by tag
+        if (player == null || !player.activeInHierarchy)
+        {
+            player = GameObject.FindGameObjectWithTag("Player");
+            if (player == null) return;
+        }
 
         float distance = Vector2.Distance(transform.position, player.transform.position);
 
         if (player.transform.position.x < transform.position.x)
-        {
-            SpriteRenderer.flipX = false; // Flip the sprite to face left
-        }
+            spriteRenderer.flipX = false;
         else
-        {
-            SpriteRenderer.flipX = true; // Flip the sprite to face right
-        }
+            spriteRenderer.flipX = true;
 
         if (distance <= throwRange && Time.time >= nextFireTime)
         {
-            ThrowProjectile();
-            nextFireTime = Time.time + fireRate; // Set the next fire time
+            ThrowProjectiles();
+            nextFireTime = Time.time + fireRate;
         }
     }
 
-    void ThrowProjectile()
+    void ThrowProjectiles()
     {
+        if (projectilePrefab == null || throwPoint == null || player == null) return;
 
-        Vector2 baseDirection = (player.transform.position - throwPoint.position).normalized; // Direction from scarecrow to player
+        Vector2 baseDirection = (player.transform.position - throwPoint.position).normalized;
 
-        float randomOffset = Random.Range(-spreadAngle, spreadAngle); // Random angle offset for spread
-        Quaternion rotation = Quaternion.Euler(0, 0, randomOffset); // Create a rotation based on the random offset
-        Vector2 finalDirection = rotation * baseDirection;
+        if (mushroomCount <= 1)
+        {
+            SpawnMushroom(baseDirection);
+            return;
+        }
 
-        GameObject mushroom = Instantiate(projectilePrefab, throwPoint.position, Quaternion.identity); // Create the projectile
+        float startAngle = -spreadAngle * 0.5f;
+        float angleStep = spreadAngle / (mushroomCount - 1);
+
+        for (int i = 0; i < mushroomCount; i++)
+        {
+            float currentAngle = startAngle + (angleStep * i);
+            Quaternion rotation = Quaternion.Euler(0, 0, currentAngle);
+            Vector2 finalDirection = rotation * baseDirection;
+
+            SpawnMushroom(finalDirection);
+        }
+    }
+
+    void SpawnMushroom(Vector2 direction)
+    {
+        GameObject mushroom = Instantiate(projectilePrefab, throwPoint.position, Quaternion.identity);
 
         Rigidbody2D rb = mushroom.GetComponent<Rigidbody2D>();
         if (rb != null)
         {
-            
-            rb.linearVelocity = finalDirection * throwForce; // Set the velocity of the projectile
+            rb.linearVelocity = direction.normalized * throwForce;
         }
-
-        Debug.Log("Scarecrow threw a projectile!");
     }
-
 }

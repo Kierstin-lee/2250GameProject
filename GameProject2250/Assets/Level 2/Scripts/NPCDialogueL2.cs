@@ -3,31 +3,42 @@ using UnityEngine;
 public class NPCDialogueL2 : MonoBehaviour
 {
     [SerializeField] private GameObject dialogueUI;
+    [SerializeField] private float dialogueDuration = 8f;
+
     private bool hasShownDialogue = false;
 
     void Start()
     {
         if (dialogueUI != null)
         {
-            dialogueUI.SetActive(false); // Ensure dialogue UI is hidden at the start
+            dialogueUI.SetActive(false);
+        }
+        else
+        {
+            Debug.LogWarning("Dialogue UI is not assigned on " + gameObject.name);
         }
     }
 
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
+        Debug.Log("Triggered by: " + collision.name);
+
         if (collision.CompareTag("Player") && !hasShownDialogue)
         {
-            dialogueUI.SetActive(true);
-            hasShownDialogue = true;
-
-            Invoke(nameof(HideDialogue), 8f); // Hide dialogue after 5 seconds
+            if (dialogueUI != null)
+            {
+                dialogueUI.SetActive(true);
+                hasShownDialogue = true;
+                Invoke(nameof(HideDialogue), dialogueDuration);
+            }
         }
     }
 
-    // Update is called once per frame
-    void HideDialogue()
+    private void HideDialogue()
     {
-        dialogueUI.SetActive(false);
+        if (dialogueUI != null)
+        {
+            dialogueUI.SetActive(false);
+        }
     }
 }
