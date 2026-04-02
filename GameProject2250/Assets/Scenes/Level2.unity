@@ -223,7 +223,7 @@ GameObject:
   - component: {fileID: 7714139}
   m_Layer: 0
   m_Name: Spikes
-  m_TagString: Spike
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2065,7 +2065,7 @@ GameObject:
   - component: {fileID: 273593135}
   m_Layer: 0
   m_Name: Groundd
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2394,7 +2394,7 @@ GameObject:
   - component: {fileID: 339764777}
   m_Layer: 0
   m_Name: Plants
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3784,10 +3784,10 @@ MonoBehaviour:
   moveSpeed: 3
   jumpForce: 10
   groundCheck: {fileID: 1117174685}
-  whatIsGround:
+  groundCheckRadius: 0.25
+  groundLayer:
     serializedVersion: 2
-    m_Bits: 9
-  checkRadius: 0.1
+    m_Bits: 8
 --- !u!114 &434591276
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4131,10 +4131,10 @@ MonoBehaviour:
   moveSpeed: 3
   jumpForce: 8
   groundCheck: {fileID: 273593136}
-  whatIsGround:
+  groundCheckRadius: 0.25
+  groundLayer:
     serializedVersion: 2
-    m_Bits: 64
-  checkRadius: 4
+    m_Bits: 0
 --- !u!1 &457905999
 GameObject:
   m_ObjectHideFlags: 0
@@ -5995,7 +5995,7 @@ GameObject:
   - component: {fileID: 624766992}
   m_Layer: 0
   m_Name: Fences
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10139,7 +10139,7 @@ Transform:
   m_GameObject: {fileID: 1117174684}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.10320574, y: -1.09, z: 0}
+  m_LocalPosition: {x: -0.10320574, y: -1.07, z: 0}
   m_LocalScale: {x: 1.5637215, y: 1.5160704, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -16119,7 +16119,7 @@ GameObject:
   - component: {fileID: 1911709764}
   m_Layer: 0
   m_Name: BackGround
-  m_TagString: Ground
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16960,10 +16960,10 @@ MonoBehaviour:
   moveSpeed: 3
   jumpForce: 10
   groundCheck: {fileID: 1117174685}
-  whatIsGround:
+  groundCheckRadius: 0.25
+  groundLayer:
     serializedVersion: 2
     m_Bits: 9
-  checkRadius: 0.1
 --- !u!114 &1971614064
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17013,8 +17013,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 2, y: 2}
+  m_Offset: {x: 0.037926637, y: 0}
+  m_Size: {x: 2.0758538, y: 2.0125961}
   m_Direction: 0
 --- !u!50 &1971614066
 Rigidbody2D:
@@ -17028,7 +17028,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 1
-  m_Mass: 1.3362026
+  m_Mass: 1.3905954
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 2
@@ -17600,10 +17600,10 @@ MonoBehaviour:
   moveSpeed: 3
   jumpForce: 10
   groundCheck: {fileID: 1117174685}
-  whatIsGround:
+  groundCheckRadius: 0.25
+  groundLayer:
     serializedVersion: 2
-    m_Bits: 9
-  checkRadius: 0.1
+    m_Bits: 8
 --- !u!114 &2053726103
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18435,6 +18435,21 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 3740776606834805786, guid: 471cc1cb75445db4a9ca4317d3bff98a,
+        type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3740776606834805786, guid: 471cc1cb75445db4a9ca4317d3bff98a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Ground
+      objectReference: {fileID: 0}
+    - target: {fileID: 4272195009111664760, guid: 471cc1cb75445db4a9ca4317d3bff98a,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4272195009111664760, guid: 471cc1cb75445db4a9ca4317d3bff98a,
         type: 3}

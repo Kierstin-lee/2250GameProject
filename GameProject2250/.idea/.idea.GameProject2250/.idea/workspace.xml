@@ -6,11 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="5b3795eb-0421-4b52-bb7b-73433f0ab0ec" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GameProject2250/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameProject2250/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level 1/Scripts_Level1/CameraMovement_Level1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level 1/Scripts_Level1/CameraMovement_Level1.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level 1/Scripts_Level1/FairyController_Level1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level 1/Scripts_Level1/FairyController_Level1.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 2/PrefabsLevel2/Ground.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level 2/PrefabsLevel2/Ground.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Level 2/Scripts/FairyMovementL2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level 2/Scripts/FairyMovementL2.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
