@@ -5,9 +5,15 @@ public class FairyController_Level1 : MonoBehaviour
     [SerializeField] private float moveSpeed = 3f;
     [SerializeField] private float jumpForce = 8f;
 
+    [Header("Ground Check")]
+    [SerializeField] private Transform groundCheck;
+    [SerializeField] private float groundCheckRadius = 0.2f;
+    [SerializeField] private LayerMask whatIsGround;
+
     private Rigidbody2D rb;
     private Vector2 moveInput;
     private SpriteRenderer spriteRenderer;
+    private bool isGrounded;
 
     void Start()
     {
@@ -19,6 +25,8 @@ public class FairyController_Level1 : MonoBehaviour
     {
         moveInput.x = Input.GetAxisRaw("Horizontal");
 
+        isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, whatIsGround);
+
         if (moveInput.x < 0)
         {
             spriteRenderer.flipX = true;
@@ -28,11 +36,11 @@ public class FairyController_Level1 : MonoBehaviour
             spriteRenderer.flipX = false;
         }
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.UpArrow) && isGrounded)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+            isGrounded = false;
         }
-        
     }
 
     void FixedUpdate()
@@ -50,5 +58,13 @@ public class FairyController_Level1 : MonoBehaviour
     {
         Debug.Log("Activating wing power");
         moveSpeed += 1f;
+    }
+
+    private void OnDrawGizmosSelected()
+    {
+        if (groundCheck == null) return;
+
+        Gizmos.color = Color.green;
+        Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
     }
 }

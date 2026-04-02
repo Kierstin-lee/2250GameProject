@@ -2,13 +2,14 @@ using UnityEngine;
 
 public class FairyMovementL2 : MonoBehaviour
 {
-    [SerializeField] private float moveSpeed = 3f;
-    [SerializeField] private float jumpForce = 8f;
+    [Header("Movement")]
+    [SerializeField] private float moveSpeed = 5f;
+    [SerializeField] private float jumpForce = 10f;
 
     [Header("Ground Check")]
     [SerializeField] private Transform groundCheck;
-    [SerializeField] private LayerMask whatIsGround;
-    [SerializeField] private float checkRadius = 0.2f;
+    [SerializeField] private float groundCheckRadius = 0.25f;
+    [SerializeField] private LayerMask groundLayer;
 
     private Rigidbody2D rb;
     private Animator anim;
@@ -28,18 +29,31 @@ public class FairyMovementL2 : MonoBehaviour
     {
         moveInput.x = Input.GetAxisRaw("Horizontal");
 
-        isGrounded = Physics2D.OverlapCircle(groundCheck.position, checkRadius, whatIsGround);
-
-        if ((Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.Space)) && isGrounded)
+        if (groundCheck != null)
         {
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
-            isGrounded = false; // immediately prevent another jump
+            Collider2D hit = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
+            isGrounded = hit != null;
+
+            if (hit != null)
+                Debug.Log("Grounded on: " + hit.name);
+            else
+                Debug.Log("Grounded: false");
+        }
+        else
+        {
+            isGrounded = false;
+            Debug.LogWarning("No groundCheck assigned on " + gameObject.name);
         }
 
-        if (moveInput.x > 0)
-            spriteRenderer.flipX = false;
-        else if (moveInput.x < 0)
+        if (Input.GetKeyDown(KeyCode.UpArrow) && isGrounded)
+        {
+            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+        }
+
+        if (moveInput.x < 0)
             spriteRenderer.flipX = true;
+        else if (moveInput.x > 0)
+            spriteRenderer.flipX = false;
 
         UpdateAnimationState();
     }
@@ -49,30 +63,29 @@ public class FairyMovementL2 : MonoBehaviour
         rb.linearVelocity = new Vector2(moveInput.x * moveSpeed, rb.linearVelocity.y);
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.CompareTag("Coin"))
-        {
-            Destroy(collision.gameObject);
-        }
-    }
-
     private void UpdateAnimationState()
     {
         if (anim == null) return;
 
-        anim.SetFloat("MoveX", moveInput.x);
-        anim.SetBool("isGrounded", isGrounded);
-        anim.SetBool("isJumping", !isGrounded);
+        foreach (AnimatorControllerParameter param in anim.parameters)
+        {
+            if (param.name == "MoveX")
+                anim.SetFloat("MoveX", Mathf.Abs(moveInput.x));
+
+            if (param.name == "isGrounded")
+                anim.SetBool("isGrounded", isGrounded);
+
+            if (param.name == "isJumping")
+                anim.SetBool("isJumping", !isGrounded);
+        }
     }
 
-    private void OnDrawGizmos()
+    private void OnDrawGizmosSelected()
     {
-        if (groundCheck != null)
-        {
-            Gizmos.color = isGrounded ? Color.green : Color.red;
-            Gizmos.DrawWireSphere(groundCheck.position, checkRadius);
-        }
+        if (groundCheck == null) return;
+
+        Gizmos.color = Color.green;
+        Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
     }
     
     public void ActivateHeartPower()
