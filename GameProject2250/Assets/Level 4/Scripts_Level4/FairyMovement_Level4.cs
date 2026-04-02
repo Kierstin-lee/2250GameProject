@@ -67,4 +67,10 @@ public class FairyMovement_Level4 : MonoBehaviour
         Gizmos.color = Color.green;
         Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
     }
+    
+    public void ActivateWingPower()
+    {
+        Debug.Log("Activating wing power");
+        //moveSpeed += 1f;
+    }
 }

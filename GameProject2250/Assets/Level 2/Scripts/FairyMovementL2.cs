@@ -74,4 +74,9 @@ public class FairyMovementL2 : MonoBehaviour
             Gizmos.DrawWireSphere(groundCheck.position, checkRadius);
         }
     }
+    
+    public void ActivateHeartPower()
+    {
+        Debug.Log("Activating heart power");
+    }
 }
