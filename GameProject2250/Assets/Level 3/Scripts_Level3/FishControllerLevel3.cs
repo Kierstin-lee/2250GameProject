@@ -16,7 +16,7 @@ public class FishControllerLevel3 : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        // makes it apply to all children?
+        // makes it apply to all children
         fish = new Transform[transform.childCount];
         timers = new float[transform.childCount];
         directions = new int[transform.childCount];
@@ -26,6 +26,14 @@ public class FishControllerLevel3 : MonoBehaviour
             fish[i] = transform.GetChild(i);
             directions[i] = Random.value > 0.5f ? 1 : -1; // picks starting direction
             timers[i] = Random.Range(minDirectionTime, maxDirectionTime); // randomizes times
+            
+            // makes sure fish are facing movement direction
+            if (directions[i] == -1)
+            {
+                Vector3 scale = fish[i].localScale;
+                scale.x *= -1;
+                fish[i].localScale = scale;
+            }
         }
     }
 
@@ -34,26 +42,38 @@ public class FishControllerLevel3 : MonoBehaviour
     {
         for (int i = 0; i < fish.Length; i++)
         {
-            // moves each fish
-            fish[i].position += Vector3.right * (directions[i] * moveSpeed * Time.deltaTime);
+            // move fish
+            float step = directions[i] * moveSpeed * Time.deltaTime;
+            fish[i].position += new Vector3(step, 0f, 0f);
 
-            // count timer
             timers[i] -= Time.deltaTime;
-
             if (timers[i] <= 0f)
             {
-                // flip movement direction
-                directions[i] *= -1;
-
-                // flip sprite horizontally
-                Vector3 scale = fish[i].localScale;
-                scale.x *= -1;
-                fish[i].localScale = scale;
-
-                // reset timer with random duration
-                timers[i] = Random.Range(minDirectionTime, maxDirectionTime);
+                FlipFish(i); // flips fish when timer runs out
             }
         }
+    }
+    
+    void OnTriggerExit2D(Collider2D other) // runs is fish is hit
+    {
+        // check which fish left the boundary
+        for (int i = 0; i < fish.Length; i++)
+        {
+            if (other.transform == fish[i]) // flips fish if it hits boundary
+            {
+                FlipFish(i);
+            }
+        }
+    }
+    
+    void FlipFish(int i)
+    {
+        directions[i] *= -1;
 
+        Vector3 scale = fish[i].localScale;
+        scale.x *= -1;
+        fish[i].localScale = scale;
+
+        timers[i] = Random.Range(minDirectionTime, maxDirectionTime);
     }
 }
