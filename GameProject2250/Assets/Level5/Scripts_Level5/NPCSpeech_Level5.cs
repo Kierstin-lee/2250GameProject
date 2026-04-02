@@ -4,46 +4,32 @@ using TMPro;
 
 public class NPCSpeech_Level5 : MonoBehaviour
 {
-    [SerializeField] private GameObject dialogueBox;
-    [SerializeField] private TMP_Text dialogueText;
-    [SerializeField] private FairyControllerLevel5 FairyControllerLevel5;
+    [SerializeField] private GameObject speechBubbleObject;
+    [SerializeField] private TMP_Text bubbleText;
 
-    private string[] fullLines =
-    {
-        "Welcome to the Castle!\nPress Space to keep reading.",
-        "Spikes are your enemy here,\n avoid them at all costs!",
-        "If you see wings,\n pick them up for a speed boost!",
-        "Dont forget to collect the key!"
-    };
+    [TextArea] [SerializeField] private string firstLine;
+    [TextArea] [SerializeField] private string secondLine;
 
-    private string[] shortLines =
-    {
-        "One life gone, be careful!\nPress Space to continue."
-    };
-
-    private string[] currentLines;
+    private string[] lines;
     private int currentLine = 0;
     private bool isDialogueActive = false;
-    private bool hasSeenDialogue = false;
 
     void Start()
     {
-        dialogueBox.SetActive(false);
+        speechBubbleObject.SetActive(false);
+
+        // Put your lines into an array like Level 1
+        lines = new string[] { firstLine, secondLine };
     }
 
-    void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
-        {
-            currentLine = 0;
-            currentLines = hasSeenDialogue ? shortLines : fullLines;
-            dialogueBox.SetActive(true);
-            dialogueText.text = currentLines[currentLine];
-            isDialogueActive = true;
+        if (!other.CompareTag("Player")) return;
 
-            if (FairyControllerLevel5 != null)
-                FairyControllerLevel5.enabled = false;
-        }
+        currentLine = 0;
+        speechBubbleObject.SetActive(true);
+        bubbleText.text = lines[currentLine];
+        isDialogueActive = true;
     }
 
     void Update()
@@ -52,18 +38,14 @@ public class NPCSpeech_Level5 : MonoBehaviour
         {
             currentLine++;
 
-            if (currentLine < currentLines.Length)
+            if (currentLine < lines.Length)
             {
-                dialogueText.text = currentLines[currentLine];
+                bubbleText.text = lines[currentLine];
             }
             else
             {
-                dialogueBox.SetActive(false);
+                speechBubbleObject.SetActive(false);
                 isDialogueActive = false;
-                hasSeenDialogue = true;
-
-                if (FairyControllerLevel5 != null)
-                    FairyControllerLevel5.enabled = true;
             }
         }
     }
