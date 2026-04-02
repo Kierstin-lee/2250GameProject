@@ -1866,7 +1866,6 @@ MonoBehaviour:
   playerLives: 5
   coinsCollected: 0
   coinsPerLife: 10
-  deathScreen: {fileID: 0}
   selectedFairy: FairyA
 --- !u!4 &1984616127
 Transform:

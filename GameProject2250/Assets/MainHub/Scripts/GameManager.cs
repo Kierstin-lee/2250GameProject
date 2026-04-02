@@ -16,8 +16,6 @@ public class GameManager : MonoBehaviour
     public int coinsCollected = 0;
     public int coinsPerLife = 10;
 
-    public GameObject deathScreen;
-
     public string selectedFairy = "FairyA";
 
     void Awake()
@@ -69,6 +67,11 @@ public class GameManager : MonoBehaviour
     {
         return keysDeposited.Count;
     }
+    
+    public string GetGameOverScene()
+    {
+        return "GameOver";
+    }
 
     // ---------- Lives ----------
     public void LoseLife(float amount = 0.5f)
@@ -85,9 +88,15 @@ public class GameManager : MonoBehaviour
         if (playerLives <= 0f)
         {
             Debug.Log("Player has died!");
-            deathScreen.SetActive(true);
-            Time.timeScale = 0f;
-            //StartCoroutine(RestartGame());
+            Time.timeScale = 1f;
+
+            string scene = GetGameOverScene();
+
+            if (!string.IsNullOrEmpty(scene))
+            {
+                SceneManager.LoadScene(scene);
+            }
+            
         }
     }
 
@@ -146,7 +155,7 @@ public class GameManager : MonoBehaviour
     {
         int deposited = KeysDepositedCount();
 
-        if (deposited == 0 && portalNumber == 1) return "Level2";
+        if (deposited == 0 && portalNumber == 1) return "Level1";
         if (deposited == 1 && portalNumber == 1) return "Level2";
         if (deposited == 2 && portalNumber == 2) return "Level3";
         if (deposited == 3 && portalNumber == 2) return "Level4";
