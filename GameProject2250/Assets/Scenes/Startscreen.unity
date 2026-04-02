@@ -1764,8 +1764,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
   keysCollected: []
   keysDeposited: []
-  startingLives: 1
-  playerLives: 1
+  startingLives: 5
+  playerLives: 5
   coinsCollected: 0
   coinsPerLife: 10
   deathScreen: {fileID: 0}
