@@ -408,7 +408,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6dfc6ec45f3272458ba7e9683579d49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GroundfishController
-  moveDistance: 1
+  moveDistance: 0.75
   moveSpeed: 0.5
 --- !u!1 &65347350
 GameObject:
@@ -916,7 +916,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6dfc6ec45f3272458ba7e9683579d49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GroundfishController
-  moveDistance: 1
+  moveDistance: 0.75
   moveSpeed: 0.5
 --- !u!1 &108112831
 GameObject:
@@ -1381,7 +1381,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6dfc6ec45f3272458ba7e9683579d49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GroundfishController
-  moveDistance: 1
+  moveDistance: 0.75
   moveSpeed: 0.5
 --- !u!1 &182704737
 GameObject:
@@ -1672,7 +1672,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6dfc6ec45f3272458ba7e9683579d49, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GroundfishController
-  moveDistance: 1
+  moveDistance: 0.7
   moveSpeed: 0.5
 --- !u!1 &211303702
 GameObject:
