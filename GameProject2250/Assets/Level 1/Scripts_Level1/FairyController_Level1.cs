@@ -25,8 +25,10 @@ public class FairyController_Level1 : MonoBehaviour
     {
         moveInput.x = Input.GetAxisRaw("Horizontal");
 
+        // Check if player is grounded
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, whatIsGround);
 
+        // Flip sprite based on movement direction
         if (moveInput.x < 0)
         {
             spriteRenderer.flipX = true;
@@ -36,32 +38,23 @@ public class FairyController_Level1 : MonoBehaviour
             spriteRenderer.flipX = false;
         }
 
+        // Jump only when grounded
         if (Input.GetKeyDown(KeyCode.UpArrow) && isGrounded)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
-            isGrounded = false;
+            isGrounded = false; // Prevent immediate re-jump in same frame
         }
     }
 
     void FixedUpdate()
     {
+        // Apply horizontal movement
         rb.linearVelocity = new Vector2(moveInput.x * moveSpeed, rb.linearVelocity.y);
-    }
-
-    public void ActivateWandPower()
-    {
-        Debug.Log("Activating wand power");
-        jumpForce += 2f;
-    }
-
-    public void ActivateWingPower()
-    {
-        Debug.Log("Activating wing power");
-        moveSpeed += 1f;
     }
 
     private void OnDrawGizmosSelected()
     {
+        // Visualize ground check radius in editor
         if (groundCheck == null) return;
 
         Gizmos.color = Color.green;
