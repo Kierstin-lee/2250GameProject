@@ -7,9 +7,9 @@ public class BossController_level6 : MonoBehaviour
     private int currentHealth;
 
     [Header("Movement")]
-    [SerializeField] private float moveSpeed = 2f;
+    [SerializeField] private float moveSpeed = 1f;
     //[SerializeField] private float jumpForce = 10f;
-    [SerializeField] private float leftBound = 40f;
+    [SerializeField] private float leftBound = 43f;
     [SerializeField] private float rightBound = 67f;
     
     //[Header("Ground Check")]
@@ -19,8 +19,8 @@ public class BossController_level6 : MonoBehaviour
     //private bool isGrounded;
 
     [Header("Combat")]
-    [SerializeField] private float attackRange = 2f;
-    [SerializeField] private float attackCooldown = 2f;
+    [SerializeField] private float attackRange = 3f;
+    [SerializeField] private float attackCooldown = 5f;
     //[SerializeField] private int numberOfAttackAnimations = 2;
     private float lastAttackTime;
     
@@ -28,7 +28,7 @@ public class BossController_level6 : MonoBehaviour
     private Rigidbody2D rb;
     
     //private Animator anim;
-    //private SpriteRenderer spriteRenderer;
+    private SpriteRenderer spriteRenderer;
 
     [Header("Health UI")]
     [SerializeField] private BossHealthBar healthBarPrefab;
@@ -36,19 +36,17 @@ public class BossController_level6 : MonoBehaviour
 
     void Start()
     {
-        Debug.Log("Boss Start"); //i see this
-        
         currentHealth = maxHealth;
         
         rb = GetComponent<Rigidbody2D>();
         //anim = GetComponent<Animator>();
-        //spriteRenderer = GetComponent<SpriteRenderer>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
         
         GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
         if (playerObj != null)
         {
             player = playerObj.transform;
-            Debug.Log("Player found: " + playerObj.name); //i see this
+            Debug.Log("Player found: " + playerObj.name);
         }
 
         // Instantiate health bar above boss
@@ -61,14 +59,11 @@ public class BossController_level6 : MonoBehaviour
 
     void Update()
     {
-        Debug.Log("Player is: " + (player == null ? "NULL" : player.name));
-        
         if (player == null) return;
         
         // Handle movement
         //isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
         
-        //Debug.Log("Update function running"); //i see this
         TryAttack();
 
         if (healthBar != null)
@@ -86,8 +81,6 @@ public class BossController_level6 : MonoBehaviour
 
     private void Move()
     {
-        Debug.Log("Move function running"); //i see this
-        
         float direction = Mathf.Sign(player.position.x - transform.position.x);
 
         // Clamp movement inside bounds
@@ -101,14 +94,15 @@ public class BossController_level6 : MonoBehaviour
 
         // Move toward player
         rb.linearVelocity = new Vector2(direction * moveSpeed, rb.linearVelocity.y);
-        Debug.Log("Boss moving"); //i see this
+        //Debug.Log("Boss moving");
+        
         //anim.SetFloat("Speed", Mathf.Abs(rb.linearVelocity.x));
 
-        // Flip sprite
-        //if (direction < 0)
-            //spriteRenderer.flipX = true;
-        //else if (direction > 0)
-            //spriteRenderer.flipX = false;
+        //Flip sprite
+        if (direction < 0)
+            spriteRenderer.flipX = true;
+        else if (direction > 0)
+            spriteRenderer.flipX = false;
 
         // Jump logic (platform chasing)
         //if (isGrounded)
@@ -130,8 +124,7 @@ public class BossController_level6 : MonoBehaviour
         Debug.Log("Distance to player: " + distanceToPlayer);
         
         // Proper cooldown enforcement
-        //if (distanceToPlayer <= attackRange && Time.time >= lastAttackTime + attackCooldown)
-        if (Time.time >= lastAttackTime + attackCooldown)
+        if (distanceToPlayer <= attackRange && Time.time >= lastAttackTime + attackCooldown)
         {
             Attack();
         }
