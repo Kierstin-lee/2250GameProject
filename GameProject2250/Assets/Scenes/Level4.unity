@@ -11868,7 +11868,7 @@ Camera:
   far clip plane: 1000
   field of view: 0.34491745
   orthographic: 1
-  orthographic size: 6.293622
+  orthographic size: 7.701831
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -11893,7 +11893,7 @@ Transform:
   m_GameObject: {fileID: 535427357}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.4, y: 1, z: -10}
+  m_LocalPosition: {x: -5.65, y: 2.09, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -18646,6 +18646,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 890967143}
+    - targetCorrespondingSourceObject: {fileID: 3979658910644941265, guid: ea8d65b89dc84d9092703d2ef9b70db7,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 890967144}
   m_SourcePrefab: {fileID: 100100000, guid: ea8d65b89dc84d9092703d2ef9b70db7, type: 3}
 --- !u!1 &890967137 stripped
 GameObject:
@@ -18751,12 +18755,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FairyMovement_Level2V2
   moveSpeed: 4
-  jumpForce: 15
+  jumpForce: 14
   groundCheck: {fileID: 1663497332}
   groundCheckRadius: 0.25
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
+--- !u!114 &890967144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 890967137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 354d5dc06a9ff44d0b2dedbb071dac30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerHazard_Level4
+  respawnPoint: {fileID: 1895194076}
+  damageCooldown: 1
+  cameraMovement: {fileID: 535427361}
+  mainCamera: {fileID: 535427359}
+  offscreenBuffer: 0.05
 --- !u!1 &896605516
 GameObject:
   m_ObjectHideFlags: 0
@@ -34397,7 +34418,7 @@ MonoBehaviour:
   dialogueBox: {fileID: 1629001911}
   dialogueText: {fileID: 512929829}
   dialogueLines:
-  - Congrats! You made it back to the beach
+  - Congrats! You made it back to the beach, this mission is timed so move fast!
   - Be careful for those coconuts, the come out of nowhere!
   - If you see a pair of wings, go collect them they will help you double jump, which
     may come in handy later!
@@ -44236,6 +44257,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1826012226}
+    - targetCorrespondingSourceObject: {fileID: 1671945572645789033, guid: 059790aee4124594910a271a5986e78d,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1826012227}
   m_SourcePrefab: {fileID: 100100000, guid: 059790aee4124594910a271a5986e78d, type: 3}
 --- !u!1 &1826012220 stripped
 GameObject:
@@ -44360,12 +44385,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FairyMovement_Level4V2
   moveSpeed: 4
-  jumpForce: 15
+  jumpForce: 14
   groundCheck: {fileID: 810720992}
   groundCheckRadius: 0.25
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
+--- !u!114 &1826012227
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1826012220}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 354d5dc06a9ff44d0b2dedbb071dac30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerHazard_Level4
+  respawnPoint: {fileID: 1895194076}
+  damageCooldown: 1
+  cameraMovement: {fileID: 535427361}
+  mainCamera: {fileID: 535427359}
+  offscreenBuffer: 0.05
 --- !u!1 &1828623341
 GameObject:
   m_ObjectHideFlags: 0
@@ -45975,6 +46017,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1894375113}
+    - targetCorrespondingSourceObject: {fileID: 7194166884115714197, guid: 8f19645d1dcc4c24a1fe81dfc3bbe9a5,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1894375114}
   m_SourcePrefab: {fileID: 100100000, guid: 8f19645d1dcc4c24a1fe81dfc3bbe9a5, type: 3}
 --- !u!1 &1894375107 stripped
 GameObject:
@@ -46099,12 +46145,29 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FairyMovement_Level4V2
   moveSpeed: 4
-  jumpForce: 15
+  jumpForce: 14
   groundCheck: {fileID: 250829274}
   groundCheckRadius: 0.25
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
+--- !u!114 &1894375114
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1894375107}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 354d5dc06a9ff44d0b2dedbb071dac30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerHazard_Level4
+  respawnPoint: {fileID: 1895194076}
+  damageCooldown: 1
+  cameraMovement: {fileID: 535427361}
+  mainCamera: {fileID: 535427359}
+  offscreenBuffer: 0.05
 --- !u!1 &1895194075
 GameObject:
   m_ObjectHideFlags: 0

@@ -12,6 +12,6 @@ public class StartButton : MonoBehaviour
 
     public void OpenScene()
     {
-        SceneManager.LoadScene("MainhubV2");
+        SceneManager.LoadScene("Level6");
     }
 }

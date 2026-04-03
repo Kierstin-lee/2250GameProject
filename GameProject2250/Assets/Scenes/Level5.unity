@@ -5526,7 +5526,7 @@ MonoBehaviour:
   - Be sure not to land on any spikes
   - 'If you see a brown ladder, use it to climb up to safety '
   - 'Collect the lightning bolt, it helps you go faster.  '
-  - 'Be careful at the end of the level, net up is the scary wizard! '
+  - 'Be careful at the end of the level, next up is the scary wizard! '
 --- !u!61 &944649113
 BoxCollider2D:
   m_ObjectHideFlags: 0
