@@ -64862,8 +64862,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5d1b7b482f1c594e98caa6624f06d62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FairyMovementL2
-  moveSpeed: 3
-  jumpForce: 10
+  moveSpeed: 5
+  jumpForce: 13
   groundCheck: {fileID: 675844349}
   groundCheckRadius: 0.25
   groundLayer:

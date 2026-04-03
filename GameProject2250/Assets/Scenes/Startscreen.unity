@@ -356,7 +356,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 70, y: -153.78998}
+  m_AnchoredPosition: {x: 70, y: -99}
   m_SizeDelta: {x: -390.2959, y: 54.92569}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &503914425
@@ -1867,6 +1867,7 @@ MonoBehaviour:
   coinsCollected: 0
   coinsPerLife: 10
   selectedFairy: FairyA
+  hasTalkedToNPC: 0
 --- !u!4 &1984616127
 Transform:
   m_ObjectHideFlags: 0

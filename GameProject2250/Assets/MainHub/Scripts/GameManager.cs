@@ -90,8 +90,7 @@ public class GameManager : MonoBehaviour
         bool holdingKey = keysCollected.Count > 0;
 
         if (!hasTalkedToNPC)
-            return "Go talk to the NPC.";
-
+            return "Welcome to Fairy Rescue! A scary wizard has taken over the land. Go talk to Gertrude the bear (press SPACE) to begin your mission.";
         if (holdingKey)
             return "Deposit the key in the chest.";
 
@@ -132,7 +131,7 @@ public class GameManager : MonoBehaviour
     {
         int deposited = KeysDepositedCount();
 
-        if (deposited == 0 && portalNumber == 1) return "Level1";
+        if (deposited == 0 && portalNumber == 1) return "Level4";
         if (deposited == 1 && portalNumber == 1) return "Level2";
         if (deposited == 2 && portalNumber == 2) return "Level3";
         if (deposited == 3 && portalNumber == 2) return "Level4";
