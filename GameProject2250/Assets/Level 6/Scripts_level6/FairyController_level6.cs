@@ -25,12 +25,6 @@ public class FairyController_level6 : MonoBehaviour
     private bool canTakeDamage = true;
     [SerializeField] private float damageCooldown = 1f;
     
-    //Projectiles / magic fairy wand stuff to kill the boss
-    [SerializeField] private GameObject projectilePrefab;
-    [SerializeField] private Transform projectileSpawnPoint;
-    [SerializeField] private float shootCooldown = 0.5f;
-    private float lastShootTime;
-    
     void Start()
     {
         rb = GetComponent<Rigidbody2D>(); 
@@ -50,13 +44,6 @@ public class FairyController_level6 : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.UpArrow) && isGrounded)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
-        }
-        
-        // Shoot projectile
-        if (Input.GetKeyDown(KeyCode.Space) && Time.time >= lastShootTime + shootCooldown)
-        {
-            ShootProjectile();
-            lastShootTime = Time.time;
         }
         
         //Flip the fairy sprite so she is always facing the direction she is moving in 
@@ -156,18 +143,5 @@ public class FairyController_level6 : MonoBehaviour
         UnityEngine.SceneManagement.SceneManager.LoadScene(
             UnityEngine.SceneManagement.SceneManager.GetActiveScene().name
         );
-    }
-    
-    private void ShootProjectile()
-    {
-        if (projectilePrefab != null && projectileSpawnPoint != null)
-        {
-            GameObject proj = Instantiate(projectilePrefab, projectileSpawnPoint.position, Quaternion.identity);
-
-            // Make sure it faces the direction the fairy is facing
-            Vector3 scale = proj.transform.localScale;
-            scale.x = spriteRenderer.flipX ? -1 : 1;
-            proj.transform.localScale = scale;
-        }
     }
 }

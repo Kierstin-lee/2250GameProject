@@ -149,25 +149,6 @@ public class BossController_level6 : MonoBehaviour
         }
     }
 
-    public void TakeDamage(int damage)
-    {
-        currentHealth -= damage;
-
-        Debug.Log("Boss HP: " + currentHealth); //fairy attack not set up yet
-
-        if (healthBar != null)
-        {
-            healthBar.SetHealth(currentHealth);
-        }
-
-        //anim.SetTrigger("Take hit_0");
-
-        if (currentHealth <= 0)
-        {
-            Die();
-        }
-    }
-
     private void Die()
     {
         Debug.Log("Boss Died"); //again, fairy attack is not set up
