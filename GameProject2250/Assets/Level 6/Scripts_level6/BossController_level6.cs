@@ -8,12 +8,6 @@ public class BossController_level6 : MonoBehaviour
     [SerializeField] private float leftBound = 43f;
     [SerializeField] private float rightBound = 67f;
 
-    //[Header("Ground Check")]
-    //[SerializeField] private Transform groundCheck;
-    //[SerializeField] private float groundCheckRadius = 0.2f;
-    //[SerializeField] private LayerMask groundLayer;
-    //private bool isGrounded;
-
     [Header("Combat")] [SerializeField] private float attackRange = 3f;
 
     [SerializeField] private float attackCooldown = 5f;
@@ -43,10 +37,7 @@ public class BossController_level6 : MonoBehaviour
     void Update()
     {
         if (player == null) return;
-
-        // Handle movement
-        //isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
-
+        
         TryAttack();
     }
 
@@ -81,18 +72,6 @@ public class BossController_level6 : MonoBehaviour
             spriteRenderer.flipX = true;
         else if (direction > 0)
             spriteRenderer.flipX = false;
-
-        // Jump logic (platform chasing)
-        //if (isGrounded)
-        //{
-        //bool playerAbove = player.position.y > transform.position.y + 1f;
-        //bool closeHorizontally = Mathf.Abs(player.position.x - transform.position.x) < 3f;
-
-        //if (playerAbove && closeHorizontally)
-        //{
-        //rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
-        //anim.SetTrigger("Jump");
-        //}
     }
 
     private void TryAttack()
@@ -118,11 +97,11 @@ public class BossController_level6 : MonoBehaviour
         //int attackIndex = Random.Range(1, numberOfAttackAnimations + 1);
         //anim.SetTrigger("Attack" + attackIndex);
 
-        FairyController_level6 playerScript = player.GetComponent<FairyController_level6>();
+        PlayerDamage damageScript = player.GetComponent<PlayerDamage>();
 
-        if (playerScript != null)
+        if (damageScript != null)
         {
-            playerScript.TakeDamage(1);
+            damageScript.TakeDamage(1, false);
         }
     }
 }

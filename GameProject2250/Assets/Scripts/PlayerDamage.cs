@@ -25,7 +25,7 @@ public class PlayerDamage : MonoBehaviour
         // Trigger damage on hazard tags
         if (other.CompareTag("Hole") || other.CompareTag("Hazard") || other.CompareTag("Spike"))
         {
-            TakeDamage();
+            TakeDamage(1, true);
         }
     }
 
@@ -36,11 +36,12 @@ public class PlayerDamage : MonoBehaviour
         // Handle collision-based hazards
         if (collision.gameObject.CompareTag("Hazard") || collision.gameObject.CompareTag("Spike"))
         {
-            TakeDamage();
+            TakeDamage(1, true);
         }
     }
 
-    public void TakeDamage()
+    //Added a boolean to handle respawns b/c boss hits dont respawn the character and created a damage amount to set custom damage
+    public void TakeDamage(float amount, bool shouldRespawn = true)
     {
         if (!canTakeDamage) return;
 
@@ -54,13 +55,13 @@ public class PlayerDamage : MonoBehaviour
         }
 
         // Respawn player at designated point
-        if (respawnPoint != null)
+        if (respawnPoint != null && shouldRespawn == true)
         {
             transform.position = respawnPoint.position;
         }
 
         // Reset physics state
-        if (rb != null)
+        if (rb != null && shouldRespawn == true)
         {
             rb.linearVelocity = Vector2.zero;
             rb.angularVelocity = 0f;

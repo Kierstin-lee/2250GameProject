@@ -97,7 +97,7 @@ public class RandomCoconutDrop_Level4 : MonoBehaviour
         PlayerDamage damage = other.GetComponent<PlayerDamage>();
         if (damage != null)
         {
-            damage.TakeDamage();
+            damage.TakeDamage(1, true);
         }
 
         Destroy(gameObject);
@@ -111,7 +111,7 @@ public class RandomCoconutDrop_Level4 : MonoBehaviour
             PlayerDamage damage = collision.gameObject.GetComponent<PlayerDamage>();
             if (damage != null)
             {
-                damage.TakeDamage();
+                damage.TakeDamage(1, true);
             }
 
             Destroy(gameObject);

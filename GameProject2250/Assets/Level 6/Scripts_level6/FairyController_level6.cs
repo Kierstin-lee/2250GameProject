@@ -101,34 +101,6 @@ public class FairyController_level6 : MonoBehaviour
         }
     }
 
-    //method to allow the fairy to take damage from the boss
-    public void TakeDamage(int damage)
-    {
-        Debug.Log("TakeDamage CALLED on: " + gameObject.name);
-        
-        if (!canTakeDamage) return;
-        
-        canTakeDamage = false;
-        currentLives -= damage;
-        
-        Debug.Log("Lives: " + currentLives);
-
-        if (currentLives <= 0)
-        {
-            Die();
-        }
-
-        //prevent insta dealth with a cool down
-        StartCoroutine(DamageCooldownRoutine());
-    }
-    
-    //helper method to create a damage cool down to the boss can't just insta kill the player 
-    private IEnumerator DamageCooldownRoutine()
-    {
-        yield return new WaitForSeconds(damageCooldown);
-        canTakeDamage = true;
-    }
-
     //method for when the fairy dies/runs out of lives - respawns at start of level but will need to be changed to switch to a "Game Over" screen
     private void Die()
     {
