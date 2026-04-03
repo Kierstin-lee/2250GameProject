@@ -5,8 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5b3795eb-0421-4b52-bb7b-73433f0ab0ec" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Level 4/Scripts_Level4/CameraMovement_Level4.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level 4/Scripts_Level4/CameraMovement_Level4.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level 4/Scripts_Level4/FairyMovement_Level4.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level 4/Scripts_Level4/FairyMovement_Level4.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameProject2250/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameProject2250/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level5/Scripts_Level5/CameraMovementLevel5.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level5/Scripts_Level5/CameraMovementLevel5.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level5/Scripts_Level5/CharacterSpawner_Level5.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level5/Scripts_Level5/CharacterSpawner_Level5.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level5/Scripts_Level5/DeathPopup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level5/Scripts_Level5/DeathPopup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level5/Scripts_Level5/FairyControllerLevel5.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level5/Scripts_Level5/FairyControllerLevel5.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level5/Scripts_Level5/LadderFunctionLevel5.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level5/Scripts_Level5/LadderFunctionLevel5.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level5/Scripts_Level5/PauseMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level5/Scripts_Level5/PauseMenu.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,7 +150,7 @@
       <workItem from="1775139211184" duration="593000" />
       <workItem from="1775144575194" duration="5100000" />
       <workItem from="1775153303571" duration="8767000" />
-      <workItem from="1775175864328" duration="657000" />
+      <workItem from="1775175864328" duration="1289000" />
     </task>
     <servers />
   </component>

@@ -25,10 +25,10 @@ public class FairyControllerLevel5 : MonoBehaviour
     private bool isLadder;
     private bool isClimbing;
     
-    // for wing powerup
+    // Wing power-up (allows one extra jump while airborne)
     private bool hasWingPower = false;
     private int extraJumps;
-    private int maxExtraJumps = 1; // ONLY ONE extra jump
+    private int maxExtraJumps = 1;
 
     void Start()
     {
@@ -42,32 +42,32 @@ public class FairyControllerLevel5 : MonoBehaviour
         moveInput.x = Input.GetAxisRaw("Horizontal");
         vertical = Input.GetAxisRaw("Vertical");
 
+        // Ground detection
         if (groundCheck != null)
         {
             isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
+
+            // Reset extra jumps when grounded
+            if (isGrounded && hasWingPower)
+                extraJumps = maxExtraJumps;
         }
         else
         {
             isGrounded = false;
         }
 
+        // Ladder climbing state
         if (isLadder && Mathf.Abs(vertical) > 0.01f)
-        {
             isClimbing = true;
-        }
         else if (!isLadder)
-        {
             isClimbing = false;
-        }
 
+        // Jump and double jump logic
         if (Input.GetKeyDown(KeyCode.UpArrow) && !isClimbing)
         {
             if (isGrounded)
             {
                 rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
-
-                if (hasWingPower)
-                    extraJumps = maxExtraJumps; // reset when touching ground
             }
             else if (hasWingPower && extraJumps > 0)
             {
@@ -76,15 +76,13 @@ public class FairyControllerLevel5 : MonoBehaviour
             }
         }
 
+        // Flip sprite based on movement direction
         if (moveInput.x < 0)
             spriteRenderer.flipX = true;
         else if (moveInput.x > 0)
             spriteRenderer.flipX = false;
 
         UpdateAnimationState();
-        
-        //debug line 
-        Debug.Log("Grounded: " + isGrounded + " | Ladder: " + isLadder + " | Climbing: " + isClimbing);
     }
 
     void FixedUpdate()
@@ -104,9 +102,7 @@ public class FairyControllerLevel5 : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Ladder"))
-        {
             isLadder = true;
-        }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -130,23 +126,21 @@ public class FairyControllerLevel5 : MonoBehaviour
 
     private void OnDrawGizmosSelected()
     {
+        // Visualize ground check radius
         if (groundCheck == null) return;
 
         Gizmos.color = Color.green;
         Gizmos.DrawWireSphere(groundCheck.position, groundCheckRadius);
     }
     
-    
     public void ActivateWingPower()
     {
-        Debug.Log("Activating wing power");
         hasWingPower = true;
         extraJumps = maxExtraJumps;
     }
     
     public void ActivateSpeedPower()
     {
-        Debug.Log("Activating speed power");
-        moveSpeed += 1f;
+        moveSpeed += 1f; // Consider clamping if stacking is not intended
     }
 }
