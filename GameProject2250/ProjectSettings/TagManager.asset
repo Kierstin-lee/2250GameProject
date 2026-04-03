@@ -19,6 +19,7 @@ TagManager:
   - Hole
   - Scarecrow
   - Level3Bounds
+  - Boss
   layers:
   - Default
   - TransparentFX
@@ -67,6 +68,12 @@ TagManager:
     locked: 0
   - name: Ground
     uniqueID: 1421661029
+    locked: 0
+  - name: walls
+    uniqueID: 3011394981
+    locked: 0
+  - name: decor
+    uniqueID: 4076796983
     locked: 0
   m_RenderingLayers:
   - Default
