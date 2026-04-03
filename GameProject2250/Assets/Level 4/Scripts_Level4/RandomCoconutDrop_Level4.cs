@@ -23,22 +23,27 @@ public class RandomCoconutDrop_Level4 : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
 
+        // Ensure Rigidbody2D is present
         if (rb == null)
         {
             Debug.LogError("No Rigidbody2D on coconut: " + gameObject.name);
             return;
         }
 
+        // Disable physics until activation
         rb.simulated = false;
+
+        // Randomize drop delay
         timeToDrop = Random.Range(minDropTime, maxDropTime);
 
+        // Cache main camera transform
         if (Camera.main != null)
         {
             cameraTransform = Camera.main.transform;
         }
         else
         {
-            Debug.LogError("Camera.main is NULL. Make sure your camera has the MainCamera tag.");
+            Debug.LogError("Camera.main is null. Ensure the camera has the MainCamera tag.");
         }
     }
 
@@ -47,6 +52,7 @@ public class RandomCoconutDrop_Level4 : MonoBehaviour
         if (hasDropped || rb == null) return;
         if (cameraTransform == null) return;
 
+        // Activate when within horizontal distance of camera
         if (!isActivated)
         {
             float distanceX = Mathf.Abs(transform.position.x - cameraTransform.position.x);
@@ -62,6 +68,7 @@ public class RandomCoconutDrop_Level4 : MonoBehaviour
             }
         }
 
+        // Count time after activation
         dropTimer += Time.deltaTime;
 
         if (dropTimer >= timeToDrop)
@@ -73,6 +80,8 @@ public class RandomCoconutDrop_Level4 : MonoBehaviour
     void DropCoconut()
     {
         hasDropped = true;
+
+        // Enable physics and apply random motion
         rb.simulated = true;
 
         float randomX = Random.Range(-horizontalForce, horizontalForce);
@@ -84,6 +93,7 @@ public class RandomCoconutDrop_Level4 : MonoBehaviour
     {
         if (!other.CompareTag("Player")) return;
 
+        // Apply damage if player has PlayerDamage component
         PlayerDamage damage = other.GetComponent<PlayerDamage>();
         if (damage != null)
         {
@@ -95,6 +105,7 @@ public class RandomCoconutDrop_Level4 : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        // Damage player on collision
         if (collision.gameObject.CompareTag("Player"))
         {
             PlayerDamage damage = collision.gameObject.GetComponent<PlayerDamage>();
@@ -107,6 +118,7 @@ public class RandomCoconutDrop_Level4 : MonoBehaviour
             return;
         }
 
+        // Destroy on ground impact
         if (collision.gameObject.CompareTag("Ground"))
         {
             Destroy(gameObject);
