@@ -2968,6 +2968,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LevelUI
   levelText: {fileID: 2048536243}
+  objectiveText: {fileID: 0}
+  portalsUnlockedText: {fileID: 0}
 --- !u!1001 &262755997
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6083,7 +6085,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 29}
+  m_AnchoredPosition: {x: 0, y: -21}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &559911270
@@ -23389,6 +23391,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4565724717316249753, guid: 7e9008ed97ba3aa429fe3c5a92a0317c,
+        type: 3}
+      propertyPath: keyID
+      value: Key3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4565724717316249753, guid: 7e9008ed97ba3aa429fe3c5a92a0317c,
+        type: 3}
+      propertyPath: nextSceneName
+      value: MainHubV2
       objectReference: {fileID: 0}
     - target: {fileID: 4565724717316249753, guid: 7e9008ed97ba3aa429fe3c5a92a0317c,
         type: 3}

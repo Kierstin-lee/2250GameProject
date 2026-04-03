@@ -8321,6 +8321,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4565724717316249753, guid: 7e9008ed97ba3aa429fe3c5a92a0317c,
         type: 3}
+      propertyPath: keyID
+      value: Key4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4565724717316249753, guid: 7e9008ed97ba3aa429fe3c5a92a0317c,
+        type: 3}
+      propertyPath: nextSceneName
+      value: MainHubV2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4565724717316249753, guid: 7e9008ed97ba3aa429fe3c5a92a0317c,
+        type: 3}
       propertyPath: keyCollectSound
       value: 
       objectReference: {fileID: 8300000, guid: 1af1d96111cf74c0bad9b6c59749d7ab, type: 3}
@@ -17346,7 +17356,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 29}
+  m_AnchoredPosition: {x: 0, y: -24}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!4 &819367908 stripped
@@ -43264,6 +43274,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LevelUI
   levelText: {fileID: 1106307405}
+  objectiveText: {fileID: 0}
+  portalsUnlockedText: {fileID: 0}
 --- !u!1001 &1786296688
 PrefabInstance:
   m_ObjectHideFlags: 0
