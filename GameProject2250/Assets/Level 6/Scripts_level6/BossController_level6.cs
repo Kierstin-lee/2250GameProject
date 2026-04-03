@@ -2,11 +2,6 @@ using UnityEngine;
 
 public class BossController_level6 : MonoBehaviour
 {
-    [Header("Boss Stats")] [SerializeField]
-    private int maxHealth = 3; // Boss dies after 3 hits
-
-    private int currentHealth;
-
     [Header("Movement")] [SerializeField] private float moveSpeed = 1f;
 
     //[SerializeField] private float jumpForce = 10f;
@@ -32,13 +27,8 @@ public class BossController_level6 : MonoBehaviour
     //private Animator anim;
     private SpriteRenderer spriteRenderer;
 
-    [Header("Health UI")] [SerializeField] private BossHealthBar healthBarPrefab;
-    private BossHealthBar healthBar;
-
     void Start()
     {
-        currentHealth = maxHealth;
-
         rb = GetComponent<Rigidbody2D>();
         //anim = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
@@ -48,13 +38,6 @@ public class BossController_level6 : MonoBehaviour
         {
             player = playerObj.transform;
             Debug.Log("Player found: " + playerObj.name);
-        }
-
-        // Instantiate health bar above boss
-        if (healthBarPrefab != null)
-        {
-            healthBar = Instantiate(healthBarPrefab, transform.position + Vector3.up * 2f, Quaternion.identity);
-            healthBar.SetMaxHealth(maxHealth);
         }
     }
 
@@ -66,11 +49,6 @@ public class BossController_level6 : MonoBehaviour
         //isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
 
         TryAttack();
-
-        if (healthBar != null)
-        {
-            healthBar.transform.position = transform.position + Vector3.up * 2f;
-        }
     }
 
     void FixedUpdate()
@@ -147,17 +125,5 @@ public class BossController_level6 : MonoBehaviour
         {
             playerScript.TakeDamage(1);
         }
-    }
-
-    private void Die()
-    {
-        Debug.Log("Boss Died"); //again, fairy attack is not set up
-
-        //anim.SetTrigger("Death");
-        rb.linearVelocity = Vector2.zero;
-        this.enabled = false; // stop all boss behavior
-
-        Destroy(gameObject, 2f);
-        if (healthBar != null) Destroy(healthBar.gameObject);
     }
 }
