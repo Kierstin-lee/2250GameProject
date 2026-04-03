@@ -5,9 +5,281 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5b3795eb-0421-4b52-bb7b-73433f0ab0ec" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CameraResetable.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CameraResetable.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CharacterSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CharacterSpawner.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Heart_Powerup_Behaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Heart_Powerup_Behaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.GameProject2250/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameProject2250/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Animal Character Pack.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Animal Character Pack/Original artworks.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Animal Character Pack/Original artworks/Free-background.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Animal Character Pack/Original artworks/Free-background.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Animal Character Pack/Original artworks/original-artwork-hd.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Animal Character Pack/Original artworks/original-artwork-hd.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Animal Character Pack/Original artworks/original-artwork.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Animal Character Pack/Original artworks/original-artwork.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Animal Character Pack/Prefabs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Animal Character Pack/Prefabs/BearCatOwl.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Animal Character Pack/Prefabs/BearCatOwl.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Animal Character Pack/Prefabs/Cow.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Animal Character Pack/Prefabs/Cow.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Animal Character Pack/Scenes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Animal Character Pack/Scenes/Character display.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Animal Character Pack/Scenes/Character display.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Animal Character Pack/Scenes/Character displaySettings.lighting" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Animal Character Pack/Scenes/Character displaySettings.lighting.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Animal Character Pack/Sprites.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Animal Character Pack/Sprites/Background.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Animal Character Pack/Sprites/Background/Free-background.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Animal Character Pack/Sprites/Background/Free-background.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Animal Character Pack/Sprites/Characters.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Animal Character Pack/Sprites/Characters/Bears.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Animal Character Pack/Sprites/Characters/Bears/Bear.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Animal Character Pack/Sprites/Characters/Bears/Bear.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Animal Character Pack/Sprites/Characters/Cats.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Animal Character Pack/Sprites/Characters/Cats/Black-cat.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Animal Character Pack/Sprites/Characters/Cats/Black-cat.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Animal Character Pack/Sprites/Characters/Cats/Kanif.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Animal Character Pack/Sprites/Characters/Cats/Kanif.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Animal Character Pack/Sprites/Characters/Cats/Toon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Animal Character Pack/Sprites/Characters/Cats/Toon.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Animal Character Pack/Sprites/Characters/Cow.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Animal Character Pack/Sprites/Characters/Cow/Cow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Animal Character Pack/Sprites/Characters/Cow/Cow.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Animal Character Pack/Sprites/Characters/Demons.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Animal Character Pack/Sprites/Characters/Demons/DemonBrown.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Animal Character Pack/Sprites/Characters/Demons/DemonBrown.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Animal Character Pack/Sprites/Characters/Demons/DemonMagen.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Animal Character Pack/Sprites/Characters/Demons/DemonMagen.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Animal Character Pack/Sprites/Characters/Demons/DemonRed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Animal Character Pack/Sprites/Characters/Demons/DemonRed.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Animal Character Pack/Sprites/Characters/Owls.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Animal Character Pack/Sprites/Characters/Owls/Owl.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Animal Character Pack/Sprites/Characters/Owls/Owl.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Animal Character Pack/Sprites/Characters/Owls/Snow-owl.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Animal Character Pack/Sprites/Characters/Owls/Snow-owl.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Animal Character Pack/readme.rtf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Animal Character Pack/readme.rtf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Atlas.spriteatlas" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Atlas.spriteatlas.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Demo.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Demo.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/ReadMe.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/ReadMe.pdf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Sprites.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Sprites.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileBackGround1.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileBackGround1.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileBackGround10.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileBackGround10.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileBackGround11.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileBackGround11.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileBackGround12.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileBackGround12.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileBackGround13.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileBackGround13.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileBackGround2.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileBackGround2.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileBackGround3.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileBackGround3.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileBackGround4.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileBackGround4.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileBackGround5.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileBackGround5.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileBackGround6.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileBackGround6.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileBackGround7.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileBackGround7.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileBackGround8.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileBackGround8.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileBackGround9.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileBackGround9.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileFence1.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileFence1.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileFence2.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileFence2.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileFence3.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileFence3.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileFence4.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileFence4.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileFence5.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileFence5.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileFence6.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileFence6.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileGround1.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileGround1.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileGround10.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileGround10.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileGround11.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileGround11.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileGround12.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileGround12.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileGround13.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileGround13.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileGround14.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileGround14.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileGround15.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileGround15.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileGround16.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileGround16.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileGround17.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileGround17.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileGround18.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileGround18.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileGround19.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileGround19.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileGround2.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileGround2.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileGround20.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileGround20.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileGround21.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileGround21.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileGround22.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileGround22.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileGround23.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileGround23.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileGround24.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileGround24.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileGround3.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileGround3.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileGround4.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileGround4.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileGround5.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileGround5.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileGround6.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileGround6.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileGround7.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileGround7.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileGround8.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileGround8.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileGround9.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileGround9.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TilePlant1.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TilePlant1.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TilePlant10.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TilePlant10.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TilePlant11.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TilePlant11.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TilePlant12.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TilePlant12.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TilePlant14.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TilePlant14.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TilePlant15.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TilePlant15.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TilePlant16.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TilePlant16.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TilePlant17.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TilePlant17.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TilePlant18.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TilePlant18.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TilePlant19.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TilePlant19.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TilePlant2.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TilePlant2.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TilePlant20.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TilePlant20.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TilePlant3.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TilePlant3.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TilePlant4.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TilePlant4.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TilePlant5.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TilePlant5.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TilePlant6.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TilePlant6.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TilePlant7.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TilePlant7.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TilePlant8.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TilePlant8.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TilePlant9.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TilePlant9.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileSpikes.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/TileSpikes.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/Tilemap.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/2D Pixel Art Platformer Biome - Plains/Tilemap/Tilemap.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Belevich.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Belevich/Hyper casual mobile GUI.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Belevich/Hyper casual mobile GUI/Original artwork.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Belevich/Hyper casual mobile GUI/Original artwork/additional controls.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Belevich/Hyper casual mobile GUI/Original artwork/additional controls.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Belevich/Hyper casual mobile GUI/Original artwork/buttons.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Belevich/Hyper casual mobile GUI/Original artwork/buttons.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Belevich/Hyper casual mobile GUI/Original artwork/icons.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Belevich/Hyper casual mobile GUI/Original artwork/icons.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Belevich/Hyper casual mobile GUI/Original artwork/popups.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Belevich/Hyper casual mobile GUI/Original artwork/popups.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Belevich/Hyper casual mobile GUI/Scenes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Belevich/Hyper casual mobile GUI/Scenes/Sample Scene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Belevich/Hyper casual mobile GUI/Scenes/Sample Scene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Belevich/Hyper casual mobile GUI/Sprites.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Belevich/Hyper casual mobile GUI/Sprites/additional controls.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Belevich/Hyper casual mobile GUI/Sprites/additional controls.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Belevich/Hyper casual mobile GUI/Sprites/buttons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Belevich/Hyper casual mobile GUI/Sprites/buttons.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Belevich/Hyper casual mobile GUI/Sprites/icons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Belevich/Hyper casual mobile GUI/Sprites/icons.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Belevich/Hyper casual mobile GUI/Sprites/popups.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Belevich/Hyper casual mobile GUI/Sprites/popups.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Belevich/Hyper casual mobile GUI/readme.rtf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Belevich/Hyper casual mobile GUI/readme.rtf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FanyasyStatusIcons.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FanyasyStatusIcons/Light.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FanyasyStatusIcons/Light.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FanyasyStatusIcons/StatusIcons.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/FanyasyStatusIcons/StatusIcons.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fonts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fonts/FairyDustB SDF.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fonts/FairyDustB SDF.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fonts/FairyDustB.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fonts/FairyDustB.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fonts/Pix32 SDF.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fonts/Pix32 SDF.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fonts/Pix32.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fonts/Pix32.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 4/Scripts_Level4/FairyMovement_Level4.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level 4/Scripts_Level4/FairyMovement_Level4.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 6/Scripts_level6/CharacterSpawner_level6.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level 6/Scripts_level6/CharacterSpawner_level6.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MainHub/Scenes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MainHub/Scenes/Level0.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MainHub/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MainHub/Scripts/CameraFollow_MainHub.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MainHub/Scripts/CameraFollow_MainHub.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MainHub/Scripts/CharacterSpawner_MainHub.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MainHub/Scripts/CharacterSpawner_MainHub.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MainHub/Scripts/ChestBehaviour.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MainHub/Scripts/ChestBehaviour.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MainHub/Scripts/CoinBehaviour.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MainHub/Scripts/CoinBehaviour.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MainHub/Scripts/CoinsUI.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MainHub/Scripts/CoinsUI.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MainHub/Scripts/FairyController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MainHub/Scripts/FairyController.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MainHub/Scripts/FairyMovement_MainHub.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MainHub/Scripts/FairyMovement_MainHub.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MainHub/Scripts/GameManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MainHub/Scripts/GameManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MainHub/Scripts/HubPortal.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MainHub/Scripts/HubPortal.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MainHub/Scripts/KeyBhaviour.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MainHub/Scripts/KeyBhaviour.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MainHub/Scripts/KeyManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MainHub/Scripts/KeyManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MainHub/Scripts/KeyTest.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MainHub/Scripts/KeyTest.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MainHub/Scripts/LevelUI.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MainHub/Scripts/LevelUI.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MainHub/Scripts/LivesUI.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MainHub/Scripts/LivesUI.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MainHub/Scripts/NPCDialogue.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MainHub/Scripts/NPCDialogue.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MobileDependencyResolver.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MobileDependencyResolver/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MobileDependencyResolver/Editor/1.2.185.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Roboto-Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Roboto-Bold SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/BillingMode.json.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/BillingMode.json.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level4.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level4.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level5.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level5.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level6.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level6.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Wings_Powerup_Behvaiour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Wings_Powerup_Behvaiour.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,9 +292,11 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Level 2/Scripts/CharacterSpawner_Level2.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Level 4/Scripts_Level4/CameraMovement_Level4.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Level 4/Scripts_Level4/FairyMovement_Level2V2.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Level 4/Scripts_Level4/FairyMovement_Level4.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Level 4/Scripts_Level4/HideAfterTime_Level4.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Level 4/Scripts_Level4/NPCSpeech_Level4.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Level 6/Scripts_level6/CharacterSpawner_level6.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Level0/Scripts/CharacterSpawner_Level0.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Level5/Scripts_Level5/CharacterSpawner_Level5.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Level5/Scripts_Level5/DeathPopup.cs" root0="FORCE_HIGHLIGHTING" />
@@ -55,24 +329,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.MCP Project settings loaded": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "git-widget-placeholder": "AddingComments-",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;FullGame-updated-new-V4&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.3.6f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/6000.3.6f1/Unity.app/Contents/MacOS/Unity" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath $PROJECT_DIR$ -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -82,7 +356,7 @@
       <method v="2" />
     </configuration>
     <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
-      <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.3.6f1\Editor\Unity.exe" />
+      <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/6000.3.6f1/Unity.app/Contents/MacOS/Unity" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath $PROJECT_DIR$ -testResults Logs/results.xml -logFile Logs/Editor.log -testPlatform EditMode -debugCodeOptimization" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="PASS_PARENT_ENVS" value="1" />
@@ -107,6 +381,14 @@
     <configuration name="Attach to" type="UnityDevicePlayer" factoryName="UnityAttachToDevicePlayer">
       <method v="2" />
     </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-26cb7f24e5b0-intellij.indexing.shared.core-IU-253.29346.240" />
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-IU-253.29346.240" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -147,6 +429,7 @@
       <workItem from="1775144575194" duration="5100000" />
       <workItem from="1775153303571" duration="8767000" />
       <workItem from="1775175864328" duration="1628000" />
+      <workItem from="1775182348659" duration="410000" />
     </task>
     <servers />
   </component>

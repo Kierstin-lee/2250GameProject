@@ -1,53 +1,69 @@
 using UnityEngine;
 
-//Note: I kept this code the same as level 4 cuz im scared that if it's not consistent it will break 
-public class CharacterSpawner_level6 : MonoBehaviour
+public class CharacterSpawner_Level6 : MonoBehaviour
 {
-    //Fields for each of the fairy options 
+    [Header("Fairy Options")]
     [SerializeField] private GameObject fairyRedCharacter;
     [SerializeField] private GameObject fairyGreenCharacter;
     [SerializeField] private GameObject fairyOrangeCharacter;
 
-    [SerializeField] private CameraFollow_MainHub cameraFollow;
-
     void Start()
     {
-        //set all the fairies as inactive for now
-        fairyRedCharacter.SetActive(false);
-        fairyGreenCharacter.SetActive(false);
-        fairyOrangeCharacter.SetActive(false);
+        // Turn all off first
+        if (fairyRedCharacter != null) fairyRedCharacter.SetActive(false);
+        if (fairyGreenCharacter != null) fairyGreenCharacter.SetActive(false);
+        if (fairyOrangeCharacter != null) fairyOrangeCharacter.SetActive(false);
 
-        //Create a reference to store the fairy selected by the fairy
         GameObject selectedObject = null;
 
-        switch (GameManager.instance.selectedFairy)
+        // If GameManager is missing, default to red
+        if (GameManager.instance == null)
         {
-            //if the player selects the red fairy
-            case "FairyR":
+            Debug.LogWarning("GameManager is null, defaulting to red fairy");
+
+            if (fairyRedCharacter != null)
+            {
                 fairyRedCharacter.SetActive(true);
                 selectedObject = fairyRedCharacter;
-                break;
-            //if the player selects the green fairy
-            case "FairyG":
-                fairyGreenCharacter.SetActive(true);
-                selectedObject = fairyGreenCharacter;
-                break;
-            //if the player selects the orange fairy
-            case "FairyO":
-                fairyOrangeCharacter.SetActive(true);
-                selectedObject = fairyOrangeCharacter;
-                break;
-            //use the red fairy as the default fairy (testing purposes)
-            default:
-                fairyRedCharacter.SetActive(true);
-                selectedObject = fairyRedCharacter;
-                break;
+            }
+        }
+        else
+        {
+            switch (GameManager.instance.selectedFairy)
+            {
+                case "FairyR":
+                    selectedObject = fairyRedCharacter;
+                    break;
+
+                case "FairyG":
+                    selectedObject = fairyGreenCharacter;
+                    break;
+
+                case "FairyO":
+                    selectedObject = fairyOrangeCharacter;
+                    break;
+
+                default:
+                    selectedObject = fairyRedCharacter;
+                    break;
+            }
+
+            if (selectedObject != null)
+            {
+                selectedObject.SetActive(true);
+            }
         }
 
-        //make sure the camera is set to follow the selected fairy
-        if (selectedObject != null && cameraFollow != null)
+        // VERY IMPORTANT → tag the active one as Player
+        if (selectedObject != null)
         {
-            cameraFollow.target = selectedObject.transform;
+            selectedObject.tag = "Player";
+
+            Debug.Log("Level 6 spawned: " + selectedObject.name);
+        }
+        else
+        {
+            Debug.LogWarning("No fairy assigned in CharacterSpawner_Level6");
         }
     }
 }

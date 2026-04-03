@@ -12,7 +12,7 @@ public class Wings_Powerup_Behvaiour : MonoBehaviour
             Debug.Log("Fairy hit the wings power-up");
             // FairyControllerLevel5 is reference to the fairy controller script (whatever one you may be using for your given level/scene)
            
-            FairyMovement_Level4 player4 = collision.gameObject.GetComponent<FairyMovement_Level4>();
+            FairyMovement_Level4V2 player4 = collision.gameObject.GetComponent<FairyMovement_Level4V2>();
             FairyControllerLevel5 player5 = collision.gameObject.GetComponent<FairyControllerLevel5>();
            
             //FairyControllerLevel6 player = collision.gameObject.GetComponent<FairyControllerLevel6>();

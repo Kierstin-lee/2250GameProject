@@ -3969,6 +3969,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Speed_Powerup
       objectReference: {fileID: 0}
+    - target: {fileID: 5270713749766373445, guid: 4fa1d106f7744c542a706bd0cfabad57,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 200
+      objectReference: {fileID: 0}
     - target: {fileID: 6441468994249525134, guid: 4fa1d106f7744c542a706bd0cfabad57,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5396,12 +5401,12 @@ PrefabInstance:
     - target: {fileID: 8379997176090739907, guid: 2a1dafdcc9f3468458682536bdfd0c96,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.73
+      value: -24.66
       objectReference: {fileID: 0}
     - target: {fileID: 8379997176090739907, guid: 2a1dafdcc9f3468458682536bdfd0c96,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.9
+      value: -7.74
       objectReference: {fileID: 0}
     - target: {fileID: 8379997176090739907, guid: 2a1dafdcc9f3468458682536bdfd0c96,
         type: 3}
@@ -5442,6 +5447,46 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8553639808232751349, guid: 2a1dafdcc9f3468458682536bdfd0c96,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8553639808572756527, guid: 2a1dafdcc9f3468458682536bdfd0c96,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8553639808745851015, guid: 2a1dafdcc9f3468458682536bdfd0c96,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8553639809845078011, guid: 2a1dafdcc9f3468458682536bdfd0c96,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8553639811192372161, guid: 2a1dafdcc9f3468458682536bdfd0c96,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8553639811546844313, guid: 2a1dafdcc9f3468458682536bdfd0c96,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8553639814861772439, guid: 2a1dafdcc9f3468458682536bdfd0c96,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8553639815082335875, guid: 2a1dafdcc9f3468458682536bdfd0c96,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -563392,8 +563437,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2261269a6e7dfe54d8ef5c47f3c7cf21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FairyControllerLevel5
-  moveSpeed: 6
-  jumpForce: 13
+  moveSpeed: 4
+  jumpForce: 15
   groundCheck: {fileID: 19399340}
   groundCheckRadius: 0.25
   groundLayer:
