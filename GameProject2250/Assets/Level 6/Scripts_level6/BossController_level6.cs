@@ -26,19 +26,18 @@ public class BossController_level6 : MonoBehaviour
 
     //private Animator anim;
     private SpriteRenderer spriteRenderer;
+    
+    public void SetPlayer(Transform newPlayer)
+    {
+        player = newPlayer;
+        Debug.Log("Boss now targeting: " + newPlayer.name);
+    }
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         //anim = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
-
-        GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
-        if (playerObj != null)
-        {
-            player = playerObj.transform;
-            Debug.Log("Player found: " + playerObj.name);
-        }
     }
 
     void Update()

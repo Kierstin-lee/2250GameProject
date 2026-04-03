@@ -3704,6 +3704,7 @@ MonoBehaviour:
   fairyRedCharacter: {fileID: 614162310}
   fairyGreenCharacter: {fileID: 849661750}
   fairyOrangeCharacter: {fileID: 1431883662}
+  level6Camera: {fileID: 0}
 --- !u!4 &810919722
 Transform:
   m_ObjectHideFlags: 0
@@ -5822,9 +5823,9 @@ MonoBehaviour:
   dialogueBox: {fileID: 1479159587}
   dialogueText: {fileID: 1751272528}
   dialogueLines:
-  - Welcome to the last level!
-  - Get to the end to collect your final key
-  - Be careful! I think the wizard is here...
+  - You did it! You beat the wizard
+  - 'As a thank you, please take one final key '
+  - So long little fairy!
 --- !u!61 &1119456810
 BoxCollider2D:
   m_ObjectHideFlags: 0

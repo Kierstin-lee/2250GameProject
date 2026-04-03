@@ -6,9 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="5b3795eb-0421-4b52-bb7b-73433f0ab0ec" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GameProject2250/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameProject2250/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level 6/Scripts_level6/CameraFollow_level6.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level 6/Scripts_level6/CameraFollow_level6.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 6/Scripts_level6/BossController_level6.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level 6/Scripts_level6/BossController_level6.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Level 6/Scripts_level6/CharacterSpawner_level6.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level 6/Scripts_level6/CharacterSpawner_level6.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level6.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level6.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,7 +161,7 @@
       <workItem from="1775182348659" duration="410000" />
       <workItem from="1775223766827" duration="5966000" />
       <workItem from="1775239010062" duration="225000" />
-      <workItem from="1775248374655" duration="1189000" />
+      <workItem from="1775248374655" duration="1486000" />
     </task>
     <servers />
   </component>

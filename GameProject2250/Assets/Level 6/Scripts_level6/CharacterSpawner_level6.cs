@@ -66,6 +66,13 @@ public class CharacterSpawner_Level6 : MonoBehaviour
             {
                 level6Camera.SetPlayer(selectedObject.transform);
             }
+            
+            BossController_level6 boss = FindObjectOfType<BossController_level6>();
+
+            if (boss != null)
+            {
+                boss.SetPlayer(selectedObject.transform);
+            }
 
             Debug.Log("Level 6 spawned: " + selectedObject.name);
         }
