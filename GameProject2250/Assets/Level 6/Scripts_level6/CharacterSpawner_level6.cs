@@ -6,6 +6,9 @@ public class CharacterSpawner_Level6 : MonoBehaviour
     [SerializeField] private GameObject fairyRedCharacter;
     [SerializeField] private GameObject fairyGreenCharacter;
     [SerializeField] private GameObject fairyOrangeCharacter;
+    
+    [Header("Level 6 Camera")]
+    [SerializeField] private CameraFollow_level6 level6Camera;
 
     void Start()
     {
@@ -58,6 +61,11 @@ public class CharacterSpawner_Level6 : MonoBehaviour
         if (selectedObject != null)
         {
             selectedObject.tag = "Player";
+            
+            if (level6Camera != null)
+            {
+                level6Camera.SetPlayer(selectedObject.transform);
+            }
 
             Debug.Log("Level 6 spawned: " + selectedObject.name);
         }

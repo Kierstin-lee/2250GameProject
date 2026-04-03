@@ -14,11 +14,10 @@ public class CameraFollow_level6 : MonoBehaviour
     [SerializeField] private float maxX = 62.76f;
 
     private Transform player;
-
-    void Start()
+    
+    public void SetPlayer(Transform newPlayer)
     {
-        //set the player object
-        player = GameObject.FindGameObjectWithTag("Player").transform;
+        player = newPlayer;
     }
 
     void LateUpdate()
