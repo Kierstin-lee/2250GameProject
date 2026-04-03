@@ -20,6 +20,7 @@ public class PlayerDamage : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        // Trigger damage on hazard tags
         if (other.CompareTag("Hole") || other.CompareTag("Hazard") || other.CompareTag("Spike"))
         {
             TakeDamage();
@@ -28,6 +29,7 @@ public class PlayerDamage : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        // Handle collision-based hazards
         if (collision.gameObject.CompareTag("Hazard") || collision.gameObject.CompareTag("Spike"))
         {
             TakeDamage();
@@ -40,22 +42,26 @@ public class PlayerDamage : MonoBehaviour
 
         canTakeDamage = false;
 
+        // Reduce player life
         if (GameManager.instance != null)
         {
             GameManager.instance.LoseLife(damageAmount);
         }
 
+        // Respawn player at designated point
         if (respawnPoint != null)
         {
             transform.position = respawnPoint.position;
         }
 
+        // Reset physics state
         if (rb != null)
         {
             rb.linearVelocity = Vector2.zero;
             rb.angularVelocity = 0f;
         }
 
+        // Reset camera if applicable
         CameraResettable resettableCam = FindObjectOfType<CameraResettable>();
         if (resettableCam != null)
         {
@@ -68,6 +74,7 @@ public class PlayerDamage : MonoBehaviour
             level4Cam.ResetCamera();
         }
 
+        // Start cooldown before damage can be taken again
         StartCoroutine(DamageCooldownRoutine());
     }
 
