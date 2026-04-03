@@ -61,6 +61,8 @@ public class BossController_level6 : MonoBehaviour
 
     void Update()
     {
+        Debug.Log("Player is: " + (player == null ? "NULL" : player.name));
+        
         if (player == null) return;
         
         // Handle movement
@@ -125,8 +127,11 @@ public class BossController_level6 : MonoBehaviour
     {
         float distanceToPlayer = Vector2.Distance(transform.position, player.position);
 
+        Debug.Log("Distance to player: " + distanceToPlayer);
+        
         // Proper cooldown enforcement
-        if (distanceToPlayer <= attackRange && Time.time >= lastAttackTime + attackCooldown)
+        //if (distanceToPlayer <= attackRange && Time.time >= lastAttackTime + attackCooldown)
+        if (Time.time >= lastAttackTime + attackCooldown)
         {
             Attack();
         }

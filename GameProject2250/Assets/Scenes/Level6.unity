@@ -5504,8 +5504,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: -218170313
-  m_SortingLayer: 5
+  m_SortingLayerID: -1283572315
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: -505062661, guid: 29ff499e9e777444480d4dde1d098f1c, type: 3}
@@ -12225,6 +12225,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3979658910644941265, guid: ea8d65b89dc84d9092703d2ef9b70db7,
         type: 3}
       insertIndex: -1
+      addedObject: {fileID: 733614998}
+    - targetCorrespondingSourceObject: {fileID: 3979658910644941265, guid: ea8d65b89dc84d9092703d2ef9b70db7,
+        type: 3}
+      insertIndex: -1
       addedObject: {fileID: 733614994}
   m_SourcePrefab: {fileID: 100100000, guid: ea8d65b89dc84d9092703d2ef9b70db7, type: 3}
 --- !u!1 &733614992 stripped
@@ -12246,7 +12250,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 733614992}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2261269a6e7dfe54d8ef5c47f3c7cf21, type: 3}
   m_Name: 
@@ -12339,6 +12343,27 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &733614998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 733614992}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8400668161dbabe4c8f42533167d7579, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FairyController_level6
+  moveSpeed: 5
+  jumpForce: 10
+  groundCheck: {fileID: 1925494587}
+  groundCheckRadius: 0.2
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 8
+  maxLives: 5
+  damageCooldown: 1
 --- !u!1 &734098556
 GameObject:
   m_ObjectHideFlags: 0
@@ -13745,7 +13770,7 @@ Canvas:
   m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 0
   m_UpdateRectTransformForStandalone: 0
-  m_SortingLayerID: 1038092625
+  m_SortingLayerID: -218170313
   m_SortingOrder: 1
   m_TargetDisplay: 0
 --- !u!224 &838258890
@@ -14811,6 +14836,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7194166884115714197, guid: 8f19645d1dcc4c24a1fe81dfc3bbe9a5,
         type: 3}
       insertIndex: -1
+      addedObject: {fileID: 911623213}
+    - targetCorrespondingSourceObject: {fileID: 7194166884115714197, guid: 8f19645d1dcc4c24a1fe81dfc3bbe9a5,
+        type: 3}
+      insertIndex: -1
       addedObject: {fileID: 911623209}
   m_SourcePrefab: {fileID: 100100000, guid: 8f19645d1dcc4c24a1fe81dfc3bbe9a5, type: 3}
 --- !u!1 &911623207 stripped
@@ -14832,7 +14861,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 911623207}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2261269a6e7dfe54d8ef5c47f3c7cf21, type: 3}
   m_Name: 
@@ -14925,6 +14954,27 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &911623213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 911623207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8400668161dbabe4c8f42533167d7579, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FairyController_level6
+  moveSpeed: 5
+  jumpForce: 10
+  groundCheck: {fileID: 152693758}
+  groundCheckRadius: 0.2
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 8
+  maxLives: 5
+  damageCooldown: 1
 --- !u!4 &931250582 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7941510191009950314, guid: 60bde70e37085514e83ddb43c317fb87,
@@ -20355,6 +20405,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 1671945572645789033, guid: 059790aee4124594910a271a5986e78d,
         type: 3}
       insertIndex: -1
+      addedObject: {fileID: 1240984063}
+    - targetCorrespondingSourceObject: {fileID: 1671945572645789033, guid: 059790aee4124594910a271a5986e78d,
+        type: 3}
+      insertIndex: -1
       addedObject: {fileID: 1240984059}
   m_SourcePrefab: {fileID: 100100000, guid: 059790aee4124594910a271a5986e78d, type: 3}
 --- !u!1 &1240984057 stripped
@@ -20376,7 +20430,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1240984057}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2261269a6e7dfe54d8ef5c47f3c7cf21, type: 3}
   m_Name: 
@@ -20469,6 +20523,27 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &1240984063
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1240984057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8400668161dbabe4c8f42533167d7579, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::FairyController_level6
+  moveSpeed: 5
+  jumpForce: 10
+  groundCheck: {fileID: 233498899}
+  groundCheckRadius: 0.2
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 8
+  maxLives: 5
+  damageCooldown: 1
 --- !u!1 &1242425807
 GameObject:
   m_ObjectHideFlags: 0
@@ -23013,8 +23088,8 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_GlobalIlluminationMeshLod: 0
-  m_SortingLayerID: -218170313
-  m_SortingLayer: 5
+  m_SortingLayerID: -1283572315
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: -505062661, guid: 29ff499e9e777444480d4dde1d098f1c, type: 3}
@@ -27990,7 +28065,7 @@ PrefabInstance:
     - target: {fileID: 8553639808745851015, guid: 2a1dafdcc9f3468458682536bdfd0c96,
         type: 3}
       propertyPath: m_SortingOrder
-      value: 20
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 8553639809845078011, guid: 2a1dafdcc9f3468458682536bdfd0c96,
         type: 3}
@@ -28000,7 +28075,7 @@ PrefabInstance:
     - target: {fileID: 8553639811192372161, guid: 2a1dafdcc9f3468458682536bdfd0c96,
         type: 3}
       propertyPath: m_SortingOrder
-      value: 20
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 8553639811546844313, guid: 2a1dafdcc9f3468458682536bdfd0c96,
         type: 3}
@@ -29697,7 +29772,7 @@ MonoBehaviour:
   groundCheckRadius: 0.2
   groundLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   maxLives: 5
   damageCooldown: 1
 --- !u!50 &1796854538

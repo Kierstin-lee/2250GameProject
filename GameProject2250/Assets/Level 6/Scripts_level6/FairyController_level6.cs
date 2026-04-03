@@ -104,6 +104,8 @@ public class FairyController_level6 : MonoBehaviour
     //method to allow the fairy to take damage from the boss
     public void TakeDamage(int damage)
     {
+        Debug.Log("TakeDamage CALLED on: " + gameObject.name);
+        
         if (!canTakeDamage) return;
         
         canTakeDamage = false;
