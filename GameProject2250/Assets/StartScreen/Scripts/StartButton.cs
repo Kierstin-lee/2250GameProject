@@ -12,6 +12,7 @@ public class StartButton : MonoBehaviour
 
     public void OpenScene()
     {
+        // Load the scene named "MainhubV2"
         SceneManager.LoadScene("MainhubV2");
     }
 }

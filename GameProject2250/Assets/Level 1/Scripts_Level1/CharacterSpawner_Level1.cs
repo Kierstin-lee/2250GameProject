@@ -15,27 +15,29 @@ public class CharacterSpawner_Level1 : MonoBehaviour
 
         GameObject selectedObject = null;
 
+        // Fairy spawner logic
         if (GameManager.instance == null)
         {
             Debug.LogWarning("GameManager.instance is null. Defaulting to red fairy.");
 
             if (fairyRedCharacter != null)
             {
-                fairyRedCharacter.SetActive(true);
-                fairyRedCharacter.tag = "Player";
+                // If GameManager is missing, default to red fairy
+                fairyRedCharacter.SetActive(true); // Ensure the red fairy is active
+                fairyRedCharacter.tag = "Player"; // Set the tag to Player for the red fairy
                 Debug.Log("Spawned default red fairy because GameManager was null.");
             }
 
             return;
         }
 
-        switch (GameManager.instance.selectedFairy)
+        switch (GameManager.instance.selectedFairy) // Check the selected fairy from GameManager
         {
             case "FairyR":
-                if (fairyRedCharacter != null)
+                if (fairyRedCharacter != null) // Check if the red fairy GameObject is assigned
                 {
-                    fairyRedCharacter.SetActive(true);
-                    selectedObject = fairyRedCharacter;
+                    fairyRedCharacter.SetActive(true); // Activate the red fairy GameObject
+                    selectedObject = fairyRedCharacter; // Store the reference to the selected red fairy for later use
                 }
                 break;
 
@@ -67,11 +69,11 @@ public class CharacterSpawner_Level1 : MonoBehaviour
         if (selectedObject != null)
         {
             selectedObject.tag = "Player";
-            Debug.Log("Level 1 spawned fairy: " + selectedObject.name + " | tag set to Player");
+            Debug.Log("Level 1 spawned fairy: " + selectedObject.name + " | tag set to Player"); // Log the name of the spawned fairy for debugging
         }
         else
         {
-            Debug.LogWarning("No fairy was selected/spawned for Level 1.");
+            Debug.LogWarning("No fairy was selected/spawned for Level 1."); // Log a warning if no fairy was spawned
         }
     }
 }
