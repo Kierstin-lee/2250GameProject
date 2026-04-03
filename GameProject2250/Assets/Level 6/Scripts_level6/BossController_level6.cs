@@ -2,46 +2,47 @@ using UnityEngine;
 
 public class BossController_level6 : MonoBehaviour
 {
-    [Header("Boss Stats")]
-    [SerializeField] private int maxHealth = 3;        // Boss dies after 3 hits
+    [Header("Boss Stats")] [SerializeField]
+    private int maxHealth = 3; // Boss dies after 3 hits
+
     private int currentHealth;
 
-    [Header("Movement")]
-    [SerializeField] private float moveSpeed = 1f;
+    [Header("Movement")] [SerializeField] private float moveSpeed = 1f;
+
     //[SerializeField] private float jumpForce = 10f;
     [SerializeField] private float leftBound = 43f;
     [SerializeField] private float rightBound = 67f;
-    
+
     //[Header("Ground Check")]
     //[SerializeField] private Transform groundCheck;
     //[SerializeField] private float groundCheckRadius = 0.2f;
     //[SerializeField] private LayerMask groundLayer;
     //private bool isGrounded;
 
-    [Header("Combat")]
-    [SerializeField] private float attackRange = 3f;
+    [Header("Combat")] [SerializeField] private float attackRange = 3f;
+
     [SerializeField] private float attackCooldown = 5f;
+
     //[SerializeField] private int numberOfAttackAnimations = 2;
     private float lastAttackTime;
-    
+
     private Transform player;
     private Rigidbody2D rb;
-    
+
     //private Animator anim;
     private SpriteRenderer spriteRenderer;
 
-    [Header("Health UI")]
-    [SerializeField] private BossHealthBar healthBarPrefab;
+    [Header("Health UI")] [SerializeField] private BossHealthBar healthBarPrefab;
     private BossHealthBar healthBar;
 
     void Start()
     {
         currentHealth = maxHealth;
-        
+
         rb = GetComponent<Rigidbody2D>();
         //anim = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
-        
+
         GameObject playerObj = GameObject.FindGameObjectWithTag("Player");
         if (playerObj != null)
         {
@@ -60,10 +61,10 @@ public class BossController_level6 : MonoBehaviour
     void Update()
     {
         if (player == null) return;
-        
+
         // Handle movement
         //isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
-        
+
         TryAttack();
 
         if (healthBar != null)
@@ -95,7 +96,7 @@ public class BossController_level6 : MonoBehaviour
         // Move toward player
         rb.linearVelocity = new Vector2(direction * moveSpeed, rb.linearVelocity.y);
         //Debug.Log("Boss moving");
-        
+
         //anim.SetFloat("Speed", Mathf.Abs(rb.linearVelocity.x));
 
         //Flip sprite
@@ -107,22 +108,22 @@ public class BossController_level6 : MonoBehaviour
         // Jump logic (platform chasing)
         //if (isGrounded)
         //{
-            //bool playerAbove = player.position.y > transform.position.y + 1f;
-            //bool closeHorizontally = Mathf.Abs(player.position.x - transform.position.x) < 3f;
+        //bool playerAbove = player.position.y > transform.position.y + 1f;
+        //bool closeHorizontally = Mathf.Abs(player.position.x - transform.position.x) < 3f;
 
-            //if (playerAbove && closeHorizontally)
-            //{
-                //rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
-                //anim.SetTrigger("Jump");
-            //}
-        }
-    
+        //if (playerAbove && closeHorizontally)
+        //{
+        //rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+        //anim.SetTrigger("Jump");
+        //}
+    }
+
     private void TryAttack()
     {
         float distanceToPlayer = Vector2.Distance(transform.position, player.position);
 
-        Debug.Log("Distance to player: " + distanceToPlayer);
-        
+        //Debug.Log("Distance to player: " + distanceToPlayer);
+
         // Proper cooldown enforcement
         if (distanceToPlayer <= attackRange && Time.time >= lastAttackTime + attackCooldown)
         {
@@ -133,13 +134,13 @@ public class BossController_level6 : MonoBehaviour
     private void Attack()
     {
         lastAttackTime = Time.time;
-        
+
         Debug.Log("Boss Attack"); //i dont see this
 
         // Random attack animation from 1 to N
         //int attackIndex = Random.Range(1, numberOfAttackAnimations + 1);
         //anim.SetTrigger("Attack" + attackIndex);
-        
+
         FairyController_level6 playerScript = player.GetComponent<FairyController_level6>();
 
         if (playerScript != null)
@@ -151,7 +152,7 @@ public class BossController_level6 : MonoBehaviour
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
-        
+
         Debug.Log("Boss HP: " + currentHealth); //fairy attack not set up yet
 
         if (healthBar != null)
@@ -170,7 +171,7 @@ public class BossController_level6 : MonoBehaviour
     private void Die()
     {
         Debug.Log("Boss Died"); //again, fairy attack is not set up
-        
+
         //anim.SetTrigger("Death");
         rb.linearVelocity = Vector2.zero;
         this.enabled = false; // stop all boss behavior
@@ -178,14 +179,4 @@ public class BossController_level6 : MonoBehaviour
         Destroy(gameObject, 2f);
         if (healthBar != null) Destroy(healthBar.gameObject);
     }
-
-    // Optional: for testing, handle collisions with player attacks
-    //private void OnTriggerEnter2D(Collider2D collision)
-    //{
-        //if (collision.CompareTag("PlayerAttack"))
-        //{
-            //TakeDamage(1);
-            //Destroy(collision.gameObject); // remove attack projectile if needed
-        //}
-    //}
 }

@@ -12221,15 +12221,11 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 3979658910644941265, guid: ea8d65b89dc84d9092703d2ef9b70db7,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 733614995}
-    - targetCorrespondingSourceObject: {fileID: 3979658910644941265, guid: ea8d65b89dc84d9092703d2ef9b70db7,
-        type: 3}
-      insertIndex: -1
       addedObject: {fileID: 733614998}
     - targetCorrespondingSourceObject: {fileID: 3979658910644941265, guid: ea8d65b89dc84d9092703d2ef9b70db7,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 733614994}
+      addedObject: {fileID: 733614995}
   m_SourcePrefab: {fileID: 100100000, guid: ea8d65b89dc84d9092703d2ef9b70db7, type: 3}
 --- !u!1 &733614992 stripped
 GameObject:
@@ -12243,27 +12239,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 733614991}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &733614994
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 733614992}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2261269a6e7dfe54d8ef5c47f3c7cf21, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::FairyControllerLevel5
-  moveSpeed: 4
-  jumpForce: 15
-  groundCheck: {fileID: 1925494587}
-  groundCheckRadius: 0.25
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 8
-  climbSpeed: 8
-  normalGravity: 4
 --- !u!114 &733614995
 MonoBehaviour:
   m_ObjectHideFlags: 0

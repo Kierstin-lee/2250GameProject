@@ -20,6 +20,8 @@ public class PlayerDamage : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
+        Debug.Log("TRIGGER with: " + other.name + " | tag: " + other.tag);
+
         // Trigger damage on hazard tags
         if (other.CompareTag("Hole") || other.CompareTag("Hazard") || other.CompareTag("Spike"))
         {
@@ -29,6 +31,8 @@ public class PlayerDamage : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
+        Debug.Log("COLLISION with: " + collision.gameObject.name + " | tag: " + collision.gameObject.tag);
+        
         // Handle collision-based hazards
         if (collision.gameObject.CompareTag("Hazard") || collision.gameObject.CompareTag("Spike"))
         {
@@ -45,6 +49,7 @@ public class PlayerDamage : MonoBehaviour
         // Reduce player life
         if (GameManager.instance != null)
         {
+            Debug.Log("Player life lost");
             GameManager.instance.LoseLife(damageAmount);
         }
 
