@@ -1,74 +1,106 @@
+using System.Collections;
 using UnityEngine;
 using TMPro;
-using System.Collections;
 
 public class NPCDialogue : MonoBehaviour
 {
+    [Header("UI")]
     public TMP_Text bubbleText;
-    public TMP_Text objectiveText;
 
-    [TextArea] public string[] dialogueLines;
-    [TextArea] public string[] objectiveLines;
+    [Header("Dialogue")]
+    [TextArea] public string[] firstTalkLines;
+    [TextArea] public string[] repeatTalkLines;
 
-    [SerializeField] private float waitTime = 5f;
+    [SerializeField] private float lineDuration = 3f;
 
-    private int currentKeyIndex = 0;
-    private Coroutine textRoutine;
+    private Coroutine dialogueRoutine;
+    private bool playerInside = false;
+    private bool isTalking = false;
 
     private void Start()
     {
         if (bubbleText != null)
-            bubbleText.text = "";
-
-        if (objectiveText != null)
-            objectiveText.gameObject.SetActive(false);
-
-        // Show first instruction immediately
-        PlaySequence(0);
-    }
-
-    public void TriggerNextKeySequence()
-    {
-        currentKeyIndex++;
-
-        if (currentKeyIndex < dialogueLines.Length)
         {
-            PlaySequence(currentKeyIndex);
+            bubbleText.text = "";
+            bubbleText.gameObject.SetActive(false);
         }
     }
 
-    private void PlaySequence(int index)
+    private void Update()
     {
-        if (index < 0 || index >= dialogueLines.Length || index >= objectiveLines.Length)
-            return;
+        if (!playerInside) return;
 
-        if (textRoutine != null)
-            StopCoroutine(textRoutine);
-
-        textRoutine = StartCoroutine(DisplaySequence(dialogueLines[index], objectiveLines[index]));
+        if (Input.GetKeyDown(KeyCode.Space) && !isTalking)
+        {
+            PlayAppropriateDialogue();
+        }
     }
 
-    private IEnumerator DisplaySequence(string story, string goal)
+    private void OnTriggerEnter2D(Collider2D other)
     {
+        if (!other.CompareTag("Player")) return;
+        playerInside = true;
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (!other.CompareTag("Player")) return;
+
+        playerInside = false;
+        isTalking = false;
+
+        if (dialogueRoutine != null)
+            StopCoroutine(dialogueRoutine);
+
         if (bubbleText != null)
         {
-            bubbleText.gameObject.SetActive(true);
-            bubbleText.text = story;
-            bubbleText.color = Color.white;
+            bubbleText.text = "";
+            bubbleText.gameObject.SetActive(false);
+        }
+    }
+
+    private void PlayAppropriateDialogue()
+    {
+        if (dialogueRoutine != null)
+            StopCoroutine(dialogueRoutine);
+
+        if (!GameManager.instance.hasTalkedToNPC)
+        {
+            dialogueRoutine = StartCoroutine(PlayLines(firstTalkLines, true));
+        }
+        else
+        {
+            dialogueRoutine = StartCoroutine(PlayLines(repeatTalkLines, false));
+        }
+    }
+
+    private IEnumerator PlayLines(string[] lines, bool markTutorialCompleteAfter)
+    {
+        if (bubbleText == null || lines == null || lines.Length == 0)
+            yield break;
+
+        isTalking = true;
+        bubbleText.gameObject.SetActive(true);
+
+        for (int i = 0; i < lines.Length; i++)
+        {
+            if (!playerInside)
+            {
+                isTalking = false;
+                yield break;
+            }
+
+            bubbleText.text = lines[i];
+            yield return new WaitForSeconds(lineDuration);
         }
 
-        if (objectiveText != null)
-            objectiveText.gameObject.SetActive(false);
+        bubbleText.text = "";
+        bubbleText.gameObject.SetActive(false);
+        isTalking = false;
 
-        yield return new WaitForSeconds(waitTime);
-
-        if (bubbleText != null)
-            bubbleText.text = "";
-
-        if (objectiveText != null)
+        if (markTutorialCompleteAfter)
         {
-            objectiveText.text = goal;
-            objectiveText.gameObject.SetActive(true);
+            GameManager.instance.MarkNPCTutorialComplete();
         }
     }
 }

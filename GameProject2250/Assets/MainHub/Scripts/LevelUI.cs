@@ -5,14 +5,28 @@ using UnityEngine.SceneManagement;
 public class LevelUI : MonoBehaviour
 {
     public static LevelUI instance;
-    public TMP_Text levelText;
 
-    void Awake()
+    [Header("UI References")]
+    public TMP_Text levelText;
+    public TMP_Text objectiveText;
+    public TMP_Text portalsUnlockedText;
+
+    private void Awake()
     {
         instance = this;
     }
 
-    void Start()
+    private void OnEnable()
+    {
+        GameManager.OnProgressChanged += UpdateLevelUI;
+    }
+
+    private void OnDisable()
+    {
+        GameManager.OnProgressChanged -= UpdateLevelUI;
+    }
+
+    private void Start()
     {
         UpdateLevelUI();
     }
@@ -21,19 +35,49 @@ public class LevelUI : MonoBehaviour
     {
         string sceneName = SceneManager.GetActiveScene().name;
 
-        // Convert scene name → level number
         if (sceneName.StartsWith("Level"))
         {
             string levelNumber = sceneName.Replace("Level", "");
-            levelText.text = "Level: " + levelNumber;
+            if (levelText != null)
+                levelText.text = "Level: " + levelNumber;
         }
         else if (sceneName == "MainHubV2")
         {
-            levelText.text = "Main Hub";
+            if (levelText != null)
+                levelText.text = "Main Hub";
         }
         else
         {
-            levelText.text = sceneName; // fallback
+            if (levelText != null)
+                levelText.text = sceneName;
+        }
+
+        bool inHub = sceneName == "MainHubV2";
+
+        if (objectiveText != null)
+        {
+            if (inHub)
+            {
+                objectiveText.gameObject.SetActive(true);
+                objectiveText.text = GameManager.instance.GetHubObjectiveText();
+            }
+            else
+            {
+                objectiveText.gameObject.SetActive(false);
+            }
+        }
+
+        if (portalsUnlockedText != null)
+        {
+            if (inHub)
+            {
+                portalsUnlockedText.gameObject.SetActive(true);
+                portalsUnlockedText.text = "Portals Unlocked: " + GameManager.instance.GetUnlockedPortalCount() + "/3";
+            }
+            else
+            {
+                portalsUnlockedText.gameObject.SetActive(false);
+            }
         }
 
         Debug.Log("Current Scene: " + sceneName);

@@ -8,28 +8,21 @@ public class HubPortal : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("TRIGGER HIT by: " + other.name + " | tag = " + other.tag);
-
         if (isLoading) return;
-
-        if (!other.CompareTag("Player"))
-        {
-            Debug.Log("Not tagged Player");
-            return;
-        }
+        if (!other.CompareTag("Player")) return;
 
         if (!GameManager.instance.CanUsePortal(portalNumber))
         {
-            Debug.Log("This portal is not active yet.");
+            Debug.Log("Portal " + portalNumber + " is not active yet.");
             return;
         }
 
         string sceneToLoad = GameManager.instance.GetNextSceneForPortal(portalNumber);
-        Debug.Log("Loading scene: " + sceneToLoad);
 
         if (!string.IsNullOrEmpty(sceneToLoad))
         {
             isLoading = true;
+            Debug.Log("Loading scene: " + sceneToLoad);
             SceneManager.LoadScene(sceneToLoad);
         }
     }
