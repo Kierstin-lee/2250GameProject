@@ -140,8 +140,6 @@ public class FairyController_level6 : MonoBehaviour
         anim.SetTrigger("Dying");
         
         //For now, fairy dies restart the level 6 scene
-        UnityEngine.SceneManagement.SceneManager.LoadScene(
-            UnityEngine.SceneManagement.SceneManager.GetActiveScene().name
-        );
+        UnityEngine.SceneManagement.SceneManager.LoadScene("GameOver");
     }
 }
