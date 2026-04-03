@@ -17,10 +17,10 @@ public class FairyMovement_Level4 : MonoBehaviour
     private Vector2 moveInput;
     private bool isGrounded;
     
-    // for wing powerup
+    // Wing power-up (allows one extra jump while airborne)
     private bool hasWingPower = false;
     private int extraJumps;
-    private int maxExtraJumps = 1; // ONLY ONE extra jump
+    private int maxExtraJumps = 1;
 
     void Start()
     {
@@ -33,13 +33,27 @@ public class FairyMovement_Level4 : MonoBehaviour
     {
         moveInput.x = Input.GetAxisRaw("Horizontal");
 
+        // Check if player is grounded
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
 
-        if (Input.GetKeyDown(KeyCode.UpArrow) && isGrounded)
+        // Jump and optional double jump
+        if (Input.GetKeyDown(KeyCode.UpArrow))
         {
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+            if (isGrounded)
+            {
+                rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+
+                if (hasWingPower)
+                    extraJumps = maxExtraJumps;
+            }
+            else if (hasWingPower && extraJumps > 0)
+            {
+                rb.linearVelocity = new Vector2(rb.linearVelocity.x, jumpForce);
+                extraJumps--;
+            }
         }
 
+        // Flip sprite based on movement direction
         if (moveInput.x < 0)
             spriteRenderer.flipX = true;
         else if (moveInput.x > 0)
@@ -50,11 +64,14 @@ public class FairyMovement_Level4 : MonoBehaviour
 
     private void FixedUpdate()
     {
+        // Apply horizontal movement
         rb.linearVelocity = new Vector2(moveInput.x * moveSpeed, rb.linearVelocity.y);
     }
 
     private void UpdateAnimationState()
     {
+        if (anim == null) return;
+
         anim.SetFloat("MoveX", moveInput.x);
         anim.SetBool("isGrounded", isGrounded);
         anim.SetBool("isJumping", !isGrounded);
@@ -62,6 +79,7 @@ public class FairyMovement_Level4 : MonoBehaviour
 
     private void OnDrawGizmosSelected()
     {
+        // Visualize ground check radius in editor
         if (groundCheck == null) return;
 
         Gizmos.color = Color.green;
@@ -70,7 +88,6 @@ public class FairyMovement_Level4 : MonoBehaviour
     
     public void ActivateWingPower()
     {
-        Debug.Log("Activating wing power");
         hasWingPower = true;
         extraJumps = maxExtraJumps;
     }

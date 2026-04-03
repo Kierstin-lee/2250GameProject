@@ -8,13 +8,14 @@ public class CharacterSpawner_Level1 : MonoBehaviour
 
     void Start()
     {
-        // Turn all fairies off first
+        // Disable all fairy characters initially
         if (fairyRedCharacter != null) fairyRedCharacter.SetActive(false);
         if (fairyGreenCharacter != null) fairyGreenCharacter.SetActive(false);
         if (fairyOrangeCharacter != null) fairyOrangeCharacter.SetActive(false);
 
         GameObject selectedObject = null;
 
+        // Fallback if GameManager is unavailable
         if (GameManager.instance == null)
         {
             Debug.LogWarning("GameManager.instance is null. Defaulting to red fairy.");
@@ -23,12 +24,12 @@ public class CharacterSpawner_Level1 : MonoBehaviour
             {
                 fairyRedCharacter.SetActive(true);
                 fairyRedCharacter.tag = "Player";
-                Debug.Log("Spawned default red fairy because GameManager was null.");
             }
 
             return;
         }
 
+        // Activate the selected fairy based on GameManager value
         switch (GameManager.instance.selectedFairy)
         {
             case "FairyR":
@@ -56,6 +57,7 @@ public class CharacterSpawner_Level1 : MonoBehaviour
                 break;
 
             default:
+                // Default to red fairy if selection is invalid
                 if (fairyRedCharacter != null)
                 {
                     fairyRedCharacter.SetActive(true);
@@ -64,14 +66,14 @@ public class CharacterSpawner_Level1 : MonoBehaviour
                 break;
         }
 
+        // Assign Player tag to the selected fairy
         if (selectedObject != null)
         {
             selectedObject.tag = "Player";
-            Debug.Log("Level 1 spawned fairy: " + selectedObject.name + " | tag set to Player");
         }
         else
         {
-            Debug.LogWarning("No fairy was selected/spawned for Level 1.");
+            Debug.LogWarning("No fairy was selected or activated.");
         }
     }
 }

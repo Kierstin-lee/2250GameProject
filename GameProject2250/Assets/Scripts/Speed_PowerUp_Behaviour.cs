@@ -10,20 +10,20 @@ public class Speed_PowerUp_Behaviour : MonoBehaviour
             // FairyControllerLevel5 is reference to the fairy controller script (whatever one you may be using for your given level/scene)
             
             FairyControllerLevel5 player5 = collision.gameObject.GetComponent<FairyControllerLevel5>();
-
-            //FairyControllerLevel6 player = collision.gameObject.GetComponent<FairyControllerLevel6>();
+            //FairyController_Level6 player6 = collision.gameObject.GetComponent<FairyController_Level6>();
 
             if (player5 != null)
             {
                 player5.ActivateSpeedPower(); // call a function on the player
             }
-
+            
             /*
             if (player6 != null)
             {
                 player6.ActivateWingPower(); // call a function on the player
             }
             */
+            
 
 
             Destroy(gameObject);

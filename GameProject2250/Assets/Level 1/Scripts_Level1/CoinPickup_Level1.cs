@@ -19,7 +19,7 @@ public class CoinPickup_Level1 : MonoBehaviour
             coin++;
             scoreText.text = "Coins: " + coin;
             AudioSource.PlayClipAtPoint(coinSound, transform.position);
-            Destroy(other.gameObject);
+            Destroy(other.gameObject); // Destroy coin when picked up by player
         }
     }
 }

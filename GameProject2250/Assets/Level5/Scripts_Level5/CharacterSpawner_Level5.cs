@@ -12,12 +12,14 @@ public class CharacterSpawner_Level5 : MonoBehaviour
 
     void Start()
     {
+        // Disable all characters initially
         if (fairyRedCharacter != null) fairyRedCharacter.SetActive(false);
         if (fairyGreenCharacter != null) fairyGreenCharacter.SetActive(false);
         if (fairyOrangeCharacter != null) fairyOrangeCharacter.SetActive(false);
 
         GameObject selectedObject = null;
 
+        // Fallback if GameManager is unavailable
         if (GameManager.instance == null)
         {
             Debug.LogWarning("GameManager.instance is null. Defaulting to red fairy.");
@@ -30,6 +32,7 @@ public class CharacterSpawner_Level5 : MonoBehaviour
         }
         else
         {
+            // Activate selected character based on GameManager value
             switch (GameManager.instance.selectedFairy)
             {
                 case "FairyR":
@@ -57,6 +60,7 @@ public class CharacterSpawner_Level5 : MonoBehaviour
                     break;
 
                 default:
+                    // Default to red if selection is invalid
                     if (fairyRedCharacter != null)
                     {
                         fairyRedCharacter.SetActive(true);
@@ -66,6 +70,7 @@ public class CharacterSpawner_Level5 : MonoBehaviour
             }
         }
 
+        // Assign Player tag and camera target
         if (selectedObject != null)
         {
             selectedObject.tag = "Player";
@@ -74,12 +79,10 @@ public class CharacterSpawner_Level5 : MonoBehaviour
             {
                 level5Camera.SetTarget(selectedObject.transform);
             }
-
-            Debug.Log("Level 5 spawned fairy: " + selectedObject.name);
         }
         else
         {
-            Debug.LogWarning("Level 5 could not spawn a fairy. Check Inspector references.");
+            Debug.LogWarning("No fairy was selected or activated.");
         }
     }
 }
