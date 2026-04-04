@@ -18946,10 +18946,9 @@ MonoBehaviour:
   dialogueText: {fileID: 2086362565}
   dialogueLines:
   - Welcome underwater!
-  - I think the key is down that way. Make sure to avoid the seaweed, I wouldn't
-    want to run into them
-  - Underwater you can move freely in any direction. Don't hit the ceiling or the
-    floor!
+  - I think the key is down that way. Make sure to avoid the fish, I wouldn't want
+    to run into them
+  - 'Underwater you can move freely in any direction. '
   - Collect the key to finish the mission
 --- !u!61 &1645689626
 BoxCollider2D:
