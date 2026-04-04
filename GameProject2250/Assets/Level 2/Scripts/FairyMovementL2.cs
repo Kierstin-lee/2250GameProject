@@ -91,5 +91,8 @@ public class FairyMovementL2 : MonoBehaviour
     public void ActivateHeartPower()
     {
         Debug.Log("Activating heart power");
+        
+        
+        
     }
 }

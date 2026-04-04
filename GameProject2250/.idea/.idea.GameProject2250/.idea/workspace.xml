@@ -6,20 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="5b3795eb-0421-4b52-bb7b-73433f0ab0ec" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GameProject2250/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameProject2250/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level 4/Scripts_Level4/FairyMovement_Level4V2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level 4/Scripts_Level4/FairyMovement_Level4V2.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level 6/Scripts_level6/FairyController_level6.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level 6/Scripts_level6/FairyController_level6.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level5/Scripts_Level5/FairyControllerLevel5.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level5/Scripts_Level5/FairyControllerLevel5.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Level 2/Scripts/FairyMovementL2.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level 2/Scripts/FairyMovementL2.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MainHub/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Anton SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MainHub/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Anton SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MainHub/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MainHub/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Heart_Powerup.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Heart_Powerup.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefab/Roboto-Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Roboto-Bold SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level2.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level4.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level4.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level5.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level5.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level6.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level6.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/WinnerScreen.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/WinnerScreen.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Speed_PowerUp_Behaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Speed_PowerUp_Behaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Wings_Powerup_Behvaiour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Wings_Powerup_Behvaiour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/StartScreen/Scripts/StartButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StartScreen/Scripts/StartButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Heart_Powerup_Behaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Heart_Powerup_Behaviour.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,22 +62,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;FullGame-updated-new-V4&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "git-widget-placeholder": "FullGame-updated-new-V4",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/6000.3.6f1/Unity.app/Contents/MacOS/Unity" />
@@ -176,7 +169,8 @@
       <workItem from="1775248374655" duration="2307000" />
       <workItem from="1775254620367" duration="2287000" />
       <workItem from="1775264742304" duration="1000" />
-      <workItem from="1775264799919" duration="5889000" />
+      <workItem from="1775264799919" duration="6441000" />
+      <workItem from="1775315006016" duration="1076000" />
     </task>
     <servers />
   </component>
