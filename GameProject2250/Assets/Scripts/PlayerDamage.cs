@@ -74,6 +74,7 @@ public class PlayerDamage : MonoBehaviour
             resettableCam.ResetCamera();
         }
 
+        //special camera reset for level 4 because it does not follow the character like the other levels 
         CameraMovement_Level4 level4Cam = FindObjectOfType<CameraMovement_Level4>();
         if (level4Cam != null)
         {

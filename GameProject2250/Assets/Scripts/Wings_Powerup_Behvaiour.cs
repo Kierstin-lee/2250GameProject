@@ -10,7 +10,6 @@ public class Wings_Powerup_Behvaiour : MonoBehaviour
 
         FairyMovement_Level4V2 player4 = collision.GetComponentInParent<FairyMovement_Level4V2>();
         FairyControllerLevel5 player5 = collision.GetComponentInParent<FairyControllerLevel5>();
-        FairyController_level6 player6 = collision.GetComponentInParent<FairyController_level6>();
 
         bool activated = false;
 

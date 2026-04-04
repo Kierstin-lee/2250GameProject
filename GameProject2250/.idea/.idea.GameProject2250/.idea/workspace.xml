@@ -6,6 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="5b3795eb-0421-4b52-bb7b-73433f0ab0ec" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GameProject2250/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameProject2250/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/External/Fonts/FairyDustB SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/External/Fonts/FairyDustB SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/External/Fonts/Pix32 SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/External/Fonts/Pix32 SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Roboto-Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Roboto-Bold SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerDamage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerDamage.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/StartScreen/Scripts/StartButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StartScreen/Scripts/StartButton.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -165,7 +169,9 @@
       <workItem from="1775264742304" duration="1000" />
       <workItem from="1775264799919" duration="6441000" />
       <workItem from="1775315006016" duration="1916000" />
-      <workItem from="1775317031359" duration="3150000" />
+      <workItem from="1775317031359" duration="3167000" />
+      <workItem from="1775337513595" duration="300000" />
+      <workItem from="1775337870382" duration="26000" />
     </task>
     <servers />
   </component>
@@ -181,11 +187,38 @@
   </component>
   <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/Level3-build" />
+                </option>
+              </RecentGroup>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/Level3-build" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
