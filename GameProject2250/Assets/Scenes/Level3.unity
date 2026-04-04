@@ -4405,7 +4405,7 @@ GameObject:
   - component: {fileID: 393246779}
   m_Layer: 0
   m_Name: Boundary
-  m_TagString: Level3Bounds
+  m_TagString: Spike
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4444,7 +4444,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -95.196655, y: -1.697012}
+  m_Offset: {x: -95.196655, y: -1.610424}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -4454,7 +4454,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 205.47934, y: 10.132877}
+  m_Size: {x: 205.47934, y: 8.559362}
   m_EdgeRadius: 0
 --- !u!4 &393246780
 Transform:
@@ -8908,7 +8908,7 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 0
-  boundaryCollider: {fileID: 0}
+  boundaryCollider: {fileID: 393246779}
 --- !u!114 &764428126
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19655,7 +19655,7 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 0
-  boundaryCollider: {fileID: 0}
+  boundaryCollider: {fileID: 393246779}
 --- !u!114 &1689855614
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22890,7 +22890,7 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 0
-  boundaryCollider: {fileID: 0}
+  boundaryCollider: {fileID: 393246779}
 --- !u!114 &2031387858
 MonoBehaviour:
   m_ObjectHideFlags: 0
