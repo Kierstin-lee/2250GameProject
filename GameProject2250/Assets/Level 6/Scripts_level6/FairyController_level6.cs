@@ -100,6 +100,11 @@ public class FairyController_level6 : MonoBehaviour
             anim.SetFloat("MoveY", 0);
         }
     }
+    
+    public void ActivateHeartPower()
+    {
+        Debug.Log("Activating heart power");
+    }
 
     //method for when the fairy dies/runs out of lives - respawns at start of level but will need to be changed to switch to a "Game Over" screen
     private void Die()
