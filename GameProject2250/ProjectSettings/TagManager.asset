@@ -2,15 +2,33 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!78 &1
 TagManager:
-  serializedVersion: 2
-  tags: []
+  serializedVersion: 3
+  tags:
+  - Portal
+  - Key
+  - Coin
+  - Wall
+  - Ladder
+  - Spike
+  - Ground
+  - menuButton
+  - NPC
+  - Water
+  - Coconut
+  - Hazard
+  - Hole
+  - Scarecrow
+  - Level3Bounds
+  - Boss
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Ground
   - Water
   - UI
+  - Characters
+  - Background
   - 
   - 
   - 
@@ -25,9 +43,7 @@ TagManager:
   - 
   - 
   - 
-  - Layer 1
-  - Layer 2
-  - Layer 3
+  - 
   - 
   - 
   - 
@@ -38,15 +54,26 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Characters
+    uniqueID: 3051057135
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
-  - name: Layer 1
-    uniqueID: 2425651459
+  - name: Coins
+    uniqueID: 730091649
     locked: 0
-  - name: Layer 2
-    uniqueID: 4250941897
+  - name: Keys
+    uniqueID: 1559177833
     locked: 0
-  - name: Layer 3
-    uniqueID: 4189426099
+  - name: Ground
+    uniqueID: 1421661029
     locked: 0
+  - name: walls
+    uniqueID: 3011394981
+    locked: 0
+  - name: decor
+    uniqueID: 4076796983
+    locked: 0
+  m_RenderingLayers:
+  - Default
