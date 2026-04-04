@@ -582,6 +582,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FairyControllerLevel5
   moveSpeed: 6
   jumpForce: 13
+  maxMoveSpeed: 10
   groundCheck: {fileID: 920177104}
   groundCheckRadius: 0.25
   groundLayer:
@@ -3968,6 +3969,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Speed_Powerup
+      objectReference: {fileID: 0}
+    - target: {fileID: 4420732712486154940, guid: 4fa1d106f7744c542a706bd0cfabad57,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5270713749766373445, guid: 4fa1d106f7744c542a706bd0cfabad57,
         type: 3}
@@ -27430,6 +27436,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FairyControllerLevel5
   moveSpeed: 6
   jumpForce: 13
+  maxMoveSpeed: 10
   groundCheck: {fileID: 1216014851}
   groundCheckRadius: 0.25
   groundLayer:
@@ -563439,6 +563446,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FairyControllerLevel5
   moveSpeed: 4
   jumpForce: 15
+  maxMoveSpeed: 10
   groundCheck: {fileID: 19399340}
   groundCheckRadius: 0.25
   groundLayer:

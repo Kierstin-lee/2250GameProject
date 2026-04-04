@@ -2964,6 +2964,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FairyController_level6
   moveSpeed: 5
   jumpForce: 10
+  maxMoveSpeed: 10
   groundCheck: {fileID: 1228053026}
   groundCheckRadius: 0.2
   groundLayer:
@@ -3952,6 +3953,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FairyControllerLevel5
   moveSpeed: 6
   jumpForce: 13
+  maxMoveSpeed: 10
   groundCheck: {fileID: 933989415}
   groundCheckRadius: 0.25
   groundLayer:
@@ -3973,6 +3975,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FairyController_level6
   moveSpeed: 5
   jumpForce: 10
+  maxMoveSpeed: 10
   groundCheck: {fileID: 933989415}
   groundCheckRadius: 0.2
   groundLayer:
@@ -7944,6 +7947,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FairyControllerLevel5
   moveSpeed: 6
   jumpForce: 13
+  maxMoveSpeed: 10
   groundCheck: {fileID: 602022409}
   groundCheckRadius: 0.25
   groundLayer:
@@ -7965,6 +7969,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FairyController_level6
   moveSpeed: 5
   jumpForce: 10
+  maxMoveSpeed: 10
   groundCheck: {fileID: 602022409}
   groundCheckRadius: 0.2
   groundLayer:

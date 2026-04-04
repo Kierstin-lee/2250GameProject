@@ -18755,7 +18755,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FairyMovement_Level2V2
   moveSpeed: 4
-  jumpForce: 14
+  jumpForce: 12
   groundCheck: {fileID: 1663497332}
   groundCheckRadius: 0.25
   groundLayer:
@@ -36122,6 +36122,31 @@ PrefabInstance:
       propertyPath: m_Name
       value: Wings_Powerup
       objectReference: {fileID: 0}
+    - target: {fileID: 5610638689231898014, guid: 774eb6337e9357f40a4d92ccb03c9dc0,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 1.988297
+      objectReference: {fileID: 0}
+    - target: {fileID: 5610638689231898014, guid: 774eb6337e9357f40a4d92ccb03c9dc0,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 2.2484446
+      objectReference: {fileID: 0}
+    - target: {fileID: 5610638689231898014, guid: 774eb6337e9357f40a4d92ccb03c9dc0,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -0.13891748
+      objectReference: {fileID: 0}
+    - target: {fileID: 5610638689231898014, guid: 774eb6337e9357f40a4d92ccb03c9dc0,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -0.1981957
+      objectReference: {fileID: 0}
+    - target: {fileID: 5610638689231898014, guid: 774eb6337e9357f40a4d92ccb03c9dc0,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6297866199032724493, guid: 774eb6337e9357f40a4d92ccb03c9dc0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -44385,7 +44410,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FairyMovement_Level4V2
   moveSpeed: 4
-  jumpForce: 14
+  jumpForce: 12
   groundCheck: {fileID: 810720992}
   groundCheckRadius: 0.25
   groundLayer:
@@ -46145,7 +46170,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::FairyMovement_Level4V2
   moveSpeed: 4
-  jumpForce: 14
+  jumpForce: 12
   groundCheck: {fileID: 250829274}
   groundCheckRadius: 0.25
   groundLayer:

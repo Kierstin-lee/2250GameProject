@@ -97,15 +97,15 @@ public class GameManager : MonoBehaviour
         switch (deposited)
         {
             case 0:
-                return "Go to Portal 1.";
+                return "To begin your mission, go to Portal 1.";
             case 1:
-                return "There's another key in Portal 1. Go back to it.";
+                return "Congrats on your first mission. But i think there's another key in Portal 1. Go back to it.";
             case 2:
-                return "There's another key in Portal 2.";
+                return "The tropical island needs your help! There's another key in Portal 2.";
             case 3:
-                return "There's another key left in Portal 2.";
+                return "I think theres one more key on the beach! Go back into portal 2.";
             case 4:
-                return "Go into Portal 3.";
+                return "You saved the Enchanted Forest and the Tropical island. Go into Portal 3 to defeat the wizard.";
             default:
                 return "All hub objectives complete.";
         }

@@ -2,34 +2,35 @@ using UnityEngine;
 
 public class Speed_PowerUp_Behaviour : MonoBehaviour
 {
-    void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Player")
+        if (!collision.CompareTag("Player")) return;
+
+        Debug.Log("Fairy hit the speed power-up");
+
+        FairyControllerLevel5 player5 = collision.GetComponentInParent<FairyControllerLevel5>();
+        FairyController_level6 player6 = collision.GetComponentInParent<FairyController_level6>();
+
+        bool activated = false;
+
+        if (player5 != null)
         {
-            Debug.Log("Fairy hit the wings power-up");
-            // FairyControllerLevel5 is reference to the fairy controller script (whatever one you may be using for your given level/scene)
-            
-            FairyControllerLevel5 player5 = collision.gameObject.GetComponent<FairyControllerLevel5>();
-            //FairyController_Level6 player6 = collision.gameObject.GetComponent<FairyController_Level6>();
-
-            if (player5 != null)
-            {
-                player5.ActivateSpeedPower(); // call a function on the player
-            }
-            
-            /*
-            if (player6 != null)
-            {
-                player6.ActivateWingPower(); // call a function on the player
-            }
-            */
-            
-
-
-            Destroy(gameObject);
+            player5.ActivateSpeedPower();
+            activated = true;
         }
+
+        if (player6 != null)
+        {
+            player6.ActivateSpeedPower();
+            activated = true;
+        }
+
+        if (!activated)
+        {
+            Debug.LogWarning("No compatible player script found for speed power-up.");
+            return;
+        }
+
+        Destroy(gameObject);
     }
-
 }
-
-

@@ -1450,8 +1450,8 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 25.344181, y: 1.0928676}
-      - {x: 23.381866, y: 1.099322}
+    - - {x: 25.317097, y: 0.8762114}
+      - {x: 23.40895, y: 0.85558367}
       - {x: 23.383833, y: -0.12987387}
       - {x: 25.355474, y: -0.09925461}
       - {x: 25.344933, y: 0.38696164}
@@ -3919,6 +3919,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FairyControllerLevel5
   moveSpeed: 4
   jumpForce: 13
+  maxMoveSpeed: 10
   groundCheck: {fileID: 2092885996}
   groundCheckRadius: 0.25
   groundLayer:
@@ -5375,6 +5376,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::FairyControllerLevel5
   moveSpeed: 4
   jumpForce: 13
+  maxMoveSpeed: 10
   groundCheck: {fileID: 1572518370}
   groundCheckRadius: 0.25
   groundLayer:
@@ -5874,8 +5876,8 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: -2.582302, y: 0.1409074}
-      - {x: -5.594577, y: 0.17041475}
+    - - {x: -2.6093864, y: -0.21115887}
+      - {x: -5.5674925, y: -0.15456957}
       - {x: -5.5993996, y: -1.1128492}
       - {x: -3.865457, y: -1.1249493}
       - {x: -2.6297784, y: -1.1217058}
@@ -10540,11 +10542,11 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 19.317017, y: 1.1142709}
-      - {x: 18.375862, y: 1.1033545}
+    - - {x: 19.317017, y: 0.8163686}
+      - {x: 18.402939, y: 0.8325341}
       - {x: 18.38201, y: -0.09146702}
       - {x: 21.303057, y: -0.105567455}
-      - {x: 21.356857, y: 1.1087885}
+      - {x: 21.356857, y: 0.8650503}
   m_UseDelaunayMesh: 1
 --- !u!1 &1085548186
 GameObject:
@@ -13856,11 +13858,11 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 27.245262, y: 2.102724}
-      - {x: 26.382591, y: 2.111732}
+    - - {x: 27.245262, y: 1.8589857}
+      - {x: 26.355507, y: 1.8679938}
       - {x: 26.410479, y: 0.9020871}
       - {x: 28.339506, y: 0.9021342}
-      - {x: 28.355095, y: 2.0831368}
+      - {x: 28.27385, y: 1.8664808}
   m_UseDelaunayMesh: 1
 --- !u!483693784 &1483141155
 TilemapRenderer:
@@ -14903,6 +14905,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Offset.y
       value: -0.13027847
+      objectReference: {fileID: 0}
+    - target: {fileID: 7371739401957804688, guid: 61adac23bdffd92408f5698dbb4d40ff,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -18796,10 +18803,10 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 4.317608, y: 1.1754732}
-      - {x: 2.3485384, y: 1.1814313}
-      - {x: 2.3724022, y: 0.0769968}
-      - {x: 1.4097543, y: 0.095199466}
+    - - {x: 4.3717766, y: 0.82340693}
+      - {x: 2.3485384, y: 0.8835292}
+      - {x: 2.3724022, y: -0.1396594}
+      - {x: 1.3826737, y: -0.17562068}
       - {x: 1.3974762, y: -1.1135702}
       - {x: 4.390287, y: -1.096935}
       - {x: 4.3663626, y: -0.16753656}
