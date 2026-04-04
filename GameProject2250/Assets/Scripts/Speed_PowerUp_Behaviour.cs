@@ -9,7 +9,6 @@ public class Speed_PowerUp_Behaviour : MonoBehaviour
         Debug.Log("Fairy hit the speed power-up");
 
         FairyControllerLevel5 player5 = collision.GetComponentInParent<FairyControllerLevel5>();
-        FairyController_level6 player6 = collision.GetComponentInParent<FairyController_level6>();
 
         bool activated = false;
 
@@ -18,12 +17,7 @@ public class Speed_PowerUp_Behaviour : MonoBehaviour
             player5.ActivateSpeedPower();
             activated = true;
         }
-
-        if (player6 != null)
-        {
-            player6.ActivateSpeedPower();
-            activated = true;
-        }
+        
 
         if (!activated)
         {

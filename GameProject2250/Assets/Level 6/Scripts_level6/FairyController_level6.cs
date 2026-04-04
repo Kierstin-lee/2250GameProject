@@ -127,22 +127,7 @@ public class FairyController_level6 : MonoBehaviour
         }
     }
 
-    public void ActivateWingPower()
-    {
-        // Enable double jump power-up
-        hasWingPower = true;
-        extraJumps = maxExtraJumps;
-        Debug.Log("Wing power activated in Level 6");
-    }
-
-    public void ActivateSpeedPower()
-    {
-        // Increase movement speed, but clamp it so it does not exceed the limit
-        moveSpeed += 1f;
-        moveSpeed = Mathf.Min(moveSpeed, maxMoveSpeed);
-        Debug.Log("Speed power activated in Level 6. moveSpeed = " + moveSpeed);
-    }
-
+   
     public void ActivateHeartPower()
     {
         // Placeholder for heart power-up behavior

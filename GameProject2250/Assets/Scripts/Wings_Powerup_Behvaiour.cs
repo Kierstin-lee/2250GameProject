@@ -26,12 +26,7 @@ public class Wings_Powerup_Behvaiour : MonoBehaviour
             activated = true;
         }
 
-        if (player6 != null)
-        {
-            player6.ActivateWingPower();
-            activated = true;
-        }
-
+        
         if (!activated)
         {
             Debug.LogWarning("No compatible player script found for wings power-up.");
