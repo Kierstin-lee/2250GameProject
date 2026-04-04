@@ -6,17 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="5b3795eb-0421-4b52-bb7b-73433f0ab0ec" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GameProject2250/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameProject2250/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Level 6/Scripts_level6/FairyController_level6.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Level 6/Scripts_level6/FairyController_level6.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MainHub/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Anton SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MainHub/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Anton SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Roboto-Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Roboto-Bold SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level2.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level3.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level3.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level4.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level4.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level5.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level5.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Startscreen.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Startscreen.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Speed_PowerUp_Behaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Speed_PowerUp_Behaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Wings_Powerup_Behvaiour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Wings_Powerup_Behvaiour.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/StartScreen/Scripts/StartButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/StartScreen/Scripts/StartButton.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -176,7 +165,7 @@
       <workItem from="1775264742304" duration="1000" />
       <workItem from="1775264799919" duration="6441000" />
       <workItem from="1775315006016" duration="1916000" />
-      <workItem from="1775317031359" duration="2185000" />
+      <workItem from="1775317031359" duration="3150000" />
     </task>
     <servers />
   </component>
